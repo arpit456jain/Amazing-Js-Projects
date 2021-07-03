@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>my calculator</title> 
+    <link rel="stylesheet" type="text/css" href="animation for body.css">
+    <!-- <link rel="stylesheet" href="css/calculator.css"> -->
+    <style>
+
+.container table
+{
+    margin: auto;
+}
+
+.container input
+{
+    width: 90%;
+    height: 9vh;
+    font-size: 1.7rem;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin:15px;
+    padding: 5px;
+    background-color: rgb(240, 230, 230);
+}
+.mybutton
+{
+    font-size:1.5rem;
+    background-color: aqua;
+    outline: none;
+    padding: 6px 30px;
+    margin:2px;
+    /*box-shadow: 2px 2px 2px 2px ;*/
+    border-radius: 15px;
+}
+
+.calculator
+{
+    /*width:40%;*/
+    /*height: 60vh;*/
+    padding: 5px 20px;
+  
+    background-color: blueviolet;
+    border-radius: 30px;
+}
+@media screen and (max-width:550px)  {
+    .mybutton
+{
+    font-size:1.5rem;
+    background-color: aqua;
+    outline: none;
+    padding: 6px 25px;
+   
+    /*box-shadow: 2px 2px 2px 2px ;*/
+    border-radius: 15px;
+}
+
+}
+ </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center align-center mt-4 pt-4 px-0">
+        <div class="container  mx-auto px-0">
+            <h1>Calculator</h1>
+            <div class="calculator mx-auto col-lg-5 col-md-8 col-sm-12">
+
+                <input type="text" name="screen" id="screen">
+                <table id='mybuttons'>
+                    
+                       
+                    
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+
+        var mybuttons = document.getElementById('mybuttons');
+
+        var buttonval =  ['X','00','C','%',
+                   '7',
+                   ' 8 ',
+                   ' 9 ',
+                   ' x ',
+               
+                   ' 4 ',
+                    '5 ',
+                   ' 6 ',
+                   ' - ',
+                
+                   ' 1 ',
+                   ' 2 ',
+                   ' 3 ',
+                   ' + ',
+                
+                   ' 0 ',
+                   ' . ',
+                   ' / ',
+                   ' = ']
+        for (let i=0;i<20;i=i+4)
+        {
+        mybuttons.innerHTML += 
+        `<tr>
+                    <td><button class="btn mybutton">${buttonval[i]}</button></td>
+                    <td><button class="btn mybutton">${buttonval[i+1]}</button></td>
+                    <td><button class="btn mybutton">${buttonval[i+2]}</button></td>
+                    <td><button class="btn mybutton">${buttonval[i+3]}</button></td>
+                </tr>`
+        }
+        console.log('this is by calculator file')
+let screen = document.getElementById('screen');
+
+buttons = document.querySelectorAll('button');
+let screenvalue ='';
+for(item of buttons)
+{
+    item.addEventListener('click',(e)=>{
+        buttonText= e.target.innerText
+        console.log('button text is',buttonText)
+        if(buttonText=='x')
+        {
+            buttonText='*';
+            screenvalue += buttonText;
+            screen.value = screenvalue;
+            console.log('button text is',buttonText)
+        }
+        else if(buttonText == '=')
+        {
+            screen.value = eval(screenvalue);//  eval is inbuilt function to evaluate string
+            screenvalue=screen.value;
+        }
+        else if(buttonText=='C')
+        {
+            screenvalue ="";
+            screen.value = screenvalue;
+        }
+        else if(buttonText=='X')
+        {
+            screenvalue=String(screenvalue).slice(0,-1);
+            console.log(typeof(screenvalue))
+            screen.value=screenvalue;
+        }
+        else
+        {
+            screenvalue += buttonText;
+            screen.value = screenvalue;
+        }
+    })
+}
+    </script>
+  </body>
+</html>
