@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag and Drop - Js Tutorial 64</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+    background: darkslateblue;
+}
+
+.imgBox{
+    background-image: url('img/my img.jpg');
+    position: relative;
+    top: 7px;
+    left: 5px;
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.whiteBox{
+    display: inline-block;
+    height: 155px;
+    width: 155px;
+    margin: 10px;
+    background-color: white;
+    border: 3px black solid;
+}
+
+.hold{
+    border: solid red 4px;
+}
+
+.dashed{
+    background: rgb(214, 206, 206);
+    border-style: dashed;
+}
+
+.hide{
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="whiteBox">
+        <div class="imgBox" draggable="true"></div>
+    </div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+   <script>
+       console.log('This is drag and drop utility');
+
+const imgBox = document.querySelector('.imgBox');
+const whiteBoxes = document.getElementsByClassName('whiteBox');
+
+// Event listeners for draggable element imgBox
+imgBox.addEventListener('dragstart', (e) => {
+    console.log('DragStart has been triggered');
+    e.target.className += ' hold';
+    setTimeout(() => {
+        e.target.className = 'hide';
+    }, 0);
+
+});
+
+imgBox.addEventListener('dragend', (e) => {
+    console.log('DragEnd has been triggered');
+    e.target.className = 'imgBox';
+});
+
+for (whiteBox of whiteBoxes) {
+    whiteBox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        console.log('DragOver has been triggered');
+    });
+
+    whiteBox.addEventListener('dragenter', (e) => {
+        console.log('DragEnter has been triggered');
+        e.target.className += ' dashed'; 
+    })
+
+    whiteBox.addEventListener('dragleave', (e) => {
+        console.log('DragLeave has been triggered');
+        e.target.className = 'whiteBox'
+    })
+
+    whiteBox.addEventListener('drop', (e) => {
+        console.log('Drop has been triggered');
+        e.target.append(imgBox);
+    })
+}
+
+   </script> 
+</body>
+<!-- <script src="index.js"></script> -->
+</html>
