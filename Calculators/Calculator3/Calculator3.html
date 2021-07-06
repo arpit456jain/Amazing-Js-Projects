@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="cal3_style.css">
+  <title>Pocket Calculator</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+  <h1 class="text-center">Pocket Calculator</h1>
+  <div class="row">
+    <div class="mx-auto calcContainer">
+      <form>
+          <div class="screen">
+            <input type="text" class="userInputScreen" placeholder=0 readonly/>
+          </div>
+          <div class="buttonGrid">
+            <div>
+              <button type="button" class="btn btn-danger clearEntryBtn">CE</button>
+              <button type="button" class="btn btn-danger cancelBtn">C</button>
+              <button type="button" class="btn converter">+/-</button>
+              <button type="button" class="btn operatorBtn">÷</button>
+            </div>
+            <div>
+              <button type="button" class="btn digitBtn">7</button>
+              <button type="button" class="btn digitBtn">8</button>
+              <button type="button" class="btn digitBtn">9</button>
+              <button type="button" class="btn operatorBtn">x</button>
+            </div>
+            <div>
+              <button type="button" class="btn digitBtn">4</button>
+              <button type="button" class="btn digitBtn">5</button>
+              <button type="button" class="btn digitBtn">6</button>
+              <button type="button" class="btn operatorBtn">-</button>
+            </div>
+            <div>
+              <button type="button" class="btn digitBtn">1</button>
+              <button type="button" class="btn digitBtn">2</button>
+              <button type="button" class="btn digitBtn">3</button>
+              <button type="button" class="btn operatorBtn">+</button>
+            </div>
+            <div>
+              <button type="button" class="btn digitBtn">0</button>
+              <button type="button" class="btn decimalPnt">.</button>
+              <button type="button" class="btn calcBtn dblSizeBtn">=</button>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="cal3_app.js" type="text/babel"></script>
+
+</body>
+
+</html>

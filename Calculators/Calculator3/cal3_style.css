@@ -1,0 +1,33 @@
+.container {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .calcContainer {
+    background-color: #68706a;
+    margin: 50px;
+    width: 280px;
+    height: 300px;
+  }
+  
+  .userInputScreen {
+    width: 280px;
+    height: 40px;
+    font-size: large;
+    text-align: right;
+  }
+  
+  button {
+    margin: 5px;
+    width: 50px;
+  }
+  
+  .dblSizeBtn {
+    width: 120px;
+  }
+  
+  .buttonGrid {
+    margin: 10px;
+  }
