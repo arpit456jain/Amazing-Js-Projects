@@ -8,6 +8,10 @@
     "link": "Calculators/Calculator 2.html"
   },
   {
+    "name": "Calculator Type 3",
+    "link": "Calculators/Calculator3/Calculator3.html"
+  },
+  {
     "name": "Magic Color",
     "link": "Magic Color/index.html"
   },
@@ -18,5 +22,9 @@
   {
     "name": "Clock N Alarm",
     "link": "Clock And Alarm/index.html"
+  },
+  {
+    "name": "To-Do List",
+    "link": "To-Do List/index.html"
   }
 ]
