@@ -27,4 +27,9 @@
     "name": "To-Do List",
     "link": "To-Do List/index.html"
   }
+  ,
+  {
+    "name": "Analog Clock",
+    "link": "Analog Clock/index.html"
+  }
 ]
