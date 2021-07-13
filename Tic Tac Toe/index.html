@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>TIC TAC TOE</title>
+</head>
+<body>
+    <header id="head">
+        <br>
+        <h1 style="text-align: center;">TIC TAC TOE</h1>
+        <nav>
+        </nav>
+    </header>
+        <div id="confirm">
+            <div class="message">This is a warning message.</div>
+            <button class="yes">Close</button>
+        </div>
+        <audio src="assets/sound/sound1.wav" id="click1"></audio>
+        <audio src="assets/sound/sound2.wav" id="click2"></audio>
+        <audio src="assets/sound/sound3.wav" id="click3"></audio>
+        <audio src="assets/sound/playagain.wav" id="click4"></audio>
+        <audio src="assets/sound/error.wav" id="click5"></audio>
+        <section id="section1">
+            <div class="sec-info">
+                <div class="info">
+                    <h2>Enter Players name:</h2>
+                    <br><br>
+                    <span id="pl1">Player1 [X]:</span> <input type="text" id="name1">
+                    <br><br>
+                    <span id="pl2">Player2 [O]:</span> <input type="text" id="name2">
+                </div>
+                <div class="start">
+                    <input type="button" value="Start Game" class="start-btn" id="start-btn" onClick="gamestrt()" />
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="col1">
+                <h1>Tic Tac Toe</h1>
+                <div class="board">
+                    <div class="row">
+                        <button class="btn" id="btn1" onclick="played('btn1')">-</button>
+                        <button class="btn" id="btn2" onclick="played('btn2')">-</button>
+                        <button class="btn" id="btn3" onclick="played('btn3')">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" id="btn4" onclick="played('btn4')">-</button>
+                        <button class="btn" id="btn5" onclick="played('btn5')">-</button>
+                        <button class="btn" id="btn6" onclick="played('btn6')">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" id="btn7" onclick="played('btn7')">-</button>
+                        <button class="btn" id="btn8" onclick="played('btn8')">-</button>
+                        <button class="btn" id="btn9" onclick="played('btn9')">-</button>
+                    </div>
+                </div>
+                <div class="playagain">
+                    <input type="button" value="Play Again" class="play-again-btn" id="play-again-btn" onClick="playagain()" />
+                </div>
+                <div class="newgame">
+                    <input type="button" value="Start New Game" class="new-game-btn" id="new-game-btn" onClick="newgame()" />
+                </div>
+            </div>
+            
+            <div class="col2" id="score_board">
+                <h1 style="text-decoration: underline;">Info:</h1>
+                <br>
+                <span id="pl1">Player 1: <p id="enter1"></p>
+                    <br>
+                    <span id="turn"></span>
+                </span>
+                <span id="pl2">Player 2: <p id="enter2"></p> </span>
+            </div>
+        </section>
+        <footer>
+            <div class="credits">
+                <!-- <span style="color: aliceblue;">Any Suggestion:</span> -->
+                <a href="https://linktr.ee/altyon" target="_blank">
+                    altyon-get</a>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="play.js"></script>
+    </body>
+</html>

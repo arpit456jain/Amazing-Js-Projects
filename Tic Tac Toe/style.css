@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+  scroll-behavior: smooth;
+  margin: 0 ;
+}
+header h1{
+  font-family: Zen Tokyo Zoo;
+  font-size: 40px;
+  color: darkblue;
+}
+section {
+  height: 100vh;
+}
+#section1 {
+  text-align: center;
+  padding: 40px;
+  margin: 0px 20px 50px 20px;
+  border: none;
+}
+.sec-info{
+  background-image: url("https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?size=626&ext=jpg");
+   width: 40%;  
+   padding: 20px;
+   margin: 100px auto;
+   color: #eeeeee;
+   box-shadow: 4px 8px 16px 4px rgb(119, 118, 118);
+ }
+#pl1,
+#pl2 {
+  font-size: 150%;
+  font-weight: 600;
+}
+.start-btn{
+  margin-top: 80px;
+  font-size: 120%;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background-color: yellowgreen;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px 2px rgb(214, 78, 255);
+  outline: none;
+  transition: 0.2s all;
+}
+.start-btn:active{
+  transform: scale(0.92);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+#section2 {
+    padding: 40px;
+    margin: 50px 100px;
+}
+.col1{
+    border: 1px black solid;
+    width: 400px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin-top: 70px;
+    box-shadow: 2px 8px 8px 4px rgb(91, 86, 94);
+}
+.board{
+    margin-top: 80px;
+}
+.btn {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  font-weight: 800;
+  font-size: 40px;
+  background-color: orange;
+}
+.btn:disabled{
+  border: 2px 2px 1px 1pxsolid #000000;
+  background-color: orange;
+  color: #974c4c;
+
+}
+.col2{
+  border: 1px black solid;
+    padding: 10px; 
+    height: 300px;
+    float: right;
+    width: 400px;
+}
+.col2 #pl1{
+    float: left;
+    line-height: 1.5;
+}
+.col2 #pl2{
+    line-height: 1.5;
+}
+.play-again-btn{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 2px 4px 8px 2px rgb(91, 86, 94);
+  font-size: 120%;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background-color: yellowgreen;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.play-again-btn:disabled{
+  color: #2c2a2a;
+}
+.play-again-btn:active{
+  transform: scale(0.92);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.new-game-btn{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  box-shadow: 2px 4px 8px 2px rgb(91, 86, 94);
+  font-size: 120%;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  background-color: rgb(75, 91, 143);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+input[type='text']{
+    font-size: large;
+    font-weight: 800;
+    padding: 2px 6px;
+}
+footer{
+  background-color: rgb(4, 39, 59);
+  text-align: center;
+  position: sticky;
+  bottom: 0;;
+  height: 27px;
+  padding: 4px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer a{
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(255, 0, 64);
+  text-decoration: none;
+  margin:  4px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*  */
+/* For all screen  */
+/*  */
+@media screen and (max-width: 1100px) {
+  .sec-info{
+    width: 50%;
+  }
+  .col2{
+    padding: 10px;
+    border: 1px black solid;
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 10px auto;
+  }
+  #section2{
+    padding: 0px auto;
+  }
+}
+@media screen and (max-width: 908px) {
+  .sec-info{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .sec-info{
+    width: 70%;
+  }
+  .col2{
+    width: 400px;
+    /* float: left; */
+    text-align: center;
+  }
+ 
+}
+@media screen and (max-width: 688px) {
+  .sec-info{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px){
+ #section2{
+   padding: 0;
+   margin: 0;
+ }
+ .col1,.col2{
+   margin: 10px;
+   padding: 10px;
+   width: 80%;
+   margin: 10px 10%;
+   height: 60%;
+ }
+ .col2{
+  height: 30%;
+  text-align: center;
+ }
+ .board{
+   margin-top: 20px;
+ }
+ .btn{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 20px;
+ }
+}
+@media screen and (max-width: 420px) {
+  #section1{
+    padding: 10px;
+  }
+  .sec-info{
+    width: 100%;  
+    padding: 10px;
+  }
+ #pl1,
+ #pl2 {
+   font-size: 130%;
+   font-weight: 500;
+ }
+ input[type='text']{
+  font-size: small;
+  font-weight: 600;
+  padding: 2px 5px;
+  width: 80%;
+ }
+}
+
+/*  */
+/* For all screen ends */
+/*  */
+
+
+/*  */
+/* For Alert Msg  start*/
+/*  */
+#confirm {
+  display: none;
+  background-image: url(assets/img/alert.png);
+  background-repeat: no-repeat;
+  background-color: rgb(15, 10, 78);
+  position: fixed;
+  width: 220px;
+  height: 270px;
+  left: 50%;
+  margin-left: -100px;
+  padding: 10px 20px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 140px;
+}
+#confirm button {
+  background-color: #FFFFFF;
+  display: inline-block;
+  border-radius: 12px;
+  border: 2px solid #aaa;
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  margin-top: 165px; 
+}
+#confirm .message {
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 600;
+  font-size: 17px;
+  color: rgb(88, 17, 170);
+}
+/*  */
+/* For Alert Msg Ends */
+/*  */
+
+/*  */
+/* For bk img */
+/*  */
+body{
+  background-image: linear-gradient(to right, #b0d9ee, #71b1de, #3786cd, #005bb7, #142c98);
+}
+#score_board {
+ border: 5px rgb(2, 63, 2) solid;
+ background-color: rgb(115, 211, 115);
+} 
+/*  */
+/* For bk img Ends */
+/*  */
