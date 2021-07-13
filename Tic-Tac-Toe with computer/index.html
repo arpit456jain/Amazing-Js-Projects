@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Classic Tic Tac Toe Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  <meta property="og:title" content="Classic Tic Tac Toe Game" />
+  <meta property="og:description" content="Another FCC Front End Development Project completed! This TicTacToe game uses the Minimax Algorithm to decide the computer's next best move. Check out the design :)" />
+  <meta property="og:image" content="http://res.cloudinary.com/maribelduran/image/upload/v1498438715/TicTacToe_sj9mlw.png" />
+ 
+
+	 <link rel="stylesheet" href="style.css">
+	 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	 <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="game-well right-shadow">
+		<div class='symbolOptions'>
+			<h3 class="mid-center ">Player 1 choose your symbol</h3>
+			<button id="X"><i class="fa fa-times x-color fa-5x text-shadow" aria-hidden="true"></i></button>
+			<button id="O"><i class="fa fa-circle-o fa-5x text-shadow" aria-hidden="true"></i></button>
+		</div>
+
+		<div class="board-container">
+			<div class="row no-gutters">
+					<div class="col-xs-6  score-board right-shadow">
+						<div class="row no-gutters player-and-stats">
+							<div class="col-xs-8 player player1">
+								<h5 class="player1-name" ></h5>
+							</div>
+							<div class="col-xs-2 col-xs-offset-1 stats black-gradient">
+								<h6 class="player1-score score">0</h6>
+							</div>	
+						</div>
+						<div class="row no-gutters player-and-stats ">
+							<div class="col-xs-8 player player2">
+								<h5 class="player2-name "></h5>
+							</div>
+							<div class="col-xs-2 col-xs-offset-1 stats black-gradient">
+							 	<h6 class="player2-score score">0</h6>
+							</div>
+						</div>
+					<span class="sponsor-name"><b>TIC TAC TOE</b></span>
+				</div>
+				<div class="col-xs-6 text-right">
+					<button id="reset" class="btn btn-default btn-sm"><i class="fa fa-undo fa-3x fa-gradient black-gradient" aria-hidden="true"></i></button>
+				</div>
+		</div>
+
+		<div class=" statuses text-center">
+				<span id="whosTurn"></span>
+				<span id="whoWon"></span>
+		</div>
+		<ul class="boxList game-board right-shadow">
+			<li id="box0" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box1" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box2" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box3" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box4" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box5" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box6" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box7" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+			<li id="box8" ><i class="fa fa-4x" aria-hidden="true"></i></li>
+		</ul>
+	  </div>
+
+  </div>
+
+
+</div>
+</body>
+<script src="app.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+</html>

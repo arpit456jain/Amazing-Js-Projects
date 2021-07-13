@@ -31,5 +31,9 @@
   {
     "name": "Analog Clock",
     "link": "Analog clock/index.html"
+  },
+  {
+    "name": "Tic-Tac-Toe",
+    "link": "Tic-Tac-Toe with computer/index.html"
   }
 ]
