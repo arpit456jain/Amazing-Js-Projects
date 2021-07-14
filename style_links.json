@@ -39,5 +39,9 @@
   {
     "name": "Calculator 4",
     "link": "Calculators/Calculator 4/index.html"
+  },
+  {
+    "name": "Weather App",
+    "link": "Weather-App/index.html"
   }
 ]
