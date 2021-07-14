@@ -35,5 +35,9 @@
   {
     "name": "Tic-Tac-Toe",
     "link": "Tic-Tac-Toe with computer/index.html"
+  },
+  {
+    "name": "Calculator 4",
+    "link": "Calculators/Calculator 4/index.html"
   }
 ]

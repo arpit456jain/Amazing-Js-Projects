@@ -1,0 +1,200 @@
+/* Themes */
+
+.dark-theme {
+	background-color: hsl(222, 26%, 31%);
+	font-family: 'Spartan';
+}
+
+.light-theme {
+	background-color: hsl(0, 0%, 90%);
+}
+
+
+/* Container */
+
+.container {
+	width: 550px;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+	margin-left: 2px;
+	margin-top: 50px;
+}
+
+.navbar-brand {
+	font-size: 2rem;
+}
+
+.navbar-brand-light {
+	color: hsl(60, 10%, 19%) !important;
+}
+
+.theme-text {
+	color: white;
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+.theme-text-light {
+	color:  hsl(60, 10%, 19%);
+}
+
+
+/* Answer Box */
+
+.ans-box {
+	align-items: center;
+	background-color: hsl(224, 36%, 15%);
+	border-radius: 10px;
+	display: flex;
+	height: 150px;
+	justify-content: flex-end;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	overflow: auto;
+	padding: 20px;
+}
+
+.ans-box-light {
+	background-color: hsl(0, 0%, 98%);
+}
+
+.number-input {
+	color: white;
+	font-size: 2rem;
+}
+
+.number-input-light {
+	color: hsl(60, 10%, 19%);
+}
+
+.row {
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	width: 95%;
+}
+
+
+/* Keypad */
+
+.keypad {
+	background-color: hsl(223, 31%, 20%);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 50px;
+	padding: 10px 0;
+}
+
+.keypad-light {
+	background-color: hsl(0, 5%, 81%);
+}
+
+
+/* Buttons */
+
+.btn {
+	background-color: hsl(30, 25%, 89%);
+	border-radius: 8px;
+	box-shadow: 1px 7px 5px hsl(28, 16%, 65%);
+	color: hsl(221, 14%, 31%);
+	font-size: 2rem;
+	font-weight: 700;
+	height: 70px;
+	width: 100%;
+}
+
+.btn-light-mode {
+	color: hsl(60, 10%, 19%);
+	background-color: hsl(45, 7%, 89%);
+	box-shadow: 1px 7px 5px hsl(35, 11%, 61%);
+}
+
+.blue-btn {
+	background-color: hsl(225, 21%, 49%);
+	box-shadow: 1px 7px 5px hsl(224, 28%, 35%);
+	color: white;
+	font-size: 1.5rem;
+}
+
+.blue-btn:hover {
+	color: white;
+}
+
+.red-btn {
+	background-color: hsl(6, 63%, 50%);
+	box-shadow: 1px 7px 5px hsl(6, 70%, 34%);
+	color: white;
+	font-size: 1.5rem;
+}
+
+.red-btn:hover {
+	color: white;
+}
+
+.green-btn {
+	background-color: hsl(185, 42%, 37%);
+	box-shadow: 1px 7px 5px hsl(185, 58%, 25%);
+}
+
+.orange-btn {
+	background-color: hsl(25, 98%, 40%);
+	box-shadow: 1px 7px 5px hsl(25, 99%, 27%);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 475px) {
+
+	.container {
+		width: 97vw;
+	}
+
+	.number-input {
+		font-size: 1.5rem;
+	}
+
+	.row {
+		margin-bottom: 12px;
+		margin-top: 12px;
+		width: 97%;
+	}
+
+	.col-3 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.btn {
+		font-size: 1.5rem;
+		height: 60px;
+	}
+
+	.red-btn {
+		font-size: 1rem;
+	}
+
+	.blue-btn {
+		font-size: 1rem;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.container {
+		width: 90vw;
+	}
+
+	.number-input {
+		font-size: 1.8rem;
+	}
+
+}
