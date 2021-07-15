@@ -43,5 +43,9 @@
   {
     "name": "Weather App",
     "link": "Weather-App/index.html"
+  },
+  {
+    "name": "Memory Game",
+    "link": "Memory Game/index.html"
   }
 ]
