@@ -142,6 +142,6 @@ Thanks to all the [Contributors](CONTRIBUTORS.md) and [Maintainers](MAINTAINERS.
 
   > Do share and ⭐Star this repositatory :)
  
-## 💬Join Our CES Community
+## 💬Join Our Codesmashers Community
 
-Join - https://discord.gg/FVPvDUXfRR
+Join - https://discord.gg/gtYUZQSjTt
