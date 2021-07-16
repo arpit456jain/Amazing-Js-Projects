@@ -10,6 +10,10 @@
 
 
 #  Amazing-Js-Projects
+### This project is a part of the following Open Source Program
+  
+  ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+
 
 >### Do you want to make project on JavaScript ? if yes then :point_down:	
 
@@ -131,17 +135,46 @@ Now submit the pull request.
 
 
 
-You could contact our mentor/project maintainer in case you need any help or have any questions....
+## 📌Till Then 
+<p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<hr>
+
+ <h1 align=center> Project Admin ❤️ </h1>
+<p align="center">
+<table>
+  <tbody><tr>
+ <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br><a href="https://github.com/arpit456jain/Cool-Front-End_Templates/commits?author=arpit456jain" title="Code">💻 </a></td> </a></td>
+
+</tbody></table>
+
+<h1 align=center> Mentor 😃 </h1>
+<p align="center">
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
+  </tr>
+</tbody></table>
+
+<h2 align=center> ✨ Contributors </h2>
+
+Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of any kind are welcome! 
+
+<table>
+	<tr>
+		 <td>
+  		<a href="https://github.com/arpit456jain/Amazing-Js-Projects/graphs/contributors">
+  			<img src="https://contributors-img.web.app/image?repo=arpit456jain/Amazing-Js-Projects" />
+  		</a>
+		</td>
+	</tr>
+</table>
 
 <hr>
 
-## ✨ Acknowledgments
+<h1 align=center>Happy Coding 👨‍💻 </h1>
+## 💬Join Our CodeSmashers Community
 
-Thanks to all the [Contributors](CONTRIBUTORS.md) and [Maintainers](MAINTAINERS.md) for all their contributions!
+Join -  https://discord.gg/gtYUZQSjTt
 
-
-  > Do share and ⭐Star this repositatory :)
- 
-## 💬Join Our Codesmashers Community
-
-Join - https://discord.gg/gtYUZQSjTt
+show some ❤️&nbsp; by giving the star to this repo
