@@ -8,7 +8,7 @@ To start contributing, follow the below guidelines:
 **2.**  Clone your forked copy of the project.
 
 ```
-git clone https://github.com/<your_user_name>/Amazing-Js-Effects.git
+git clone https://github.com/<your_user_name>/Amazing-Js-Projects.git
 ```
 
 **3.** Navigate to the project directory :file_folder: .
@@ -20,7 +20,7 @@ cd Amazing-Js-Effect
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/arpit456jain/Amazing-Js-Effects.git
+git remote add upstream https://github.com/arpit456jain/Amazing-Js-Projects.git
 ```
 
 **5.** Check the remotes for this repository.
