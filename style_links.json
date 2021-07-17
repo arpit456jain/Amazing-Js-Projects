@@ -49,14 +49,16 @@
     "link": "Memory Game/index.html"
   },
   {
+    "name": "Connect Four",
+    "link": "Connect Four/index.html"
+  },
     "name": "Clock",
     "link": "Clock/index.html"
   },
   {
     "name": "Drag N Drop",
     "link": "Drag N Drop/index.html"
-  }
-  ,
+  },
   {
     "name": "Drum Kit",
     "link": "Drum Kit/index.html"
