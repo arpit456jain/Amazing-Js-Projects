@@ -66,8 +66,6 @@ HELLO FOLKS , <br><br>
 
 ## ⭐ How to get started?
 
-> ### Before starting kindly please read the [Code of Conduct](/CODE_OF_CONDUCT.md)
-
 You can refer to the following steps  on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
