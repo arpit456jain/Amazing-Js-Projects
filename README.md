@@ -51,6 +51,11 @@ HELLO FOLKS , <br><br>
      This repository contains many amazing projects written in HTML5 , CSS3 and JavaScript.  Consider this repository as your personal space to find or add any new script that can make life easier for us and the Open Source community too, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating javascript, markup language and styling, that you can use to develop amazing products.
 
 <hr>
+
+## 🎥 Demo 
+#### GitHub Pages website for this repository : https://arpit456jain.github.io/Amazing-Js-Projects/
+
+<hr>
  
 ## 💻 Technologies
 
@@ -60,6 +65,8 @@ HELLO FOLKS , <br><br>
 <hr>
 
 ## ⭐ How to get started?
+
+> ### Before starting kindly please read the [Code of Conduct](/CODE_OF_CONDUCT.md)
 
 You can refer to the following steps  on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
