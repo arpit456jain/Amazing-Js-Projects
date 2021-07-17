@@ -33,7 +33,7 @@
     "link": "Analog clock/index.html"
   },
   {
-    "name": "Tic-Tac-Toe",
+    "name": "Tic-Tac-Toe 1",
     "link": "Tic-Tac-Toe with computer/index.html"
   },
   {
@@ -47,5 +47,26 @@
   {
     "name": "Memory Game",
     "link": "Memory Game/index.html"
+  },
+  {
+    "name": "Clock",
+    "link": "Clock/index.html"
+  },
+  {
+    "name": "Drag N Drop",
+    "link": "Drag N Drop/index.html"
+  }
+  ,
+  {
+    "name": "Drum Kit",
+    "link": "Drum Kit/index.html"
+  },
+  {
+    "name": "Simon Game",
+    "link": "Simon Game/index.html"
+  },
+  {
+    "name": "Tic-Tac-Toe 2",
+    "link": "Tic Tac Toe/index.html"
   }
 ]
