@@ -47,5 +47,9 @@
   {
     "name": "Memory Game",
     "link": "Memory Game/index.html"
+  },
+  {
+    "name": "Connect Four",
+    "link": "Connect Four/index.html"
   }
 ]
