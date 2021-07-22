@@ -53,7 +53,7 @@ HELLO FOLKS , <br><br>
 <hr>
 
 ## 🎥 Demo 
-#### GitHub Pages website for this repository : https://arpit456jain.github.io/Amazing-Js-Projects/
+#### GitHub Pages website for this repository : https://amazing-js-projects.netlify.app/
 
 <hr>
  
