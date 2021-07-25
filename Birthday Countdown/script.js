@@ -1,12 +1,12 @@
 
 document.getElementById("text-one").onload = function() {myFunction()};
 function myFunction() {
-  var person = prompt("Please enter your birthdate", "mm/dd/yyyy");
+  var person = prompt("Please enter your birthday date", "mm/dd");
   if (person != null) {
     const timeLeft = document.getElementById('time-left')
 
 //add you birthday date in month day year format
-const birthday = new Date(person)
+const birthday = new Date(person+'/2021')
 
 
 
