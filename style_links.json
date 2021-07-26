@@ -1,5 +1,13 @@
 [
   {
+    "name": "Analog Clock",
+    "link": "Analog clock/index.html"
+  },
+  {
+    "name": "Birthday Countdown",
+    "link": "Birthday Countdown/index.html"
+  },
+  {
     "name": "Calculator Type 1",
     "link": "Calculators/Calculator 1.html"
   },
@@ -12,49 +20,20 @@
     "link": "Calculators/Calculator3/Calculator3.html"
   },
   {
-    "name": "Magic Color",
-    "link": "Magic Color/index.html"
+    "name": "Calculator 4",
+    "link": "Calculators/Calculator 4/index.html"
   },
   {
-    "name": "Magic Image",
-    "link": "Magic Image/index.html"
+    "name": "Clock",
+    "link": "Clock/index.html"
   },
   {
     "name": "Clock N Alarm",
     "link": "Clock And Alarm/index.html"
   },
   {
-    "name": "To-Do List",
-    "link": "To-Do List/index.html"
-  }
-  ,
-  {
-    "name": "Analog Clock",
-    "link": "Analog clock/index.html"
-  },
-  {
-    "name": "Tic-Tac-Toe 1",
-    "link": "Tic-Tac-Toe with computer/index.html"
-  },
-  {
-    "name": "Calculator 4",
-    "link": "Calculators/Calculator 4/index.html"
-  },
-  {
-    "name": "Weather App",
-    "link": "Weather-App/index.html"
-  },
-  {
-    "name": "Memory Game",
-    "link": "Memory Game/index.html"
-  },
-  {
     "name": "Connect Four",
     "link": "Connect Four/index.html"
-  },
-  {
-    "name": "Clock",
-    "link": "Clock/index.html"
   },
   {
     "name": "Drag N Drop",
@@ -65,27 +44,47 @@
     "link": "Drum Kit/index.html"
   },
   {
-    "name": "Simon Game",
-    "link": "Simon Game/index.html"
-  },
-  {
-    "name": "Tic-Tac-Toe 2",
-    "link": "Tic Tac Toe/index.html"
-  },
-  {
     "name": "Issue Tracker",
     "link": "Issue Tracker"
+  },
+  {
+    "name": "KeyBoard",
+    "link": "Keyboard/index.html"
+  },
+  {
+    "name": "Magic Color",
+    "link": "Magic Color/index.html"
+  },
+  {
+    "name": "Magic Image",
+    "link": "Magic Image/index.html"
+  },
+  {
+    "name": "Memory Game",
+    "link": "Memory Game/index.html"
   },
   {
     "name": "Password Generator",
     "link": "Password Generator"
   },
   {
-    "name": "Birthday Countdown",
-    "link": "Birthday Countdown/index.html"
+    "name": "Simon Game",
+    "link": "Simon Game/index.html"
   },
   {
-    "name": "KeyBoard",
-    "link": "Keyboard/index.html"
+    "name": "Tic-Tac-Toe 1",
+    "link": "Tic-Tac-Toe with computer/index.html"
+  },
+  {
+    "name": "Tic-Tac-Toe 2",
+    "link": "Tic Tac Toe/index.html"
+  },
+  {
+    "name": "To-Do List",
+    "link": "To-Do List/index.html"
+  },
+  {
+    "name": "Weather App",
+    "link": "Weather-App/index.html"
   }
 ]
