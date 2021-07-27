@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            
+            <title>Tip Calculator</title>
+            <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&amp;display=swap"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </head>
+        <body>
+<div class="box">
+	<div class="container"> 
+		<section> 
+			<div class="wrapper">
+				<label for="bill" class="lbl">Enter Bill Amount</label>
+				<div class="input-box">
+					<span>₹</span>
+					<input type="number" id="bill" class="val" value="0.00">
+				</div>
+			</div>
+			<div class="wrapper">
+				<span class="lbl">Tip</span>
+				<span id="tip-amount" class="val"></span>
+			</div>
+			<hr>
+			<div class="wrapper">
+				<span class="lbl">Total Amount</span>
+				<span id="total-amount" class="val"></span>
+			</div>
+		</section>
+		<section>
+			<div class="wrapper">
+				<label for="tip" class="lbl">Tip %</label>
+				<span id="tip-percent" class="val"></span>
+			</div>
+			<input type="range" min="1" id="tip" value="15">
+			<div class="wrapper">
+				<label for="no-of-people" class="lbl">No. of People</label>
+				<span id="split-num" class="val"></span>
+			</div>
+			<input type="range" min="1" max="15" id="no-of-people" value="1">
+		</section>
+		<section>
+			<div class="wrapper">
+				<span class="lbl">Tip Per Person</span>
+				<span id="tip-per-person" class="val"></span>
+			</div>
+			<div class="wrapper">
+				<span class="lbl">Total Per Person</span>
+				<span id="total-per-person" class="val"></span>
+			</div>
+		</section>
+	</div>
+	<a href="https://github.com/Naman-mahi" target="_blank"> Follow me &nbsp;<i class="fab fa-github"></i></a>
+</div>
+<script src="style.js"></script>
+</body>
+</html>
