@@ -1,0 +1,139 @@
+/* for light bg */
+
+body{
+    background-color:var(--primary-color);
+}
+
+/* for dark bg */
+
+/* body{
+    background-color: var(--primary-color);
+} */
+
+.container{
+    margin: 100px 0 0 275px;
+}
+.row{
+    width: 100%;
+    height: 60%;
+}
+.zero,.one ,.two ,.three ,.four,.five{
+    margin: 10px;
+
+}
+/* for light theme */
+
+button{
+    background-color:var(--third-color);
+    color: var(--secondary-color);
+    width: 55px;
+    height: 55px;
+    border: none;
+    background: var(--primary-color);
+    box-shadow: 5px 5px 10px #474747, -5px -5px 10px #7b7b7b;
+    font-size: 20px;
+    margin-left: 5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20%;
+}
+
+/* dark theme */
+/* 
+    button{
+    color:var(--third-color);
+    width: 55px;
+    height: 55px;
+    border: none;
+    background: rgb(14, 11, 11);
+    box-shadow: 5px 5px 10px #474747,-5px -5px 10px #7b7b7b;
+    font-size: 20px;
+    margin-left: 5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20%;
+} */
+
+button:active{
+    box-shadow: 1px 1px 2px #474747 ,-1px -1px 2px #474747;
+
+}
+.first{
+    width: 57px;
+    height: 45px;
+    border-radius: 10px;
+}
+.second{
+    width:54px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.emmet{
+    width: 45px;
+    border-radius: 10px;
+}
+.back{
+    width: 125px;
+    border-radius: 10px;
+
+}
+
+.tab{
+    width: 85px;
+    border-radius: 10px;
+}
+
+.caps{
+    width: 100px;
+    border-radius: 10px;
+
+}
+.ent-btn{
+    width: 135px;
+    border-radius: 10px;
+}
+.shift1{
+    width: 135px;
+    border-radius: 10px;
+}
+.shift2{
+    width: 165px;
+    border-radius: 10px;
+}
+.other{
+    width: 83px;
+    border-radius: 10px;
+}
+.space{
+    width: 400px;
+    border-radius: 10px;
+    
+}
+.slace{
+    width: 85px;
+    border-radius: 10px;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+.logo-img{
+    position: relative;
+    margin: 12px 76px 21px 1400px;
+   
+}
+:root{
+   --primary-color:rgb(214 ,214 ,214);
+   --secondary-color:#000000;
+   --third-color:rgb(230, 35, 9);
+
+}
+
+.dark-theme{
+    --primary-color:rgb(14, 11, 11);
+    --secondary-color:#ffffff;
+    --third-color:rgb(140, 247, 0);
+}
