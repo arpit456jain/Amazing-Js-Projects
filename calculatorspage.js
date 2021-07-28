@@ -7,6 +7,7 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+ //NavBar ends 
 
 // scroll to top starts
 var scrolltop = $('#scroll-top');
@@ -25,7 +26,7 @@ scrolltop.on('click', function(e) {
 });
 // scroll to top ends
 
-fetch('style_links.json')
+fetch('calculatorspage.json')
     .then(response => response.json())
     .then(data => {
         let links = data;
@@ -35,7 +36,7 @@ fetch('style_links.json')
             let StyleBoxDiv = document.createElement('div');
             StyleBoxDiv.innerHTML = `<div class="stylebox">
             <div class="image">
-                 <img src="/${links[i].name}/preview.png" alt="">
+                 <img src="Calculators/${links[i].name}/preview.png" alt="">
              </div>
             <p>${links[i].name}</p>
             <a target="_blank" href="${links[i].link}">View</a>

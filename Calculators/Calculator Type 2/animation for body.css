@@ -1,0 +1,18 @@
+h1::selection{
+background-color:yellow;
+color:red;
+}body
+{
+	animation-name:wap;
+	animation-duration:20s;
+	background-color:red;
+	animation-iteration-count:infinite;
+}
+@keyframes wap
+{
+	0%{background:red;}
+	25%{background:yellow;}
+	50%{background:green;}
+	75%{background:cyan;}
+	100%{background:blue;}
+}
