@@ -1,6 +1,6 @@
 [
   {
-    "name": "Analog Clock",
+    "name": "Analog clock",
     "link": "Analog clock/index.html"
   },
   {
@@ -8,7 +8,7 @@
     "link": "Birthday Countdown/index.html"
   },
   {
-    "name": "Calculator Type 1",
+    "name": "Calculators",
     "link": "Calculators/Calculator 1.html"
   },
   {
@@ -32,7 +32,7 @@
     "link": "Clock/index.html"
   },
   {
-    "name": "Clock N Alarm",
+    "name": "Clock And Alarm",
     "link": "Clock And Alarm/index.html"
   },
   {
@@ -49,10 +49,10 @@
   },
   {
     "name": "Issue Tracker",
-    "link": "Issue Tracker"
+    "link": "Issue Tracker/index.html"
   },
   {
-    "name": "KeyBoard",
+    "name": "Keyboard",
     "link": "Keyboard/index.html"
   },
   {
@@ -69,18 +69,18 @@
   },
   {
     "name": "Password Generator",
-    "link": "Password Generator"
+    "link": "Password Generator/index.html"
   },
   {
     "name": "Simon Game",
     "link": "Simon Game/index.html"
   },
   {
-    "name": "Tic-Tac-Toe 1",
+    "name": "Tic-Tac-Toe with computer",
     "link": "Tic-Tac-Toe with computer/index.html"
   },
   {
-    "name": "Tic-Tac-Toe 2",
+    "name": "Tic Tac Toe",
     "link": "Tic Tac Toe/index.html"
   },
   {
@@ -88,7 +88,7 @@
     "link": "To-Do List/index.html"
   },
   {
-    "name": "Weather App",
+    "name": "Weather-App",
     "link": "Weather-App/index.html"
   }
 ]
