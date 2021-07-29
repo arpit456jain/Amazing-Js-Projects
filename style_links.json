@@ -70,5 +70,9 @@
   {
     "name": "Weather-App",
     "link": "Weather-App/index.html"
+  },
+  {
+    "name": "Movie-Search-App",
+    "link": "Movie-Search-App/index.html"
   }
 ]
