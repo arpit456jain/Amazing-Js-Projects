@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rect {
+    height: 15rem;
+    width: 15rem;
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    z-index: -1;
+    background-color: #61b672;
+    animation: rotate 8s linear infinite;
+}
+
+.small {
+    background-color: #FBF5F3;
+    height: 10rem;
+    width: 10rem;
+    position: fixed;
+    inset: auto;
+    bottom: -10%;
+    right: -5%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background: radial-gradient(circle at center, rgb(47, 70, 104), rgb(20, 21, 57));
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #FBF5F3;
+    max-width: 560px;
+    margin: 0.5rem auto;
+    text-align: center;
+    width: 85vw;
+    border-radius: 0.5rem;
+}
+
+.section1 span {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 3rem;
+    white-space: nowrap;
+    letter-spacing: .15em;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        color: transparent
+    }
+
+    50% {
+        color: #20C20E;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    background-color: black;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+span {
+    padding-right: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #20C20E;
+    text-align: center;
+}
+
+[caret] {
+    font-weight: 400;
+    font-size: 2rem;
+    animation: blink-caret .75s step-end infinite;
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+.cards {
+    flex-wrap: wrap;
+    justify-content:left;
+    max-width: 48rem;
+    margin: 2rem auto;
+}
+
+footer {
+    display: flex;
+    max-width: 50rem;
+    margin: 0 auto;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+img {
+    transition: 0.5s;
+    height: 50%;
+}
+
+.card:hover img {
+    filter: drop-shadow(0 0 20px rgb(175, 175, 175));
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 12rem;
+    height: 15rem;
+    float: left;
+    transition: 0.5s;
+    margin:1rem 2rem;
+    backdrop-filter: blur(1rem);
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.493);
+}
+
+.right{
+    float: right;
+}
+button {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    margin: 1rem;
+    background-color: rgb(252, 139, 36);
+    transition: 0.5s;
+    border: 2px solid rgb(252, 139, 36);
+}
+
+.hide {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0 !important;
+}
+footer div {
+    padding: 1rem 1rem !important;
+    margin: 1rem;
+    border-radius: 0.3rem;
+}
+
+#scoreboard {
+    text-align: center;
+    float: left;
+    width: 12rem;
+    margin:0 2rem;
+}
+
+.remove {
+width: 0;
+margin: 0;
+transform: scale(0);
+}
+
+.removebtn button {
+transform: translate(0,200%);
+}
+.removebtn img{
+    transform: translate(0,35%);
+}
+.removebtn p{
+    transform: translate(0,80%);
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        width: 5.6rem;
+        margin: 2rem 0.5rem;
+        justify-content: space-around;
+    }
+    .remove {
+        width: 0;
+        margin: 0;
+        transform: scale(0);
+        }
+    img{
+        height: 40%;
+    }
+    button{
+    font-size: 1rem;
+   margin: 0;
+   padding: 0;
+}
+
+#scoreboard {
+    text-align: center;
+    float: left;
+    width: 5.6rem;
+    margin:2rem 0.5rem;
+}
+p {
+    font-size: 1.3rem;
+}
+}
