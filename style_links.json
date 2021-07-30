@@ -74,5 +74,10 @@
   {
     "name": "Movie-Search-App",
     "link": "Movie-Search-App/index.html"
+  },
+  {
+    "name": "Custom Range Slider",
+    "link": "Custom Range Slider/index.html"
   }
+
 ]
