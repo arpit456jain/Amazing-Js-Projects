@@ -86,5 +86,9 @@
   {
     "name": "Tip Calculator",
     "link": "Tip Calculator/index.html"
+  },
+  {
+    "name": "Snake Game",
+    "link": "Snake Game/index.html"
   }
 ]
