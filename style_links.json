@@ -78,6 +78,17 @@
   {
     "name": "Custom Range Slider",
     "link": "Custom Range Slider/index.html"
+  },
+  {
+    "name": "Rock-Paper-Scissors",
+    "link": "Rock-Paper-Scissors/index.html"
+  },
+  {
+    "name": "Tip Calculator",
+    "link": "Tip Calculator/index.html"
+  },
+  {
+    "name": "Snake Game",
+    "link": "Snake Game/index.html"
   }
-
 ]
