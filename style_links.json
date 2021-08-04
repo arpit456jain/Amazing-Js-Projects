@@ -94,5 +94,9 @@
   {
     "name": "Snake Game",
     "link": "Snake Game/index.html"
+  },
+  {
+    "name": "Image Filter App",
+    "link": "Image Filter App/index.html"
   }
 ]
