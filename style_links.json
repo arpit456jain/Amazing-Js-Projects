@@ -60,6 +60,10 @@
     "link": "Simon Game/index.html"
   },
   {
+    "name": "StopWatch",
+    "link": "StopWatch/index.html"
+  },
+  {
     "name": "Tic-Tac-Toe with computer",
     "link": "Tic-Tac-Toe with computer/index.html"
   },
