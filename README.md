@@ -54,6 +54,7 @@ HELLO FOLKS , <br><br>
 
 ## 🎥 Demo 
 #### GitHub Pages website for this repository : https://amazing-js-projects.netlify.app/
+![frontendtemp](recording.gif)
 
 <hr>
  
