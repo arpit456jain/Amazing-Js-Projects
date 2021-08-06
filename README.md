@@ -5,6 +5,11 @@
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/pulls"><img src="https://img.shields.io/github/issues-pr/arpit4567jain/Amazing-Js-Projects"></a>
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/network/members"><img src="https://img.shields.io/github/forks/arpit4567jain/Amazing-Js-Projects"></a>
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/stargazers"><img src="https://img.shields.io/github/stars/arpit4567jain/Amazing-Js-Projects"></a>
+<a href="https://github.com/arpit4567jain/Amazing-Js-Projects"><img src="https://img.shields.io/github/repo-size/arpit4567jain/Amazing-Js-Projects?color=yellow"></a>
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+	
 
 </div>
 
@@ -60,9 +65,10 @@ HELLO FOLKS , <br><br>
  
 ## 💻 Technologies
 
-- HTML 5
-- CSS 3
-- JavaScript
+- ![HTML 5](https://forthebadge.com/images/badges/uses-html.svg)
+- ![CSS](https://forthebadge.com/images/badges/uses-css.svg)
+- ![JavaScript](https://forthebadge.com/images/badges/uses-js.svg)
+
 <hr>
 
 ## ⭐ How to get started?
@@ -204,8 +210,9 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 <hr>
 
 <h1 align=center>Happy Coding 👨‍💻 </h1>
+
 ## 💬Join Our CodeSmashers Community
 
 Join -  https://discord.gg/gtYUZQSjTt
 
-show some ❤️&nbsp; by giving the star to this repo
+### Show some ❤️&nbsp; by giving the star :star: to this repository!!
