@@ -107,5 +107,9 @@
   {
     "name": "Image Filter App",
     "link": "Image Filter App/index.html"
+  },
+  {
+    "name": "Double Vertical Slider",
+    "link": "Double Vertical Slider/index.html"
   }
 ]
