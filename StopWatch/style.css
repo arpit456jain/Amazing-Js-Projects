@@ -1,0 +1,55 @@
+    *{
+        margin: o;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background:rgb(78, 185, 228);
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        height:100%;
+        }
+        
+    .wrapper {
+        width: 800px;
+        margin: 30px auto;
+        color:white;
+        text-align:center;
+        }
+        
+    h1, h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 2.6em;
+        text-transform: uppercase;
+        }
+    h1{
+        color: black;
+        
+        }
+
+    #seconds, #tens{
+        font-size:2em;
+        color: black;
+        }
+        
+    button{
+        background:rgb(255, 117, 53);
+        color:white;
+        border: solid 2px black;
+        text-decoration:none;
+        cursor:pointer;
+        font-size:1.5em;
+        padding:18px 10px;
+        width:180px;
+        margin: 10px;
+        outline: none;
+        border-radius:10px; 
+        
+        }
+    button:hover{
+            transition: all 0.5s ease-in-out;
+            background:black;
+            border: solid 2px white;
+            color:white;
+            border-radius:10
+            }

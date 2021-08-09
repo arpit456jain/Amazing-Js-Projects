@@ -8,6 +8,11 @@
     "link": "Birthday Countdown/index.html"
   },
   {
+    "name": "Breakout Game",
+    "link": "Breakout Game/index.html"
+  },
+  
+  {
     "name": "Clock",
     "link": "Clock/index.html"
   },
@@ -52,8 +57,16 @@
     "link": "Password Generator/index.html"
   },
   {
+    "name": "Rocket Web Animation",
+    "link": "Rocket Web Animation/index.html"
+  },
+  {
     "name": "Simon Game",
     "link": "Simon Game/index.html"
+  },
+  {
+    "name": "StopWatch",
+    "link": "StopWatch/index.html"
   },
   {
     "name": "Tic-Tac-Toe with computer",
@@ -90,5 +103,13 @@
   {
     "name": "Snake Game",
     "link": "Snake Game/index.html"
+  },
+  {
+    "name": "Image Filter App",
+    "link": "Image Filter App/index.html"
+  },
+  {
+    "name": "Double Vertical Slider",
+    "link": "Double Vertical Slider/index.html"
   }
 ]
