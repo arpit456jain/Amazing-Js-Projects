@@ -114,5 +114,9 @@
   {
     "name": "Double Vertical Slider",
     "link": "Double Vertical Slider/index.html"
+  },
+  {
+    "name": "Minify CSS",
+    "link": "Minify CSS/index.html"
   }
 ]
