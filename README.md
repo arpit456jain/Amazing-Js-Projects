@@ -213,6 +213,6 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 
 ## 💬Join Our CodeSmashers Community
 
-Join -  https://discord.gg/gtYUZQSjTt
+Join - https://discord.gg/gtYUZQSjTt
 
 ### Show some ❤️&nbsp; by giving the star :star: to this repository!!
