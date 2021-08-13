@@ -34,9 +34,15 @@ HELLO FOLKS , <br><br>
 <hr>
 
 ## 🎥 Demo 
-#### GitHub Pages website for this repository : https://amazing-js-projects.netlify.app/
+#### Website for this repository : https://amazing-js-projects.netlify.app/
 ![frontendtemp](recording.gif)
 
+# Must Check These Repos Also
+- [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
+- [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
+- [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
+- [Web-Development-Path-And-Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+- [Open-Source-Programs](https://github.com/arpit456jain/Open-Source-Programs)
 <hr>
  
 ## 💻 Technologies
