@@ -118,5 +118,10 @@
   {
     "name": "Minify CSS",
     "link": "Minify CSS/index.html"
+  },
+  {
+    "name": "Quote Generator",
+    "link": "Quote Generator/index.html"
   }
+ 
 ]
