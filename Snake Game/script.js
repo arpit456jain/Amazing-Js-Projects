@@ -29,15 +29,23 @@ function initialize() {
   cellWidth = 20;
   gameArea.width = gameAreaWidth;
   gameArea.height = gameAreaHeight;
+  localStorage.setItem("maxScore",0);
 
   gameStart.onclick = function () {
     this.disabled = true;
     startGame();
   };
+  document.addEventListener("keypress", (e)=>{
+    if(e.key === "Enter"){
+      this.disabled = true;
+    startGame();
+    }
+  })
 }
 
 function startGame() {
   playerScore = 0;
+  playerMaxScore = localStorage.getItem("maxScore");
   snakeDirection = "right";
   speedSize = parseInt(gameSpeed.value);
 
@@ -136,6 +144,7 @@ function writeScore() {
     gameAreaWidth / 2 - 100,
     gameAreaHeight / 2
   );
+  if(localStorage.getItem("maxScore")<playerScore)localStorage.setItem("maxScore",playerScore);
 }
 
 // we are creating a square box with cellWidth at coordinates (x,y)
@@ -169,4 +178,6 @@ window.onload = initialize;
 
 //displaying score on screen
 let s = document.getElementById("score");
+let ms = document.getElementById("maxScore");
 setInterval(() => (s.innerHTML = `Score : ` + playerScore), 100);
+setInterval(() => (ms.innerHTML = `MaxScore ${localStorage.getItem("maxScore")}`), 100);
