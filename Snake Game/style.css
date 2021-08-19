@@ -26,7 +26,7 @@ canvas {
   box-shadow: 3px 5px 6px black;
   margin-right: 40px;
 }
-#score {
+#score,#maxScore {
   color: #fff333;
   font-family: sans-serif;
   margin-left: 50px;
