@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,700&display=swap');
+
+h1,h2{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.div{
+    text-align: center;
+}
