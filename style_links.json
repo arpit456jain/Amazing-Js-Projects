@@ -122,5 +122,13 @@
   {
     "name": "Netflix Clone",
     "link": "Netflix Clone/index.html"
+  },
+  {
+    "name": "Quote Generator",
+    "link": "Quote Generator/index.html"
+  },
+  {
+    "name": "Github Profiles",
+    "link": "Github Profiles/index.html"
   }
 ]

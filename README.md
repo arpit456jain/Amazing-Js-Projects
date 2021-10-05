@@ -15,6 +15,8 @@
 
 
 #  Amazing-Js-Projects
+### This project is part of Hacktoberfest'21
+![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
 ### This project was a part of the following Open Source Program
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
@@ -34,9 +36,15 @@ HELLO FOLKS , <br><br>
 <hr>
 
 ## 🎥 Demo 
-#### GitHub Pages website for this repository : https://amazing-js-projects.netlify.app/
+#### Website for this repository : https://amazing-js-projects.netlify.app/
 ![frontendtemp](recording.gif)
 
+# Must Check These Repos Also
+- [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
+- [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
+- [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
+- [Web-Development-Path-And-Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+- [Open-Source-Programs](https://github.com/arpit456jain/Open-Source-Programs)
 <hr>
  
 ## 💻 Technologies

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
-html{
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -10,7 +10,7 @@ body {
   padding: auto;
   background-color: rgb(19, 24, 44);
 }
-  /* heading */
+/* heading */
 h1 {
   color: #fff;
   text-transform: uppercase;
@@ -19,24 +19,24 @@ h1 {
   text-align: center;
   padding: 15px 20px;
   position: relative;
-    }
-    h1:after {    
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: #fff;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    h1:hover:after { 
-      width: 100%; 
-      left: 0; 
-    }  
-   
+}
+h1:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+h1:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .styles {
   display: flex;
   justify-content: space-around;
@@ -53,32 +53,32 @@ h1 {
   background-color: rgb(245, 217, 217);
   padding: 1rem;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   width: 20rem;
   justify-content: center;
-  transition: .2s;
+  transition: 0.2s;
 }
-.stylebox:hover{
+.stylebox:hover {
   transform: scale(1.02);
   -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
 }
-.stylebox .image{
+.stylebox .image {
   width: 20rem;
   height: 13rem;
 }
-.stylebox .image img{
+.stylebox .image img {
   background-size: cover;
   width: 100%;
   height: 100%;
-  border-radius: .5rem;
-  image-rendering:pixelated;
+  border-radius: 0.5rem;
+  image-rendering: pixelated;
 }
-.stylebox p{
+.stylebox p {
   text-align: left;
   font-size: 1.2rem;
   font-weight: 600;
@@ -87,13 +87,13 @@ h1 {
 .stylebox a {
   background-color: white;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1vmin;
   font-size: 1.2rem;
   background-color: rgb(89, 0, 131);
   color: rgb(255, 255, 255);
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 a:hover {
   background-color: rgb(44, 1, 65);
@@ -110,24 +110,23 @@ a:hover {
     margin-top: 4vmin;
   }
   .stylebox {
-    padding: .5rem;
+    padding: 0.5rem;
     margin: auto;
     width: 18rem;
     margin-bottom: 1.5rem;
   }
-  .stylebox .image{
+  .stylebox .image {
     width: 18rem;
     height: 12rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 }
 
 /* scroll top starts */
-#scroll-top{
+#scroll-top {
   position: fixed;
-  bottom: -140%;
   right: 1rem;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   font-size: 2rem;
   background: #00ff37;
   color: rgb(13, 0, 44);
@@ -136,13 +135,13 @@ a:hover {
   z-index: 1000;
   text-decoration: none;
 }
-#scroll-top:hover{
+#scroll-top:hover {
   -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
 }
-#scroll-top.active{
-  bottom: calc(100% - 36rem);
+#scroll-top.active {
+  bottom: 5px;
 }
 /* scroll top ends */
 
@@ -168,7 +167,7 @@ a:hover {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
 
@@ -177,7 +176,9 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -185,7 +186,9 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
