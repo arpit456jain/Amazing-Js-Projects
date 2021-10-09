@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEIGHT CONVERTER</title>
+    <link rel="stylesheet" href="weightcon.css">
+</head>
+<body>
+    <div id="container">
+        <h2>WEIGHT CONVERTER</h2>
+        <input type="number" name="weight" id="weight" placeholder="Enter mass in Pounds">
+        <div id="conversion">
+            <div id="kg">
+                <h4>IN KILOGRAMS</h4>
+                <p id="kgs"></p>
+            </div>
+            <div id="gm">
+                <h4>IN GRAMS</h4>
+                <p id="gms"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let wt=document.getElementById("weight");
+        document.getElementById("weight").addEventListener("input",convert);
+        function convert()
+        {
+            let val=wt.value;
+            if(val=="")
+            {
+                document.getElementById("conversion").style.display="none";
+            }
+            else
+            {
+                document.getElementById("conversion").style.display="block";
+                document.getElementById("kgs").innerHTML=val*0.453592;
+                document.getElementById("gms").innerHTML=val*453.592;
+            }
+        }
+    </script>
+</body>
+</html>
