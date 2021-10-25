@@ -14,29 +14,7 @@
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
   
-  <h2>Levels & Points</h2>
-<table>
-  <tr>
-    <th>Level</th>
-    <th>Points</th> 
-  </tr>
-  <tr>
-    <td>Level 0</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>Level 1</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Level 2</td>
-    <td>20</td>
-  </tr>
-  <tr>
-    <td>Level 3</td>
-    <td>40</td>
-  </tr>
-</table>
+  
 
 
 >### Do you want to make project on JavaScript ? if yes then :point_down:	
@@ -168,21 +146,13 @@ Now submit the pull request.
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
 <hr>
 
- <h1 align=center> Project Admin ❤️ </h1>
+  <h1 align=center> Project Admins ❤️ </h1>
 <p align="center">
 <table>
   <tbody><tr>
- <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br><a href="https://github.com/arpit456jain/Cool-Front-End_Templates/commits?author=arpit456jain" title="Code">💻 </a></td> </a></td>
+     <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
 
-</tbody></table>
-
-<h1 align=center> Mentor 😃 </h1>
-<p align="center">
-
-<table>
-  <tbody><tr>
-    <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
-  </tr>
 </tbody></table>
 
 <h2 align=center> ✨ Contributors </h2>
