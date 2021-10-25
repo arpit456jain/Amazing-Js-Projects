@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   padding: auto;
   background-color: rgb(19, 24, 44);
 }
-  /* heading */
+/* heading */
 h1 {
   color: #fff;
   text-transform: uppercase;
@@ -12,24 +19,24 @@ h1 {
   text-align: center;
   padding: 15px 20px;
   position: relative;
-    }
-    h1:after {    
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: #fff;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    h1:hover:after { 
-      width: 100%; 
-      left: 0; 
-    }  
-   
+}
+h1:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+h1:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .styles {
   display: flex;
   justify-content: space-around;
@@ -42,60 +49,168 @@ h1 {
 .stylebox {
   display: flex;
   flex-direction: column;
-  background-color: rgb(240, 216, 216);
-  padding: 3vmin;
+  flex-wrap: wrap;
+  background-color: rgb(245, 217, 217);
+  padding: 1rem;
   text-align: center;
-  font-size: 2vmax;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 1vmax;
-  border-radius: 8px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.459);
-  border: 2px solid black;
-  width: 40vmin;
-  height: 40vmin;
+  font-family: "Poppins", sans-serif;
+  margin: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 20rem;
   justify-content: center;
+  transition: 0.2s;
 }
-
+.stylebox:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+  -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+  box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+}
+.stylebox .image {
+  width: 20rem;
+  height: 13rem;
+}
+.stylebox .image img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  image-rendering: pixelated;
+}
+.stylebox p {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.stylebox .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
 .stylebox a {
   background-color: white;
-  border: 1px solid black;
-  border-radius: 8px;
+  border: none;
+  border-radius: 0.5rem;
   padding: 1vmin;
-  font-size: 2vmax;
-  background-color: rgb(29, 128, 119);
-  color: black;
+  font-size: 1.2rem;
+  background-color: rgb(89, 0, 131);
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: 0.2s;
+  width: 100%;
 }
-
+.stylebox a.code {
+  background-color: rgb(47, 128, 0);
+}
+.stylebox a.code:hover {
+  background-color: rgb(39, 105, 0);
+}
 a:hover {
-  background-color: rgb(15, 173, 173);
+  background-color: rgb(44, 1, 65);
   cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
   .styles {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 4vmin;
   }
   .stylebox {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 3vmin;
-    text-align: center;
-    font-size: 3vmax;
-    border-radius: 8px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.459);
-    border: 2px solid black;
-    width: 80vmin;
-    height: 30vmin;
+    padding: 0.5rem;
     margin: auto;
-    margin-top: 1vmax;
-    margin-bottom: 1vmax;
-    justify-content: center;
+    width: 18rem;
+    margin-bottom: 1.5rem;
+  }
+  .stylebox .image {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 0.5rem;
   }
 }
 
+/* scroll top starts */
+#scroll-top {
+  position: fixed;
+  right: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 2rem;
+  background: #00ff37;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+  text-decoration: none;
+}
+#scroll-top:hover {
+  -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+  -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+  box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+}
+#scroll-top.active {
+  bottom: 5px;
+}
+/* scroll top ends */
+
+/* CSS for NavBar starts */
+.topnav {
+  background-color: rgb(19, 24, 44);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* CSS for NavBar end */

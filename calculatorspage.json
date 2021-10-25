@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Calculator Type 1",
+      "link": "Calculators/Calculator Type 1/Calculator 1.html"
+    },
+    {
+      "name": "Calculator Type 2",
+      "link": "Calculators/Calculator Type 2/Calculator 2.html"
+    },
+    {
+      "name": "Calculator Type 3",
+      "link": "Calculators/Calculator Type 3/Calculator3.html"
+    },
+    {
+      "name": "Neuromorphic Calculator",
+      "link": "Calculators/Neuromorphic Calculator/index.html"
+    },
+    {
+      "name": "Calculator 4",
+      "link": "Calculators/Calculator 4/index.html"
+    },
+    {
+      "name": "Scientific Calculator",
+      "link": "Calculators/Scientific Calculator/index.html"
+    }
+  ]

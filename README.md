@@ -5,38 +5,21 @@
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/pulls"><img src="https://img.shields.io/github/issues-pr/arpit4567jain/Amazing-Js-Projects"></a>
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/network/members"><img src="https://img.shields.io/github/forks/arpit4567jain/Amazing-Js-Projects"></a>
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/stargazers"><img src="https://img.shields.io/github/stars/arpit4567jain/Amazing-Js-Projects"></a>
+<a href="https://github.com/arpit4567jain/Amazing-Js-Projects"><img src="https://img.shields.io/github/repo-size/arpit4567jain/Amazing-Js-Projects?color=yellow"></a>
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+	
 
 </div>
 
 
 #  Amazing-Js-Projects
-### This project is a part of the following Open Source Program
+### This project is part of Hacktoberfest'21
+![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+### This project was a part of the following Open Source Program
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
-  
-  <h2>Levels & Points</h2>
-<table>
-  <tr>
-    <th>Level</th>
-    <th>Points</th> 
-  </tr>
-  <tr>
-    <td>Level 0</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>Level 1</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Level 2</td>
-    <td>20</td>
-  </tr>
-  <tr>
-    <td>Level 3</td>
-    <td>40</td>
-  </tr>
-</table>
 
 
 >### Do you want to make project on JavaScript ? if yes then :point_down:	
@@ -53,15 +36,23 @@ HELLO FOLKS , <br><br>
 <hr>
 
 ## 🎥 Demo 
-#### GitHub Pages website for this repository : https://arpit456jain.github.io/Amazing-Js-Projects/
+#### Website for this repository : https://amazing-js-projects.netlify.app/
+![frontendtemp](recording.gif)
 
+# Must Check These Repos Also
+- [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
+- [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
+- [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
+- [Web-Development-Path-And-Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+- [Open-Source-Programs](https://github.com/arpit456jain/Open-Source-Programs)
 <hr>
  
 ## 💻 Technologies
 
-- HTML 5
-- CSS 3
-- JavaScript
+- ![HTML 5](https://forthebadge.com/images/badges/uses-html.svg)
+- ![CSS](https://forthebadge.com/images/badges/uses-css.svg)
+- ![JavaScript](https://forthebadge.com/images/badges/uses-js.svg)
+
 <hr>
 
 ## ⭐ How to get started?
@@ -165,6 +156,7 @@ Now submit the pull request.
 
 
 ## 📌Till Then 
+ ### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
 <hr>
 
@@ -202,8 +194,9 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 <hr>
 
 <h1 align=center>Happy Coding 👨‍💻 </h1>
+
 ## 💬Join Our CodeSmashers Community
 
-Join -  https://discord.gg/gtYUZQSjTt
+Join - https://discord.gg/gtYUZQSjTt
 
-show some ❤️&nbsp; by giving the star to this repo
+### Show some ❤️&nbsp; by giving the star :star: to this repository!!

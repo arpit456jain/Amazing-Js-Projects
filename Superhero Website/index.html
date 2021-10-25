@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+     <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>SuperHero</title>
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SuperHero</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+          <a href="./favourite.html"> <button class="btn btn-outline-danger "><i class="fas fa-heart"></i> My Favourites</button></a> 
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+  <div class="container ">
+    <div class="d-flex gap-3 mt-5">
+      <input
+        class="w-75 "
+        type="search"
+        placeholder="Search your superheroes..."
+        id="searchbar"
+        aria-label="Search" />
+      <button class="btn btn-outline-success searchBtn" type="submit" id="btn">
+        Search
+      </button>
+    </div>
+   
+
+    <div class="">
+      <!-- list-items -->
+      <ol id="list" class=" list w-75">
+         
+      </ol>
+    </div>
+
+  </div>  
+
+    <!-- cards -->
+    <div class="container mb-3">
+      <div class="row gap-5 mt-5">
+           <h1 class="text-muted">Search your superhero by typing the <br>  name in the above search bar!</h1>
+      </div>
+    </div>
+
+    <!-- bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
