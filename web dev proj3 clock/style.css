@@ -1,0 +1,46 @@
+body{
+    background-color:black;
+}
+.clockcontainer{
+    position: relative;
+    height:40vw;
+    width:40vw;
+    border-width: 10px;
+    border-color:grey;
+    border-style: ridge;
+    background: url('images/clock1.jpg') no-repeat center center/cover;
+  /*  background-size: 100%;  in this case you would have to change height and width as per image size inserted*/
+margin-left:30vw;
+  margin-top:4vw;
+ /* margin:auto; */
+  
+}
+#hour{
+    background-color: black;
+    width: 1.7%;
+    height: 21%;
+    border-radius: 13px;
+    margin-left: 49%;
+    margin-top: 29%;
+    transform-origin:bottom;
+   /* display: none;*/
+}
+#minute{
+    background-color: black;
+    width: 1.2%;
+    height: 23%;
+    border-radius: 13px;
+    margin-left: 49%;
+    margin-top: -23%;
+    transform-origin:bottom;
+  /*  display:none;*/
+}
+#second{
+    background-color:black;
+    width: 1%;
+    height: 25.5%;
+    border-radius: 13px;
+    margin-left: 49%;
+    margin-top: -25.5%;
+    transform-origin:bottom;
+}
