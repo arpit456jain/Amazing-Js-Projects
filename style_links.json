@@ -138,7 +138,9 @@
   {
     "name": "Superhero Website",
     "link": "Superhero Website/index.html"
+  },
+  {
+    "name": "Lorem Ipsum Generator",
+    "link": "Lorem Ipsum/index.html"
   }
-  
-
 ]
