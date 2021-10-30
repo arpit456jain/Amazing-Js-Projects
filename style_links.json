@@ -142,5 +142,9 @@
   {
     "name": "Lorem Ipsum Generator",
     "link": "Lorem Ipsum/index.html"
+  },
+  {
+    "name":"Dice Challenge",
+    "link":"Dice Challenge/index.html"
   }
 ]
