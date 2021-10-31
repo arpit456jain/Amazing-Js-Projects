@@ -1,0 +1,57 @@
+body{
+    padding: 50px 100px;
+    margin: 0px;
+}
+
+#color-icons{
+    text-align: right;
+}
+
+.buttons{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+#white{
+    background-color: white;
+}
+
+#black{
+    background-color: black;
+}
+
+#green{
+    background-color: #adff2f;
+}
+
+#aqua{
+    background-color: #00ffff;
+}
+
+
+h1{
+    text-decoration: #ce177d;
+    text-decoration-line: underline;
+    text-align: center;
+    
+}
+
+#imgstyle{
+    width: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    height: 600px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h2{
+    text-align: center;
+}
