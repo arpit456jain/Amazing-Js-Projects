@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    background-color: cornflowerblue; font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock{
+    cursor: pointer;
+}
+
+#contain{
+    color: whitesmoke;
+}
+
+.digit{
+    font-size: 140px; font-weight: bold; padding: 0px 5px 0px 36px;
+}
+
+.txt{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+#btn{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+
+.btn-style{
+    padding: 10px 30px;
+    font-size: 15px; margin: 25px 20px; 
+    cursor: pointer; border: 2px solid darkblue; font-family: cursive; border-radius: 10px;
+
+}
+
+#start{
+    background-color: lightgreen;
+}
+
+#stop{
+    background-color: lightgoldenrodyellow;
+    padding: 10px 31.9835px;
+}
+
+#reset{
+    background-color: rgb(250, 142, 142);
+}
