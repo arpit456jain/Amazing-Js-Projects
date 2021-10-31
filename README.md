@@ -191,4 +191,6 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 
 Join - https://discord.gg/gtYUZQSjTt
 
+Feel free to contribute to this repo.
+
 ### Show some ❤️&nbsp; by giving the star :star: to this repository!!
