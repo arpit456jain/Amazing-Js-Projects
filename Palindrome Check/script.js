@@ -2,19 +2,18 @@ document.getElementById("btn").addEventListener("click",function(){
     let txt = document.getElementById("input-text").value;
     checkPalindrome(txt);
 });
+    function checkPalindrome(str) {
 
-function checkPalindrome(txt){
-    let txt_new = txt.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    let len = txt_new.length;
-    let halfLen = Math.floor( len/2 );
-    let result =document.getElementById("result");
-    let i;
+    // find the length of a string
+    const len = string.length;
 
-    for( i = 0; i < halfLen; i++){
-        if( txt_new[i] !== txt_new[len-1-i]){
-            result.textContent = "Nope! Not a palindrome";
-            return;
+    // loop through half of the string
+    for (let i = 0; i < len / 2; i++) {
+        // check if first and last string are same
+        if (string[i] !== string[len - 1 - i]) {
+            return 'It is not a palindrome';
         }
-        result.textContent = "Yes! It's a palindrome"
     }
+    return 'It is a palindrome';
+}
 }
