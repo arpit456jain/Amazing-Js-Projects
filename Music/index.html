@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/WhatsApp Image 2022-03-01 at 8.58.34 PM.jpeg" class="logo">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">SPECIFICATION</a>
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">CONNECT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE<br> REAL<br> MUSIC</h1>
+            </div>
+
+            <div class="right-col">
+                <p>Click Here To Enter In Music World</p>
+                <img src="images/play.png" id="icon">
+
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="mysong">
+        <source src="bensound-clearday.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+
+        var mysong = document.getElementById("mysong")
+        var icon = document.getElementById("icon")
+
+        icon.onclick = function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.src = "images/pause.png";
+            }else{
+                mysong.pause();
+                icon.src = "images/play.png";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
