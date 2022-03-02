@@ -9,20 +9,20 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-	
+    
 
 </div>
 
 
 #  Amazing-Js-Projects
-### This project is part of Hacktoberfest'21
+### This project was part of Hacktoberfest'21
 ![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
 ### This project was a part of the following Open Source Program
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
 
 
->### Do you want to make project on JavaScript ? if yes then :point_down:	
+>### Do you want to make project on JavaScript ? if yes then :point_down:   
 
  <h3 align="center">
     <a>👋  <strong>Join Us</strong> </a>
@@ -31,7 +31,7 @@
     
 # 📌Introduction
 HELLO FOLKS , <br><br>
-     This repository contains many amazing projects written in HTML5 , CSS3 and JavaScript.  Consider this repository as your personal space to find or add any new script that can make life easier for us and the Open Source community too, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating javascript, markup language and styling, that you can use to develop amazing products.
+     This repository contains many amazing projects written in HTML5, CSS3 and JavaScript.  Consider this repository as your personal space to find or add any new script that can make life easier for us and the Open Source community too, as a Developer, and find a utility of coding to burst out of boredom. Get started with coding exhilarating javascript, markup language and styling, that you can use to develop amazing products.
 
 <hr>
 
@@ -57,7 +57,7 @@ HELLO FOLKS , <br><br>
 
 ## ⭐ How to get started?
 
-You can refer to the following steps  on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
+You can refer to the following steps on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
 
@@ -114,7 +114,7 @@ git checkout -b abc
 
 ## Make necessary changes and commit those changes
 
-Now open file in a text editor, add your changes to it. Now, save the file.
+Now open a file in a text editor, add your changes to it. Now, save the file.
 
 
 If you go to the project directory and execute the command `git status`, you'll see there are changes.
@@ -151,7 +151,7 @@ If you go to your repository on GitHub, you'll see a `Compare & pull request` bu
 
 Now submit the pull request.
 
-**voila** ! You have done it , You will get a notification email once the changes have been merged by maintainer.
+**voila** ! You have done it, You will get a notification email once the changes have been merged by maintainer.
 
 
 
@@ -174,13 +174,13 @@ Now submit the pull request.
 Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of any kind are welcome! 
 
 <table>
-	<tr>
-		 <td>
-  		<a href="https://github.com/arpit456jain/Amazing-Js-Projects/graphs/contributors">
-  			<img src="https://contributors-img.web.app/image?repo=arpit456jain/Amazing-Js-Projects" />
-  		</a>
-		</td>
-	</tr>
+    <tr>
+         <td>
+        <a href="https://github.com/arpit456jain/Amazing-Js-Projects/graphs/contributors">
+            <img src="https://contributors-img.web.app/image?repo=arpit456jain/Amazing-Js-Projects" />
+        </a>
+        </td>
+    </tr>
 </table>
 
 <hr>
