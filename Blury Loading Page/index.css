@@ -3,7 +3,6 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -14,7 +13,6 @@ body{
     min-height: 100vh;
     overflow:hidden;
 }
-
 .bg{
     background:url('  https://cf.shopee.ph/file/85d9c26264562eeca1bcaa189323f2eb');
     background-size: cover;
