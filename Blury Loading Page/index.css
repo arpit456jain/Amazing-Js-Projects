@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:hidden;
+}
+.bg{
+    background:url('  https://cf.shopee.ph/file/85d9c26264562eeca1bcaa189323f2eb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-30px;
+    left:-30px;
+    height:calc(100vh + 50px);
+    width:calc(100vw + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text{
+    font-size: 50px;
+    color:#FFF
+}
