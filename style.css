@@ -252,15 +252,16 @@ a {
 
  .menu li:hover {
   background-color: #fff;
-  
+  box-shadow: 0 0 10px 2px rgba(43, 19, 255, 0.699);
   transition: 0.3s ease;
  }
- a:hover{
-   color: #1d1d1d;
- }
-
+.menu li a:hover{
+  background-color:transparent;
+  color: #13182c;
+}
  .menu li {
   padding: 5px 14px;
+  border-radius: 1rem;
  }
 
  input[type=checkbox]{
