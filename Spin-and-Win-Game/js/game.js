@@ -22,11 +22,11 @@ let game = new Phaser.Game(config);
 function preload(){
     console.log("Preload");
     //load object, load some images
-    this.load.image('background','../Assets/back.jpg');
+    this.load.image('background', 'js/back.jpg');
     console.log(this);
-    this.load.image('wheel','../Assets/wheel.png');
-    this.load.image('pin','../Assets/pin.png');
-    this.load.image('stand','../Assets/stand.png');
+    this.load.image('wheel', 'js/wheel.png');
+    this.load.image('pin', 'js/pin.png');
+    this.load.image('stand', 'js/stand.png');
        
 }
 function create(){
