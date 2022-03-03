@@ -1,44 +1,43 @@
-const empty = "";
-const uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const lCase = "abcdefghijklmnopqrstuvwxyz";
-const number = "0123456789";
-const symbol = "!@#$%^&*=-_";
+const passwordLength = document.getElementById("len-p");
+const upper = document.getElementById("upper");
+const lower = document.getElementById("lower");
+const special = document.getElementById("special");
+const number = document.getElementById("number");
+const submitBtn = document.getElementById("gen");
 
-const pLength = document.getElementById('plength');
-const upperCase = document.getElementById('puppercase');
-const lowerCase = document.getElementById('plowercase');
-const pNumber = document.getElementById('pnumber');
-const pSymbol = document.getElementById('psymbol');
-const submit = document.getElementById('submit');
-const password = document.getElementById('pwd');
+submitBtn.addEventListener("click", () => {
+  const len = passwordLength.value;
 
-submit.addEventListener('click', ()=>{
-    let initPwd = empty;
-    (upperCase.checked) ? initPwd += uCase : "";
-    (lowerCase.checked) ? initPwd += lCase : "";
-    (pNumber.checked) ? initPwd += number : "";
-    (pSymbol.checked) ? initPwd += symbol : "";
+  if (len < 0) {
+    alert("Please provide positive number");
+  }
 
-    password.value = generatePwd(pLength.value,initPwd);
-});
+  const upperString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lowerString = "abcdefghijklmnopqrstuvwxyz";
+  const specialString = "@#$";
+  const numberString = "1234567890";
 
-// generate password
-function generatePwd(l, initPwd){
-    let pass = "";
-    for (let i=0;i<l;i++){
-        pass += initPwd.charAt(Math.floor(Math.random() * initPwd.length));
-    }
-    return pass;
-}
+  let finalString = "";
 
-// copy button
-const copy = document.getElementById('copy');
-copy.addEventListener('click', ()=> {
-    if(password.value == ""){
-        alert("Please generate a password!");
-    }else{
-        password.select();
-        document.execCommand("copy");
-        alert("Password has been copied.");
-    }
+  if (upper.checked) {
+    finalString = finalString + upperString;
+  }
+  if (lower.checked) {
+    finalString = finalString + lowerString;
+  }
+  if (special.checked) {
+    finalString = finalString + specialString;
+  }
+  if (number.checked) {
+    finalString = finalString + numberString;
+  }
+
+  let password = "";
+
+  for (let index = 0; index < len; index++) {
+    let randomIndex = Math.floor(Math.random() * finalString.length);
+    password = password + finalString[randomIndex];
+  }
+
+  document.getElementById("passarea").value = password;
 });

@@ -158,5 +158,9 @@
   {
     "name":"Dice Challenge",
     "link":"Dice Challenge/index.html"
+  },
+  {
+    "name":"Ping Pong Score Keeper",
+    "link":"Ping Pong Score Keeper/index.html"
   }
 ]
