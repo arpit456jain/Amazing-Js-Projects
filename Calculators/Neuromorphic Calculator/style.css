@@ -47,7 +47,7 @@ button{
     border-radius: 50%; 
     font-size: 20px;
     margin: 8px;
-
+    cursor: pointer;
 }
 .equal{
     width:115px;
@@ -58,4 +58,20 @@ button{
 }
 .redd{
     background-color: red;
+}
+button:hover{
+    color: #15e38a;
+}
+button:active{
+    color: #15e38a;
+    box-shadow: inset -10px -10px 15px #f7f4f4,
+                inset  10px  10px 15px rgba(70, 70, 70, 0.12);   
+}
+.redd:hover{
+    color: whitesmoke;
+}
+.redd:active{
+    color: whitesmoke;
+    box-shadow: inset -10px -10px 15px #eb6c6c,
+                inset  10px  10px 15px rgba(70, 70, 70, 0.12);
 }
