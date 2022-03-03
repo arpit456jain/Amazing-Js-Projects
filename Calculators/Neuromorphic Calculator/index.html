@@ -11,30 +11,36 @@
    <div class="container">
        <div class="calculator">
            <input type="text" placeholder="0" id="output-screen">
-           <button onclick="Clear()" class="redd">Clr</button>
-           <button onclick="del()">Del</button>
-           <button onclick="dispaly('%')">%</button>
-           <button onclick="display('/')">/</button>
-           <button onclick="display('7')">7</button>
-           <button onclick="display('8')">8</button>
-           <button onclick="display('9')">9</button>
-           <button onclick="display('*')">*</button>
-           <button onclick="display('4')">4</button>
-           <button onclick="display('5')">5</button>
-           <button onclick="display('6')">6</button>
-           <button onclick="display('-')">-</button>
-           <button onclick="display('1')">1</button>
-           <button onclick="display('2')">2</button>
-           <button onclick="display('3')">3</button>
-           <button onclick="display('+')">+</button>
-           <button onclick="display('.')">.</button>
-           <button onclick="display('0')">0</button>
-           <button onclick="Calculate()" class="equal">=</button>
+           <button onclick="Clear(); clickSound();" class="redd">Clr</button>
+           <button onclick="del(); clickSound();">Del</button>
+           <button onclick="display('%'); clickSound();">%</button>
+           <button onclick="display('/'); clickSound();">/</button>
+           <button onclick="display('7'); clickSound();">7</button>
+           <button onclick="display('8'); clickSound();">8</button>
+           <button onclick="display('9'); clickSound();">9</button>
+           <button onclick="display('*'); clickSound();">*</button>
+           <button onclick="display('4'); clickSound();">4</button>
+           <button onclick="display('5'); clickSound();">5</button>
+           <button onclick="display('6'); clickSound();">6</button>
+           <button onclick="display('-'); clickSound();">-</button>
+           <button onclick="display('1'); clickSound();">1</button>
+           <button onclick="display('2'); clickSound();">2</button>
+           <button onclick="display('3'); clickSound();">3</button>
+           <button onclick="display('+'); clickSound();">+</button>
+           <button onclick="display('.'); clickSound();">.</button>
+           <button onclick="display('0'); clickSound();">0</button>
+           <button onclick="Calculate(); clickSound();" class="equal">=</button>
        </div>
    </div> 
 
    <script>
      let outputScreen = document.getElementById("output-screen");
+     var sound = new Audio("btn-sound.wav");
+     function clickSound()
+     {
+        sound.play();
+        sound.currentTime = 0;
+     }
      function display(num)
      {
         outputScreen.value +=num;
