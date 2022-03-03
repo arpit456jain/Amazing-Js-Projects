@@ -10,6 +10,10 @@
   {
     "name": "Breakout Game",
     "link": "Breakout Game/index.html"
+  }, 
+  {
+    "name": "Candy Crush",
+    "link": "Candy Crush Clone/index.html"
   },
   {
     "name": "Clock",
@@ -146,5 +150,9 @@
   {
     "name":"Dice Challenge",
     "link":"Dice Challenge/index.html"
+  },
+  {
+    "name":"Ping Pong Score Keeper",
+    "link":"Ping Pong Score Keeper/index.html"
   }
 ]
