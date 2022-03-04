@@ -12,6 +12,10 @@
     "link": "Breakout Game/index.html"
   }, 
   {
+    "name": "Ball-Game",
+    "link": "Ball-Game/index.html"
+  }, 
+  {
     "name": "Candy Crush",
     "link": "Candy Crush Clone/index.html"
   },
