@@ -12,6 +12,10 @@
     "link": "Breakout Game/index.html"
   }, 
   {
+    "name": "Ball-Game",
+    "link": "Ball-Game/index.html"
+  }, 
+  {
     "name": "Candy Crush",
     "link": "Candy Crush Clone/index.html"
   },
@@ -26,6 +30,10 @@
   {
     "name": "Connect Four",
     "link": "Connect Four/index.html"
+  },
+  {
+    "name": "Dictionary App",
+    "link": "Dictionary App/index.html"
   },
   {
     "name": "Drag N Drop",
@@ -70,6 +78,10 @@
   {
     "name": "Simon Game",
     "link": "Simon Game/index.html"
+  },
+  {
+    "name": "Ecommerce Sneaker Site",
+    "link": "Sneaker Site/index.html"
   },
   {
     "name": "StopWatch",
@@ -154,5 +166,9 @@
   {
     "name":"Ping Pong Score Keeper",
     "link":"Ping Pong Score Keeper/index.html"
+  },
+  {
+    "name":"Currency Convertor",
+    "link":"Currency Convertor/index.html"
   }
 ]
