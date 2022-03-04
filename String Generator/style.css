@@ -1,0 +1,72 @@
+*{
+    margin: 2px 2px;
+    /* padding: 2px 2px; */
+    box-sizing: border-box;
+}
+#header{
+    text-align: center;
+    margin: 25px auto 7px auto;
+    color: green;
+
+
+}
+#container{
+    margin: 70px auto;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+label{
+    font-size: 25px;
+    color: green;
+}
+.box{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#type,#length{
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    border-width: 10px;
+    font-size: 1.3rem;
+}
+
+/* CSS */
+.button-33 {
+    margin: 7px;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.generatedString{
+    font-size: 2rem;
+    color: rgb(59, 233, 59);
+    text-align: center;
+}
