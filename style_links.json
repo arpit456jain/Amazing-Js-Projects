@@ -162,5 +162,9 @@
   {
     "name":"Ping Pong Score Keeper",
     "link":"Ping Pong Score Keeper/index.html"
+  },
+  {
+    "name":"Currency Convertor",
+    "link":"Currency Convertor/index.html"
   }
 ]
