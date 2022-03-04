@@ -252,5 +252,51 @@ a {
    display: block;
    
   }
+} */
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* body {
+  margin: 0px;
+  font-family: 'segoe ui';
+} */
+a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #13182c;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ .logo img{
+   width: 7em;
+ }
+
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 16px;
+  font-family: 'Space Mono';
+ }
+
+ .menu li:hover {
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px rgba(43, 19, 255, 0.699);
+  transition: 0.3s ease;
+ }
+.menu li a:hover{
+  background-color:transparent;
+  color: #13182c;
 }
-/* CSS for NavBar end */
