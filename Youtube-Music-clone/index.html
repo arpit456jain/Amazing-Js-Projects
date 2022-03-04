@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Music</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/youtube-music.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="assets/images/logo.png" alt="logo">
+            <span class="logo visible">Music</span>
+        </a>
+        <div class="nav-items">
+            <ul class="nav-links">
+                <li class="links">
+                    <i class="fas fa-home hidden active"></i>
+                    <span class="visible active">Home</span>
+                </li>
+                <li class="links">
+                    <i class="fas fa-compass hidden"></i>
+                    <span class="visible">Explore</span>
+                </li>
+                <li class="links">
+                    <i class="fas fa-music hidden"></i>
+                    <span class="visible">Library</span>
+                </li>
+                <li class="links">
+                    <i class="fas fa-arrow-circle-up hidden"></i>
+                    <span class="visible">Upgrade</span>
+                </li>
+                <li class="links search">
+                    <i class="fas fa-search"></i>
+                    <span class="visible">Search</span>
+                </li>
+            </ul>
+        </div>
+        <div class="profile">
+            <img src="assets/images/user.png">
+            <div class="hidden-profile">
+                <div class="profile-upper">
+                    <img src="assets/images/user.png">
+                    <div class="profile-info">
+                        <span class="profile-name">Sreemoyee Sadhukhan</span>
+                        <a href="#" class="profile-link">Manage your Google Account</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-middle">
+                    <a href="#" class="profile-links">
+                        <i class="fas fa-id-badge"></i>
+                        <p class="link-name">Your channel</p>
+                    </a>
+                    <a href="#" class="profile-links">
+                        <i class="fab fa-youtube"></i>
+                        <p class="link-name">Get Music Premium</p>
+                    </a>
+                    <a href="#" class="profile-links switch-link">
+                        <span class="switch">
+                            <i class="fas fa-exchange-alt"></i>
+                            <p class="link-name">Switch account</p>
+                        </span>
+                        <span><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#" class="profile-links">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p class="link-name">Sign out</p>
+                    </a>
+                </div>
+                <hr>
+                <div class="profile-lower">
+                    <a class="profile-links">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="link-name">Upload music</p>
+                    </a>
+                    <a class="profile-links">
+                        <i class="fas fa-history"></i>
+                        <p class="link-name">History</p>
+                    </a>
+                    <a class="profile-links">
+                        <i class="fas fa-cog"></i>
+                        <p class="link-name">Settings</p>
+                    </a>
+                    <a class="profile-links">
+                        <i class="fas fa-shield-alt"></i>
+                        <p class="link-name">Terms & privacy policy</p>
+                    </a>
+                    <a class="profile-links">
+                        <i class="far fa-question-circle"></i>
+                        <p class="link-name">Help</p>
+                    </a>
+                    <a class="profile-links">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p class="link-name">Send feedback</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <img src="assets/images/bg.png" class="bg">
+    <div class="img-overlay"></div>
+    <main>
+        <div class="card_container">
+            <div class="card_title">
+                <h1 class="card_heading">All Songs</h1>
+            </div>
+            <div class="card_collection_main">
+               
+            </div>
+        </div>
+        <div class="card_container liked">
+            <div class="card_title">
+                <h1 class="card_heading">Your Liked Songs</h1>
+            </div>
+            <div class="card_collection_main">
+
+            </div>
+        </div>
+        <div class="artists">
+            <img src="assets/images/a.png" alt="artist image" class="artist">
+            <div class="artist-info">
+                <h2>Tell us which artists you like</h2>
+                <p>We will create an experience just for you</p>
+                <button class="btn">LET'S GO</button>
+            </div>
+        </div>
+        <div class="card_container">
+            <div class="card_title">
+                <h1 class="card_heading">Your Songs</h1>
+            </div>
+            <div class="card_collection_main">
+                
+            </div>
+        </div>
+        <div class="card_container">
+            <div class="card_title">
+                <h1 class="card_heading">Top music videos</h1>
+                <p>SEE ALL</p>
+            </div>
+            <div class="card_collection">
+                <div class="card_top">
+                    <img src="assets/images/content/artist_image.jpeg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-circle dot"></i><span>  1</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Eternal Youth</p>
+                        <p class="card_artist">Rude <i class="fas fa-circle"></i> 657 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/nggyp.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-circle dot"></i><span>  2</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Never Gonna Give You UP</p>
+                        <p class="card_artist">Rick Astely <i class="fas fa-circle"></i> 749 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/keepingIt.png" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-sort-up up"></i><span>  3</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Keeping It</p>
+                        <p class="card_artist">Sou <i class="fas fa-circle"></i> 877 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/survivor.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-sort-up up"></i><span>  4</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Eye of the Tiger</p>
+                        <p class="card_artist">Surviour <i class="fas fa-circle"></i> 543 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/kennyg.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-caret-down down"></i><span>  5</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Kenny G Collection</p>
+                        <p class="card_artist">Kenny G <i class="fas fa-circle"></i> 674 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/noctornal.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-caret-down down"></i><span>  6</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Nocturnal</p>
+                        <p class="card_artist">The Midnight <i class="fas fa-circle"></i> 444 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/unravel.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-caret-down down"></i><span>  7</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Unravel</p>
+                        <p class="card_artist">TK <i class="fas fa-circle"></i> 695 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/timFerriss.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-sort-up up"></i><span>  8</span></p>
+                    <div class="card_info">
+                        <p class="card_name">The Timm Ferris Show</p>
+                        <p class="card_artist">Timm Ferry <i class="fas fa-circle"></i> 772 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="card_top">
+                    <img src="assets/images/content/lofi.jpg" alt="">
+                    <div class="song-overlay"><i class="fas fa-play"></i></div>
+                    <p><i class="fas fa-sort-up up"></i><span>  9</span></p>
+                    <div class="card_info">
+                        <p class="card_name">Lofi Coffee</p>
+                        <p class="card_artist">Lofi <i class="fas fa-circle"></i> 399 views</p>
+                    </div>
+                    <div class="hidden-hover">
+                        <i class="fas fa-thumbs-down"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card_container">
+            <div class="card_title">
+                <h1 class="card_heading">Top Hits</h1>
+            </div>
+            <div class="card_collection_main">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="playerhead">
+            <div class="timeline">
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play playbtn"></i>
+                <i class="fas fa-pause pausebtn"></i>
+                <i class="fas fa-step-forward"></i>
+                <div class="time"><span class="time-now">0:00</span> / <span class="end-time">4:00</span></div>
+            </div>
+            <div class="song-info">
+                <div class="song">
+                    <img src="assets/images/content/artist_image.jpeg" alt="Artist" class="song_image">
+                    <div class="song_details">
+                        <p class="song_name">Eternal Youth</p>
+                        <p class="song_artist">RUDE | 657 views</p>
+                    </div>
+                </div>
+                <div class="liking">
+                    <i class="fas fa-thumbs-down dislikebtn"></i>
+                    <i class="fas fa-thumbs-up likebtn"></i>
+                    <i class="fas fa-ellipsis-v popup">
+                        <div class="player-hidden">
+                            <a href="" class="player-links">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <p class="player-link-info">Start radio</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fas fa-forward"></i>
+                                <p class="player-link-info">Play next</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fab fa-itunes-note"></i>
+                                <p class="player-link-info">Add to queue</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fas fa-thumbs-up"></i>
+                                <p class="player-link-info">Add to liked songs</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fas fa-plus-circle"></i>
+                                <p class="player-link-info">Add to playlist</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fas fa-minus-circle"></i>
+                                <p class="player-link-info">Remove from queue</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fas fa-share"></i>
+                                <p class="player-link-info">Share</p>
+                            </a>
+                            <a href="" class="player-links">
+                                <i class="fas fa-chart-bar"></i>
+                                <p class="player-link-info">Stats for nerds</p>
+                            </a>
+                        </div>
+                    </i>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-redo"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-sort-up"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- Made With ❤ By Sreemoyee Sadhukhan Github Profile https://github.com/Sreemoyee26 -->
