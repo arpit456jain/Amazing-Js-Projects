@@ -1,0 +1,70 @@
+*{
+			margin:0;
+			padding: 0;
+		}
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			background: url(clock.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+		}
+        .datetime{
+			color:#fff;
+			background-color: transparent;
+			font-family:"Segoe UI",sans-serif;
+			width: 500px;
+			margin-left: 50px;
+			padding: 20px 15px;
+			border: 3px solid #ff00ff;
+			border-radius: 5px; 
+			-webkit-box-reflect:below 1px linear-gradient(transparent,rgba(255,255,255,0.1));
+			transition: 0.5s;
+			transition-property: background ,box-shadow;
+		}
+           .datetime:hover{
+             background: #ff00ff;
+             box-shadow: 0 0 30px #ff00ff;
+           }
+        .time{
+        	font-size: 80px;
+        	font-weight: 650px;
+        	text-align: center;
+        	letter-spacing: 2.9px;
+        	display: flex;
+        	justify-content: center;
+        }
+        .date{
+        	margin-top: 5%;
+        	font-size: 22px;
+        	font-weight: 650px;
+        	text-align: center;
+        	letter-spacing: 2.9px;
+        }
+        .time span:not(:last-child){
+        	position:relative;
+        	margin: 0 6px;
+        	letter-spacing: 3px;
+        }
+        .time span:last-child{
+            
+            font-size: 60px;
+            font-weight: 590;
+            text-transform: uppercase;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 7px 3px;
+
+        }
+        .container h1{
+        	position: relative;
+		    color: #fff;
+			font-size: 50px;
+			text-align: center;
+	        height:120px;
+	       
+	        justify-content: center;
