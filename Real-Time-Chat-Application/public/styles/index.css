@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+main header {
+  background-color: #2791cf;
+  color: #ffffff;
+  padding: 7px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header div.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main header div.title h1 {
+  font-family: "Baloo 2", cursive;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+main header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+main div.container {
+  background-color: #7E878c;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main div.container div.users-window {
+  width: 350px;
+  color: #ffffff;
+  background-color: #3f3f3f;
+  padding: 15px  20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+main div.container div.users-window div.users-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+main div.container div.users-window div.users-head h4 {
+  background-color: #7E878c;
+  padding: 0 8px;
+  border-radius: 50px;
+}
+
+main div.container div.users-window div.users-list p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main div.container div.chat-window {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #3f3f3f;
+}
+
+main div.container div.chat-window div.chats {
+  height: 65vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+main div.container div.chat-window div.chats div.user-join {
+  font-size: 0.9rem;
+  color: #3f3f3f;
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7px 20px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+main div.container div.chat-window div.chats div.message {
+  color: #3f3f3f;
+  background-color: #ffffff;
+  padding: 5px 15px;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border-radius: 20px 50px 50px 20px;
+}
+
+main div.container div.chat-window div.chats div.message p {
+  font-size: 16px;
+}
+
+main div.container div.chat-window div.chats div.outgoing {
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #2791cf;
+  border-radius: 50px 10px 10px 50px;
+  text-align: right;
+}
+
+main div.container div.chat-window div.user-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+main div.container div.chat-window div.user-input input {
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 50px 0 0 50px;
+}
+
+main div.container div.chat-window div.user-input button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  letter-spacing: 0.5px;
+  background-color: #2791cf;
+  border-radius: 0 50px 50px 0;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 95%;
+  }
+  main header button {
+    display: block;
+  }
+  main div.container {
+    position: relative;
+  }
+  main div.container div.users-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10 px 10px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 11;
+    -webkit-box-shadow: 0 15px 20px -20px black;
+            box-shadow: 0 15px 20px -20px black;
+    padding-bottom: 0;
+    display: none;
+  }
+  main div.container div.chat-window div.chat div.message {
+    max-width: 300px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
