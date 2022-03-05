@@ -1,0 +1,28 @@
+/* Stats Card */
+.stats {
+  grid-area: stats;
+  padding: 1rem;
+  background-color: #d1c8c8;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.stats h3 {
+  text-align: left;
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(158, 146, 146);
+}
+
+.stat {
+  margin: 0.5rem 0;
+}
+
+.stat__name {
+  font-size: 1rem;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 5px;
+}

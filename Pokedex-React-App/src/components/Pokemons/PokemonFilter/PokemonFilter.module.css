@@ -1,0 +1,30 @@
+.search__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.search__form input {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search__form button {
+  padding: 0.65rem;
+  border: 1px solid #ccc;
+}
+
+.search__form button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.search__form select {
+  width: 20%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+}

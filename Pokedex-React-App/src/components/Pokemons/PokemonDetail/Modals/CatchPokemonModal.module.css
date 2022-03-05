@@ -1,0 +1,90 @@
+.catching {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 80;
+}
+
+.confirm__modal h1 {
+  font-size: 1.5rem;
+  font-weight: 1000;
+  text-align: left;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.confirm__modal p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.confirm__modal .modal__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.modal__actions button {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-right: 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.modal__actions .danger:hover {
+  background-color: #ff7f8e;
+  transform: scale(1.02);
+}
+
+.modal__actions .success:hover {
+  background-color: #18f14b;
+  transform: scale(1.02);
+}
+
+.modal__actions .warning:hover {
+  background-color: #ffc107;
+  transform: scale(1.02);
+}
+
+.modal__actions .primary:hover {
+  background-color: #17a2b8;
+  transform: scale(1.02);
+}
+
+.modal__actions .danger {
+  background-color: #dc3545;
+}
+
+.modal__actions .primary {
+  background-color: #007bff;
+}
+
+.modal__actions .success {
+  background-color: #28a745;
+}

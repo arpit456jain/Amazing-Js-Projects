@@ -1,0 +1,35 @@
+/* Info Card */
+.info {
+  grid-area: info;
+  padding: 1rem;
+  background-color: #30a7d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+}
+
+.info h3 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.info .info-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0.5rem;
+  font-weight: 700;
+}
+
+.info ul {
+  text-transform: capitalize;
+}
+
+.info .info-label {
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,47 @@
+.modal {
+  text-align: center;
+  width: 30rem;
+}
+
+.modal h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal .modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.modal .modal__form__input input {
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 0.2rem 0.5rem;
+  width: 50%;
+  margin: 1rem;
+  border: 2px solid #000;
+}
+
+.modal .modal__form__input label {
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: 800;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon__name {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-weight: 800;
+}

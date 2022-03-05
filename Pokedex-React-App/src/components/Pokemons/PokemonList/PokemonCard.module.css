@@ -1,0 +1,55 @@
+.card {
+  display: grid;
+  max-width: 15rem;
+  grid-template:
+    "image"
+    "name"
+    "pokeid";
+  grid-gap: 1rem;
+  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.img {
+  margin: 0.5rem auto 0;
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  grid-area: image;
+}
+
+.name {
+  grid-area: name;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p {
+  text-align: center;
+}
+
+.pokeid {
+  grid-area: "pokeid";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #828282;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5rem);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

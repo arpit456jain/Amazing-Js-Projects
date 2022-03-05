@@ -1,0 +1,43 @@
+.nav {
+  background-color: #ff2929;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+
+.nav__logo {
+  font-size: 3rem;
+  color: #000;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list li {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+  transition: color 0.1s ease-in-out;
+}
+
+.nav__list li:hover {
+  color: rgb(255, 238, 2);
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.2rem 1rem;
+  }
+  .nav__logo {
+    font-size: 2rem;
+  }
+  .nav__list li {
+    font-size: 1.2rem;
+  }
+}

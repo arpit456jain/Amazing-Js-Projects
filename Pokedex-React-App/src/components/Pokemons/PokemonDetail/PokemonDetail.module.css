@@ -1,0 +1,148 @@
+/* Grid */
+.grid {
+  margin: 0 auto 5rem;
+  max-width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template:
+    "img desc" 1fr
+    "img info" 2fr
+    "stats type" auto
+    "evolutions evolutions" 3fr
+    "btn btn" 0.2fr
+    "moves moves" auto/1fr 1fr;
+  grid-gap: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Move List Button */
+.btn {
+  grid-area: btn;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #ffa0b1;
+  transition: background-color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ff7f8e;
+  transform: scale(1.02) translateY(-0.1rem);
+}
+
+/* Pokemon Title Name */
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.name span {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+/* Image */
+.img {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  grid-area: img;
+}
+
+/* Description */
+.desc {
+  grid-area: desc;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc button {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: #ffa0b1;
+  transition: background-color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.desc button:hover {
+  background-color: #ff7f8e;
+  transform: scale(1.02);
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 990px) {
+  .grid {
+    grid-template:
+      "img desc" 1fr
+      "img info" 2fr
+      "stats stats" auto
+      "type type" auto
+      "evolutions evolutions" 3fr
+      "btn btn" 0.2fr
+      "moves moves" auto/1fr 1fr;
+  }
+}
+
+@media (max-width: 808px) {
+  .grid {
+    grid-template:
+      "img img" auto
+      "desc info" auto
+      "stats stats" auto
+      "type type" auto
+      "evolutions evolutions" auto
+      "btn btn" auto
+      "moves moves" auto/1fr 1fr;
+  }
+}
+
+@media (max-width: 701px) {
+  .grid {
+    grid-template:
+      "img" auto
+      "desc" auto
+      "info" auto
+      "stats" auto
+      "type" auto
+      "evolutions" auto
+      "btn" auto
+      "moves" auto;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
