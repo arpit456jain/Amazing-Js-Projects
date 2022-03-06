@@ -170,5 +170,9 @@
   {
     "name":"Currency Convertor",
     "link":"Currency Convertor/index.html"
+  },
+  {
+    "name": "Random Shapes and Backgrounds",
+    "link": "Random Shapes and Backgrounds/index.html"
   }
 ]
