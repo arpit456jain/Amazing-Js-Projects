@@ -7,7 +7,7 @@ function myFunction() {
 let yr= new Date().getFullYear();
 
 //add you birthday date in month day year format
-const birthday = new Date(person+ "/2021")
+const birthday = new Date(person+ "/" +yr)
 console.log(birthday);
 
 
