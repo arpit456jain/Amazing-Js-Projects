@@ -7,6 +7,8 @@ body {
   margin-top:150px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size:30px;
+  color: rgb(133, 101, 214)
+  ;
 }
 
   @keyframes gradient {

@@ -4,10 +4,11 @@ function myFunction() {
   var person = prompt("Please enter your birthday date", "mm/dd");
   if (person != null) {
     const timeLeft = document.getElementById('time-left')
+let yr= new Date().getFullYear();
 
 //add you birthday date in month day year format
-const birthday = new Date(person+'/2021')
-
+const birthday = new Date(person+ "/" +yr)
+console.log(birthday);
 
 
 const second = 1000
@@ -18,6 +19,7 @@ let timerId
 
 function countDown() {
   const today = new Date()
+  
   const timeSpan = birthday - today
   //milliseconds
   console.log(timeSpan)
