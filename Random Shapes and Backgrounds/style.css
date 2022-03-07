@@ -1,0 +1,119 @@
+body{
+    background-image: url('images/gr4.png');
+    background-position: center;
+    background-blend-mode:color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 1.5;
+    margin: 0px;
+    height: 83.45vh;
+}
+
+button {
+    width: 350px;
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-image: url('images/gr2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px 2px grey;
+}
+
+#block {
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(72, 148, 235);
+    z-index: 1;
+    border-radius: 50%;
+    margin: 100px auto;
+    margin-bottom: 60px;
+    border: 3px solid rgb(7, 4, 139);
+    box-shadow: 5px 4px 30px 5px rgba(2, 1, 78, 0.74);
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+#rectangle {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: aliceblue;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 50%
+}
+
+#oval {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: aliceblue;
+    border-radius: 100px / 50px;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid aliceblue;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid aliceblue;
+}
+
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid aliceblue;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid aliceblue;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid aliceblue;
+    border-left: 100px solid transparent;
+}
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid aliceblue;
+    border-bottom: 50px solid transparent;
+}
