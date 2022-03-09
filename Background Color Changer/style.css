@@ -1,11 +1,9 @@
-body{
-    background:white;
-    padding: 50px 100px;
-    margin: 0px;
-}
+
 
 #color-icons{
     text-align: right;
+    position: relative;
+    right: 2%;
     color: rgb(2, 4, 26);
 }
 
@@ -59,6 +57,7 @@ h1{
     font-size: 4vw;
     font-family: "Bad Script", cursive;
     text-align: center;
+    
     animation :animate 3s linear infinite; 
     
 }
@@ -91,23 +90,27 @@ h1{
     100%{
         color: transparent;
         box-shadow: none;
-        filter: blur(1px) hue-rotate(00deg);
+        filter: blur(1px) hue-rotate(0deg);
     }
 }
 
 #imgstyle{
-    width: auto;
-    display: block;
-    margin: auto;
-    object-fit: cover;
-    height: 600px;
+   width: 70%;
+   align-items: center;
 }
-
+img{
+    width: 90vw;
+}
 p{
     font-size: 18px;
-    line-height: 25px;
+    position: absolute;
+   
+    margin: 2% 2% 2% 2%;
+
+    /* line-height: 25px; */
 }
 
 h2{
     text-align: center;
 }
+
