@@ -54,7 +54,7 @@
 h1{
     text-decoration: #ce177d;
     text-decoration-line: underline;
-    font-size: 4vw;
+    font-size: 40px;
     font-family: "Bad Script", cursive;
     text-align: center;
     
@@ -90,7 +90,7 @@ h1{
     100%{
         color: transparent;
         box-shadow: none;
-        filter: blur(1px) hue-rotate(0deg);
+        filter: blur(1px) hue-rotate(00deg);
     }
 }
 
@@ -114,3 +114,6 @@ h2{
     text-align: center;
 }
 
+@media(max-width:830px){
+    
+}
