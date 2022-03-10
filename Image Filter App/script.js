@@ -22,6 +22,7 @@ document.addEventListener("click", (e) => {
     } else if (e.target.classList.contains("contrast-add")) {
       Caman("#canvas", img, function () {
         this.contrast(5).render();
+
       });
     } else if (e.target.classList.contains("contrast-remove")) {
       Caman("#canvas", img, function () {
@@ -44,34 +45,42 @@ document.addEventListener("click", (e) => {
         this.vibrance(-5).render();
       });
     } else if (e.target.classList.contains("vintage-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.vintage().render();
       });
     } else if (e.target.classList.contains("lomo-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.lomo().render();
       });
     } else if (e.target.classList.contains("clarity-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.clarity().render();
       });
     } else if (e.target.classList.contains("sincity-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.sinCity().render();
       });
     } else if (e.target.classList.contains("crossprocess-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.crossProcess().render();
       });
     } else if (e.target.classList.contains("pinhole-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.pinhole().render();
       });
     } else if (e.target.classList.contains("nostalgia-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.nostalgia().render();
       });
     } else if (e.target.classList.contains("hermajesty-add")) {
+      revertFilters();
       Caman("#canvas", img, function () {
         this.herMajesty().render();
       });
@@ -80,10 +89,13 @@ document.addEventListener("click", (e) => {
 });
 
 // Revert Filters
+function revertFilters(updateContext = false) {
+   Caman("#canvas", img, function () {
+      this.revert(updateContext);
+   });
+}
 revertBtn.addEventListener("click", (e) => {
-  Caman("#canvas", img, function () {
-    this.revert();
-  });
+ revertFilters(true);
 });
 
 // Upload File
@@ -113,7 +125,7 @@ uploadFile.addEventListener("change", () => {
       img.onload = function () {
         canvas.width = img.width;
         canvas.height = img.height;
-        ctx.drawImage(img, 0, 0, img.width, img.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         canvas.removeAttribute("data-caman-id");
       };
     },

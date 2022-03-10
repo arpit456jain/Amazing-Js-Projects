@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, yellow);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   color: white;
@@ -7,6 +7,8 @@ body {
   margin-top:150px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size:30px;
+  color: rgb(133, 101, 214)
+  ;
 }
 
   @keyframes gradient {

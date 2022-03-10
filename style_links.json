@@ -12,6 +12,10 @@
     "link": "Breakout Game/index.html"
   }, 
   {
+    "name": "Ball-Game",
+    "link": "Ball-Game/index.html"
+  }, 
+  {
     "name": "Candy Crush",
     "link": "Candy Crush Clone/index.html"
   },
@@ -162,5 +166,13 @@
   {
     "name":"Ping Pong Score Keeper",
     "link":"Ping Pong Score Keeper/index.html"
+  },
+  {
+    "name":"Currency Convertor",
+    "link":"Currency Convertor/index.html"
+  },
+  {
+    "name": "Random Shapes and Backgrounds",
+    "link": "Random Shapes and Backgrounds/index.html"
   }
 ]
