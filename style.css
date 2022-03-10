@@ -10,6 +10,23 @@ body {
   padding: auto;
   background-color: rgb(19, 24, 44);
 }
+
+/* Custon scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(40, 46, 71); 
+  border-radius: 30px;
+}
 /* heading */
 h1 {
   color: #fff;
