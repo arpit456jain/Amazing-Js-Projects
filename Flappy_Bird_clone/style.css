@@ -27,7 +27,7 @@
 #wall
 {
     height: 700px;
-    width: 100px;
+    width: 125px;
     background-image: url("wall.jpg");
     position: relative;
     left: 400px;
@@ -43,12 +43,12 @@
 }
 #hole
 {
-    width: 100px;
-    height: 150px;
+    width: 125px;
+    height: 200px;
     
-    background-color: white;
+    background-image: url("hole.png");
     position: relative;
-    left: 400px;
+    left: 600px;
     top: -700px;
     animation: wall 2s infinite linear;
 
@@ -56,8 +56,8 @@
 }
 #gigachad
 {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url("download.png");
     position: absolute;
     top: 200px;
