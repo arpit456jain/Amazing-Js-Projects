@@ -12,16 +12,18 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Amatic SC', cursive;
-
+  cursor: url('assets/hammer.png'), auto; 
+  transition-delay: 2s;
 }
-
+.cursordown{
+  cursor: url('assets/hammerdown.png'), auto;
+}
 h1 {
   text-align: center;
   font-size: 10rem;
   line-height: 1;
   margin-bottom: 0;
 }
-
 .score {
   background: rgba(255,255,255,0.2);
   padding: 0 3rem;
@@ -29,14 +31,17 @@ h1 {
   border-radius: 1rem;
 }
 
+.container
+{
+  display: flex;
+}
 .game {
   width: 600px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-
-  cursor: url('assets/hammer.png'), default; 
+  
 }
 .strtbtn{
   font-size: 25px;
@@ -50,6 +55,7 @@ h1 {
        border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+
 }
 
 .strtbtn:hover {background-color: #ffa366}

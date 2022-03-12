@@ -33,7 +33,17 @@
   </div>
 <script>
  
-
+  //mouse events---> 
+  let crsr=document.querySelector('body');
+  console.log(crsr);
+  window.addEventListener("mousedown",hammerdown); //handle mouse click
+  function hammerdown() {
+    crsr.classList.add("cursordown");
+  }
+  window.addEventListener("mouseup",msup); //handle hammer up
+  function msup(){
+    crsr.classList.remove("cursordown");
+  }
   const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
@@ -45,7 +55,6 @@
     return Math.round(Math.random()*(max-min)+min);
   
   }
-  
   function randomHole(holes){
     //get a list of holes
     const idx=Math.floor(Math.random() * holes.length);
@@ -57,7 +66,7 @@
     lastHole=hole;//stores the last hole that popped up to prevent same one to pop
     return hole;
   }
-
+  
   function peep(){
     const time=randomTime(200,1000);
     const hole=randomHole(holes);
