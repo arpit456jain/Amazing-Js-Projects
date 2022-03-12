@@ -1,0 +1,558 @@
+body{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* Navbar CSS starts */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    padding: 5px 20px 5px 10px;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+.navbar-brand{
+    height:30px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #212121;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #282828;
+  }
+.logo{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+img{
+    height:100%;
+}
+.nav-links{
+    color: rgba(255, 255, 255, 0.623);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    min-width: 40vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 0;
+    gap: 20px;
+}
+.links:hover{
+    color: white;
+    cursor: pointer;
+}
+.fas,.fab,.far{
+    color: rgba(255, 255, 255, 0.623);
+}
+.fas:hover,.fab:hover,.far:hover{
+    color: white;
+}
+.active{
+    color: white;
+}
+.search{
+    display: flex;
+    gap: 5px;
+}
+.hidden{
+    display: none;
+}
+.profile{
+    height: 25px;
+}
+.searchbox{
+    background-color: black;
+    border: none;
+    width: 50vw;
+    height: 40px;
+    color: white;
+    outline: none;
+    padding-left: 30px;
+}
+.back{
+    position: absolute;
+    top: 15px;
+    margin-left: 5px;
+}
+.hidden-profile{ 
+    display: none; 
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    z-index: 2;
+    background: #282828;
+    box-shadow: 1px 1px 5px rgba(105, 72, 72, 0.2);
+    padding: 15px 4px;
+    width: 250px;
+    height: 450px;
+}
+.profile-links>p, .profile-name{
+    color: white;
+}
+.profile-upper{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+}
+.profile-link{
+    font-size: 0.8em;
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+}
+.profile-upper>img{
+    width:45px;
+    height:40px;
+}
+.profile-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-links:hover{
+    background-color: #212121;
+}
+.switch-link{
+    justify-content: space-between;
+    gap:0;
+    width: 230px;
+}
+.switch{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+.profile-middle{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
+    height: 150px;
+    line-height: 5px;
+}
+.profile-lower{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
+    height: 230px;
+    line-height: 5px;
+}
+a:hover{
+    cursor: pointer;
+}
+.profile:hover .hidden-profile{
+    display: inline;
+}
+/* Navbar CSS ends */
+
+/* Bg CSS starts */
+.bg{
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 80vh;
+    z-index: -2;
+}
+.img-overlay{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.99));
+    z-index: -1;
+}
+/* Bg CSS ends */
+
+/* Main Section CSS starts */
+main{
+    padding-left: 7vw;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+.liked{
+    color:white;
+}
+.card_container{
+    color: white;
+}
+.card_title{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.card_title p{
+    color: rgb(131, 133, 133);
+    font-size: 0.8em;
+    margin-top: 25px;
+}
+
+/* Cards Section */
+.card_collection_main{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin: 20px;
+}
+.card_collection_main::-webkit-scrollbar{
+    display: none;
+}
+.song_card >img{
+    width: 14vw;
+    height: 15vw;
+}
+.song_card_artist{
+    color:rgb(156, 155, 155)
+}
+.song_card_info{
+    font-size: 1.1vw;
+    line-height: 5px;
+}
+
+/* Artists Section */
+.artists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-left: -5vw;
+}
+.artist{
+    width: 40vw;
+}
+.artist-info{
+    color: white;
+}
+.artist-info>p{
+    color: rgb(200, 201, 201);
+    font-size: 15px;
+}
+.btn{
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+/* Collections Section */
+.card_collection{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    align-items: center;
+}
+.card_top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.card_top>p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card_top>img{
+    width: 40px;
+    height: 30px;
+}
+.dot{
+    font-size: 0.5em;
+}
+.card_artist>i{
+    font-size: 0.2em;
+}
+.up{
+    color: green;
+    font-size: 1.2em;
+}
+.down{
+    color: red;
+    font-size: 1.2em;
+}
+.card_info{
+    line-height: 8px;
+    margin-left: 2vw;
+}
+.card_top>img:hover,.card_info:hover{
+    cursor: pointer;
+}
+.hidden-hover{
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    left: 200px;
+    padding: 20px;
+    display: none;
+    gap: 10px;
+}
+.song-overlay{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: absolute;
+    width: 40px;
+    height: 30px;
+}
+.song-overlay>.fas{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.card_top:hover .song-overlay{
+    display: inline;
+}
+.card_top:hover .hidden-hover{
+    display: flex;
+}
+/* Main Section CSS ends */
+
+/* PlayerHead Section CSS starts */
+.playerhead{
+    position: fixed;
+    bottom: 0;
+    width: 98vw;
+    padding: 10px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+}
+.timeline,.controls,.liking{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.time{
+    color: white;
+}
+.timeline .fas,.controls .fas,.liking .fas,.time{
+    font-size: 1vw;
+}
+.player-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.player-links:hover{
+    background-color: #212121;
+}
+.player-hidden{
+    position: absolute;
+    bottom: 30px;
+    height: 290px;
+    width: 150px;
+    background-color: #282828;
+    padding: 10px;
+    display: none;
+}
+.player-link-info{
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.popup:hover .player-hidden{
+    display: inline;
+}
+.pausebtn{
+    display: none;
+}
+.song-info{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    gap: 40px;
+}
+.song_image{
+    width: 40px;
+    height: 40px;
+}
+.song{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    width: 80%;
+}
+.song_details{
+    color: white;
+    font-size: 12px;
+}
+.timeline>.playbtn, .timeline>.pausebtn{
+    font-size: 1.8vw;
+}
+.song_artist{
+    width:40vw;
+}
+/* PlayerHead Section CSS ends */
+
+/* Media Query */
+@media screen and (max-width: 935px) {
+    .hidden{
+        display: inline;
+    }
+    .visible{
+        display: none;
+    }
+    .card_collection{
+        display: grid;
+        grid-template-columns: 90vw;
+        align-items: center;
+        margin-left: 5vw;
+    }
+    .navbar{
+        width:99vw;
+    }
+    .btn{
+        transform: scale(0.8);
+    }
+    .playerhead{
+        width: 101vw;
+    }
+    .bg,.img-overlay{
+        width: 103vw;
+    }
+    .hidden-hover{
+        left: 200px;
+        padding: 20px;
+    }
+    .timeline .fas,.controls .fas,.liking .fas,.time{
+        font-size: 2vw;
+    }
+    .timeline>.playbtn, .timeline>.pausebtn{
+        font-size: 2.8vw;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    .artist-info>p{
+        font-size: 2vw;
+    }
+    .song-info{
+        flex-direction: column;
+    }
+    .liking{
+        position: absolute;
+        left: 250px;
+        top: 35px;
+    }
+    .song_card >img{
+        width: 19vw;
+        height: 20vw;
+    }
+    .song_card_info{
+        font-size: 1.6vw;
+        line-height: 5px;
+    }
+    .controls{
+        position: absolute;
+        top: 15px;
+        left: 220px;
+    }
+    .song{
+        position: relative;
+        right: 80px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .timeline .fas,.controls .fas,.liking .fas,.time{
+        font-size: 2.6vw;
+    }
+    .timeline>.playbtn, .timeline>.pausebtn{
+        font-size: 3.6vw;
+    }
+    .liking{
+        position: absolute;
+        left: 175px;
+        top: 35px;
+    }
+    .controls{
+        position: absolute;
+        top: 15px;
+        left: 160px;
+    }
+    .song{
+        position: relative;
+        right: 115px;
+    }
+    .song_card >img{
+        width: 22vw;
+        height: 23vw;
+    }
+    .song_card_info{
+        font-size: 1.75vw;
+        line-height: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timeline .fas,.controls .fas,.liking .fas,.time{
+        font-size: 3vw;
+    }
+    .timeline>.playbtn, .timeline>.pausebtn{
+        font-size: 3.8vw;
+    }
+    .playerhead{
+        width: 98vw;
+    }
+    .btn{
+        transform: scale(0.6);
+    }
+    .song_card >img{
+        width: 24vw;
+        height: 25vw;
+    }
+    .song_card_info{
+        font-size: 2vw;
+    }
+    .liking{
+        position: absolute;
+        left: 130px;
+        top: 35px;
+    }
+    .controls{
+        position: absolute;
+        top: 15px;
+        left: 120px;
+    }
+    .song{
+        position: relative;
+        right: 110px;
+    }
+}
