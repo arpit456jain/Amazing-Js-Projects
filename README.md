@@ -15,12 +15,24 @@
 
 
 #  Amazing-Js-Projects
-### This project is part of Girl script Summer of code 2022
-![Gssoc'2022](https://i.postimg.cc/k40ntsV4/1500x500.jpg)
+
 ### This project was a part of the following Open Source Program
   
-![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
-![HacktoberFest'21](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+<div align="center">
+  <a href="https://www.devincept.com/">
+     <img width="35%" src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif" />&nbsp
+  </a>	
+	
+  <a href="https://hacktoberfest.digitalocean.com/">
+     <img width="31%" src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png" />&nbsp
+  </a>	  
+	
+  <a href="https://gssoc.girlscript.tech/">
+     <img width="40%" src="https://raw.githubusercontent.com/GSSoC-Web/gssoc-assets/main/Logos/GS_logo_White.png" />
+  </a>	
+</div>
+
+#
 
 >### Do you want to make project on JavaScript ? if yes then :point_down:	
 
