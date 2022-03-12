@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1c14;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Original Surfer', cursive;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1{
+  color: #b89a42;
+  font-style: oblique;
+  font-stretch: extra-expanded;
+  
+}
+
+.container{
+  background: #1b1602;
+  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.5);
+  width: 400px;
+}
+
+.header{
+  padding: 1rem;
+}
+
+.pword{
+  background-color: rgb(153, 153, 99);
+  color: #544304;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  word-break: break-all;
+}
+
+.pword button{
+  background-color: rgb(201, 199, 113);
+  border: none;
+  color: rgb(69, 24, 114);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 20%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+}
+
+.pword:hover button {
+  opacity: 1;
+  transform: translate(0, 0%);
+}
+
+.pword__body{
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  color: rgb(186, 192, 97);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.generate {
+  background-color: #b3b00c;
+  border: black;
+  color: #201f1a;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-style: italic;
+  width: 100%;
+
+}
