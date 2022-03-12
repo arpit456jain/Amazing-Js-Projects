@@ -19,7 +19,7 @@ setInterval(function(){
     }
     
     
-    if(charactertop>730)
+    if(charactertop>850)
     {alert("Game Over! Score:  " + (counter-1));
     counter=0;
     gigachad.style.top = 200 + "px";
@@ -29,7 +29,7 @@ setInterval(function(){
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(750-charactertop)
     
-    if(charactertop>730||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>(holeTop+130)))))
+    if(charactertop>850||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>(holeTop+160)))))
     {alert("Game Over! Score:  " + (counter-1));
     
     counter=0;
