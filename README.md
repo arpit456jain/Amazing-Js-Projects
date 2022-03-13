@@ -20,15 +20,15 @@
   
 <div align="center">
   <a href="https://www.devincept.com/">
-     <img width="35%" src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif" />&nbsp
+     <img width="25%" src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif" />&nbsp
   </a>	
 	
   <a href="https://hacktoberfest.digitalocean.com/">
-     <img width="31%" src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png" />&nbsp
+     <img width="25%" src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png" />&nbsp
   </a>	  
 	
   <a href="https://gssoc.girlscript.tech/">
-     <img width="40%" src="https://raw.githubusercontent.com/GSSoC-Web/gssoc-assets/main/Logos/GS_logo_White.png" />
+     <img width="35%" height="35%" src="https://camo.githubusercontent.com/254612e762d0ee6a52de5d455d24b2be371f8c2f351c03d37d6c4b370b445b98/68747470733a2f2f692e706f7374696d672e63632f6b34306e747356342f31353030783530302e6a7067" />
   </a>	
 </div>
 
