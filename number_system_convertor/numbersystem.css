@@ -1,0 +1,104 @@
+html {
+    background-image: linear-gradient(to right, rgb(162, 81, 243), rgb(201, 131, 184));
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: 'Merriweather',
+        serif;
+}
+
+/* For input  */
+.inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30%;
+
+
+}
+
+input {
+    width: 15%;
+    height: 9%;
+    font-family: 'Merriweather',
+        serif;
+}
+
+.btn {
+
+    background-color: rgb(186, 140, 151);
+    padding: 0.5%;
+    font-weight: 800;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+.btn:active {
+    transform: translateY(5px);
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* To Dispplya the values */
+h3 {
+    font-family: 'Merriweather',
+        serif;
+    font-size: 330%;
+}
+
+.whole {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 250%;
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+/* For Some Hover effects on the Values box */
+.hex:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3%;
+    border-radius: 40%;
+}
+
+.binr:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3%;
+    border-radius: 40%;
+}
+
+.oct:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3%;
+    border-radius: 40%;
+}
