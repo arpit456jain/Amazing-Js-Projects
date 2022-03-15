@@ -121,8 +121,16 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 700px) {
     body {
-      background-color: red;
+      background-color: antiquewhite;
     }
   }
+
+#previous {
+  padding-right: 20px;
+}
+
+#next{
+  padding-left: 20px;
+}
