@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #064635;
+}
+
+
+
+.wrapper{
+    max-width: 485px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #fff;
+    padding: 30px 30px 50px;
+}
+.wrapper header{
+    color: #064635;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+.wrapper .captcha-area{
+    display: flex;
+    height: 65px;
+    margin: 30px 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.captcha-area .captcha-img{
+    height: 100%;
+    width: 345px;
+    user-select: none;
+    position: relative;
+    border-radius: 5px;
+    background: #000;
+}
+.captcha-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+    border-radius: 5px;
+}
+.captcha-img .captcha{
+position: absolute;
+left: 50%;
+top: 50%;
+width: 100%;
+color: #678983;
+font-size: 30px;
+font-weight: 400;
+text-align: center;
+letter-spacing: 10px;
+transform: translate(-50%,-50%);
+text-shadow: 0 0 2px #fff;
+font-family: 'Noto Serif',serif;
+}
+
+.wrapper button{
+    border: none;
+    outline: none;
+    color: #fff;
+    background:#064635 ;
+}
+.captcha-area .reload-btn{
+    width: 75px;
+    height: 100%;
+    font-size: 25px;
+}
+
+.captcha-area .reload-btn i{
+    transition: transform 0.3s ease;
+}
+
+.captcha-area .reload-btn:hover i{
+    transform: rotate(15deg);
+}
+
+.wrapper .input-area{
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+.input-area input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+.input-area input:is(:focus, :valid){
+    padding-left: 19px;
+    border: 2px solid #064635;
+}
+
+.input-area .check-btn{
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    height: 45px;
+    padding: 0 25px;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    font-size: 17px;
+    opacity: 0;
+    pointer-events: none;
+}
+.input-area input:valid + .check-btn{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .status-txt{
+    margin: 20px 0 -5px 0;
+    text-align: center;
+    font-size: 18px;
+    /* color: #ff0000; */
+}
+
