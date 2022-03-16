@@ -1,22 +1,58 @@
 [
   {
+    "name": "2048_game",
+    "link": "2048_game/index.html"
+  },
+  {
+    "name": "Age Calculator",
+    "link": "Age Calculator/index.html"
+  },
+  {
     "name": "Analog clock",
     "link": "Analog clock/index.html"
+  },
+  {
+    "name": "Anime random profle  pics",
+    "link": "Anime random profle  pics/index.html"
+  },
+  {
+    "name": "Background Color Changer",
+    "link": "Background Color Changer/index.html"
+  },
+  {
+    "name": "Ball-Game",
+    "link": "Ball-Game/index.html"
+  },
+  {
+    "name": "BaseX_Calculator",
+    "link": "BaseX_Calculator/index.html"
   },
   {
     "name": "Birthday Countdown",
     "link": "Birthday Countdown/index.html"
   },
   {
+    "name": "Blury Loading Page",
+    "link": "Blury Loading Page/index.html"
+  }, 
+  {
+    "name": "BMI-Calculator",
+    "link": "BMI-Calculator/index.html"
+  }, 
+  {
     "name": "Breakout Game",
     "link": "Breakout Game/index.html"
   }, 
   {
-    "name": "Ball-Game",
-    "link": "Ball-Game/index.html"
+    "name": "Bubble Burst Game",
+    "link": "Bubble Burst Game/index.html"
   }, 
   {
-    "name": "Candy Crush",
+    "name": "Calculators",
+    "link": "Calculators"
+  },
+  {
+    "name": "Candy Crush Clone",
     "link": "Candy Crush Clone/index.html"
   },
   {
@@ -28,12 +64,64 @@
     "link": "Clock And Alarm/index.html"
   },
   {
+    "name": "Color Checker",
+    "link": "Clock And Alarm/index.html"
+  },
+  {
+    "name": "Color_Code_Converter",
+    "link": "Color_Code_Converter/index.html"
+  },
+  {
+    "name": "Color-change",
+    "link": "Color-change/index.html"
+  },
+  {
+    "name": "Color-guessing game",
+    "link": "Color-guessing game/index.html"
+  },
+  {
     "name": "Connect Four",
     "link": "Connect Four/index.html"
   },
   {
+    "name": "Convert Fonts",
+    "link": "Convert Fonts/index.html"
+  },
+  {
+    "name": "Counter",
+    "link": "Counter/index.html"
+  },
+  {
+    "name": "Currency Convertor",
+    "link": "Currency Convertor/index.html"
+  },
+  {
+    "name": "Custom Range Slider",
+    "link": "Custom Range Slider/index.html"
+  },
+  {
+    "name": "Dice Challenge",
+    "link": "Dice Challenge/index.html"
+  },
+  {
+    "name": "Dice Game",
+    "link": "Dice Game/dicee.html"
+  },
+  {
+    "name": "DIce Game Updated",
+    "link": "DIce Game Updated/dicee.html"
+  },
+  {
     "name": "Dictionary App",
     "link": "Dictionary App/index.html"
+  },
+  {
+    "name": "Digital-clock",
+    "link": "Digital-clock/clock.html"
+  },
+  {
+    "name": "Double Vertical Slider",
+    "link": "Double Vertical Slider/index.html"
   },
   {
     "name": "Drag N Drop",
@@ -44,12 +132,72 @@
     "link": "Drum Kit/index.html"
   },
   {
+    "name": "Expense-Tracker",
+    "link": "Expense-Tracker/index.html"
+  },
+  {
+    "name": "Flipbook",
+    "link": "Flipbook/index.html"
+  },
+  {
+    "name": "Fresh Quotes",
+    "link": "Fresh Quotes/index.html"
+  },
+  {
+    "name": "Fruit Slice Game",
+    "link": "Fruit Slice Game/index.html"
+  },
+  {
+    "name": "Github Profiles",
+    "link": "Github Profiles/index.html"
+  },
+  {
+    "name": "Gradient_Background_Generator",
+    "link": "Gradient_Background_Generator/index.html"
+  },
+  {
+    "name": "Guess the Number",
+    "link": "Guess the Number/game.html"
+  },
+  {
+    "name": "Happy New Year CountDown Timer",
+    "link": "Happy New Year CountDown Timer/index.html"
+  },
+  {
+    "name": "Image Filter App",
+    "link": "Image Filter App/index.html"
+  },
+  {
+    "name": "Image-Resizer",
+    "link": "Image-Resizer/index.html"
+  },
+  {
+    "name": "Guess-The-Number",
+    "link": "Guess-The-Number/index.html"
+  },
+  {
     "name": "Issue Tracker",
     "link": "Issue Tracker/index.html"
   },
   {
+    "name": "Javascript-sudoku-main",
+    "link": "Javascript-sudoku-main/index.html"
+  },
+  {
+    "name": "Jokes Chrome Extension",
+    "link": "Jokes Chrome Extension/popup.html"
+  },
+  {
     "name": "Keyboard",
     "link": "Keyboard/index.html"
+  },
+  {
+    "name": "Leap Year",
+    "link": "Leap Year/index.html"
+  },
+  {
+    "name": "Lorem Ipsum Generator",
+    "link": "Lorem Ipsum Generator/index.html"
   },
   {
     "name": "Magic Color",
@@ -60,8 +208,40 @@
     "link": "Magic Image/index.html"
   },
   {
+    "name": "Meme Generator",
+    "link": "Meme Generator/index.html"
+  },
+  {
     "name": "Memory Game",
     "link": "Memory Game/index.html"
+  },
+  {
+    "name": "Minify CSS",
+    "link": "Minify CSS/index.html"
+  },
+  {
+    "name": "Movie-Search-App",
+    "link": "Movie-Search-App/index.html"
+  },
+  {
+    "name": "Music",
+    "link": "Music/index.html"
+  },
+  {
+    "name": "Music Player",
+    "link": "Music Player/index.html"
+  },
+  {
+    "name": "Netflix Clone",
+    "link": "Netflix Clone/index.html"
+  },
+  {
+    "name": "Note Taking App",
+    "link": "Note Taking App/index.html"
+  },
+  {
+    "name": "Notes Maker",
+    "link": "Notes Maker/index.html"
   },
   {
     "name": "Palindrome Check",
@@ -72,6 +252,66 @@
     "link": "Password Generator/index.html"
   },
   {
+    "name": "Photo-Editor",
+    "link": "Photo-Editor/index.html"
+  },
+  {
+    "name": "picture-in-picture",
+    "link": "picture-in-picture/index.html"
+  },
+  {
+    "name": "PiG-Game",
+    "link": "PiG-Game/index.html"
+  },
+  {
+    "name": "PIng _Pong _Ball _Score_Keeper",
+    "link": "PIng _Pong _Ball _Score_Keeper/index.html"
+  },
+  {
+    "name": "Ping Pong Score Keeper",
+    "link": "Ping Pong Score Keeper/index.html"
+  },
+  {
+    "name": "Pokemon-Generator",
+    "link": "Pokemon-Generator/index.html"
+  },
+  {
+    "name": "Pomodoro-Timer",
+    "link": "Pomodoro-Timer/index.html"
+  },
+  {
+    "name": "Pong game",
+    "link": "Pong game/index.html"
+  },
+  {
+    "name": "Prime Factor Calculator",
+    "link": "Prime Factor Calculator/index.html"
+  },
+  {
+    "name": "Quote Generator",
+    "link": "Quote Generator/index.html"
+  },
+  {
+    "name": "Quote-generator",
+    "link": "Quote-generator/index.html"
+  },
+  {
+    "name": "Random Shapes and Backgrounds",
+    "link": "Random Shapes and Backgrounds/index.html"
+  },
+  {
+    "name": "Random-joke-generator",
+    "link": "Random-joke-generator/index.html"
+  },
+  {
+    "name": "RandomColorGenerator",
+    "link": "RandomColorGenerator/index.html"
+  },
+  {
+    "name": "Rock-Paper-Scissors",
+    "link": "Rock-Paper-Scissors/index.html"
+  },
+  {
     "name": "Rocket Web Animation",
     "link": "Rocket Web Animation/index.html"
   },
@@ -80,103 +320,91 @@
     "link": "Simon Game/index.html"
   },
   {
-    "name": "Ecommerce Sneaker Site",
+    "name": "Snake Game",
+    "link": "Snake Game/index.html"
+  },
+  {
+    "name": "Sneaker Site",
     "link": "Sneaker Site/index.html"
+  },
+  {
+    "name": "Spin-and-Win-Game",
+    "link": "Spin-and-Win-Game/index.html"
+  },
+  {
+    "name": "Stick hero game by yash-25log",
+    "link": "Stick hero game by yash-25log/index.html"
   },
   {
     "name": "StopWatch",
     "link": "StopWatch/index.html"
   },
   {
-    "name": "Tic-Tac-Toe with computer",
-    "link": "Tic-Tac-Toe with computer/index.html"
+    "name": "Stopwatch (minimalist)",
+    "link": "Stopwatch (minimalist)/index.html"
   },
   {
-    "name": "Tic Tac Toe",
-    "link": "Tic Tac Toe/index.html"
-  },
-  {
-    "name": "To-Do List",
-    "link": "To-Do List/index.html"
-  },
-  {
-    "name": "Weather-App",
-    "link": "Weather-App/index.html"
-  },
-  {
-    "name": "Movie-Search-App",
-    "link": "Movie-Search-App/index.html"
-  },
-  {
-    "name": "Custom Range Slider",
-    "link": "Custom Range Slider/index.html"
-  },
-  {
-    "name": "Rock-Paper-Scissors",
-    "link": "Rock-Paper-Scissors/index.html"
-  },
-  {
-    "name": "Tip Calculator",
-    "link": "Tip Calculator/index.html"
-  },
-  {
-    "name": "Snake Game",
-    "link": "Snake Game/index.html"
-  },
-  {
-    "name": "Image Filter App",
-    "link": "Image Filter App/index.html"
-  },
-  {
-    "name": "Double Vertical Slider",
-    "link": "Double Vertical Slider/index.html"
-  },
-  {
-    "name": "Minify CSS",
-    "link": "Minify CSS/index.html"
-  },
-  {
-    "name": "Netflix Clone",
-    "link": "Netflix Clone/index.html"
-  },
-  {
-    "name": "Quote Generator",
-    "link": "Quote Generator/index.html"
-  },
-  {
-    "name": "Github Profiles",
-    "link": "Github Profiles/index.html"
-  },
-  {
-    "name": "Bubble Burst Game",
-    "link": "Bubble-Burst-Game/index.html"
+    "name": "String Generator",
+    "link": "String Generator/index.html"
   },
   {
     "name": "Superhero Website",
     "link": "Superhero Website/index.html"
   },
   {
-    "name": "Lorem Ipsum Generator",
-    "link": "Lorem Ipsum/index.html"
+    "name": "Temp Convert",
+    "link": "Temp Convert/index.html"
   },
   {
-    "name":"Dice Challenge",
-    "link":"Dice Challenge/index.html"
+    "name": "Terminal Themed Portfolio",
+    "link": "Terminal Themed Portfolio/index.html"
   },
   {
-    "name":"Ping Pong Score Keeper",
-    "link":"Ping Pong Score Keeper/index.html"
+    "name": "Text_to_speech_converter",
+    "link": "Text_to_speech_converter/index.html"
   },
   {
-    "name": "Pokemon Generator",
-    "link": "Pokemon-Generator/index.html"
+    "name": "Tic Tac Toe",
+    "link": "Tic Tac Toe/index.html"
   },
   {
-    "name":"Currency Convertor",
-    "link":"Currency Convertor/index.html"
+    "name": "Tic-Tac-Toe with computer",
+    "link": "Tic-Tac-Toe with computer/index.html"
   },
   {
-    "name": "Random Shapes and Backgrounds",
-    "link": "Random Shapes and Backgrounds/index.html"
+    "name": "Tip Calculator",
+    "link": "Tip Calculator/index.html"
+  },
+  {
+    "name": "To-Do List",
+    "link": "To-Do List/index.html"
+  },
+  {
+    "name": "Transpose-3X3-Matrix Calculator",
+    "link": "Transpose-3X3-Matrix Calculator/index.html"
+  },
+  {
+    "name": "Tying Speed Game",
+    "link": "Tying Speed Game/index.html"
+  },
+  {
+    "name": "Weather-App",
+    "link": "Weather-App/index.html"
+  },
+  {
+    "name": "Web dev proj3 clock",
+    "link": "Web dev proj3 clock/index.html"
+  },
+  {
+    "name": "Weight Converter",
+    "link": "Weight Converter/index.html"
+  },
+  {
+    "name": "Whac a mole",
+    "link": "Whac a mole/index.html"
+  },
+  {
+    "name": "Youtube-Music-clone",
+    "link": "Youtube-Music-clone/index.html"
   }
 ]
