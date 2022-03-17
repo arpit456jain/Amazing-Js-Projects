@@ -7,13 +7,17 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+.btns{
+  position: absolute;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
 body {
   padding: 0;
   margin: 0;
   font-family: 'Amatic SC', cursive;
-  cursor: url('assets/hammer.png'), auto; 
-  transition-delay: 2s;
+  cursor: url('assets/hammer.png'), auto;
 }
 .cursordown{
   cursor: url('assets/hammerdown.png'), auto;
@@ -31,10 +35,6 @@ h1 {
   border-radius: 1rem;
 }
 
-.container
-{
-  display: flex;
-}
 .game {
   width: 600px;
   height: 400px;

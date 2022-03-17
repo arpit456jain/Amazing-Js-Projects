@@ -9,8 +9,7 @@
 <body>
 
   <h1>Whack-a-mole! <span class="score">0</span></h1>
-  <button class="strtbtn" onClick="startgame()">Start!</button>
-  <button class="stopbtn" onclick="stopgame()">Stop!</button>
+  
   <div class="game">
     <div class="hole hole1">
       <div class="mole"></div>
@@ -31,30 +30,39 @@
       <div class="mole"></div>
     </div>
   </div>
+  <div class="butns">
+    <button class="strtbtn" onClick="startgame()">Start!</button>
+  <button class="stopbtn" onclick="stopgame()">Stop!</button>
+  </div>
 <script>
- 
   //mouse events---> 
   let crsr=document.querySelector('body');
-  console.log(crsr);
+
   window.addEventListener("mousedown",hammerdown); //handle mouse click
   function hammerdown() {
     crsr.classList.add("cursordown");
   }
+
   window.addEventListener("mouseup",msup); //handle hammer up
   function msup(){
     crsr.classList.remove("cursordown");
   }
+
+  //gameplay --->
   const holes = document.querySelectorAll('.hole');
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
   let lastHole;
   let timeUp=false;
   let score=0;
+  let start=0;
   var gametime=0;
+
   function randomTime(min,max){
     return Math.round(Math.random()*(max-min)+min);
   
   }
+  
   function randomHole(holes){
     //get a list of holes
     const idx=Math.floor(Math.random() * holes.length);
@@ -80,12 +88,20 @@
   }
 
   function startgame(){
+    if(start==0)
+    {
     scoreBoard.textContent=0;
     timeup=false;
     score=0;
+    start=1;
     peep();
     gametime=setTimeout(()=>timeup=true,2000);
-    //console.log(gametime);
+  }
+  else
+  {
+    //if user clicks start more than one time
+    console.log("game already running");
+  }
   }
 
   function bonk(e){
@@ -96,7 +112,7 @@
   }
 
   function stopgame(){
-   scoreBoard.textContent=0;
+    start=0;
    timeUp=true;
   }
 
