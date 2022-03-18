@@ -113,6 +113,7 @@ body .pr {
 
 @media screen and (max-width: 1000px) {
   html {
+    overflow-x: hidden;
     font-size: 15px;
   }
 }
@@ -273,7 +274,7 @@ body .pr {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   html {
     font-size: 12px;
   }
@@ -328,7 +329,7 @@ body .pr {
     width: 90%;
   }
   section.sec-2 {
-    margin: 4rem 0;
+    margin: 5rem 0;
   }
   section.sec-2 .txt {
     width: 80%;

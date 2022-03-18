@@ -1,5 +1,6 @@
 @media screen and (max-width: 1000px) {
   html {
+    overflow-x:hidden;
     font-size: 15px;
   }
 }
@@ -139,9 +140,10 @@
     }
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   html {
     font-size: 12px;
+   
   }
   h1,
   h2,
@@ -185,7 +187,7 @@
   }
 
   section.sec-2 {
-    margin: 4rem 0;
+    margin: 5rem 0;
 
     & .txt {
       width: 80%;
