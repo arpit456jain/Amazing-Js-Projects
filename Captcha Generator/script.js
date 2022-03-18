@@ -1,8 +1,9 @@
-const captcha = document.querySelector(".captcha"),
-    reloadBtn = document.querySelector(".reload-btn"),
-    inputField = document.querySelector(".input-area input"),
-    checkBtn = document.querySelector(".check-btn"),
-    statusTxt = document.querySelector(".status-txt");
+const captcha = document.querySelector(".captcha-txt"),
+    refresh = document.querySelector(".refresh"),
+    inputField = document.querySelector(".captcha-input input"),
+    check = document.querySelector(".check"),
+    result = document.querySelector(".result h2"),
+    card = document.querySelector(".card2");
 
 let allCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
     'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd',
@@ -13,31 +14,37 @@ let allCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 function getCaptcha() {
     for (let i = 0; i < 6; i++) {
         let randomChar = allCharacters[Math.floor(Math.random() * allCharacters.length)];
-        captcha.innerText += ` ${randomChar}`;
+        captcha.innerText += `${randomChar}`;
     }
 }
+
 getCaptcha();
-reloadBtn.addEventListener("click", () => {
+refresh.addEventListener("click", () => {
     captcha.innerText = " ";
+    inputField.value = "";
+    card.style.background = "#05595B";
+    result.innerText = "";
     getCaptcha();
 })
 
-checkBtn.addEventListener("click", e => {
+check.addEventListener("click", e => {
     e.preventDefault();
-    statusTxt.style.display = "block";
-    let inputVal = inputField.value.split('').join(' ');
+    result.style.display = "block";
+    let inputVal = inputField.value;
     if (inputVal == captcha.innerText) {
-        statusTxt.style.color = "#064635";
-        statusTxt.innerText = "You are not a Robot";
+        card.style.background = "green"
+
+        result.innerText = "Captcha verified";
         setTimeout(() => {
-            // statusTxt.style.display = "";
+
             inputField.value = "";
             captcha.innerText = "";
-            statusTxt.innerText = "";
+            result.innerText = "";
             getCaptcha();
         }, 4000)
     } else {
-        statusTxt.style.color = "#ff0000"
-        statusTxt.innerText = "Captha not matched. Please try again";
+        card.style.background = "#DA1212";
+
+        result.innerText = " Please try again";
     }
 });
