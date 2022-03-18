@@ -34,7 +34,7 @@ input {
 
 .btn {
     background-color: rgb(186, 140, 151);
-    padding: 0.8%;
+    padding: 0.3rem;
     font-weight: 800;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -85,25 +85,13 @@ p {
 }
 
 /* For Some Hover effects on the Values box */
-.hex:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 3%;
-    border-radius: 40%;
-}
-
-.binr:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 3%;
-    border-radius: 40%;
-}
-
+.hex:hover,
+.binr:hover,
 .oct:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 3%;
-    border-radius: 40%;
+    padding: 3rem;
+    border-radius: 6rem;
 }
 
 /*******Responsivness*******/
@@ -166,5 +154,9 @@ p {
 
     .whole {
         gap: 10%;
+    }
+
+    .btn {
+        padding: 0.2rem;
     }
 }
