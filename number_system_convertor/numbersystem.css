@@ -27,7 +27,7 @@ h1 {
 
 input {
     width: 15%;
-    /* height: 9%; */
+    height: 19px;
     font-family: 'Merriweather',
         serif;
 }
@@ -41,6 +41,7 @@ input {
     font-family: 'Josefin Sans',
         sans-serif;
     cursor: pointer;
+    margin-top: 2%;
 }
 
 .btn:active {
@@ -55,7 +56,7 @@ input {
 h3 {
     font-family: 'Merriweather',
         serif;
-    font-size: 330%;
+    font-size: 3rem;
 }
 
 .whole {
@@ -64,8 +65,8 @@ h3 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
+    gap: 20%;
 }
 
 .values {
@@ -137,6 +138,10 @@ p {
     input {
         width: 50%
     }
+
+    .whole {
+        gap: 10%;
+    }
 }
 
 @media (max-width:300px) {
@@ -157,5 +162,9 @@ p {
 
     .btn {
         padding: 0.2%;
+    }
+
+    .whole {
+        gap: 10%;
     }
 }
