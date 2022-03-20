@@ -32,7 +32,7 @@ check.addEventListener("click", e => {
     result.style.display = "block";
     let inputVal = inputField.value;
     if (inputVal == captcha.innerText) {
-        card.style.background = "green"
+        card.style.background = "green";
 
         result.innerText = "Captcha verified";
         setTimeout(() => {
@@ -40,6 +40,7 @@ check.addEventListener("click", e => {
             inputField.value = "";
             captcha.innerText = "";
             result.innerText = "";
+            card.style.background = "#05595B";
             getCaptcha();
         }, 4000)
     } else {
