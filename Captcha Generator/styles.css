@@ -120,3 +120,14 @@ label{
 
     
 }
+@media screen and (max-width:417px) {
+   
+    
+    .captcha-img .captcha-txt{
+        top:17%;
+       left:9%;
+        font-size: 20px;
+    }
+    
+        
+    }
