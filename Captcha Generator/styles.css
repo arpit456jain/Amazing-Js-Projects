@@ -131,3 +131,9 @@ label{
     
         
     }
+
+ @media screen and (max-width:436px){
+     .captcha-input input{
+         margin: 0 auto;
+     }
+ } 
