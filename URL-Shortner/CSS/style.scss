@@ -1,0 +1,348 @@
+@import "_basic";
+@import "_mediaq";
+
+.flex {
+  @include flex(row, center, center);
+}
+.h-flex {
+  @include flex(row, center, space-between);
+}
+.e-flex {
+  @include flex(row, baseline, space-between);
+}
+
+
+header{
+  margin-right: 4rem;
+  margin-left: 4rem;
+  width: 90%;
+  height: 10vh;
+}
+.site-logo{
+  width: 10%;
+  display: inline-block;
+ 
+}
+.cover{
+  width: 90%;
+}
+.main-nav{
+  margin-left: 3em;
+  & li{
+    margin-right: 2rem;
+    &:nth-child(3){
+      margin-right:0rem;
+    }
+    & a{
+      color: $grey;
+      transition: border-bottom 0.3s ease-in-out;
+      &:hover{
+        color: $heading;
+        border-bottom: 1px solid $heading;
+       
+      }
+    }
+  }
+}
+
+.sec-btn{
+  background: none;
+  outline: none;
+  border: none;
+  font-weight: bold;
+ margin-right: 1em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover{
+   border: 1px solid $cyan;
+ 
+  
+  }
+}
+
+.main-heading {
+  max-width: 35rem;
+  max-height: 300px;
+  line-height: 1.2;
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+section.hero {
+  flex-wrap: wrap;
+  padding-bottom: 12rem;
+
+  & .left {
+    flex: 60%;
+
+    & .text p {
+      max-width: 25rem;
+    }
+  }
+  & .right {
+    flex: 40%;
+
+    & img {
+      width: 130%;
+      margin-right: 3em;
+    }
+  }
+}
+
+
+.shortenlink {
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $d-voilet;
+  position: relative;
+  top: -60px;
+  margin: 0 auto;
+
+  border-radius: 10px;
+  width: 80%;
+  height: 140px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 1rem 2rem;
+  & input {
+    position: relative;
+    width: 75%;
+    height: 40%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    
+    
+    &:focus {
+      outline: none;
+      border: 2px solid $cyan;
+    }
+  }
+
+  & .invalid-input{
+    border: 2px solid hsl(0, 87%, 67%) ;
+    &::placeholder{
+      color:hsl(0, 87%, 67%)  ;
+    }
+  }
+  
+  & .shorten {
+    
+    width: 25%;
+    border-radius: 5px;
+    width: 8rem;
+    height: 40%;
+   
+  }
+  & .valid-link{
+    color: hsl(0, 87%, 67%);
+    font-size: 1rem;
+    position: absolute;
+    top: 95px;
+    
+    margin-bottom: 2rem;
+   visibility: hidden;
+   
+  }
+  & .invalid{
+    
+    visibility: visible;
+  }
+}
+
+.dot {
+  margin:20px auto;
+  color:$cyan;
+  width:90px;
+  height:45px;
+  --d:radial-gradient(farthest-side,currentColor 90%,#0000);
+  background:var(--d),var(--d),var(--d),var(--d);
+  background-size:20px 20px;
+  background-repeat:no-repeat;
+  animation: m 1s infinite;
+  position: relative;
+  top: -5%;
+  display: none;
+}
+
+@keyframes m {
+  0%  {background-position:calc(0*100%/3) 50%, calc(1*100%/3) 50% , calc(2*100%/3) 50%, calc(3*100%/3) 50% }
+  33% {background-position:calc(0*100%/3) 0  , calc(1*100%/3) 100%, calc(2*100%/3) 0  , calc(3*100%/3) 100%}
+  66% {background-position:calc(1*100%/3) 0  , calc(0*100%/3) 100%, calc(3*100%/3) 0  , calc(2*100%/3) 100%}
+  100%{background-position:calc(1*100%/3) 50%, calc(0*100%/3) 50% , calc(3*100%/3) 50%, calc(2*100%/3) 50% }
+}
+.shorted-links{
+  position: relative;
+  height: auto;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  
+
+  & .short-block{
+    background-color: white;
+    margin: 0.5rem auto;
+    height:auto;
+    max-height: fit-content;
+    width: 80%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  & .query{
+    width: 40%;
+    font-size: 12px;
+    word-wrap: break-word;
+    flex: 50%;
+   
+  }
+  & .link{
+    color: $cyan;
+    margin-left: 2.5rem;
+    flex: 30%;
+    text-decoration: underline;
+
+  }
+  
+  & .copy{
+     width:6rem ;
+     flex: 10%;
+  }
+}
+.bg {
+  background-color: $grey-bg;
+  width: 100vw;
+  height: 100%;
+}
+.sec-2 {
+  padding-top: 2rem;
+  width: 100%;
+
+  & .txt {
+    text-align: center;
+    width:40%;
+    margin: 2rem auto;
+  }
+  & .stats {
+    flex-wrap: wrap;
+   
+  }
+  & .card {
+    flex: 30%;
+    height: auto;
+    border-radius: 5px;
+    text-align: left;
+    padding: 3.5rem 0.5rem 1.5rem 1rem;
+    position: relative;
+    background-color: white;
+    margin-right: 1.5rem;
+    line-height: 1.6;
+    & .line{
+      border: 5px solid $cyan;
+      width: 150%;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+    }
+    & h3{
+      margin-bottom: 1rem;
+    }
+
+   
+  }
+
+  & .card-1::after {
+    border: none;
+  }
+  & .card-2 {
+    margin-top: 3em;
+  }
+  & .card-3 {
+    margin-top: 6em;
+  }
+
+  & :last-child() {
+    margin-right: 0;
+  }
+  & .icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: $d-voilet;
+    position: absolute;
+    top: -12%;
+    left: 10%;
+    & img {
+      width: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+}
+
+.sec-3 {
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $d-voilet;
+  height: 12em;
+  @include flex(column, center, center);
+  & button {
+    width: 140px;
+  }
+  & h2 {
+    color: white;
+  }
+}
+
+// footer
+footer {
+  background-color: $vdvoilet;
+  padding: 3rem 0;
+  & .ft-container{
+    flex-wrap: wrap;
+    & .links{
+      & nav{
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  & li.heading {
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  & img.white {
+    filter: invert(1) brightness(300%);
+  }
+  & ul {
+    margin-right: 3rem;
+    & li {
+      margin-bottom: 0.4rem;
+    }
+    
+  }
+}
+.social-icons {
+   width: 2.5rem;
+  padding-right: 0.8rem;
+
+  &:hover {
+    filter: invert(0) sepia(0.5) saturate(35) hue-rotate(120.4deg)
+      brightness(1.2);
+  }
+}
