@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <div class="clock">
-
+    <div class="clock" id="hovers">
         <div class="hour">
             <div class="hr" id="hr">
                 
@@ -32,6 +31,12 @@
             </div>
         </div>
 
+    </div>
+    <div class="alarm">
+        <h1 id="alarm_heading">Alarm</h1>
+        <input type="time" id="set_time" name="timeField" value="00:00" />
+        <button id="alarm_button" onclick="setAlarm()">Set Alarm</button>
+        <button id="delete_button" onclick="delAlarm()">Delete Alarm</button>
     </div>
     <div class="toggleClass" onclick="toggleClass()"></div>
     <script src="main.js"></script>

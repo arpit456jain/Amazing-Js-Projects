@@ -15,12 +15,35 @@
 
 
 #  Amazing-Js-Projects
-### This project is part of Hacktoberfest'21
-![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
-### This project was a part of the following Open Source Program
-  
-  ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
 
+### This project was a part of the following Open Source Program
+
+<div align="center">
+  <a href="https://gssoc.girlscript.tech/">
+     <img width="65%" src="https://camo.githubusercontent.com/254612e762d0ee6a52de5d455d24b2be371f8c2f351c03d37d6c4b370b445b98/68747470733a2f2f692e706f7374696d672e63632f6b34306e747356342f31353030783530302e6a7067" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+  <a href="https://www.devincept.com/">
+     <img width="55%" src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif" />&nbsp
+  </a>
+</div>	
+
+<br />
+
+<div align="center">
+  <a href="https://hacktoberfest.digitalocean.com/">
+     <img width="55%" src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png" />&nbsp
+  </a>	  
+</div>
+
+	
+
+
+#
 
 >### Do you want to make project on JavaScript ? if yes then :point_down:	
 
@@ -166,6 +189,18 @@ Now submit the pull request.
   <tbody><tr>
      <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br></td> </a></td>
      <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
+
+</tbody></table>
+
+
+ <h1 align=center> Project Mentors 👩‍🏫 </h1>
+<p align="center">
+<table>
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/astha2412"><img alt="" src="https://avatars.githubusercontent.com/u/87020129?v=4" width="100px;"><br><sub><b>Kumari Astha Rani </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
+     <td align="center"><a href="https://github.com/DEEPALI-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724041?v=4" width="100px;"><br><sub><b> DEEPALI-SUK</b></sub></a><br></td></a></td>
+     <td align="center"><a href="https://github.com/DEEPIKA-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724039?v=4" width="100px;"><br><sub><b> DEEPIKA-SUK</b></sub></a><br></td></a></td>
 
 </tbody></table>
 

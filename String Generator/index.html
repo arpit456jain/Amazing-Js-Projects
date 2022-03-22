@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random String Generator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="header">Generate Your String</h1>
+    <div id="container">
+        <form id="form">
+            <!-- label and input for size of the string -->
+            <div class="box">
+                <label for="length">Enter the length of String</label>
+                <input type="text" id="length">
+            </div>
+            <!-- type of the string to be generated -->
+            <div class="box">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="RandomString">Random String</option>
+                    <option value="AlphaNumericString">AlphaNumeric String</option>
+                </select>
+            </div>
+
+            <!-- Submit button of form  -->
+            <input type="submit" class="button-33"  id="submitValue"  value="String">
+        </form>
+    </div>
+    <div class="generatedString">
+     Here you will get your generated string !
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

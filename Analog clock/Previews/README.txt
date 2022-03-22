@@ -1,0 +1,1 @@
+** This folder has previews of the modified page with screenshots of different states of the clock **

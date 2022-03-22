@@ -1,0 +1,104 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(18, 71, 96, 0.88),
+    rgba(194, 30, 30, 0.8),
+    rgba(97, 51, 193, 0.8),
+    rgba(70, 11, 7, 0.88)
+  );
+}
+.meme-header {
+  text-align: center;
+  padding: 30px 0px;
+}
+.meme-header h1 {
+  font-size: 50px;
+}
+.meme-section {
+  background: #f0f0f0;
+  padding: 20px;
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  border-radius: 10px;
+}
+.meme-generator {
+  width: 400px;
+  font-family: sans-serif;
+}
+
+.meme-generator label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.meme-generator input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#meme {
+  width: 100%;
+}
+.meme-input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-left: 50px;
+}
+.text-section {
+  margin-top: 70px;
+}
+input[type="file"] {
+  display: none;
+}
+.input-file-section label {
+  background: #5969e2;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button_section {
+  display: none;
+}
+.button_section p {
+  margin-top: 10px;
+}
+#export {
+  margin-top: 20px;
+  border: 1px solid #5969e2;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+#export:hover {
+  background: #5969e2;
+  color: #fff;
+}
+.top-text {
+  margin-bottom: 20px;
+}
+#topTextInput,
+#bottomTextInput {
+  padding: 0px 50px;
+  min-height: 40px;
+}
+
+/* Coded with ❤ By Priyanshu Mohanty */

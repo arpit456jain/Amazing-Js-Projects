@@ -47,8 +47,10 @@ body.light .clock {
                 inset 1em -1em 1em rgba(0, 0, 0, 0.1);
 }
 
+
+
 .clock :hover {
-    /* yet to be completed; when hovered, diplay complete information about time, `new Date().toLocaleString();` */
+    /* added hover functionlity in main.js file */
     cursor: pointer;
 
 }
@@ -183,4 +185,44 @@ body.light .toggleClass {
 body.light .toggleClass:before {
     content: 'Dark Mode';
     white-space: nowrap;
+}
+
+
+#set_time {
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+#alarm_heading {
+    position: absolute;
+    color: green;
+    bottom: 170px;
+    right: 150px;
+}
+
+#alarm_button {
+    position: absolute;
+    bottom: 98px;
+    right: 100px;
+    background-color: green;
+    border: green;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#delete_button {
+    position: absolute;
+    bottom: 50px;
+    right: 130px;
+    background-color: red;
+    border: red;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
