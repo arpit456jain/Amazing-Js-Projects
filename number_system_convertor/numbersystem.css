@@ -1,0 +1,173 @@
+html {
+    background-image: linear-gradient(to right, rgb(162, 81, 243), rgb(201, 131, 184));
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.whole {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Merriweather',
+        serif;
+}
+
+/* * {
+    border: 1px red solid;
+} */
+
+/* For input  */
+.inp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    font-size: 4rem;
+    /* height: 30%; */
+}
+
+input {
+    width: 15%;
+    height: 30px;
+    font-family: 'Merriweather',
+        serif;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: rgb(186, 140, 151);
+    padding: 0.3rem;
+    font-weight: 800;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Josefin Sans',
+        sans-serif;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.btn:active {
+    transform: translateY(5px);
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* To Display the values */
+h3 {
+    font-family: 'Merriweather',
+        serif;
+    font-size: 3rem;
+}
+
+
+.values {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 70%; */
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+/* For Some Hover effects on the Values box */
+.hex:hover,
+.binr:hover,
+.oct:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3rem;
+    border-radius: 6rem;
+}
+
+/*******Responsivness*******/
+@media (max-width:600px) {
+    .values {
+        flex-direction: column;
+    }
+
+    .b3,
+    .o3,
+    .h3 {
+        font-size: 3.5rem;
+    }
+
+    input {
+        width: 30%
+    }
+}
+
+@media (max-width:400px) {
+
+    .b3,
+    .o3,
+    .h3 {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    input {
+        width: 50%
+    }
+
+    .whole {
+        gap: 10%;
+    }
+}
+
+@media (max-width:300px) {
+
+    .b3,
+    .o3,
+    .h3 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.2%;
+    }
+
+    .whole {
+        gap: 10%;
+    }
+
+    .btn {
+        padding: 0.2rem;
+    }
+}

@@ -372,6 +372,15 @@
     "link": "Tic-Tac-Toe with computer/index.html"
   },
   {
+
+    "name": "Random Shapes and Backgrounds",
+    "link": "Random Shapes and Backgrounds/index.html"
+  },
+  {
+    "name": "URL-Shortner",
+    "link": "URL-Shortner/index.html"
+  },
+  {
     "name": "Tip Calculator",
     "link": "Tip Calculator/index.html"
   },
@@ -406,5 +415,6 @@
   {
     "name": "Youtube-Music-clone",
     "link": "Youtube-Music-clone/index.html"
+
   }
 ]
