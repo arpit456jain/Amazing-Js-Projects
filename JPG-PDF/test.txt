@@ -1,0 +1,40 @@
+var imageFile=document.getElementById("fileName");
+var canvas=document.getElementById("canvas");
+var button_state=document.getElementById("button");
+var image_context=canvas.getContext("2d");
+
+button_state.onclick=jpgToPdfConvert;
+
+function jpgToPdfConvert()
+{
+    html2canvas(canvas,{
+        onrendered:function(canvas)
+        {
+            var imgData=canvas.toDataURL('image/png',1.0);
+            var doc= new jsPDF('p','mm');
+            doc.addImage(imgData,'PNG',0,5);
+            doc.save('converted-image');
+        }
+    })
+}
+
+imageFile.addEventListener("change",imageHandler,false);
+
+function imageHandler(e)
+{
+    var fileReadObject=new FileReader();
+    fileReadObject.onload=function(ev)
+    {
+        var image=new Image();
+        
+        image.onload=function()
+        {
+            canvas.width=image.width;
+            canvas.height=image.height;
+            image_context.drawImage(image,0,0);
+        }
+        image.src=ev.target.result;
+    }
+    fileReadObject.readAsDataURL(e.target.files[0]);
+
+}

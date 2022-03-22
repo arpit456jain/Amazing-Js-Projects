@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+  }
+body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: beige;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; 
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+} 
+
+canvas{
+    width: 300px;
+    height: 300px;
+    border:1px solid #000000;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="8-UTF">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JPG->PDF</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Download Button -->
+        <style>   
+            .button{
+                margin-left: 300px;
+                padding: 16px 48px;
+                background: none;
+                border: 2px solid #131313;
+                color: #131313;
+                font-size: 20px;
+                cursor: pointer;
+                position: relative;
+                margin: 200px;
+                transition: color 0.3s ease-in-out;
+            }
+            .button::before,
+            .button::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #ff7a00;
+                top: 0;
+                left: 0;
+                transition: clip-path 0.3s;
+                z-index: -1;
+            }
+        .button::before {
+            clip-path: circle(0 at 0 0);
+        }
+        .button::after {
+            clip-path: circle(0 at 100% 100%);
+        }
+        .button:hover {
+             color: #fff;
+        }
+        .button:hover::before {
+             clip-path: circle(100% at 0 0);
+        }
+        .button:hover::after {
+            clip-path: circle(100% at 100% 100%);
+        } 
+        
+        input[type=file]::file-selector-button {
+            border: 2px solid #6c5ce7;
+            padding: .2em .4em;
+            border-radius: .2em;
+            background-color: #a29bfe;
+            transition: 1s;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+            }
+        </style>
+       
+    </head>
+    <body>
+        
+        <div class="fixed-header">
+            <div class="container">
+                <h3>PNG TO PDF CONVERTER</h3>
+            </div>
+        </div> 
+        <input type="file" style="margin-left: 100px;" id="fileName">
+        
+        
+       <canvas id="canvas"></canvas> 
+
+       <button id="button" class="button">Click</button>
+        
+
+        
+    </body>
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="script.js"></script>
+</html>
