@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat:wght@400;500&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat:wght@400;500&family=Sacramento&family=Space+Mono:wght@400;700&display=swap');
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -11,22 +11,7 @@ body {
   background-color: rgb(19, 24, 44);
 }
 
-/* Custon scrollbar */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(40, 46, 71); 
-  border-radius: 30px;
-}
 /* heading */
 h1 {
   color: #fff;
@@ -34,8 +19,10 @@ h1 {
   text-decoration: none;
   letter-spacing: 0.15em;
   text-align: center;
-  padding: 15px 20px;
+  margin: 2em 0 1em 0;
   position: relative;
+  font-family: 'Bitter';
+  font-size: 46px;
 }
 h1:after {
   background: none repeat scroll 0 0 transparent;
@@ -54,164 +41,15 @@ h1:hover:after {
   left: 0;
 }
 
-.styles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 4vmin;
-  flex-wrap: wrap;
-}
 
-.stylebox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-  background-color: whitesmoke;
-  padding: 1rem;
-  text-align: center;
-  font-family: 'Bitter', sans-serif;
-  margin: 1.5rem;
-  border-radius: 5px;
-  border: none;
-  width: 20rem;
-  
-  transition: .2s;
-}
-.stylebox:hover {
-  
-  box-shadow: 15px 15px 17px #000;
-}
-.stylebox .image {
-  width: 100%;
-  overflow: hidden;
-  height: 13rem;
-  border-radius: .5em;
-  transition: .3s;
-}
+/* SCROLL TOP STARTS */
 
-.stylebox .image:hover{
-  transform: scale(1.2);
-}
-.stylebox .image img {
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  image-rendering: pixelated;
-  transition: .5s;
-  border-radius: .5em;
-}
-
-.stylebox .image img:hover {
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  image-rendering: pixelated;
-  /* transform: scale(1.1); */
-}
-
-.card-heading{
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  margin: 1em 1em 0 1em;
-  font-family: 'Bitter';
-}
-.card-data{
-  display: flex;
-  flex-direction: column;
-}
-
-button{
-  border: 2px solid #101522;
-  width: 90%;
-  font-size: 1em;
-  margin: 1em;
-  font-family: 'Bitter';
-  font-weight: bold;
-  padding: .5em;
-  transition: 0.3s;
-}
-
-.btnn:hover{
-  background-color: #101522;
-  color: #fff;
-}
-/* .stylebox p {
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-.stylebox .btn-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-} */
-/* .stylebox a {
-  background-color: white;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 1vmin;
-  font-size: 1.2rem;
-  background-color: rgb(89, 0, 131);
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: 0.2s;
-  width: 100%;
-} */
-/* .stylebox a.code {
-  background-color: rgb(47, 128, 0);
-}
-.stylebox a.code:hover {
-  background-color: rgb(39, 105, 0);
-} */
-
-@media only screen and (max-width: 600px) {
-  .styles {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 4vmin;
-  }
-  /* #searchBar{
-    width: 50%;
-  } */
-  .stylebox {
-    padding: 0.5rem;
-    margin: auto;
-    width: 18rem;
-    margin-bottom: 1.5rem;
-  }
-  .stylebox .image {
-    overflow: hidden;
-    width: 17rem;
-    height: 12rem;
-    padding: 0;
-    margin: 0;
-    padding: .5em .5em 0 .5em;
-    border-radius: 0.5rem;
-    transition: .3s;
-  }
-  /* .searchBox{
-    width: 500px;
-  } */
-}
-
-/* scroll top starts */
 #scroll-top {
   position: fixed;
   right: 1rem;
   padding: 0.6rem 1rem;
   font-size: 2rem;
-  background: #00ff37;
+  background: yellow;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
@@ -226,27 +64,132 @@ button{
 #scroll-top.active {
   bottom: 5px;
 }
-/* scroll top ends */
 
 
+/* SCROLL TOP ENDS */
+
+
+
+
+ 
+
+ 
+
+/* NAVABR STARTS HERE */
 
 a {
   text-decoration: none;
+  color: white;
+  letter-spacing: .5px;
  }
+ a:hover{
+   color: white;
+ }
+
  li {
   list-style: none;
  }
 
- ul{
-   margin-top: 1em;
+ .navbar{
+   background-color: rgb(19, 24, 44);
+ }
+ .navbar-toggler{
+   color: white;
+   line-height: 10px;
+   transform: translate(50%, -110%);
  }
 
- .searchBar{
+
+
+.active a{
+  color: yellow;
+}
+.nav-link{
+  font-family: 'Space Mono', monospace;
+  margin:0 1em ;
+  font-size: 16px;
+}
+span{
+  color: yellow;
+}
+
+.navbar-brand{
+  font-family: 'Space Mono',monospace;
+  
+}
+
+
+#navbarText{
+  justify-content: right;
+  align-items: right;
+}
+
+@media only screen and (max-width: 786px) {
+  
+}
+
+ 
+/* NAVBAR ENDS HERE */
+
+
+/* MISC. DESIGNING */
+.tags{
+  padding: 0;
+  margin: 0;
+ color: yellow;
+ font-family: 'Space Mono';
+ font-size: 16px;
+ opacity: 70%;
+}
+
+.tags-opening{
+  transform: translate(24%, 290%);
+}
+
+
+#counter{
+  color: white;
+  font-family: 'Bitter';
+  text-align: center;
+  margin: 0 .1em;
+  border: 2px solid yellow;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: .2em .5em .2em .9em;
+  
+  box-shadow: 0px 10px 10px #000;
+}
+
+@media only screen and (max-width: 786px){
+  .tags-opening{
+    transform: translate(10%, 200%);
+  }
+  .heading{
+    font-size: 36px;
+  }
+  .searchBox{
+    margin-bottom: 2em;
+  }
+}
+
+
+
+/* END OF MISC. DESIGING */
+
+
+/* SEARCH BOX STARTS */
+
+
+.searchBar{
   outline: none;
-  border: 3px solid #222636;
+  border: 2px solid yellow;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: transparent;
   font-family: 'Space Mono';
   font-size: 13px;
-  padding: .5em 2em .5em .3em;
+  padding: .8em 2em .8em .9em;
+  color: white;
   text-align: left;
   width: 250px;
   box-shadow: 0px 10px 10px #000;
@@ -255,116 +198,128 @@ a {
 
 .searchBox{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
-.searchIcon{
-  position: absolute;
-  right: 42%;
+
+/* SEARCH BOX ENDS */
+
+/* CARDS DESIGN STARTS  */
+
+.image{
+  padding: .5em;
+  transition: 0.3s;
 }
- 
+.image:hover{
+  padding: 0;
+}
 
-/* NAVABR STARTS HERE */
-
-a {
-  text-decoration: none;
- }
- li {
-  list-style: none;
- }
-
- .navbar {
+.styles {
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
-  box-shadow: none;
-  -webkit-box-shadow:none;
-  background-color: rgb(19, 24, 44);
-  color: #fff;
- }
- .nav-links a {
-  color: #fff;
- }
- .logo img{
-   width: 7em;
- }
+  
+  margin-top: 4vmin;
+  flex-wrap: wrap;
+}
 
- .menu {
+.stylebox {
   display: flex;
-  gap: 1em;
-  font-size: 16px;
-  font-family: 'Space Mono';
- }
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: white;
+  padding: .2rem;
+  text-align: center;
+  font-family: 'Bitter', sans-serif;
+  margin: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 20rem;
+  transition: .2s;
+}
+.stylebox:hover {
+  
+  box-shadow: 15px 15px 17px #000;
+}
+.stylebox .image {
+  width: 100%;
+  overflow: hidden;
+  height: 13rem;
+  border-radius: .5em;
+  transition: .4s;
+}
 
- .menu li:hover {
-  background-color: #fff;
-  border-radius: 1em;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px 2px rgba(26,1,253,0.42);
- }
- a:hover{
-   color: #1d1d1d;
-   background-color: #fff;
- }
+.stylebox .image:hover{
+  transform: scale(1.17);
+  border-radius: .5em;
+}
+/*  */
 
- .menu li {
-  padding: 5px 14px;
-  border-radius:1em ;
- }
+.card-heading{
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1em .5em;
+  font-family: 'Bitter';
+}
+.card-data{
+  display: flex;
+  flex-direction: column;
+}
 
- input[type=checkbox]{
-  display: none;
- } 
- /*HAMBURGER MENU*/
- .hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
- }
+button{
+  border: 2px solid #101522;
+  width: 95%;
+  font-size: 1em;
+  font-family: 'Bitter';
+  font-weight: bold;
+  padding: .5em;
+  transition: 0.3s;
+  margin-bottom: 1em ;
+}
 
+.btnn:hover{
+  background-color: #101522;
+  color: #fff;
+}
 
-
- @media (max-width: 768px) {
-   
-  .menu { 
-   display:none;
-   position: absolute;
-   background: rgb(19, 24, 44) ;
-   right: 0;
-   left: 0;
-   height: 92vh;
-   text-align: center;
-   padding: 96px 0;
-   z-index: 1000;
-   top: 20vh;
+@media only screen and (max-width: 600px) {
+  .styles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10vmin;
   }
-  .menu li:hover {
-   display: inline-block;
-   background-color:#fff;
-   transition: 0.3s ease;
+  .stylebox {
+    padding: .3rem;
+    margin: auto;
+    width: 18rem;
+    margin-bottom: 1.5rem;
   }
-  .menu li + li {
-   margin-top: 12px;
-  }
-  input[type=checkbox]:checked ~ .menu{
-   display: block;
-  }
-  .hamburger {
-   display: block;
-   
+  .stylebox .image {
+    overflow: hidden;
+    width: 17.5rem;
+    height: 12rem;
+    padding: 0;
+    margin: 0;
+    padding: .5em .5em 0 .5em;
+    border-radius: 0.5rem;
+    transition: .3s;
   }
 }
 
 
 
 
-/* NAVBAR ENDS HERE */
-
-
-
- 
+/* CARDS DESIGN ENDS */
  
 
 
