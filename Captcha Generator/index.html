@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    
+ 
+
+<div class="container">
+    <div class="card1">
+        <div class="captcha-img">
+            <img src="captcha.jpg" alt="Captcha">
+            <span class="captcha-txt"></span>
+            
+        </div>
+        <div class="ref-btn">
+            <button class="refresh">Refresh</button>
+        </div>
+       
+        <div class="captcha-input">
+            <label >Enter Captcha: </label>
+            <input type="text" maxlength="6" required>
+               
+        </div>  
+        <div class="check-btn">
+            <button class="check">Check</button> 
+        </div> 
+        
+                
+    </div>
+    <div class="card2">
+        <div class="result">
+            <h2></h2>
+        </div>
+    </div>
+</div>
+
+
+   
+
+    <script src="script.js"></script>
+
+</body>
+</html>
