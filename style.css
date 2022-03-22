@@ -21,6 +21,7 @@ h1 {
   text-align: center;
   margin: 2em 0 1em 0;
   position: relative;
+  padding-bottom: .5em;
   font-family: 'Bitter';
   font-size: 46px;
 }
@@ -65,15 +66,14 @@ h1:hover:after {
   bottom: 5px;
 }
 
+@media only screen and (max-width:786px) {
+  #scroll-top{
+    position: relative;
+    right: 12rem;
+  }
+}
 
 /* SCROLL TOP ENDS */
-
-
-
-
- 
-
- 
 
 /* NAVABR STARTS HERE */
 
@@ -81,9 +81,11 @@ a {
   text-decoration: none;
   color: white;
   letter-spacing: .5px;
+  transition: .3s;
  }
  a:hover{
-   color: white;
+   color: yellow;
+   transform: translateY(-10%);
  }
 
  li {
@@ -118,6 +120,10 @@ span{
   
 }
 
+.navbar-brand:hover{
+  transform: none;
+  color: white;
+}
 
 #navbarText{
   justify-content: right;
