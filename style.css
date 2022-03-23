@@ -87,6 +87,9 @@ a {
    color: yellow;
    transform: translateY(-10%);
  }
+ .navbar-nav a.active{
+   color: yellow;
+ }
 
  li {
   list-style: none;
@@ -98,14 +101,11 @@ a {
  .navbar-toggler{
    color: white;
    line-height: 10px;
-   transform: translate(50%, -110%);
+   transform: translate(50%, -200%);
  }
 
 
 
-.active a{
-  color: yellow;
-}
 .nav-link{
   font-family: 'Space Mono', monospace;
   margin:0 1em ;
@@ -207,7 +207,7 @@ span{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  padding: 1em;
 }
 
 

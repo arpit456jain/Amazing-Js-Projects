@@ -22,28 +22,53 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo1.png"/>
-        </div>
-        <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-                <li><a href="/index.html">Amazing-JS-Projects</a></li>
-                <li><a href="/calculatorspage.html">Calculator-Page</a></li>
-                <li><a href="https://cool-front-end-templates.netlify.app/">Cool-Front-End-Templates</a></li>
-                <li><a href="https://amazing-css-effects.netlify.app/">Amazing-CSS-Effects</a></li>
-            </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">&#123; AMAZING <span>JS</span> &#125;</a> -->
+      <img src="logo1.png" alt="logo" width="90px" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item  ">
+            <a class="nav-link" aria-current="page" href="index.html">Amazing-JS-Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cool Front-End Template</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://amazing-css-effects.netlify.app/">Amazing CSS Effects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="calculatorspage.html">Calculator Page</a>
+          </li>
         </ul>
-
-    </nav>
+        
+        
+      </div>
+    </div>
+  </nav>
     <!--NAVBAR ENDS-->
 
    
     <h1 class="heading">Different Calculators</h1>
     
-    <section class="styles" id="styles">
+    <div class="container">
+      <div class="row" id="cardd">
+          
+      </div>
+
+    </div>
+    <!-- <section class="styles" id="styles"> -->
         
         <!-- old card design starts -->
         <!-- <div class="stylebox">
@@ -62,7 +87,7 @@
         </div> -->
         <!-- new card design ends -->
 
-    </section>
+    <!-- </section> -->
 
     
   <!--==========================

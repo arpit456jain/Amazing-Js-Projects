@@ -1,7 +1,7 @@
 //NavBar
 $(document).ready(function () {
-  $("ul.navbar-nav > li").click(function (e) {
-   $("ul.navbar-nav > li").removeClass("active");
+  $("ul.navbar-nav a").click(function (e) {
+   $("ul.navbar-nav a").removeClass("active");
    $(this).addClass("active");
     });
 });
