@@ -55,16 +55,21 @@ const getProject = fetch('style_links.json')
       
         const htmlString = projects
         .map((project) => {
+
+          
+
           console.log(projects.length)
+
             return`<div class="stylebox">
               
                   <img class="image" src="/${project.name}/preview.png" alt="" >
                   <div class="card-data">
                       <p class="card-heading">${project.name}</p>
-                      <a href=${project.link}><button class="btnn">View</button></a>
+                
+                      <a href=${(project.link).split(" ").join("%20")}><button class="btnn">View</button></a> 
                   </div>
            
-              </div>`;
+              </div>`; // Links to projects (To eliminate space , used split and join)
               
         })
        
