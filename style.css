@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   padding: auto;
   background-color: rgb(19, 24, 44);
+  overflow-x: hidden;
 }
 
 
