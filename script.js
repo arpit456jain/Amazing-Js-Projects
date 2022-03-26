@@ -1,12 +1,10 @@
 //NavBar
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+$(document).ready(function () {
+  $("ul.navbar-nav a").click(function (e) {
+   $("ul.navbar-nav a").removeClass("active");
+   $(this).addClass("active");
+    });
+});
 
 // scroll to top starts
 var scrolltop = $("#scroll-top");
@@ -27,9 +25,9 @@ scrolltop.on("click", function (e) {
 
 let projects = [] ;
 const allProjectList = document.getElementById('styles');
-console.log(allProjectList)
+const experi = document.getElementById("cardd")
+const ProjectCounter = document.getElementById('counter');
 const searchBar = document.getElementById("searchBar");
-console.log(searchBar);
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value;
@@ -38,7 +36,6 @@ searchBar.addEventListener('keyup', (e) => {
         return projects.name.toLowerCase().includes(searchString.toLowerCase());
     });
 
-    console.log(filteredProjects)
     displayProjects(filteredProjects);
 });
 
@@ -48,7 +45,6 @@ const getProject = fetch('style_links.json')
                 .then(data => {
                     projects = data;
                     displayProjects(projects)
-                    console.log(projects)
 
 });
 
@@ -56,49 +52,35 @@ const getProject = fetch('style_links.json')
     // <a target="_blank" href="https://github.com/arpit456jain/Amazing-Css-Effects/tree/master/${links[i].name}" class="code">Code</a>
     const displayProjects = (projects) => {
 
+      
         const htmlString = projects
         .map((project) => {
+
+          
+
+          console.log(projects.length)
+
             return`<div class="stylebox">
-                 <div class="image">
-                     <img src="/${project.name}/preview.png" alt="">
-                  </div>
+              
+                  <img class="image" src="/${project.name}/preview.png" alt="" >
                   <div class="card-data">
                       <p class="card-heading">${project.name}</p>
-                      <a href=${project.link}><button class="btnn">View</button></a>
+                
+                      <a href=${(project.link).split(" ").join("%20")}><button class="btnn">View</button></a> 
                   </div>
            
-              </div>`;
+              </div>`; // Links to projects (To eliminate space , used split and join)
               
         })
-        
-        allProjectList.innerHTML = htmlString;
+       
+        // allProjectList.innerHTML = htmlString;
+        experi.innerHTML = htmlString
+        ProjectCounter.innerHTML = projects.length;
         
     }
 
     getProject();
 
-// fetch("style_links.json")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     let links = data;
 
-//     for (let i = 0; i < links.length; i++) {
-//       console.log(links.length);
-//       let StyleBoxDiv = document.createElement("div");
-//       StyleBoxDiv.innerHTML = `<div class="stylebox">
-//             <div class="image">
-//                  <img src="/${links[i].name}/preview.png" alt="">
-//              </div>
-//             <p>${links[i].name}</p>
-            
-//             <div class="btn-group">
-//             <a target="_blank" href="${links[i].link}">View</a>
-            
-//             </div>
-
-//             </div>`;
-//       document.getElementById("styles").appendChild(StyleBoxDiv);
-//     }
-//   });
 
   // <a target="_blank" href="https://github.com/arpit456jain/Amazing-Js-Projects/tree/master/${links[i].name}" class="code">Code</a>
