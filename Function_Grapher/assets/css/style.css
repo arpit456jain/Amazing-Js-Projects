@@ -31,6 +31,12 @@ button{
     background-color: rgba(44, 69, 107, 0.5);
     box-shadow: -10px 5px 30px rgb(0 0 0 / 50%);
     border-radius: 15px;
-    margin-top: 1.5%;
+    height: 94%;
+    margin: 1.5% 2%;
+    margin-bottom: 0;
     padding: 30px;
+}
+
+#plotter{
+    margin-top: 0;
 }
