@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+.container {
+  margin: 80px auto;
+  max-width: 400px;
+  width: 100%;
+  background: rgb(238, 128, 128);
+  border-radius: 5px;
+  padding: 25px;
+}
+.header-el {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.timer {
+  float: right;
+  font-size: medium;
+}
+.input-item {
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  border: none;
+  border-radius: 18px;
+  padding: 15px;
+  margin-top: 3px;
+}
+.btn-el {
+  width: 30px;
+  height: 50px;
+  border: none;
+  border-radius: 18px;
+}
+.item-list {
+  padding: 20px;
+  list-style: none;
+}
+.list-item {
+  padding-bottom: 15px;
+
+  background: rgba(128, 128, 128, 0.493);
+  border-radius: 2px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 3px;
+}
+.trash-el {
+  float: right;
+  margin: 6px;
+}
+.edit-el {
+  float: right;
+  margin: 6px;
+}
+i {
+  padding-left: 5px;
+}
+.footer-text {
+  font-size: larger;
+  font-weight: 900;
+  margin-left: 20%;
+}
+.clear-btn {
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  height: 25px;
+  margin: 10px;
+}
+.clear-all {
+  margin-left: 35%;
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+}
