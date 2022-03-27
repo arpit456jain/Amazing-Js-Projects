@@ -71,6 +71,7 @@ body{
     object-fit: cover;
     height: 50px;
     width: 50px;
+    padding: 15px;
 }
 
 .user-list:hover img{
