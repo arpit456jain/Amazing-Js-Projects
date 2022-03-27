@@ -12,7 +12,7 @@ feu.img.onload = function () {
   feu.load();
 };
 
-let diotp = new Sprite(640, 360, 0, 0, 1, 64);
+let diotp = new Sprite(320, 180, 0, 0, 1, 64);
 diotp.img.src = "./assets/diotp.png";
 diotp.img.onload = function () {
   diotp.load();
@@ -24,7 +24,7 @@ fond.img.onload = function () {
   fond.load();
 };
 
-let fond2 = new Sprite(640, 360, 0, 0, 1, 58);
+let fond2 = new Sprite(320, 180, 0, 0, 1, 58);
 fond2.img.src = "./assets/fond3.png";
 fond2.img.onload = function () {
   fond2.load();
@@ -32,7 +32,7 @@ fond2.img.onload = function () {
 fond2.slow = 2;
 fond2.sslow = 2;
 
-let fond3 = new Sprite(810, 337.5, 0, 0, 1, 60);
+let fond3 = new Sprite(405, 168.75, 0, 0, 1, 60);
 fond3.img.src = "./assets/fond2.png";
 fond3.img.onload = function () {
   fond3.load();
@@ -40,7 +40,7 @@ fond3.img.onload = function () {
 fond3.slow = 2;
 fond3.sslow = 2;
 
-let fond4 = new Sprite(680, 510, 0, 0, 1, 51);
+let fond4 = new Sprite(340, 255, 0, 0, 1, 51);
 fond4.img.src = "./assets/fond4.png";
 fond4.img.onload = function () {
   fond4.load();
@@ -71,7 +71,7 @@ dioknife.img.onload = function () {
   dioknife.load();
 };
 
-let summon = new Sprite(960, 540, 0, 0, 1, 54);
+let summon = new Sprite(480, 270, 0, 0, 1, 54);
 summon.img.src = "./assets/summon.png";
 summon.img.onload = function () {
   summon.load();
@@ -95,7 +95,7 @@ dioexpl.img.onload = function () {
   dioexpl.load();
 };
 
-let roadrollersummon = new Sprite(960, 540, 0, 0, 1, 54);
+let roadrollersummon = new Sprite(480, 270, 0, 0, 1, 54);
 roadrollersummon.img.src = "./assets/roadrollersummon.png";
 roadrollersummon.img.onload = function () {
   roadrollersummon.load();
@@ -154,13 +154,13 @@ energy.img.onload = function () {
   energy.load();
 };
 
-let zawarudo = new Sprite(1282, 722.83, 0, 0, 1, 43);
+let zawarudo = new Sprite(641, 361.415, 0, 0, 1, 43);
 zawarudo.img.src = "./assets/zawarudo.png";
 zawarudo.img.onload = function () {
   zawarudo.load();
 };
 
-let konodio = new Sprite(960, 540, 0, 0, 1, 49);
+let konodio = new Sprite(480, 270, 0, 0, 1, 49);
 konodio.img.src = "./assets/konodio.png";
 konodio.img.onload = function () {
   konodio.load();
@@ -175,7 +175,7 @@ teleportation.img.onload = function () {
 teleportation.slow = 3;
 teleportation.sslow = 3;
 
-let teleportation2 = new Sprite(960, 540, 0, 0, 1, 54);
+let teleportation2 = new Sprite(480, 270, 0, 0, 1, 54);
 teleportation2.img.src = "./assets/teleportation2.png";
 teleportation2.img.onload = function () {
   teleportation2.load();
@@ -184,14 +184,14 @@ teleportation2.img.onload = function () {
 teleportation2.slow = 2;
 teleportation2.sslow = 2;
 
-let beam = new Sprite(4564, 175, 200, 200, 1, 26);
+let beam = new Sprite(2282, 87.5, 200, 200, 1, 26);
 beam.img.src = "./assets/kamehameha.png";
 beam.img.onload = function () {
   beam.load();
 };
 beam.slow = 2;
 beam.sslow = 2;
-let beam2 = new Sprite(4564, 175, 0, 0, 1, 26);
+let beam2 = new Sprite(2282, 87.5, 0, 0, 1, 26);
 beam2.img.src = "./assets/kamehameha.png";
 beam2.img.onload = function () {
   beam2.load();
