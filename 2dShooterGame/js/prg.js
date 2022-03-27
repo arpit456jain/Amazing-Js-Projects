@@ -467,16 +467,16 @@ function tircol(i) {
 document.addEventListener("keypress", (event) => { 
   keysPressed[event.key] = true;
   if (
-    (keysPressed["z"] && event.key == "d" && event.key == "j") ||
-    (keysPressed["d"] && event.key == "z" && event.key == "j")
+    (keysPressed["w"] && event.key == "d" && event.key == "j") ||
+    (keysPressed["d"] && event.key == "w" && event.key == "j")
   ) {
     perso.fly();
     perso.fly_right();
     tirstart();
   }
   if (
-    (keysPressed["z"] && event.key == "q" && event.key == "j") ||
-    (keysPressed["q"] && event.key == "z" && event.key == "j")
+    (keysPressed["w"] && event.key == "a" && event.key == "j") ||
+    (keysPressed["a"] && event.key == "w" && event.key == "j")
   ) {
     perso.fly();
     perso.fly_left();
@@ -491,8 +491,8 @@ document.addEventListener("keypress", (event) => {
     tirstart();
   }
   if (
-    (keysPressed["s"] && event.key == "q" && event.key == "j") ||
-    (keysPressed["q"] && event.key == "s" && event.key == "j")
+    (keysPressed["s"] && event.key == "a" && event.key == "j") ||
+    (keysPressed["a"] && event.key == "s" && event.key == "j")
   ) {
     perso.stop_fly();
     perso.fly_left();
@@ -500,15 +500,15 @@ document.addEventListener("keypress", (event) => {
   }
 
   if (
-    (keysPressed["z"] && event.key == "d") ||
-    (keysPressed["d"] && event.key == "z")
+    (keysPressed["w"] && event.key == "d") ||
+    (keysPressed["d"] && event.key == "w")
   ) {
     perso.fly();
     perso.fly_right();
   }
   if (
-    (keysPressed["z"] && event.key == "q") ||
-    (keysPressed["q"] && event.key == "z")
+    (keysPressed["w"] && event.key == "a") ||
+    (keysPressed["a"] && event.key == "w")
   ) {
     perso.fly();
     perso.fly_left();
@@ -521,8 +521,8 @@ document.addEventListener("keypress", (event) => {
     perso.fly_right();
   }
   if (
-    (keysPressed["s"] && event.key == "q") ||
-    (keysPressed["q"] && event.key == "s")
+    (keysPressed["s"] && event.key == "a") ||
+    (keysPressed["a"] && event.key == "s")
   ) {
     perso.stop_fly();
     perso.fly_left();
@@ -561,7 +561,7 @@ document.addEventListener("keypress", (event) => {
       myAudio.play();
     }
   }
-  if (keysPressed["z"]) {
+  if (keysPressed["w"]) {
     perso.fly();
   }
   if (keysPressed["s"]) {
@@ -570,19 +570,19 @@ document.addEventListener("keypress", (event) => {
   if (keysPressed["d"]) {
     perso.fly_right();
   }
-  if (keysPressed["q"]) {
+  if (keysPressed["a"]) {
     perso.fly_left();
   }
 });
 
 document.addEventListener("keyup", (event) => {
-  if (keysPressed["z"]) {
+  if (keysPressed["w"]) {
     perso.restartup();
   }
   if (keysPressed["s"]) {
     perso.restartdown();
   }
-  if (keysPressed["q"]) {
+  if (keysPressed["a"]) {
     perso.restartleft();
   }
   if (keysPressed["d"]) {
