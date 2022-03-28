@@ -12,7 +12,7 @@
   /* header */
   h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4em;
+    font-size: 8em;
     color: #fff;
   }
   
@@ -23,6 +23,7 @@
     padding: 10px 30px;
     background: transparent;
     border: 1px solid #ccc;
+    font-size:3em;
     border-radius: 8px;
     outline: 0;
     color: #fff;
@@ -57,6 +58,7 @@
     background: transparent;
     border: 1px solid #ccc;
     border-radius: 8px;
+    font-size: 2em;
     outline: 0;
     color: #fff;
     transition: all ease 300ms;
@@ -67,6 +69,12 @@
   }
   #sound_name::content{
       color: #333;
+      font-size: 0.5em;
+
+
+  }
+  .clocka{
+    font-size: 3em;
   }
 </style>
         
@@ -77,10 +85,10 @@
 
         <h1 id="clock" class="clock"></h1>
           
-          <select id="hours"></select>
-          <select id="minutes"></select>
-          <select id="seconds"></select>
-          <select id="ampm">
+          <select id="hours" class="clocka"></select>
+          <select id="minutes" class="clocka"></select>
+          <select id="seconds" class="clocka"></select>
+          <select id="ampm" class="clocka">
             <option value="AM">AM</option>
             <option value="PM">PM</option>
           </select>
