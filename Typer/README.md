@@ -1,6 +1,6 @@
 # Typer
 
-## A simple typing game which can help to increase the typing speed.
+## A simple typing game which is very interesting and can help to increase the typing speed.
 
 * Characters can be case sensitive or insensitive.
 * Wrong characters will decrease your score.
