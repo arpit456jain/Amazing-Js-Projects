@@ -15,7 +15,9 @@
 <link rel="stylesheet" href="style.css">
 <script src="fortune.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
   <h1>Fortune Cookie Generator</h1>
   <p id="info">Use this page to generate fortune cookie sayings.</p>
@@ -28,11 +30,17 @@
   <button id="generate-button" onclick="generateFortuneCookie()">
             Make My Fortune
   </button>
- 
+  
   <div class="fortune-cookie-saying-wrapper">
     <br>
     <p id="message"></p><p id="cookie"></p>
   </div>
+ 
+   <br>
+   <br>
+   <button id="clear-button" onclick="clearCookie()">
+       Clear Screen
+   </button>
    <br>
    <br>
    <div class="container">
@@ -40,10 +48,12 @@
    
    <a class="whatsapp" id="whatsapp" href="whatsapp://send?text=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
    </div>
+
   <hr>
   <h2>Previous Fortunes</h2>
   <ul id="previous-fortunes-container">
     <!--previously generated fortunes are listed here -->
   </ul>
 </body>
+
 </html>
