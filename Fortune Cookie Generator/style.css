@@ -12,7 +12,7 @@ body {
 .fortune-cookie-saying-wrapper {
     margin: 1em;
     padding: 1em;
-    background-image: url('cookie.png');
+    background-image: url('../Fortune Cookie Generator/Images/cookie.png');
     background-size: 600px; 
     height: 600px; 
     background-repeat: no-repeat;
