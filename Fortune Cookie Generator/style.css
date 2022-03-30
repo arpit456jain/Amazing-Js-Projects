@@ -1,0 +1,99 @@
+/* Fortune Cookie Generator Styles */
+
+html {
+    text-align: center;
+    padding: 2em;
+}
+body {
+    background-color: #ffd0ff;
+    font-family: 'Lobster', cursive;
+}
+/*Fortune Cookie wrapper holding image and cookie quote*/
+.fortune-cookie-saying-wrapper {
+    margin: 1em;
+    padding: 1em;
+    background-image: url('../Fortune Cookie Generator/Images/cookie.png');
+    background-size: 600px; 
+    height: 600px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    word-wrap: normal;
+    
+}
+/*previous fortunes */
+ul {
+    list-style: none;
+}
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+    size: 100px; 
+}
+/*fortunes */
+#cookie{
+    margin-top: 0; 
+    font-family: 'Cookie', cursive;
+    font-size: 20px; 
+    text-align: center;
+}
+#message{
+    margin-top: 250px; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px; 
+    text-align: center;
+}
+#info{
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+/*Heading styling */
+}
+h2 {
+  font-size: 70px;
+  font-family: 'Lobster', cursive;
+}
+h1{
+  font-size: 80px; 
+}
+/*Button styling */
+button {
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 20px 50px;
+  background-color: rgba(255, 200, 112, 1);
+  font-size: 15px; 
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+#tweet {
+    border: solid rgb(102, 179, 255);
+    border-radius: 4px;
+    background-color: rgb(102, 179, 255);
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    width: 60px;
+    height: 35px;
+    line-height: 40px;
+
+}
+
+#whatsapp {
+    border: solid #25D366;
+    border-radius: 4px;
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    width: 60px;
+    height: 35px;
+    line-height: 40px;
+
+}

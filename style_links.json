@@ -1,5 +1,9 @@
 [
   {
+    "name": "2dShooterGame",
+    "link": "2dShooterGame/index.html"
+  },
+  {
     "name": "2048_game",
     "link": "2048_game/index.html"
   },
@@ -420,5 +424,6 @@
   {
     "name": "Windows 11",
     "link": "Windows 11/index.html"
+
   }
 ]
