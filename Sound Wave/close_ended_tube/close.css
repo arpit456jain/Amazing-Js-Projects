@@ -1,0 +1,134 @@
+#heading {
+    position: absolute;
+    top: 50px;
+    left: 510px;
+    font-size: 50px;
+    text-decoration: underline;
+    color: red;
+}
+#tube {
+    position: absolute;
+}
+#displacement {
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+    right: 150px;
+    background-color: rgb(39, 170, 159);
+    border: 1px solid rgb(39, 170, 159);
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+#pressure {
+    visibility: hidden;
+    position: absolute;
+    top: 470px;
+    right: 170px;
+    background-color: rgb(39, 170, 159);
+    border: 1px solid rgb(39, 170, 159);
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+#displacement:hover , #pressure:hover {
+    background-color: rgb(34, 235, 218);
+    border: 1px solid rgb(34, 235, 218);
+}
+#back {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100px;
+    right: 180px;
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+#back:hover {
+    background-color: rgb(241, 88, 88);
+    border: 1px solid rgb(241, 88, 88);
+}
+#inputs {
+    visibility: visible;
+    position: absolute;
+    top: 420px;
+    right: 50px;
+    font-size: 20px;
+}
+#submit {
+    position: absolute;
+    bottom: -200px;
+    right: 120px;
+    background-color: yellow;
+    font-size: 15px;
+    padding: 10px;
+}
+#static {
+    visibility: hidden;
+    position: absolute;
+    top: 600px;
+    right: 250px;
+    background-color: grey;
+    font-size: 15px;
+    padding: 10px;
+}
+#dynamic {
+    visibility: hidden;
+    position: absolute;
+    top: 600px;
+    right: 75px;
+    background-color: grey;
+    font-size: 15px;
+    padding: 10px;
+}
+#static:hover , #dynamic:hover {
+    background-color: rgb(175, 170, 170);
+}
+#length {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+}
+#amp {
+    position: absolute;
+    top: 300px;
+    left: 350px;
+}
+.required:after {
+    content: " *";
+    color: red;
+}
+#instruction {
+    font-size: 15px;
+    color: red;
+    position: absolute;
+    right: 25px;
+    top: -60px;
+}
+#home {
+    visibility: visible;
+    position: absolute;
+    top: 740px;
+    left: 700px;
+    background-color: rgb(234, 0, 255);
+    border: 2px solid rgb(234, 0, 255);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+#home:hover {
+    background-color: rgb(229, 147, 229);
+    border: 2px solid rgb(229, 147, 229);
+    cursor: pointer;
+}
+#info {
+    position: absolute;
+    visibility: hidden;
+    top: 700px;
+    left: 350px;
+    font-weight: bold, italic;
+    color: rgb(40, 230, 236);
+    font-size: 22px;
+}

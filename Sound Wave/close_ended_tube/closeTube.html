@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Tube</title>
+    <link rel="stylesheet" href="close.css">
+</head>
+<body>
+    <div>
+        <h1 id="heading">One End Closed Tube</h1>
+        <canvas id="tube"></canvas>
+        <h2 id="length"></h2>
+        <h2 id="amp"></h2>
+        <button id="displacement" onclick="displacement()">Displacement</button>
+        <button id="pressure" onclick="pressure()">Pressure</button>
+        <button id="static" onclick="static_w()">Static Wave</button>
+        <button id="dynamic" onclick="dynamic_w()">Dynamic wave</button>
+        <button id="back" onclick="back()">Back</button>
+        <a href="../main/sound_wave.html"><button id="home">Back</button></a>
+        <p id="info">Select Displacement or Pressure wave and then static or dynamic view</p>
+        <form id="inputs">
+            <p id="instruction">Fields marked in * are required</p>
+            <label for="disp" class="required">Length of the tube: </label>
+            <input type="number" id="disp" min="0" step="0.01" required>
+            <br><br>
+            <label for="mode" class="required">Mode of vibration: </label>
+            <input type="number" id="mode" min="1" pattern="^\d*[13579]$" step="2" required oninvalid="this.setCustomValidity('Enter an odd integer here')"
+            oninput="this.setCustomValidity('')">
+            <br><br>
+            <label for="amp_disp">Amplitude of displacement wave: </label>
+            <input type="number" id="amp_disp" min="0" step="0.01" value="1">
+            <br><br>
+            <label for="amp_press">Amplitude of pressure wave: </label>
+            <input type="number" id="amp_press" min="0" step="0.01" value="1">
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <script src="close.js"></script>
+</body>
+</html>
