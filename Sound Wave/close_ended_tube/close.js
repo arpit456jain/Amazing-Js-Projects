@@ -1,3 +1,6 @@
+
+//all formulas used are standard sound wave formulas
+
 let canvas = document.getElementById("tube");
 let ct = canvas.getContext("2d");
 let length = 700;
@@ -34,11 +37,13 @@ canvas.height = window.innerHeight;
 window.addEventListener('resize', function() {
 }, true);
 
+// mouse moving event
 window.addEventListener('mousemove', function(event){
     mouse.x = event.clientX;
     mouse.y = event.clientY;
 }, true);
 
+//triggered on submitting the form
 function onSubmit(event){
     mode = mode_inp.value;
     tubelen = disp_inp.value;
@@ -73,6 +78,7 @@ function dynamic_w() {
     moving = 2;
 }
 
+// back button
 function back(){
     check = 0;
     disp_btn.style.visibility = "hidden";
@@ -90,6 +96,7 @@ function back(){
     check = 0;
 }
 
+// drawing the tube
 function draw(){
     ct.beginPath();
     ct.moveTo(300,400);
@@ -99,6 +106,7 @@ function draw(){
     ct.stroke();
 }
 
+// drawing static displacement wave
 function draw_disp_st(){
     ct.beginPath();
     ct.moveTo(300 + length, 400 + height/2);
@@ -118,12 +126,14 @@ function draw_disp_st(){
     ct.stroke();
 }
 
+// drawing dynamic displacement wave
 function draw_disp_dy(){
     ct.beginPath();
     ct.moveTo(300 + length, 400 + height/2);
     let wl = 4 * length / mode;
     let k = 2 * Math.PI / wl;
     let amp = Math.sin(modulator);
+    // modulator is updated to change the amplitude in case of dynamic waves continuously
     modulator+=0.8;
     for (let i = 300 + length; i>=300; i--){
         ct.lineTo(i , 400 + height/2 + Math.sin((300 + length -i) * k) * height/2 * amp);
@@ -137,6 +147,7 @@ function draw_disp_dy(){
     ct.stroke();
 }
 
+// drawing static pressure wave
 function draw_pressure_st(){
     ct.beginPath();
     ct.moveTo(300, 400 + height/2);
@@ -156,12 +167,14 @@ function draw_pressure_st(){
     ct.stroke();
 }
 
+// drawing dynamic pressure wave
 function draw_pressure_dy(){
     ct.beginPath();
     ct.moveTo(300, 400 + height/2);
     let wl = 4 * length / mode;
     let k = 2 * Math.PI / wl;
     let amp = Math.sin(modulator);
+    // modulator is updated to change the amplitude in case of dynamic waves continuously
     modulator+=0.8;
     for (let i = 300; i<=300 + length; i++){
         ct.lineTo(i , 400 + height/2 + Math.sin((300 -i) * k) * height/2 * amp);
@@ -175,6 +188,7 @@ function draw_pressure_dy(){
     ct.stroke();
 }
 
+// controls all drawings and mouse hover events
 function update(){
     draw();
     if(check==1 && moving==1) draw_disp_st();
@@ -228,6 +242,7 @@ function update(){
     }
 }
 
+//calls update recursively to give animation effects
 function animate(){
     requestAnimationFrame(animate);
     ct.clearRect(0, 0, window.innerWidth, window.innerHeight);
