@@ -1,0 +1,535 @@
+/* Made by - Omkar Malpure - GSSOC'22 contributor */
+
+body {
+    background-color: rgb(25, 25, 25);
+    position: relative;
+    --nodes-size: 70px;
+}
+
+
+/* Settings Menu */
+
+div#settings {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgb(50, 50, 50);
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+@keyframes slideMenuOn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideMenuOff {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes decreaseOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes increaseOpacity {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+div.menu-header {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    place-items: center;
+    margin: 20px 0 35px 0;
+    width: 100%;
+}
+
+div#close-menu {
+    transform: translateX(25px);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+}
+
+div.menu-header>div:nth-child(2) {
+    width: 90%;
+}
+
+div.menu-header>div:nth-child(2) h2 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+div.settings-container {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+}
+
+div#settings input {
+    width: 80%;
+}
+
+div#settings button {
+    height: 32px;
+    width: 90%;
+    margin-top: 34px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(-125deg, #0067ff, #8900e8);
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* Header */
+
+div.header-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    place-items: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 span {
+    font-style: italic;
+    color: #8900e8;
+}
+
+div#settings-menu,
+div#theme-switcher {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.gradient-border {
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #0067ff, #8900e8);
+}
+
+
+/* List */
+
+section.list {
+    width: 95%;
+    padding-left: 5%;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+section.list>div {
+    flex: 0 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #4d4de0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #7e7eed;
+}
+
+
+/* Firefox */
+
+section.list {
+    scrollbar-color: #7474fd rgb(202, 190, 255);
+    scrollbar-width: thin;
+}
+
+
+/* Node */
+
+div.node {
+    background: #8900e8;
+    width: var(--nodes-size);
+    height: var(--nodes-size);
+    text-align: center;
+    border-radius: 50%;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes highlightNode {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes deleteNode {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes moveLeftNode {
+    0% {
+        transform: translateX(200%);
+    }
+    70% {
+        transform: translateX(250%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveRightNode {
+    50% {
+        transform: translateX(250%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+
+/* Number */
+
+div.node p.number {
+    margin: 0;
+    line-height: var(--nodes-size);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@keyframes fadeNumberOut {
+    70% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes fadeNumberIn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Pointer */
+
+div.pointer {
+    position: relative;
+    width: var(--nodes-size);
+    height: var(--nodes-size);
+    z-index: -1;
+}
+
+div.pointer img {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes highlightPointer {
+    33% {
+        transform: rotate(10deg);
+    }
+    66% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes deletePointer {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+/* Operations */
+
+section.operations {
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+}
+
+div.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    text-align: center;
+}
+
+div.wrapper p,
+div.wrapper input,
+div.wrapper button {
+    font-family: Arial, sans-serif;
+    width: 80%;
+}
+
+div.wrapper p {
+    margin: 10px auto 4px auto;
+    color: #fff;
+}
+
+div.wrapper input {
+    padding: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+div.wrapper input::placeholder {
+    font-style: italic;
+}
+
+
+/* Buttons */
+
+button.button {
+    border: none;
+    background: linear-gradient(-125deg, #0067ff, #8900e8);
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+button.button:hover {
+    transform: scale(1.03);
+}
+
+div.remove input {
+    display: none;
+}
+
+
+/* Remove Button */
+
+div.remove {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    transition: all .2s ease-in-out;
+    position: relative;
+    z-index: 3;
+}
+
+div.remove:hover {
+    transform: scale(1.03);
+}
+
+div.wrapper>div:nth-child(4) input {
+    display: none;
+}
+
+button#remove-btn {
+    width: 70%;
+    background: linear-gradient(to right, #ff002b, #9f0000);
+}
+
+button#remove-settings {
+    width: 30%;
+    font-size: 1.3rem;
+    background: #9f0000;
+}
+
+button#remove-btn:hover,
+button#remove-settings:hover {
+    transform: none;
+}
+
+@keyframes removeAnimationOn {
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes removeAnimationOff {
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+button.remove-option {
+    background: #fff;
+    padding: 3px;
+    font-style: italic;
+    transition: .05s all ease-in-out;
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    color: rgb(25, 25, 25);
+}
+
+button.remove-option:hover {
+    border: 2px solid #ff4c6a;
+    font-weight: bold;
+}
+
+button#remove-index-btn {
+    z-index: 2;
+}
+
+button#remove-data-btn {
+    z-index: 1;
+}
+
+@keyframes toggleMenuDown {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes toggleMenuDown200 {
+    0% {
+        transform: translate(0, -200%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes toggleMenuUp {
+    100% {
+        transform: translate(0, -100%);
+    }
+}
+
+@keyframes toggleMenuUp200 {
+    100% {
+        transform: translate(0, -200%);
+    }
+}
+
+
+/* Errors */
+
+section.errors {
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.success,
+div.error-message {
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 30px;
+    height: 32px;
+}
+
+div.error-message {
+    color: rgb(218, 23, 23);
+}
+
+div.success {
+    color: green;
+}
+
+div.error-message p {
+    margin: 0;
+}

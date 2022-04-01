@@ -1,0 +1,61 @@
+/* Made by - Omkar Malpure - GSSOC'22 contributor */
+
+@media (max-width: 840px) {
+    /* Header */
+    header h1,
+    div#settings-menu,
+    div#theme-switcher {
+        font-size: 1.5rem;
+    }
+    /* Nodes */
+    body {
+        --nodes-size: 50px;
+    }
+    div.node p.number {
+        font-size: 1.1rem;
+    }
+    div.pointer img {
+        width: 40px;
+    }
+     ::-webkit-scrollbar {
+        height: 5px;
+    }
+    /* Errors Section */
+    div.error-message {
+        font-size: 14px;
+    }
+    /* Buttons Section */
+    button.button {
+        font-size: 1rem;
+    }
+    button#remove-settings {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 550px) {
+    /* List */
+    section.list {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    /* Buttons Section */
+    section.operations {
+        bottom: 0%;
+    }
+    div.wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0px;
+    }
+    div.wrapper input {
+        margin-top: 5px;
+        font-size: .9rem;
+    }
+    button.button,
+    button.remove-option {
+        font-size: .9rem;
+    }
+    button#remove-settings {
+        font-size: .8rem;
+    }
+}
