@@ -18,7 +18,7 @@
 .carGame{
     width:100%;
     height:100vw;
-    background: blue;
+    background: yellow;
     /*background: url(back.jpg);*/
     background-repeat:no-repeat;
     background-size:100% 100%;
@@ -55,7 +55,7 @@
     position:absolute;
     top:15px;
     left:40px;
-    background: #10ac84;
+    background: #f12f12;
     widows: 300px;
     height:50px;
     width:120px;
