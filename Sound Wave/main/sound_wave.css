@@ -1,48 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+}
 #heading {
-    position: absolute;
-    top: 50px;
-    left: 400px;
-    font-size: 50px;
+    position: relative;
+    font-size: 3.5rem;
     text-decoration: underline;
     color: green;
+    text-align: center;
+    padding-top: 50px;
 }
 #open {
-    position: absolute;
-    top: 700px;
-    left: 400px;
     background-color: blue;
-    border: 2px solid blue;
+    border: 0.25rem solid blue;
     color: white;
-    padding: 10px;
-    font-size: 20px;
+    padding: 0.5rem;
+    font-size: 1.25rem;
 }
 #open:hover {
     background-color: skyblue;
-    border: 2px solid skyblue;
+    border: 0.25rem solid skyblue;
     cursor: pointer;
 }
 #close {
-    position: absolute;
-    top: 700px;
-    right: 400px;
     background-color: blue;
-    border: 2px solid blue;
+    border: 0.25rem solid blue;
     color: white;
-    padding: 10px;
-    font-size: 20px;
+    padding: 0.5rem;
+    font-size: 1.25rem;
 }
 #close:hover {
     background-color: skyblue;
-    border: 2px solid skyblue;
+    border: 0.25rem solid skyblue;
     cursor: pointer;
 }
-#openimg{
-    position: absolute;
-    top: 300px;
-    left: 410px;
-}
 #closeimg{
-    position: absolute;
-    top: 300px;
-    right: 390px;
+    padding-bottom: 42px;
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+    width: 0;
+}
+.first {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.second {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 100px;
+    justify-content: space-between;
+}
+@media (max-width: 698px) {
+    .content {
+        justify-content: center;
+    }
+    .first {
+        padding-bottom: 50px;
+    }
 }

@@ -5,6 +5,19 @@ let canvas = document.getElementById("tube");
 let ct = canvas.getContext("2d");
 let length = 700;
 let height = 200;
+if(window.innerWidth <= 560){
+    length = 200;
+    height = 100;
+}
+else if(window.innerWidth>560 && innerWidth < 770){
+    length = 500;
+    height = 200;
+}else{
+    length = 700;
+    height = 200;
+}
+let x_corr = 50;
+let y_corr = 1;
 let check = 0;
 let moving = 0;
 let submitted = 0;
@@ -23,6 +36,8 @@ let len = document.getElementById("length");
 let ampl = document.getElementById("amp");
 let home = document.getElementById("home");
 let info = document.getElementById("info");
+let inf = document.getElementById("inf");
+let line = document.getElementById("line");
 let tubelen = 0;
 let modulator = Math.PI / 2;
 
@@ -35,6 +50,19 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 window.addEventListener('resize', function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    if(window.innerWidth <= 560){
+        length = 200;
+        height = 100;
+    }
+    else if(window.innerWidth>560 && innerWidth < 770){
+        length = 500;
+        height = 200;
+    }else{
+        length = 700;
+        height = 200;
+    }
 }, true);
 
 // mouse moving event
@@ -54,6 +82,8 @@ function onSubmit(event){
     static.style.visibility = "visible";
     dynamic.style.visibility = "visible";
     info.style.visibility = "visible";
+    inf.style.visibility = "visible";
+    line.style.visibility = "visible";
     home.style.visibility = "hidden";
     len.textContent = `Length from the left end of the tube:`;
     submitted = 1;
@@ -89,6 +119,8 @@ function back(){
     dynamic.style.visibility = "hidden";
     home.style.visibility = "visible";
     info.style.visibility = "hidden";
+    inf.style.visibility = "hidden";
+    line.style.visibility = "hidden";
     submitted = 0;
     len.textContent = ``;
     ampl.textContent = ``;
@@ -99,11 +131,11 @@ function back(){
 // drawing the tube
 function draw(){
     ct.beginPath();
-    ct.moveTo(300,400);
-    ct.lineTo(300 + length, 400);
+    ct.moveTo(x_corr,y_corr);
+    ct.lineTo(x_corr + length, y_corr);
     ct.stroke();
-    ct.moveTo(300 + length, 400 + height);
-    ct.lineTo(300, 400 + height);
+    ct.moveTo(x_corr + length, y_corr + height);
+    ct.lineTo(x_corr, y_corr + height);
     ct.stroke();
 }
 
@@ -114,40 +146,40 @@ function draw_disp_st(){
     let k = 2 * Math.PI / wl;
     modulator = Math.PI / 2;
     let amp = Math.sin(modulator);
-    for (let i = 300; i<=300+length; i++){
+    for (let i = x_corr; i<=x_corr+length; i++){
         if(mode%2){
-            if(i==300){
+            if(i==x_corr){
                 if(Math.sin((length/2) * k) * height/2 * amp > 0){
-                    ct.moveTo(300, 400 + height);
+                    ct.moveTo(x_corr, y_corr + height);
                 }else{
-                    ct.moveTo(300, 400);
+                    ct.moveTo(x_corr, y_corr);
                 }
             }
-            ct.lineTo(i , 400 + height/2 + Math.sin((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 + Math.sin((x_corr + length/2 -i) * k) * height/2 * amp);
         }else{
-            if(i==300){
+            if(i==x_corr){
                 if(Math.cos((length/2) * k) * height/2 * amp > 0){
-                    ct.moveTo(300, 400 + height);
+                    ct.moveTo(x_corr, y_corr + height);
                 }else{
-                    ct.moveTo(300, 400);
+                    ct.moveTo(x_corr, y_corr);
                 }
             }
-            ct.lineTo(i , 400 + height/2 + Math.cos((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 + Math.cos((x_corr + length/2 -i) * k) * height/2 * amp);
         }
     }
     ct.stroke();
     ct.beginPath();
-    for (let i = 300; i<=300+length; i++){
+    for (let i = x_corr; i<=x_corr+length; i++){
         if(mode%2){
-            if(i==300){
-                ct.lineTo(i , 400 + height/2 - Math.sin((length/2) * k) * height/2 * amp);
+            if(i==x_corr){
+                ct.lineTo(i , y_corr + height/2 - Math.sin((length/2) * k) * height/2 * amp);
             }
-            ct.lineTo(i , 400 + height/2 - Math.sin((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 - Math.sin((x_corr + length/2 -i) * k) * height/2 * amp);
         }else{
-            if(i==300){
-                ct.lineTo(i , 400 + height/2 - Math.cos((length/2) * k) * height/2 * amp);
+            if(i==x_corr){
+                ct.lineTo(i , y_corr + height/2 - Math.cos((length/2) * k) * height/2 * amp);
             }
-            ct.lineTo(i , 400 + height/2 - Math.cos((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 - Math.cos((x_corr + length/2 -i) * k) * height/2 * amp);
         }
     }
     ct.stroke();
@@ -161,32 +193,32 @@ function draw_disp_dy(){
     let amp = Math.sin(modulator);
     // modulator is updated to change the amplitude in case of dynamic waves continuously
     modulator += 0.8;
-    for (let i = 300; i<=300+length; i++){
+    for (let i = x_corr; i<=x_corr+length; i++){
         if(mode%2){
-            if(i==300){
-                ct.moveTo(i , 400 + height/2 + Math.sin((length/2) * k) * height/2 * amp);
+            if(i==x_corr){
+                ct.moveTo(i , y_corr + height/2 + Math.sin((length/2) * k) * height/2 * amp);
             }
-            ct.lineTo(i , 400 + height/2 + Math.sin((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 + Math.sin((x_corr + length/2 -i) * k) * height/2 * amp);
         }else{
-            if(i==300){
-                ct.lineTo(i , 400 + height/2 + Math.cos((length/2) * k) * height/2 * amp);
+            if(i==x_corr){
+                ct.lineTo(i , y_corr + height/2 + Math.cos((length/2) * k) * height/2 * amp);
             }
-            ct.lineTo(i , 400 + height/2 + Math.cos((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 + Math.cos((x_corr + length/2 -i) * k) * height/2 * amp);
         }
     }
     ct.stroke();
     ct.beginPath();
-    for (let i = 300; i<=300+length; i++){
+    for (let i = x_corr; i<=x_corr+length; i++){
         if(mode%2){
-            if(i==300){
-                ct.lineTo(i , 400 + height/2 - Math.sin((length/2) * k) * height/2 * amp);
+            if(i==x_corr){
+                ct.lineTo(i , y_corr + height/2 - Math.sin((length/2) * k) * height/2 * amp);
             }
-            ct.lineTo(i , 400 + height/2 - Math.sin((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 - Math.sin((x_corr + length/2 -i) * k) * height/2 * amp);
         }else{
-            if(i==300){
-                ct.lineTo(i , 400 + height/2 - Math.cos((length/2) * k) * height/2 * amp);
+            if(i==x_corr){
+                ct.lineTo(i , y_corr + height/2 - Math.cos((length/2) * k) * height/2 * amp);
             }
-            ct.lineTo(i , 400 + height/2 - Math.cos((300 + length/2 -i) * k) * height/2 * amp);
+            ct.lineTo(i , y_corr + height/2 - Math.cos((x_corr + length/2 -i) * k) * height/2 * amp);
         }
     }
     ct.stroke();
@@ -195,19 +227,19 @@ function draw_disp_dy(){
 // drawing static pressure wave
 function draw_pressure_st(){
     ct.beginPath();
-    ct.moveTo(300, 400 + height/2);
+    ct.moveTo(x_corr, y_corr + height/2);
     let wl = 2 * length / mode;
     let k = 2 * Math.PI / wl;
     modulator = Math.PI / 2;
     let amp = Math.sin(modulator);
-    for (let i = 300; i<=300 + length; i++){
-        ct.lineTo(i , 400 + height/2 + Math.sin((300 -i) * k) * height/2 * amp);
+    for (let i = x_corr; i<=x_corr + length; i++){
+        ct.lineTo(i , y_corr + height/2 + Math.sin((x_corr -i) * k) * height/2 * amp);
     }
     ct.stroke();
     ct.beginPath();
-    ct.moveTo(300, 400 + height/2);
-    for (let i = 300; i<=300 + length; i++){
-        ct.lineTo(i , 400 + height/2 - Math.sin((300 -i) * k) * height/2 * amp);
+    ct.moveTo(x_corr, y_corr + height/2);
+    for (let i = x_corr; i<=x_corr + length; i++){
+        ct.lineTo(i , y_corr + height/2 - Math.sin((x_corr -i) * k) * height/2 * amp);
     }
     ct.stroke();
 }
@@ -215,20 +247,20 @@ function draw_pressure_st(){
 // drawing dynamic pressure wave
 function draw_pressure_dy(){
     ct.beginPath();
-    ct.moveTo(300, 400 + height/2);
+    ct.moveTo(x_corr, y_corr + height/2);
     let wl = 2 * length / mode;
     let k = 2 * Math.PI / wl;
     let amp = Math.sin(modulator);
     // modulator is updated to change the amplitude in case of dynamic waves continuously
     modulator+=0.8;
-    for (let i = 300; i<=300 + length; i++){
-        ct.lineTo(i , 400 + height/2 + Math.sin((300 -i) * k) * height/2 * amp);
+    for (let i = x_corr; i<=x_corr + length; i++){
+        ct.lineTo(i , y_corr + height/2 + Math.sin((x_corr -i) * k) * height/2 * amp);
     }
     ct.stroke();
     ct.beginPath();
-    ct.moveTo(300, 400 + height/2);
-    for (let i = 300; i<=300 + length; i++){
-        ct.lineTo(i , 400 + height/2 - Math.sin((300 -i) * k) * height/2 * amp);
+    ct.moveTo(x_corr, y_corr + height/2);
+    for (let i = x_corr; i<=x_corr + length; i++){
+        ct.lineTo(i , y_corr + height/2 - Math.sin((x_corr -i) * k) * height/2 * amp);
     }
     ct.stroke();
 }
@@ -240,9 +272,8 @@ function update(){
     if(check==1 && moving==2) draw_disp_dy();
     if(check==2 && moving==1) draw_pressure_st();
     if(check==2 && moving==2) draw_pressure_dy();
-    if(mouse.x>=308 && mouse.x<=308+length && moving==1 && check!=0){
-        let dist = (mouse.x - 300)*tubelen/length;
-        dist = dist - 0.57;
+    if(mouse.x>=x_corr && mouse.x<=x_corr+length && moving==1 && check!=0){
+        let dist = (mouse.x - x_corr)*tubelen/length;
         let dist_str = dist.toFixed(2);
         if(check==1){
             let wl = 2 * tubelen / mode;
@@ -260,7 +291,7 @@ function update(){
             }else{
                 amp_display = (amp * amp_disp_inp.value).toFixed(2);
             }
-            if(Math.abs(mouse.y - 400 - height/2 + amp*height/2 - 4) < 8 || Math.abs(mouse.y - 400 - height/2 - amp*height/2 - 4) < 8){
+            if(Math.abs(mouse.y - 408 - y_corr - height/2 + amp*height/2 - 4) < 8 || Math.abs(mouse.y - 408 - y_corr - height/2 - amp*height/2 - 4) < 8){
                 ampl.textContent = `Amplitude is: ${amp_display}`;
                 len.textContent = `Length from the left end of the tube: ${dist_str}`;
             }else{
@@ -278,7 +309,7 @@ function update(){
             }else{
                 amp_display = (amp * amp_press_inp.value).toFixed(2);
             }
-            if(Math.abs(mouse.y - 400 - height/2 + amp*height/2 - 4) < 8 || Math.abs(mouse.y - 400 - height/2 - amp*height/2 - 4) < 8){
+            if(Math.abs(mouse.y - 408 - y_corr - height/2 + amp*height/2 - 4) < 8 || Math.abs(mouse.y - 408 - y_corr - height/2 - amp*height/2 - 4) < 8){
                 ampl.textContent = `Amplitude is: ${amp_display}`;
                 len.textContent = `Length from the left end of the tube: ${dist_str}`;
             }else{
