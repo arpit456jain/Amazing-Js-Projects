@@ -36,3 +36,29 @@ html {
     height: 600px;
     width: 700px;
   }
+
+  @media (max-width:800px) {
+    #gameCanvas {
+      height: 444px;
+      width: 531px;
+  }
+  }
+  @media (max-width:543px) {
+    #gameCanvas {
+      height: 266px;
+      width: 318px;
+  }
+  .player-section {
+    margin: 0em 3em 0em 2em;
+  }
+  }
+
+  @media (max-width:360px) {
+    #gameCanvas {
+      height: 272px;
+      width: 271px;
+  }
+  .player-section {
+    margin: 0em 1em 0em 1em;
+}
+  }
