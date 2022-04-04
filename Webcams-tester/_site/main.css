@@ -1,0 +1,15 @@
+#webcam-output, #camera-select{
+    display: block;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.note{
+    text-align: center;
+    margin: 0 5em;
+    color: white;
+}
