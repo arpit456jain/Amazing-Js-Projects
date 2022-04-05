@@ -425,5 +425,9 @@
     "name": "Windows 11",
     "link": "Windows 11/index.html"
 
+  },
+  {
+    "name": "Sound Wave",
+    "link": "Sound Wave/main/sound_wave.html"
   }
 ]
