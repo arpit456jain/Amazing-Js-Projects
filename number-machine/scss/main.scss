@@ -1,0 +1,202 @@
+.page-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $bp-desktop) {
+        flex-direction: column;
+    }
+    p {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.04rem;
+        line-height: 2rem;
+        .language-javascript {
+            padding: 0.1rem 0.4rem;
+            font-size: 1.1rem;
+        }
+    }
+    .coffee-ring-bottom-left,
+    .coffee-ring-bottom-right {
+        @media screen and (max-width: $bp-tablet) {
+            display: none;
+        }
+    }
+    .coffee-ring-bottom-right {
+        position: absolute;
+        top: 1000px;
+        right: -150px;
+        // @media screen and (max-width: $bp-tablet) {
+        //     display: none;
+        // }
+        img {
+            max-width: 500px;
+            opacity: 0.3;
+        }
+    }
+    .coffee-ring-bottom-left {
+        position: absolute;
+        transform: rotate(180);
+        top: 1200px;
+        left: -300px;
+        img {
+            max-width: 500px;
+            opacity: 0.3;
+        }
+    }
+    .container {
+        position: relative;
+        width: 700px;
+        height: fit-content;
+        min-height: 500px;
+        margin: 2rem 1rem;
+        padding: 2rem;
+        background: $container-bg;
+        border-radius: $border-radius;
+        @media screen and (max-width: 1380px) {
+            width: 590px;
+            margin: 0.5rem;
+        }
+        @media screen and (max-width: $bp-desktop) {
+            margin: 2rem auto;
+            width: 92vw;
+        }
+        @media screen and (max-width: $bp-tablet) {
+            margin: 1rem auto;
+        }
+        .title {
+            width: 100%;
+        }
+        .created-by {
+            text-align: center;
+            margin: 0.5rem;
+        }
+        .github {
+            margin: 0 auto;
+            padding: 0rem 1rem;
+            display: flex;
+            border-radius: $border-radius;
+            justify-content: center;
+            background-color: $github-bg;
+            width: fit-content;
+            width: -moz-max-content;
+            transition: all ease-in-out 0.1s;
+
+            .github-link {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                img {
+                    width: 32px;
+                    height: auto;
+                    margin-right: 1rem;
+                }
+                p {
+                    letter-spacing: 0.1rem;
+                }
+            }
+        }
+        .main-form {
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0 0 0;
+            @media screen and (max-width: $bp-tablet) {
+                margin: 2rem 0;
+            }
+            .label {
+                display: flex;
+                justify-content: center;
+                @media screen and (max-width: $bp-tablet) {
+                    width: 100%;
+                }
+                .guessField {
+                    padding: 1rem;
+                    margin-right: 1rem;
+                    font-size: 3rem;
+                    border: $border;
+                    border-radius: $border-radius;
+                    width: 450px;
+                    @media screen and (max-width: $bp-tablet) {
+                        width: 300px;
+                    }
+                }
+                .button {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    width: 100px;
+                    background-color: $button;
+                    border-radius: $border-radius;
+                    border: $border;
+                    cursor: pointer;
+                    transition: all 1s;
+                    outline: none;
+                    &.submitted {
+                        background-color: $submitted;
+                        color: $white;
+                        animation: button-click 0.15s;
+                        transition: 0s all;
+                    }
+                }
+            }
+        }
+        .warning {
+            padding: 0rem;
+            margin: 0.2rem;
+            border-radius: $border-radius;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            &.show {
+                background-color: $error;
+                margin: 1rem;
+                padding: 1rem;
+                opacity: 1;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .output-label {
+            padding: 1rem;
+            font-size: 1.3rem;
+            border: $border;
+            background-color: $white;
+            border-bottom: none;
+            border-radius: 5px 5px 0px 0px;
+            width: -moz-max-content;
+            width: fit-content;
+        }
+    }
+    .output {
+        margin-top: 0;
+        background-color: $white;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: $border-radius;
+        border-top-left-radius: 0;
+        font-size: 2rem;
+    }
+}
+
+.pairs-list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        border-radius: $border-radius;
+        padding: 0.3rem;
+        margin: 0.4rem;
+        border: $border;
+        box-shadow: $box-shadow;
+        }
+}
+
+.transition {
+    transform: scale(1.07);
+    transition: all ease-in-out 0.1s;
+}
+
+.iteration-margin {
+    margin-right: 1rem;
+}

@@ -1,0 +1,37 @@
+// Colours
+$white: rgb(250, 250, 250);
+
+$container-bg: rgba(255, 255, 255, 0.7);
+
+$github-bg: lightblue;
+
+$error: lightcoral;
+
+$button: greenyellow;
+$submitted: rgb(194, 18, 18);
+
+
+// Box Shadow
+
+$box-shadow: 0px 2px 3px 1px rgba(217,217,217,1);
+
+// Border
+$border: 2px solid black;
+$border-radius: 5px;
+
+// Breakpoints
+$bp-desktop: 1200px;
+$bp-tablet: 770px;
+$bp-phone: 500px;
+$bp-xs: 415px;
+
+// Animations
+@keyframes button-click {
+    0% {
+        transform: scale(1);}
+    50% {
+        transform: scale(1.1);}
+    100% {
+        transform: scale(1);
+    }
+}

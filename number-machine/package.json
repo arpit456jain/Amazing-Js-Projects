@@ -1,0 +1,36 @@
+{
+  "name": "number-machine",
+  "version": "1.0.0",
+  "description": "This app takes a number and tells you what it is divisible by.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewghale/number-machine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewghale/number-machine/issues"
+  },
+  "homepage": "https://github.com/andrewghale/number-machine#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "prismjs": "^1.17.1"
+  },
+  "devDependencies": {
+    "commander": "^2.20.0",
+    "del": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "opentype.js": "^0.11.0"
+  }
+}
