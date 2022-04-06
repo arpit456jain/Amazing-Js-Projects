@@ -1,0 +1,92 @@
+body{
+    overflow-y: hidden;
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #FFD32D;
+    background-color: #0E185F;
+    padding: .2rem;
+}
+h2{
+  text-decoration: underline;
+  text-align: center;
+}
+h5{
+  text-align: center;
+  color: #444343;
+  background: #e3e661;
+  padding: 1%;
+}
+.links{
+  color: #FFD32D;
+}
+.slide {
+    width: 30rem;
+    height: 30rem;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 3%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+  }
+  .one , .three , .five , .seven , .nine{
+    /* background: #247881; */
+    background: #2666cf;
+    color: aliceblue;
+  }
+  .two , .four , .six , .eight , .tenth{
+    background-color: #a3e4db;
+    color: rgb(68, 74, 80);
+  }
+
+  .wrapper {
+      transform: rotate(90deg) translateY(-100vh);
+      transform-origin: top left;
+    
+    }
+    .outer-wrapper {
+      width: 100vh;
+      height: 100vw;
+      transform: rotate(-90deg) translateX(-100vh);
+      transform-origin: top left;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: absolute;
+      margin-top: 2rem;
+    }
+    .outer-wrapper {
+
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+        ::-webkit-scrollbar {
+          display:none;
+        }
+
+img{
+    height: 12rem;
+    width: 25rem;
+    margin-left: 1.7rem;
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: #0E185F;
+    color: #FFD32D;
+    text-align: center;
+}
+footer div{
+  display: flex;
+  justify-content: space-around;
+  padding: 1.3rem;
+}
