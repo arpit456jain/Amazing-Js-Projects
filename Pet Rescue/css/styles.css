@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #20175d;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8em;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  width: 100%;
+  color: #20175d;
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+}
+
+button {
+  width: 100%;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin-top: 1.5em;
+  text-align: center;
+  color: white;
+  background-color: #ed59d2;
+  font-family: sans-serif;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+.available {
+  width: 100%;
+}
+
+.all-pets {
+  padding: 0;
+  list-style: none;
+}
+
+.all-pets li {
+  padding: 1em;
+}
+
+.pet-name {
+  background-color: #20175d;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 4px;
+}
+
+.ruby {
+  width: 200px;
+}
