@@ -387,3 +387,16 @@ body{
     transform: translateY(-50%);
     left: 5%;
 }
+@media (max-width:980px)
+{
+    .instagram-icons{
+        display: none;
+    }
+    .Items-Pngs{
+        justify-content: left;
+
+    }
+    .searchbar{
+        margin-left: 100px;
+    }
+}
