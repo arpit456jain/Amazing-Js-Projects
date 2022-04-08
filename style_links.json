@@ -434,4 +434,8 @@
     "name": "Game Of Pong",
     "link": "Game-of-pong/index.html"
   }
+  ,{
+    "name":"InstagramMini",
+    "link":"InstagramMini/index.html"
+  }
 ]
