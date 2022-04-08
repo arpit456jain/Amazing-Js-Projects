@@ -246,9 +246,13 @@ span{
   font-family: 'Bitter', sans-serif;
   margin: 1.5rem;
   border-radius: 5px;
-  border: none;
+  border: 0.2rem  solid white;
   width: 20rem;
   transition: .2s;
+
+  background-image: linear-gradient(45deg, rgb(197, 47, 85),rgb(238, 104, 71));
+
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(197, 47, 85, 0.862),-0.2rem -0.2rem 0.5rem 0.2rem rgba(238, 104, 71, 0.796);
 }
 .stylebox:hover {
   
@@ -274,6 +278,7 @@ span{
   font-weight: bold;
   margin: 1em .5em;
   font-family: 'Bitter';
+  color: #fff;
 }
 .card-data{
   display: flex;
@@ -281,7 +286,7 @@ span{
 }
 
 button{
-  border: 2px solid #101522;
+  border: 2px solid white;
   width: 95%;
   font-size: 1em;
   font-family: 'Bitter';
@@ -289,6 +294,7 @@ button{
   padding: .5em;
   transition: 0.3s;
   margin-bottom: 1em ;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem rgba(253, 252, 252, 0.895),-0.1rem -0.1rem 0.4rem rgba(253, 252, 252, 0.888);
 }
 
 .btnn:hover{
