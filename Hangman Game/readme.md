@@ -2,7 +2,7 @@
 
 ## ABOUT THE PROJECT
 
-A web app based hangman game
+A web app based hangman game, PLease use DESKTOP or TABLET for a better experience.
 
 ## Tech Stacks used
 
