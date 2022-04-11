@@ -14,10 +14,5 @@ A web app based hangman game
 
 ## Screenshots
 
-# Before the game
 
-![image](https://user-images.githubusercontent.com/82095877/162577738-e978531a-41e1-4f1f-a9a6-27a2fd06f623.png)
-
-# After the game
-
-![image](https://user-images.githubusercontent.com/82095877/162577775-9bbd0726-a108-4d00-be9f-d56eaeee5834.png)
+![image](https://user-images.githubusercontent.com/82095877/162715021-ffd4415d-4c36-4871-b4eb-04868f3f695b.png)

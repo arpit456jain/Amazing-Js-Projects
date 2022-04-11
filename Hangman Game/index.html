@@ -5,25 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HangMan</title>
+    <style>
+      body{
+        background-color: rgb(125, 217, 217);
+      }
+      h1{
+        margin-top: 180px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:purple;
+        font-weight: bolder;
+        font-size:50px;
+      }
+    </style>
 </head>
 <body>
  
 <FORM NAME="f">
 <center>
   <h1>Hangman Game </h1>
-<TABLE BGCOLOR=red BORDER=1>
+<TABLE BGCOLOR=greenyellow BORDER=1>
 <TR>
-  <TD COLSPAN=4 ALIGN=RIGHT>
-   Score : <INPUT TYPE=TEXT NAME="score" VALUE="0" onfocus="score.blur();" SIZE=2>
+  <TD COLSPAN=7 ALIGN=RIGHT>
+   Score : <INPUT TYPE=TEXT NAME="score" VALUE="0" onfocus="score.blur();" SIZE=10>
    <BR>
-   Fails (6): <INPUT TYPE=TEXT NAME="lives" VALUE="0" onfocus="lives.blur();" SIZE=2>  
+   Fails (6): <INPUT TYPE=TEXT NAME="lives" VALUE="0" onfocus="lives.blur();" SIZE=10>  
   </TD>
-  <TD COLSPAN=7 ALIGN=CENTER>
-   <INPUT TYPE=TEXT NAME="word" VALUE="    --- Hangman ---" onfocus="word.blur();" SIZE=25>
+  <TD COLSPAN=9 ALIGN=CENTER>
+   <INPUT TYPE=TEXT NAME="word" VALUE="    --- Hangman ---" onfocus="word.blur();" SIZE=50>
     <BR>
-   <INPUT TYPE=TEXT NAME="tried" VALUE="Click GO to get a word." onfocus="tried.blur();" SIZE=25>  
+   <INPUT TYPE=TEXT NAME="tried" VALUE="Click GO to get a word." onfocus="tried.blur();" SIZE=50>  
   </TD>
-  <TD COLSPAN=2 ALIGN=CENTER>
+  <TD COLSPAN=4 ALIGN=CENTER>
    <INPUT TYPE=BUTTON onclick="new_word(this.form);" VALUE=" GO ">  
   </TD>
 </TR>
