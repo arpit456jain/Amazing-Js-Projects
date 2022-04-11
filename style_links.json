@@ -3,6 +3,10 @@
     "name": "2dShooterGame",
     "link": "2dShooterGame/index.html"
   },
+   {
+    "name": "Hangman Game",
+    "link": "Hangman Game/index.html"
+  },
   {
     "name": "2048_game",
     "link": "2048_game/index.html"
