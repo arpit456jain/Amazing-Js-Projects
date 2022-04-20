@@ -192,7 +192,11 @@ ul, li, p {
   left: 7700px; }
 
 .skills-banner {
+<<<<<<< HEAD
   background-image: url("../images/skills-banner.png");
+=======
+  background-image: url("../images/projects-banner.png");
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -234,10 +238,17 @@ ul, li, p {
   position: relative; }
 
 .skill-set-1-banner {
+<<<<<<< HEAD
   background-image: url("../images/programming-language-banner.png"); }
 
 .skills-set-2-banner {
   background-image: url("../images/frameworks-banner.png"); }
+=======
+  background-image: url("../images/projects-banner.png"); }
+
+.skills-set-2-banner {
+  background-image: url("../images/skills-banner.png"); }
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
 
 .skill-name-cont {
   height: 200px;
@@ -265,6 +276,7 @@ ul, li, p {
 .skill-name-4, .skill-name-8 {
   left: 72%; }
 
+<<<<<<< HEAD
 .skill-1-banner {
   background-image: url("../images/ruby-banner.png"); }
 
@@ -288,6 +300,8 @@ ul, li, p {
 
 .skill-8-banner {
   background-image: url("../images/redux-banner.png"); }
+=======
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
 
 .line {
   width: 100%;
@@ -637,7 +651,11 @@ ul, li, p {
   left: 4300px; }
 
 .project-banner {
+<<<<<<< HEAD
   background-image: url("../images/projects-banner.png");
+=======
+  background-image: url("../images/about.png");
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -660,6 +678,7 @@ ul, li, p {
   background-repeat: no-repeat;
   position: absolute; }
 
+<<<<<<< HEAD
 .portrait-1-cont {
   height: 332px;
   width: 208px;
@@ -675,6 +694,9 @@ ul, li, p {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute; }
+=======
+
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
 
 .project-frame-2-cont {
   width: 600px;
@@ -2747,7 +2769,11 @@ ul, li, p {
 .fa-ioxhost:before {
   content: ""; }
 
+<<<<<<< HEAD
 .fa-angellist:before {
+=======
+.fa-portfolio:before {
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
   content: ""; }
 
 .fa-cc:before {

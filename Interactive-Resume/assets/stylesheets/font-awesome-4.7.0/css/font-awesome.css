@@ -1679,7 +1679,11 @@
 .fa-ioxhost:before {
   content: "\f208";
 }
+<<<<<<< HEAD
 .fa-angellist:before {
+=======
+.fa-portfolio:before {
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
   content: "\f209";
 }
 .fa-cc:before {

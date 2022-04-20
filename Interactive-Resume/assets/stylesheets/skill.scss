@@ -5,7 +5,11 @@
 }
 
 .skills-banner {
+<<<<<<< HEAD
   background-image: url('../images/skills-banner.png');
+=======
+  background-image: url('../images/projects-banner.png');
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -54,11 +58,19 @@
 }
 
 .skill-set-1-banner {
+<<<<<<< HEAD
   background-image: url('../images/programming-language-banner.png');
 }
 
 .skills-set-2-banner {
   background-image: url('../images/frameworks-banner.png');
+=======
+  background-image: url('../images/projects-banner.png');
+}
+
+.skills-set-2-banner {
+  background-image: url('../images/skills-banner.png');
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
 }
 
 .skill-name-cont {
@@ -93,6 +105,7 @@
   left: 72%;
 }
 
+<<<<<<< HEAD
 .skill-1-banner {
   background-image: url('../images/ruby-banner.png');
 }
@@ -125,6 +138,8 @@
   background-image: url('../images/redux-banner.png');
 }
 
+=======
+>>>>>>> 6496a80d112645724cfdfbf35a05e8c3aad3b8e3
 .line {
   width: 100%;
   height: 3px;
