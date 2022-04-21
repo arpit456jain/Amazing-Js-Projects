@@ -16,6 +16,7 @@ body{
   /* background: #AA57CC; */
   margin-top: 200px;
 background-size: 100% 100%;
+overflow: hidden;
 }
 ::selection{
   color: #fff;
@@ -27,6 +28,7 @@ background-size: 100% 100%;
   border-radius: 7px;
   padding: 20px 25px 15px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+margin-bottom: 269px;
 }
 header h1{
   font-size: 27px;
