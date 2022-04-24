@@ -1,0 +1,15 @@
+name: Add label to open PR
+
+on:
+  pull-request:
+    types: opened
+# Adds label GSSoC22 to opened PRs
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: auto Gssoc22 label
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
+      with:
+        labels: 'GSSoC22'
