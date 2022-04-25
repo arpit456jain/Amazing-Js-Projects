@@ -5,6 +5,6 @@
 
 ### Preview
 
-![](https://github.com/DragonUncaged/frontend-html-css-js/blob/Digital_Clock/Clock/Digital_Clock/assets/stack-demo.gif)
+![](https://github.com/DragonUncaged/Amazing-Js-Projects/blob/tictactoe/Tic-Tac-Toe%20with%202%20player/assets/tictactoe-demoo.gif)
 =======
 
