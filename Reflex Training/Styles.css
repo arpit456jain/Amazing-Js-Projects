@@ -1,3 +1,35 @@
+/* body {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    background-size: cover;
+    height: 50vw;
+} */
+
+.background {
+    /* margin: 10vw; */
+    display: flex;
+    height: 96vh;
+    width: 99vw;
+    /* background-image: url("https://cdn.discordapp.com/attachments/881210305521258537/881604546722426960/anime-tamako-market-aesthetic-wallpaper-preview.png"); */
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-position: center center;
+    background-size: cover;
+    filter: blur(4px);
+
+}
+
+.container {
+
+    border: 2px solid red;
+    position: absolute;
+    top: 10vw;
+    left: 30vw;
+    transition: all 0.2s ease-in;
+}
+
+
+
 input[type=button] {
     background-color: #77797c;
     border: none;
@@ -7,4 +39,17 @@ input[type=button] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.header {
+    text-align: center;
+
+}
+
+.game_instructions {
+    text-align: center;
+}
+
+.btn_field {
+    text-align: center;
 }

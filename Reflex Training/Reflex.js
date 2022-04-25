@@ -9,10 +9,7 @@ var randINCREMENT = 1;
 var today = new Date();
 var randSeed = today.getSeconds();
 function startTest() {
-  document.body.style.background =
-    document.response.bgColorChange.options[
-      document.response.bgColorChange.selectedIndex
-    ].text;
+  document.body.style.background = "blue";
   bgChangeStarted = true;
   startTime = new Date();
 }

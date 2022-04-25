@@ -10,45 +10,37 @@
 </head>
 
 <body>
-    <center><strong>
-            <h1 style="color: black">Reflex Game</h1>
-        </strong></center>
-    <center>
-        <h2>Test your Response time!</h2>
-    </center>
-    <center>
-        <h3>How To Play</h3>
-        <p>Click on "Start" first, and wait until the
-            background color changes. As soon as it
-            changes, hit "stop!"
-        </p>
+    <div class="background"></div>
+    <div class="container">
+        <div class="header">
 
-        <br>
-        <form name="response">
-            Change background color to:
-            <select name="bgColorChange">
-                <option selected>deeppink
-                <option>aliceblue
-                <option>crimson
-                <option>darkkhaki
-                <option>cadetblue
-                <option>darkorchid
-                <option>coral
-                <option>chocolate
-                <option>mediumslateblue
-                <option>tomato
-                <option>darkslategray
-                <option>limegreen
-                <option>cornflowerblue
-                <option>darkolivegreen
-            </select>
-            <br>
+            <h1>Reflex Game</h1>
+
+            <h2>Test your Response time!</h2>
+
+        </div>
+
+        <div class="game_instructions">
+
+            <h3>How To Play</h3>
+            <p>Click on "Start" first, and wait until the
+                background color changes. As soon as it
+                changes, hit "stop!"
+            </p>
+
             <br>
 
-            <input type="button" class="btn" value="Start" onClick="startit()">
-            <input type="button" class="btn" value="Stop" onClick="stopTest()">
-        </form>
-    </center>
+        </div>
+        <div class="btn_field">
+            <form name="response">
+
+                <input type="button" class="btn" value="Start" onClick="startit()">
+                <input type="button" class="btn" value="Stop" onClick="stopTest()">
+            </form>
+        </div>
+
+    </div>
+
 
     <script src="Reflex.js"></script>
 </body>
