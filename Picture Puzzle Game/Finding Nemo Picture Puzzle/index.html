@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding Nemo</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+  <section>
+    <div class="liquid">
+      <h1>
+        Finding Nemo
+      </h1>
+      <h1>
+        Finding Nemo
+      </h1>
+
+      <br />
+
+
+    </div>
+
+
+
+
+
+
+
+    <br />
+
+    <center>
+      <img src="nemo.jpeg" width="100" height="100" />
+      <div id="board"></div>
+
+
+      <h1><b>TURNS:</b>
+
+
+
+        <div id="turns" style=" display: inline-block;font-size: 25px ">0</div>
+
+
+      </h1>
+      <div id="pieces"></div>
+
+    </center>
+
+
+  </section>
+  <div class="popup-overlay"></div>
+  <div class="popup">
+    <h1>Congratulations!!</h1>
+    <p>
+      You have finally helped Marlin recreate this special memory.
+    </p>
+    <div class="popup-close">
+      &times;
+    </div>
+  </div>
+  <script type="text/javascript">
+    function createBubbles() {
+      const section = document.querySelector('section')
+      const createElement = document.createElement('span')
+
+      var size = Math.random() * 60;
+
+      createElement.style.width = 23 + size + 'px';
+      createElement.style.height = 23 + size + 'px';
+      createElement.style.left = Math.random() * innerWidth + "px";
+      section.appendChild(createElement);
+
+      setTimeout(() => {
+        createElement.remove()
+      }, 4000)
+    }
+    setInterval(createBubbles, 50);
+  </script>
+
+</body>
+<script src="script.js"></script>
+
+</html>
