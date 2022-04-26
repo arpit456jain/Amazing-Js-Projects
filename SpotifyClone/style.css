@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body{
+    background-color: antiquewhite;
+    height: 200vh;
+}
+/* navbar section start */
+nav{
+    font-family: 'Playball', cursive;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+}
+nav li{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.3rem;
+
+}
+nav li:hover{
+    color: yellowgreen;
+}
+
+.brand img{
+    width: 55px;
+    height: 55px;
+    position:sticky ;
+    top: 0;
+}
+.brand{
+   
+    display: flex;
+    align-items: center;
+}
+/* navbar section ends  */
+.container{
+    min-height: 75vh;
+    font-family: 'Playball', cursive;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding:10px;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.songItem{
+    height: 35px;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+}
+.timeStamp{
+    margin: 0px 23px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songListPlay{
+    cursor: pointer;
+    padding: 0 18px;
+}
+.songInfo img{
+    width: 42px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in ;
+}
+.songInfo{
+    font-family: 'Playball', cursive;
+}
+/* bottom class style starts  */
+/* .bottom{
+    position: fixed;
+    bottom: 0vh;
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+} */
+.bottom{
+    position: sticky;
+    height: 100px;
+    top: 86.8vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 85vw;
+    cursor: pointer;
+}
+.icons i:hover{
+    color: rgb(215, 240, 191);
+    cursor: pointer;
+}
+/* bottom style end  */
