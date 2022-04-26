@@ -62,10 +62,11 @@ input[type=button] {
 }
 
 .header h1 {
-    font-size: 4vh;
+    font-size: 6vh;
 }
 
 .game_instructions {
+    /* font-size: 2vh; */
     text-align: center;
 }
 
