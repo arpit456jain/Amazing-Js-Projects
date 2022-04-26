@@ -4,6 +4,11 @@
     background-size: cover;
     height: 50vw;
 } */
+@media only screen and (max-width: 340px) {
+    .result p {
+        font-size: 2vh;
+    }
+}
 
 .background {
     /* margin: 10vw; */
