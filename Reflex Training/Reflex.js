@@ -9,22 +9,34 @@ var randINCREMENT = 1;
 var today = new Date();
 var randSeed = today.getSeconds();
 function startTest() {
-  document.body.style.background = "blue";
+  document.body.style.background = "crimson";
   bgChangeStarted = true;
   startTime = new Date();
 }
 
 function remark(responseTime) {
   var responseString = "";
-  if (responseTime < 0.2) responseString = "Well done!";
-  if (responseTime >= 0.3 && responseTime < 0.2) responseString = "Nice!";
-  if (responseTime >= 0.4 && responseTime < 0.3)
-    responseString = "Could be better...";
-  if (responseTime >= 0.5 && responseTime < 0.6)
+  if (responseTime < 0.3) {
+    responseString = "Dang you defeated Levi!";
+  }
+  if (responseTime >= 0.3) {
+    responseString = "Noice :)";
+  }
+  if (responseTime >= 0.4) {
+    responseString = "Eh...Try harder";
+  }
+
+  if (responseTime >= 0.5) {
     responseString = "Keep practicing!";
-  if (responseTime >= 0.6 && responseTime < 1)
-    responseString = "Have you been drinking?";
-  if (responseTime >= 1) responseString = "Did you fall asleep?";
+  }
+
+  if (responseTime >= 0.6) {
+    responseString = "lol what was that are you okay?";
+  }
+
+  if (responseTime >= 1) {
+    responseString = "You sleeping or what?";
+  }
 
   return responseString;
 }
@@ -35,22 +47,25 @@ function stopTest() {
     var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
 
     document.body.style.background = "white";
-    alert(
-      "Your response time is: " +
-        responseTime +
-        " seconds " +
-        "\n" +
-        remark(responseTime)
-    );
+    console.log(responseTime);
+    console.log(document.getElementById("result").textContent);
+    document.getElementById("result").textContent =
+      "Your response time is " +
+      responseTime +
+      "," +
+      " " +
+      remark(responseTime);
     startPressed = false;
     bgChangeStarted = false;
   } else {
     if (!startPressed) {
-      alert("press start first to start test");
+      // e;
+      document.getElementById("result").textContent = "Press Start first";
     } else {
       clearTimeout(timerID);
       startPressed = false;
-      alert("cheater! you pressed too early!");
+      document.getElementById("result").textContent =
+        "You clicked too soon :( Try Again";
     }
   }
 }
@@ -60,6 +75,7 @@ function randNumber() {
 }
 
 function startit() {
+  document.getElementById("result").textContent = " ";
   if (startPressed) {
     alert("Already started. Press stop to stop");
     return;

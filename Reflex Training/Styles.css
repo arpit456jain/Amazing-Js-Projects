@@ -11,8 +11,9 @@
     height: 96vh;
     width: 99vw;
     /* background-image: url("https://cdn.discordapp.com/attachments/881210305521258537/881604546722426960/anime-tamako-market-aesthetic-wallpaper-preview.png"); */
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
     background-position: center center;
     background-size: cover;
     filter: blur(4px);
@@ -20,18 +21,26 @@
 }
 
 .container {
-
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
-    top: 10vw;
-    left: 30vw;
+    /* position: absolute;
+    top: 10vh;
+    right: 70vh; */
+    top: 20vh;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+
+    margin: auto;
     transition: all 0.2s ease-in;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 
 input[type=button] {
-    background-color: #77797c;
+
+    background-color: #e34e4e;
     border: none;
     border-radius: 10%;
     color: white;
@@ -41,9 +50,19 @@ input[type=button] {
     cursor: pointer;
 }
 
+.btn:active {
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 9;
+}
+
 .header {
     text-align: center;
 
+}
+
+.header h1 {
+    font-size: 4vh;
 }
 
 .game_instructions {
@@ -52,4 +71,11 @@ input[type=button] {
 
 .btn_field {
     text-align: center;
+}
+
+.result {
+    transition: opacity 400ms;
+    text-align: center;
+    font-size: 5vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
