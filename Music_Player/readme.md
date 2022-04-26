@@ -5,5 +5,5 @@
 
 ### Preview
 
-![](https://github.com/DragonUncaged/Amazing-Js-Projects/blob/stack/Music_Player/preview.png)
+![](https://github.com/DragonUncaged/Amazing-Js-Projects/blob/musicplayer/Music_Player/preview.png)
 =======
