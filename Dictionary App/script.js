@@ -33,7 +33,7 @@ btn.addEventListener("click", () => {
         })
         
         .catch(() => {
-            result.innerHTML = `<h3 class="error">Didnt Get You 🤔</h3>`;
+            result.innerHTML = `<h3 class="error">Didn't Get You 🤔.<br> Check the spelling and try again! </h3>`;
         });
 });
 function playSound() {
