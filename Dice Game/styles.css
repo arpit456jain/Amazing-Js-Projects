@@ -39,3 +39,17 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+#btn{
+  background-color: rgb(190, 190, 190);
+  color: #4ECCA3;
+  font-family: 'Lobster', cursive;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-shadow: 1px 0 #232931;
+  border: none;
+  border-radius: 5%;
+  padding: 1%;
+}
+#btn:hover{
+  background-color: rgb(136, 136, 136);
+}
