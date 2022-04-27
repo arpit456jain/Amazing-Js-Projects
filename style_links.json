@@ -441,5 +441,9 @@
   ,{
     "name":"InstagramMini",
     "link":"InstagramMini/index.html"
+  },
+  {
+    "name":"SpotifyClone",
+    "link":"SpotifyClone/index.html"
   }
 ]

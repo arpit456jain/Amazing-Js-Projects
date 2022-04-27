@@ -6,7 +6,7 @@
 }
 body{
     background-color: antiquewhite;
-    height: 200vh;
+    /* height: 200vh; */
 }
 /* navbar section start */
 nav{
@@ -41,9 +41,12 @@ nav li:hover{
     display: flex;
     align-items: center;
 }
+.brand span{
+    margin: 0px 2px 0px 17px;
+}
 /* navbar section ends  */
 .container{
-    min-height: 75vh;
+    /* min-height: 75vh; */
     font-family: 'Playball', cursive;
     background-color: black;
     color: white;
@@ -73,6 +76,7 @@ nav li:hover{
 .songItem img{
     width: 43px;
     margin: 0 23px;
+    border-radius: 50%;
 }
 .timeStamp{
     margin: 0px 23px;
@@ -88,7 +92,7 @@ nav li:hover{
     width: 42px;
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 2%;
     opacity: 0;
     transition: opacity 1s ease-in ;
 }
@@ -121,5 +125,19 @@ nav li:hover{
 .icons i:hover{
     color: rgb(215, 240, 191);
     cursor: pointer;
+}
+@media screen and (max-width : 850px) {
+    .songInfo img{
+        left:10px;
+        width: 30px;
+    }
+   
+}
+@media screen and (max-width : 572px) {
+    .songInfo img{
+    
+        left:5px;
+        width: 18px;
+    }
 }
 /* bottom style end  */
