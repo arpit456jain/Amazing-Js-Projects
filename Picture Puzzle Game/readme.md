@@ -18,9 +18,8 @@ https://user-images.githubusercontent.com/95405559/164772570-8b3651f1-3978-4b88-
 
 ## Deployed Links :
 Please Note : 
-- This website is viewable only on PC/Laptop.
-- The website components might appear different from the one in the video above.
-  In such a case, try zooming in/zooming out to make them appear in the same way for better functionality.
+- This website is responsive for all screen sizes.
+
  
 ```sh
 https://babyelias.github.io/Puzzle-Game/
