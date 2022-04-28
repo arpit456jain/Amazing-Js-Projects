@@ -131,6 +131,22 @@ nav li:hover{
         left:10px;
         width: 30px;
     }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 160px;
+    }
+    nav li{
+        padding: 3px;
+    }
+    .brand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
    
 }
 @media screen and (max-width : 572px) {
@@ -138,6 +154,24 @@ nav li:hover{
     
         left:5px;
         width: 18px;
+  
     }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 160px;
+    }
+    nav li{
+        padding: 3px;
+    }
+    .brand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ 
 }
 /* bottom style end  */

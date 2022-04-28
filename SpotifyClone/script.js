@@ -5,6 +5,7 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
+let songN = document.getElementById("songName");
 let prevSong = document.getElementById("prevSong");
 let nextSong = document.getElementById("nextSong");
 let songItemContainer = document.getElementsByClassName("songItemContainer")[0];
@@ -22,7 +23,7 @@ let songs = [
    { songName: "G", filePath: "songs/7.mp3", coverPath: "covers/7.jpg" },
    { songName: "H", filePath: "songs/8.mp3", coverPath: "covers/8.jpg" },
    { songName: "I", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
-   { songName: "J", filePath: "songs/10.mp3", coverPath: "covers/10.jpg" }
+   { songName: "H", filePath: "songs/10.mp3", coverPath: "covers/10.jpg" }
 ]
 
 songs.forEach((element, index, arr) => {
@@ -79,6 +80,7 @@ prevSong.addEventListener("click", () => {
       audioElement.src=songs[songIndex].filePath;
       audioElement.play();
    }
+   songN.innerText=songs[songIndex].songName;
    songItemPlay[songIndex].classList.remove("fa-play-circle");
    songItemPlay[songIndex].classList.add("fa-pause-circle");
    masterPlay.classList.remove("fa-play-circle");
@@ -95,6 +97,7 @@ nextSong.addEventListener("click", () => {
       audioElement.src=songs[songIndex].filePath;
       audioElement.play();
    }
+   songN.innerText=songs[songIndex].songName;
    songItemPlay[songIndex].classList.remove("fa-play-circle");
    songItemPlay[songIndex].classList.add("fa-pause-circle");
    masterPlay.classList.remove("fa-play-circle");
