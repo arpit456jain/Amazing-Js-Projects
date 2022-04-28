@@ -1,12 +1,10 @@
-//NavBar 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+//NavBar
+$(document).ready(function () {
+    $("ul.navbar-nav a").click(function (e) {
+     $("ul.navbar-nav a").removeClass("active");
+     $(this).addClass("active");
+      });
+  });
  //NavBar ends 
 
 // scroll to top starts
@@ -26,21 +24,35 @@ scrolltop.on('click', function(e) {
 });
 // scroll to top ends
 
-fetch('calculatorspage.json')
-    .then(response => response.json())
-    .then(data => {
-        let links = data;
+let calculators = [];
+const calculatorCard = document.getElementById('cardd');
+const getcalculators = fetch('calculatorspage.json')
+                .then(response => response.json())
+                .then(data => {
+                    calculators = data;
+                    displayCalculators(calculators)
 
-        for (let i = 0; i < links.length; i++) {
-            console.log(links.length);
-            let StyleBoxDiv = document.createElement('div');
-            StyleBoxDiv.innerHTML = `<div class="stylebox">
-            <div class="image">
-                 <img src="Calculators/${links[i].name}/preview.png" alt="">
-             </div>
-            <p>${links[i].name}</p>
-            <a target="_blank" href="${links[i].link}">View</a>
-            </div>`;
-            document.getElementById('styles').appendChild(StyleBoxDiv);
-        };
 });
+
+const displayCalculators = (calculators) => {
+
+      
+    const htmlString = calculators
+    .map((calculator) => {
+      console.log(calculator.length)
+        return`<div class="stylebox">
+          
+              <img class="image" src="Calculators/${calculator.name}/preview.png" alt="" >
+              <div class="card-data">
+                  <p class="card-heading">${calculator.name}</p>
+                  <a href=${calculator.link}><button class="btnn">View</button></a>
+              </div>
+       
+          </div>`;
+          
+    })
+
+        calculatorCard.innerHTML = htmlString;
+};
+
+getcalculators();
