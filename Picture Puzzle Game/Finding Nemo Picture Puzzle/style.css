@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -13,6 +14,12 @@ h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
 }
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: black;
+  width:50%;
+}
 
 .liquid {
   position: relative;
@@ -20,8 +27,10 @@ h1 {
   height:100%;
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 60px;
   z-index: 3;
+  overflow:hidden;
+    flex-basis: 100%;
 }
 
 .liquid h1 {
@@ -65,8 +74,8 @@ h1 {
 }
 
 #board {
-  width: 400px;
-  height: 400px;
+  width: 355px;
+  height: 360px;
   border: 2px solid purple;
   margin: 0 auto;
   display: flex;
@@ -75,16 +84,16 @@ h1 {
 }
 
 #board img {
-  width: 78px;
-  height: 78px;
+  width: 70px;
+  height: 70px;
   border: 0.5px solid lightblue;
   opacity: 1;
   cursor: pointer;
 }
 
 #pieces {
-  width: 1067px;
-  height: 160px;
+  width: 800px;
+  height: 130px;
   border: 4px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -96,8 +105,8 @@ h1 {
 }
 
 #pieces img {
-  width: 78px;
-  height: 78px;
+  width: 60px;
+  height: 60px;
   border: 2px solid black;
   margin-left: auto;
   margin-right: auto;
