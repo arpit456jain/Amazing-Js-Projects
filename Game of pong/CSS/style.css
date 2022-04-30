@@ -1,0 +1,64 @@
+html {
+    background-color: black;
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Lobster', cursive;
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
+  }
+  #app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  
+  #app-header {
+    display: flex;
+    align-content: space-between;
+  
+  }
+  
+  .player-section {
+    margin: 0em 5em 0em 5em;
+  }
+  
+  h1, h3 {
+    text-align: center;
+    font-size: = 500px;
+    text-shadow: 8px 8px 5px #000;
+    font-size: 30px;
+  }
+  h1:hover, h3:hover {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #gameCanvas {
+    height: 600px;
+    width: 700px;
+  }
+
+  @media (max-width:800px) {
+    #gameCanvas {
+      height: 444px;
+      width: 531px;
+  }
+  }
+  @media (max-width:543px) {
+    #gameCanvas {
+      height: 266px;
+      width: 318px;
+  }
+  .player-section {
+    margin: 0em 3em 0em 2em;
+  }
+  }
+
+  @media (max-width:360px) {
+    #gameCanvas {
+      height: 272px;
+      width: 271px;
+  }
+  .player-section {
+    margin: 0em 1em 0em 1em;
+}
+  }

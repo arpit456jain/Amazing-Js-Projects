@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    
+    background-color: #219F94 !important;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card1{
+    border-radius: 10px;
+    background: #05595B;
+    width: 500px;
+    height: 300px;
+    margin: 30px;
+}
+
+.card2{
+    border-radius: 10px;
+    background: #05595B;
+    height: 300px;
+    width: 500px;
+    margin: 30px;
+}
+
+.captcha-img{
+    margin: 10% 18% 0;
+    position: relative;
+ }
+ .captcha-img img{
+     width: 100%;
+ }
+ .captcha-img .captcha-txt{
+     position: absolute;
+     height: 100%;
+     width:200px;
+     top: 18%;
+     left: 20%;
+     letter-spacing: 10px;
+    font-size: 32px;
+    color: #3FA796;
+     /* transform: translate(-50%, -50%); */
+ }
+.ref-btn{
+    display: flex;
+    margin: 0 auto;
+}
+
+ .refresh{
+    outline: none;
+    border: none;
+    background: #219F94;
+    padding: 9px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px auto 0;
+   
+    transition-duration: 0.4s;
+}
+.refresh:hover{
+   
+    background:#05595B ;
+    border: 1px solid white;
+}
+.captcha-input{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:20px ;
+}
+
+label{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
+.check-btn{
+    display: flex;
+    
+}
+.check{
+   
+    outline: none;
+    border: none;
+    background: #219F94;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px auto 5px;
+}
+.result{
+    
+    text-align: center;
+}
+.result h2{
+    color: #fff;
+    margin-top: 120px;
+}
+
+@media screen and (max-width:427px) {
+.captcha-img img{
+    width:100%;
+    height: 100%;
+}
+
+.captcha-img .captcha-txt{
+    top:20%;
+   left:20%;
+    font-size: 22px;
+}
+
+    
+}
+@media screen and (max-width:417px) {
+   
+    
+    .captcha-img .captcha-txt{
+        top:17%;
+       left:9%;
+        font-size: 20px;
+    }
+    
+        
+    }
+
+ @media screen and (max-width:436px){
+     .captcha-input input{
+         margin: 0 auto;
+     }
+<<<<<<< HEAD
+ } 
+=======
+ } 
+>>>>>>> 0f66778ab482102057626cf4e9a2c478e75cdfc6

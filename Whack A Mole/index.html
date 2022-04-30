@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack A Mole!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Whack-a-mole! <span class="score">0</span></h1>
+  
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+  <div class="butns">
+    <button class="strtbtn" onClick="startgame()">Start!</button>
+  <button class="stopbtn" onclick="stopgame()">Stop!</button>
+  </div>
+<script>
+  //mouse events---> 
+  let crsr=document.querySelector('body');
+
+  window.addEventListener("mousedown",hammerdown); //handle mouse click
+  function hammerdown() {
+    crsr.classList.add("cursordown");
+  }
+
+  window.addEventListener("mouseup",msup); //handle hammer up
+  function msup(){
+    crsr.classList.remove("cursordown");
+  }
+
+  //gameplay --->
+  const holes = document.querySelectorAll('.hole');
+  const scoreBoard = document.querySelector('.score');
+  const moles = document.querySelectorAll('.mole');
+  let lastHole;
+  let timeUp=false;
+  let score=0;
+  let start=0;
+  var gametime=0;
+
+  function randomTime(min,max){
+    return Math.round(Math.random()*(max-min)+min);
+  
+  }
+  
+  function randomHole(holes){
+    //get a list of holes
+    const idx=Math.floor(Math.random() * holes.length);
+    const hole = holes[idx];
+    if(hole==lastHole)
+    {
+      return randomHole(holes);
+    }
+    lastHole=hole;//stores the last hole that popped up to prevent same one to pop
+    return hole;
+  }
+  
+  function peep(){
+    const time=randomTime(200,1000);
+    const hole=randomHole(holes);
+    hole.classList.add('up'); 
+    setTimeout(()=>{
+      hole.classList.remove('up');//removes class up in css
+      if(!timeUp)
+      peep();
+    },time);
+    timeUp=false;
+  }
+
+  function startgame(){
+    if(start==0)
+    {
+    scoreBoard.textContent=0;
+    timeup=false;
+    score=0;
+    start=1;
+    peep();
+    gametime=setTimeout(()=>timeup=true,2000);
+  }
+  else
+  {
+    //if user clicks start more than one time
+    console.log("game already running");
+  }
+  }
+
+  function bonk(e){
+    if(!e.isTrusted)return ; 
+    score++;
+    this.classList.remove('up');
+    scoreBoard.textContent=score;
+  }
+
+  function stopgame(){
+    start=0;
+   timeUp=true;
+  }
+
+  moles.forEach(mole=>mole.addEventListener('click',bonk));
+
+  
+</script>
+</body>
+</html>

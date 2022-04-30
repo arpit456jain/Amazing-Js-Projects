@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #ffc600;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.btns{
+  position: absolute;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  cursor: url('assets/hammer.png'), auto;
+}
+.cursordown{
+  cursor: url('assets/hammerdown.png'), auto;
+}
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.score {
+  background: rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+.strtbtn{
+  font-size: 25px;
+  top: 30%;
+       left:83%;
+       width:80px;
+       height:40px;
+       position: absolute;
+       z-index: 2;
+       background: orange;
+       border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.strtbtn:hover {background-color: #ffa366}
+
+.strtbtn:active {
+  background-color: #b35900;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.stopbtn{
+  font-size: 25px;
+  top: 50%;
+       left:83%;
+       width:80px;
+       height:40px;
+       position: absolute;
+       z-index: 2;
+       background: orange;
+       border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.stopbtn:hover {background-color: #ffa366}
+
+.stopbtn:active {
+  background-color: #b35900;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.hole:after {
+  display: block;
+  background: url("assets/dirt.svg") bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.mole {
+  background: url('assets/mole.svg') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s;
+}
+
+.hole.up .mole {
+  top: 0;
+}
