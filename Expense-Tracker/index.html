@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/559b3360fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+
+    <div id="container">
+       
+        <h2>Add a new time:</h2>
+        <div class="field1">
+            <span>Name: <input id="nameField" type="text" class="container2" placeholder="where was the expense made?"
+                    style="width: 600px; height: 22px; background-color: wheat; border-radius: 7px;"></span>
+        </div><br>
+        <div class="field2">
+            <span for="date">Date:</span>
+            <input type="date" class="container2" id="dateField">
+
+            <span style="padding-left: 15px;">Amount: <input id="amountField" type="number" class="container2"></span>
+        </div>
+        <div class="button">
+           <div class="submitbtn"><button type="submit" class="btn" id="expenseButton">Add Expense</button></div>
+
+        </div>
+
+        <div id="table">
+        </div>
+
+
+      <script src="script.js"></script>
+
+</body>
+
+</html>

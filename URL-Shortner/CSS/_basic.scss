@@ -1,0 +1,112 @@
+$cyan:#2bd1d1;
+$heading:#35323e;
+$grey:#9b97a0;
+$grey-bg:  #eff1f7;
+$d-voilet:hsl(257, 27%, 26%);
+$vdvoilet:hsl(260, 8%, 14%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+   
+
+    & a{
+        text-decoration: none;
+        
+    }
+    & li{
+        list-style: none;
+    }
+    & h1{
+        color: $heading;
+        font-weight: bolder;
+        font-size: 3.5rem;
+    }
+    & h2{
+        color: $heading;
+        font-size: 2rem;
+    }
+    & p{
+        color: $grey;
+    }
+    & img{
+        width: 100%;
+    }
+    & .btn{
+        background-color: $cyan;
+        color: white;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            background-color: #9be3e2;
+            border: 1px solid $heading;
+           
+        }
+       &:focus{
+        transform: scale(0.9);
+       }
+    }
+    .cl-grey{
+        color: $grey;
+    }
+
+    // utilities
+
+    & .ml{
+        margin-left: 6rem;
+    }
+    & .mr{
+        margin-right: 6rem;
+    }
+    & .ml-2{
+        margin-left: 2rem;
+    }
+    & .mr-2{
+        margin-right: 2rem;
+    }
+  
+    & .mt{
+        margin-top: 2rem;
+    }
+    & .mt-3{
+        margin-top: 3.5rem;
+    }
+    & .mb{
+        margin-bottom: 6rem;
+    }
+    & .mb-sm{
+        margin-bottom: 1.5rem;
+    }
+
+    & .pl{
+        padding-left: 3rem;
+    }
+    & .pr{
+        padding-right: 3rem;
+    }
+}
+
+.cl-cyan{
+    color:$grey;
+
+    &:hover{
+        color: $cyan;
+    }
+}
+
+@mixin flex($direction,$al,$jc) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $al;
+}

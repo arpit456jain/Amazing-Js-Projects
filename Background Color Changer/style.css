@@ -1,57 +1,119 @@
-body{
-    padding: 50px 100px;
-    margin: 0px;
-}
+
 
 #color-icons{
     text-align: right;
+    position: relative;
+    right: 2%;
+    color: rgb(2, 4, 26);
 }
 
 .buttons{
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     display: inline-block;
     border: 1px solid grey;
     cursor: pointer;
 }
 
-#white{
-    background-color: white;
+#first{
+    background: linear-gradient(to right, rgb(67, 198, 172), rgb(25, 22, 84));
+    box-shadow: -4px -4px -12px rgb(255,255,255) inset 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
 }
-
-#black{
-    background-color: black;
-}
-
-#green{
-    background-color: #adff2f;
-}
-
-#aqua{
-    background-color: #00ffff;
+#second{
+    background: linear-gradient(to right, rgb(3, 0, 30), rgb(115, 3, 192), rgb(236, 56, 188), rgb(253, 239, 249));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
+}#third{
+    background: linear-gradient(to right,rgb(255, 180, 194), rgb(58, 228, 240),rgb(64, 117, 233));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
+}#forth{
+    background: linear-gradient(to right, rgb(232, 203, 192), rgb(99, 111, 164));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
+}#fifth{
+    background: linear-gradient(to right, rgb(0, 4, 40), rgb(0, 78, 146));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
+}#sixth{
+    background: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
+}#seventh{
+    background: linear-gradient(to right, rgb(0, 191, 143), rgb(0, 21, 16));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
+}#eighth{
+    background: linear-gradient(to right, rgb(230, 218, 218), rgb(39, 64, 70));
+    box-shadow: -4px -4px -12px rgb(255,255,255) 4px 4px 12px rgba(121 130 160 0.747);
+    border-radius: 5px;
 }
 
 
 h1{
     text-decoration: #ce177d;
     text-decoration-line: underline;
+    font-size: 40px;
+    font-family: "Bad Script", cursive;
     text-align: center;
     
+    animation :animate 3s linear infinite; 
+    
+}
+@keyframes animate{
+    0%{
+        color: #fff;
+        filter: blur(2px) hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff
+        ;
+    }
+
+    30%,70%{
+        color: #fff;
+        filter: blur(1.5px) hue-rotate(150deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff
+        ;
+    }
+    100%{
+        color: transparent;
+        box-shadow: none;
+        filter: blur(1px) hue-rotate(00deg);
+    }
 }
 
 #imgstyle{
-    width: auto;
-    display: block;
-    margin: auto;
-    object-fit: cover;
-    height: 600px;
+   width: 70%;
+   align-items: center;
 }
-
+img{
+    width: 90vw;
+}
 p{
     font-size: 18px;
-    line-height: 25px;
+    position: absolute;
+   
+    margin: 2% 2% 2% 2%;
+
+    /* line-height: 25px; */
 }
 
 h2{
     text-align: center;
+}
+
+@media(max-width:830px){
+    
 }

@@ -13,7 +13,7 @@ function calculate() {
 
     if (bmi < 18.5) {
         category = "UnderWeight"
-        result.style.color = "ffea00"
+        result.style.color = "#ffff00"
     }
     else if (bmi >= 18.5 && bmi <= 24.9) {
         category = "Normal Weight"
@@ -21,7 +21,7 @@ function calculate() {
     }
     else if (bmi >= 25 && bmi <= 29.9) {
         category = "OverWeight"
-        result.style.color = "#ffa500"
+        result.style.color = "#ff6f00"
     }
     else {
         category = "Obese"

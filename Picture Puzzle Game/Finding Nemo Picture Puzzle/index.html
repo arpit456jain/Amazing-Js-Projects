@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding Nemo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="liquid">
+            <h1 class="display-5">
+              <p class="font-weight-bold">Finding Nemo</p>
+
+            </h1>
+            <h1 class="display-5">
+              <div class="d-flex flex-wrap"><p class="font-weight-bold">Finding Nemo</p></div>
+
+            </h1>
+            <br />
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          <center>
+            <img src="nemo.jpeg" width="100" height="100" />  </center>
+            <div id="board"></div>
+
+
+            <center><h2><b>TURNS:</b><div id="turns" style=" display: inline-block;">0</div></center></h2>
+          <div class="d-flex flex-wrap"><div id="pieces"></div></div>
+          </div>
+          </div>
+          </div>
+
+
+
+  </section>
+  <div class="popup-overlay"></div>
+  <div class="popup">
+    <h1><center>Congratulations!!</center> </h1>
+    <p><center>
+
+
+      You have finally helped Marlin recreate this special memory.
+    </center>  </p>
+    <div class="popup-close">
+      &times;
+    </div>
+  </div>
+
+
+
+
+
+  <script type="text/javascript">
+    function createBubbles() {
+      const section = document.querySelector('section')
+      const createElement = document.createElement('span')
+
+      var size = Math.random() * 60;
+
+      createElement.style.width = 23 + size + 'px';
+      createElement.style.height = 23 + size + 'px';
+      createElement.style.left = Math.random() * innerWidth + "px";
+      section.appendChild(createElement);
+
+      setTimeout(() => {
+        createElement.remove()
+      }, 4000)
+    }
+    setInterval(createBubbles, 50);
+  </script>
+
+</body>
+<script src="script.js"></script>
+
+</html>

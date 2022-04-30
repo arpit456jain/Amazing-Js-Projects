@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Fortune Cookie Generator</title>
+  <meta name="description" content="This page generates fortune cookie sayings.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="fortune.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <h1>Fortune Cookie Generator</h1>
+  <p id="info">Use this page to generate fortune cookie sayings.</p>
+  
+      <!--this button executes the `generateFortuneCookie()` function after taking user's name-->
+      <label for="fname">Enter your first name:</label>
+      <input type="text" id="fname" >
+  <br>
+  <br>
+  <button id="generate-button" onclick="generateFortuneCookie()">
+            Make My Fortune
+  </button>
+  
+  <div class="fortune-cookie-saying-wrapper">
+    <br>
+    <p id="message"></p><p id="cookie"></p>
+  </div>
+ 
+   <br>
+   <br>
+   <button id="clear-button" onclick="clearCookie()">
+       Clear Screen
+   </button>
+   <br>
+   <br>
+   <div class="container">
+   <a class ="twitter" id="tweet" href="https://twitter.com/intent/tweet?text=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a> 
+   
+   <a class="whatsapp" id="whatsapp" href="whatsapp://send?text=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp"></i></a>
+   </div>
+
+  <hr>
+  <h2>Previous Fortunes</h2>
+  <ul id="previous-fortunes-container">
+    <!--previously generated fortunes are listed here -->
+  </ul>
+</body>
+
+</html>
