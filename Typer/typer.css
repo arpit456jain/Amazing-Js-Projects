@@ -12,3 +12,19 @@ canvas {
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media screen and (max-width: 280px) {
+  .btn-center {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 720px) {
+  .btn-center {
+    position: absolute;
+    left: 30%;
+    
+    transform: translateX(-50%);
+  }
+}
