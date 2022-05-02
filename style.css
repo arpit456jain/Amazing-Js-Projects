@@ -25,6 +25,7 @@ h1 {
   padding-bottom: .5em;
   font-family: 'Bitter';
   font-size: 46px;
+  
 }
 h1:after {
   background: none repeat scroll 0 0 transparent;
@@ -219,6 +220,7 @@ span{
 .image{
   padding: .5em;
   transition: 0.3s;
+  
 }
 .image:hover{
   padding: 0;
@@ -482,5 +484,11 @@ button{
   text-align: center;
   font-size: 13px;
   color: #ddd;
+  
+}
+#footer .credits:hover {
+  color: yellow;
+   transform: translateY(-10%);
+  
 }
 
