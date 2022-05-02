@@ -101,6 +101,7 @@ body {
 .x,
 .o {
   cursor: default;
+  display: inline-flex;
 }
 
 .x::after {
