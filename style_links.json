@@ -451,9 +451,12 @@
   {
     "name":"Reflex Training",
     "link":"Reflex Training/Index.html"
-  }
+  },
   {
     "name":"Picture Puzzle Game",
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
-  }
+  },
+  {
+     "name":"LyricZ - Website",
+    "link":"Lyricz API lyrics finder/index.html"
 ]
