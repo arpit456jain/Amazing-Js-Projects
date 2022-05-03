@@ -70,6 +70,16 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.todo-container .tasks-content .task-box .edit {
+  float: right;
+  background-color: rgb(99, 79, 251);
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .todo-container .tasks-content .task-box.finished {
   text-decoration: line-through;
 }
