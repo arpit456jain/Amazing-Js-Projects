@@ -1,5 +1,9 @@
 [
   {
+    "name": "15-Puzzle-Challenge",
+    "link": "15-Puzzle-Challenge/index.html"
+
+  {
     "name": "2dShooterGame",
     "link": "2dShooterGame/index.html"
   },
@@ -11,6 +15,10 @@
     "name": "2048_game",
     "link": "2048_game/index.html"
   },
+  {
+    "name": "Sum Of Digits Caluclator",
+    "link": "Sum Of Digits Caluclator/sum.html"
+  }
   {
     "name": "Age Calculator",
     "link": "Age Calculator/index.html"
@@ -54,10 +62,10 @@
   {
     "name": "Bubble Burst Game",
     "link": "Bubble Burst Game/index.html"
-  }, 
+ }, 
   {
     "name": "Calculators",
-    "link": "Calculators"
+    "link": "calculatorspage.html"
   },
   {
     "name": "Candy Crush Clone",
@@ -115,11 +123,7 @@
     "name": "Dice Game",
     "link": "Dice Game/dicee.html"
   },
-  {
-    "name": "DIce Game Updated",
-    "link": "DIce Game Updated/dicee.html"
-  },
-  {
+
     "name": "Dictionary App",
     "link": "Dictionary App/index.html"
   },
@@ -436,14 +440,27 @@
     
   {
     "name": "Game Of Pong",
-    "link": "Game-of-pong/index.html"
+    "link": "Game of pong/index.html"
+
   }
   ,{
+
     "name":"InstagramMini",
     "link":"InstagramMini/index.html"
   },
   {
+    
     "name":"SpotifyClone",
     "link":"SpotifyClone/index.html"
+  },
+  {
+    
+    "name":"Reflex Training",
+    "link":"Reflex Training/Index.html"
+  },
+  {
+    
+    "name":"Picture Puzzle Game",
+    "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   }
 ]
