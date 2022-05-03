@@ -51,3 +51,18 @@ main{
     cursor: pointer;
     background: rgb(4, 99, 4);
 }
+
+.certTemp{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;  
+    margin-left: 30%; 
+}
+.temp{
+    padding: 1rem;
+}
+
+.selectmenu{
+    align-content: center;
+    margin-left: 40%;
+}

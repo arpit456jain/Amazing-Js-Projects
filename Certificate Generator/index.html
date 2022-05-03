@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <img src="certificate.png" class="logo" width="150" alt="codedamn logo" />
+        <img src="./img/certificate.png" class="logo" width="150" alt="codedamn logo" />
         <p style="font-size:25px">Get your certificate of
         <p>
         <h1 class="blue-head">For contributing to our Project</h1>
@@ -23,7 +23,29 @@
         <input required type="text" name="Name" id="name" placeholder="Dev 1234">
         <br>
         <button class="btn"  id="submit">Generate Certificate</button>
+        
     </main>
+    
+    <div class="certTemp">
+        <span class="temp">
+            <img style="height: 150px;" id="certificate-template1" src="./img/temp1.JPG" alt="template1">
+            <p style="text-align: center;">Template 1</p>
+        </span>
+        <span class="temp">
+        <img style="height: 150px;" id="certificateTemplate2" src="./img/temp2.JPG" alt="template2">
+        <p style="text-align: center;">Template 2</p>
+        </span>
+        
+    </div>
+    <div class="selectmenu">
+    <label for="template">Choose a template:</label>
+    <select name="template" id="template">
+        <option value="template1">Template1</option>
+        <option value="template2">Template2</option>
+    </select>
+    </div>
+
+    
 
     <!-- <div class="cert">
         <iframe src="" id="mypdf" height="500px" width="500px" frameborder="0"></iframe>
