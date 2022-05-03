@@ -12,5 +12,5 @@ You can add more fields in the resume as I commented the code file properly.
 
 ### Refrence
 I took reference and understood the JavaScript logic by watching the video <a href="https://youtu.be/sGEu_3O5emc">click here</a>. <br>
-This project helped me to undertand the logic and different use of js functions and properties.
-Rest all (HTML, CSS) was fully coded by me.
+This project helped me to undertand the logic and different use of js functions and properties.<br>
+Rest all was fully coded by me.
