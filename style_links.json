@@ -449,15 +449,27 @@
     "link":"InstagramMini/index.html"
   },
   {
+    
+    "name":"SpotifyClone",
+    "link":"SpotifyClone/index.html"
+  },
+  {
+    
     "name":"Reflex Training",
     "link":"Reflex Training/Index.html"
   },
   {
+    
     "name":"Picture Puzzle Game",
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   },
   {
+    
     "name":"Resume-Builder",
     "link":"Resume-Builder/index.html"
+  },
+  {
+     "name":"LyricZ - Website",
+    "link":"Lyricz API lyrics finder/index.html"
   }
 ]
