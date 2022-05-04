@@ -442,9 +442,8 @@
     "name": "Game Of Pong",
     "link": "Game of pong/index.html"
 
-  }
-  ,{
-
+  },
+{
     "name":"InstagramMini",
     "link":"InstagramMini/index.html"
   },
@@ -456,4 +455,8 @@
     "name":"Picture Puzzle Game",
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   }
+{
+    "name":"Stack_Game",
+    "link":"https://deploy-preview-614--amazing-js-projects.netlify.app/stack_game/"
+  },
 ]
