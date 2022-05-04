@@ -113,6 +113,7 @@ body {
   content: '○';
   color: #F2EBD3;
   font-size: 255px;
+  height: 190px;
   line-height: 160px;
 }
 
@@ -137,6 +138,7 @@ body {
 
   .o::after {
     font-size: 175px;
+    height: 180px;
   }
 }
 
@@ -157,6 +159,7 @@ body {
 
   .o::after {
     font-size: 125px;
+    height: 100px;
     line-height: 90px;
   }
 }
