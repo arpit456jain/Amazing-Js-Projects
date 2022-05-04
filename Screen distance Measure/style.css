@@ -30,7 +30,7 @@ svg {
   width: 400px;
   text-align: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   user-select: none;
