@@ -28,6 +28,11 @@
     "link": "Happy numberchecker/index.html"
   },
   {
+      "name": "Special number checker",
+    "link": "Special number checker/index.html"
+  },
+  
+  {
     "name": "Age Calculator",
     "link": "Age Calculator/index.html"
   },
