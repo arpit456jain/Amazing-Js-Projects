@@ -48,3 +48,15 @@ svg {
   opacity: 0.5;
   font-size: 16px;
 }
+
+@media only screen and (max-width: 700px) {
+  .math span {
+  font-size: 24px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .math span {
+  font-size: 12px;
+}
+}
