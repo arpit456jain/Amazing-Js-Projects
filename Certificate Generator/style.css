@@ -18,7 +18,7 @@ header{
 
 .cert{
     /* align-item: center; */
-    margin-left: 33%;
+    /* margin-left: 33%; */
     margin-top: 50px
 }
 
@@ -56,13 +56,31 @@ main{
     padding: 2rem;
     display: flex;
     flex-direction: row;  
-    margin-left: 30%; 
+    justify-content: center;
 }
 .temp{
     padding: 1rem;
+    width: 200px;
 }
 
 .selectmenu{
     align-content: center;
-    margin-left: 40%;
+    text-align: center;
+}
+
+@media screen and (max-width:761px){
+    
+    .certTemp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .blue-head{
+        align-items: center;
+        padding: 0 1;
+        text-align: center;
+        font-size: 29.6px;
+    }
+
 }
