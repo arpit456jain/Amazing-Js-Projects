@@ -60,3 +60,9 @@ svg {
   font-size: 12px;
 }
 }
+
+@media only screen and (max-width: 300px) {
+  .math span {
+  font-size: 9px;
+}
+}
