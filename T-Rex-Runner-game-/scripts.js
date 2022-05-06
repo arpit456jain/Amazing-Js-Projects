@@ -19,7 +19,7 @@ let isAlive = setInterval(() => {
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
     //  detect collision
-    if (cactusLeft < 152 && cactusLeft > 0 && dinoTop >= 750) {
+    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
         // collision
         // console.log("collision");
         cactus.style.animation = "none"

@@ -3,19 +3,21 @@
     margin: 0;
 }
 .game {
-width: 3000px;
-height: 1000px;
+/* width: 3000px;
+height: 1000px; */
+width: 600px;
+height: 200px;
 border: 2px solid black;
 margin: auto;
 }
 #dino{
-width: 152px;
-height: 180px;
+width: 50px;
+height: 50px;
 background-image: url(trex.png);
-background-size:152px 180px;
+background-size:50px 50px;
 background-repeat: no-repeat;
 position: relative;
-top:820px;
+top:150px;
 }
 .jump{
     animation: jump 0.3s  linear; 
@@ -23,55 +25,55 @@ top:820px;
 }
 @keyframes jump{
     0%{
-        top: 820px;
+        top: 150px;
     }
     30%{
-        top: 750px;
+        top: 130px;
     }
     50%{
-        top: 660px;
+        top: 80px;
     }
     80%{
-        top: 750px;
+        top: 130px;
     }
     100%{
-        top: 820px;
+        top: 150px;
     }
 }
 
 #cactus{
-width: 120px;
-height: 150px;
+width: 20px;
+height: 40px;
 background-image: url(cactus.png);
-background-size:120px 150px;
+background-size:20px 40px;
 background-repeat: no-repeat;
 position: relative;
-top:670px ;
-left:2848px ;
+top:110px ;
+left:580px ;
 animation: block 2s linear infinite ;    
 }
 @keyframes block{
     0%{
-        left:2848px ;
+        left:580px ;
     }
     100%{
-        left: 0px;
+        left: -20px;
     }
 }
 #txt{
     display: block;
     margin:auto ;
-    margin-top: 500px;
-    padding: 75px 195px;
-    font-size: 50px;
+    margin-top: 100px;
+    padding: 15px 15px;
+    font-size: 20px;
    display: none;
 }
 #btn{
     display: block;
     margin:auto ;
-    margin-top: 100px;
-    padding: 25px 125px;
-    font-size: 50px;
+    margin-top: 20px;
+    padding: 2px 5px;
+    font-size: 20px;
    cursor: pointer;
    display: none;
 }
