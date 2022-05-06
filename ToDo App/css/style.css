@@ -113,5 +113,17 @@ body {
 }
 .task-stats .tasks-completed span {
   background-color: #03a9f4;
+
 }
+@media(max-width:500px){
+  .todo-container .add-task {
+  height: 78px;
+  width: 95%;
+}
+.todo-container .tasks-content > span:not(:last-child) {
+  
+  margin-bottom: 34px;
+}
+}
+
 
