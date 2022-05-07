@@ -16,9 +16,22 @@
     "link": "2048_game/index.html"
   },
   {
+    "name": "Spy Number Checker",
+    "link": "Spy%20Number%20Checker/index.html"
+  },
+  {
     "name": "Sum Of Digits Caluclator",
     "link": "Sum Of Digits Caluclator/sum.html"
   },
+  {
+    "name": "Happy number checkerr",
+    "link": "Happy numberchecker/index.html"
+  },
+  {
+      "name": "Special number checker",
+    "link": "Special number checker/index.html"
+  },
+  
   {
     "name": "Age Calculator",
     "link": "Age Calculator/index.html"
@@ -70,6 +83,10 @@
   {
     "name": "Candy Crush Clone",
     "link": "Candy Crush Clone/index.html"
+  },
+  {
+    "name": "Certificate Generator",
+    "link": "Certificate Generator/index.html"
   },
   {
     "name": "Clock",
@@ -464,7 +481,9 @@
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   },
   {
-    
+     "name":"Screen distance Measure",
+    "link":"Screen distance Measure/index.html"
+  }, 
     "name":"Resume-Builder",
     "link":"Resume-Builder/index.html"
   },
