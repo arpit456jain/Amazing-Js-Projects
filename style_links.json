@@ -356,9 +356,14 @@
     "name": "Sneaker Site",
     "link": "Sneaker Site/index.html"
   },
+
   {
     "name": "Spin-and-Win-Game",
     "link": "Spin-and-Win-Game/index.html"
+  },
+  {
+    "name":"Spotify Clone",
+    "link":"Spotify Clone/index.html"
   },
   {
     "name": "Stick hero game by yash-25log",
