@@ -31,7 +31,6 @@
       "name": "Special number checker",
     "link": "Special number checker/index.html"
   },
-  
   {
     "name": "Age Calculator",
     "link": "Age Calculator/index.html"
@@ -491,5 +490,9 @@
   {
      "name":"LyricZ - Website",
     "link":"Lyricz API lyrics finder/index.html"
+  },
+  {
+    "name":"Trex Runner",
+    "link":"Trex Runner/index.html"
   }
 ]
