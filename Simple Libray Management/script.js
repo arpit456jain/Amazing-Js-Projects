@@ -122,6 +122,9 @@ function displayBooks() {
 //Show adding message
 function addMessage() {
     let message = document.getElementById('message');
+    let navbar = document.getElementById('navbar');
+
+    navbar.style.display = "none";
 
     message.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert">
     <strong>Message:</strong> Your book has been successfully added.
@@ -131,6 +134,7 @@ function addMessage() {
   </div>`
 
     setTimeout(() => {
+        navbar.style.display = "flex";
         message.innerHTML = ``;
     }, 2000);
 }
@@ -138,7 +142,9 @@ function addMessage() {
 //Show error message
 function errorMessage() {
     let message = document.getElementById('message');
+    let navbar = document.getElementById('navbar');
 
+    navbar.style.display = "none";
     message.innerHTML = `<div class="alert alert-danger alert-dismissible fade show" role="alert">
     <strong>Error:</strong> To add book, add name of book.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -147,6 +153,7 @@ function errorMessage() {
   </div>`
 
     setTimeout(() => {
+        navbar.style.display = "flex";
         message.innerHTML = ``;
     }, 2000);
 }
@@ -154,6 +161,9 @@ function errorMessage() {
 //Show clear message
 function clearMessage() {
     let message = document.getElementById('message');
+    let navbar = document.getElementById('navbar');
+
+    navbar.style.display = "none";
 
     message.innerHTML = `<div class="alert alert-info alert-dismissible fade show" role="alert">
     <strong>Message:</strong> Your book shelf is clear! To add more books refresh the browser.
@@ -163,8 +173,9 @@ function clearMessage() {
   </div>`
 
     setTimeout(() => {
+        navbar.style.display = "flex";
         message.innerHTML = ``;
-    }, 8000);
+    }, 2000);
 }
 
 
