@@ -1,0 +1,68 @@
+body{
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.control {
+  fill: black;
+  cursor: move;
+}
+
+.segment {
+  stroke-width: 2;
+  stroke: black;
+  opacity: 0.3;
+}
+
+.output {
+  width: 400px;
+  text-align: center;
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.math {
+  margin: 20px;
+  position: absolute;
+}
+.math span {
+  font-family: monospace;
+  display: block;
+  color: grey;
+  line-height: 24px;
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  .math span {
+  font-size: 24px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .math span {
+  font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 300px) {
+  .math span {
+  font-size: 9px;
+}
+}

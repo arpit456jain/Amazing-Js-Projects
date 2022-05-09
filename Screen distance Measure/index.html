@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Screen distance Measure</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg>
+	
+</svg>
+
+<div class="output">
+	<h2></h2>
+	<span>Drag black handles to change distance.</span>
+</div>
+
+<div class="math">
+	<span>
+		var dx = x2 - x1;
+	</span>
+	<span>
+		var dy = y2 - y1;
+	</span>
+	<span>
+		var distance = Math.sqrt((dx * dx) + (dy * dy));
+	</span>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
