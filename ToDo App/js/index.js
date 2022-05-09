@@ -28,28 +28,37 @@ theAddButton.onclick = function () {
     count++;
 
     //create delete button
+    let textSpan=document.createElement("span")
     let deleteElement = document.createElement("span");
+    let editElement = document.createElement("span");
 
     //create span text
     let text = document.createTextNode(theInput.value);
-
+    
     //crete delete button text
+    let texting=document.createTextNode(theInput.value);
     let deleteText = document.createTextNode("Delete");
-
+    let editText = document.createTextNode("Edit");
+    console.log(texting);
     //add text to span
-    mainSpan.appendChild(text);
 
     //add class to span
     mainSpan.className = "task-box";
 
     //add text to delete button
+    textSpan.appendChild(texting);
     deleteElement.appendChild(deleteText);
+    editElement.appendChild(editText);
 
     //add class to delete button
+    textSpan.className="texts"
     deleteElement.className = "delete";
+    editElement.className="edit"
 
     //add delete button to main span
+    mainSpan.appendChild(textSpan);
     mainSpan.appendChild(deleteElement);
+    mainSpan.appendChild(editElement);
 
     //add the task to the container
     tasksContainer.appendChild(mainSpan);
@@ -72,7 +81,7 @@ document.addEventListener("click", function (e) {
       finished--;
     }
     e.target.parentNode.remove();
-  }
+   }
   //finish task
   if (e.target.classList.contains("task-box")) {
     e.target.classList.toggle("finished");
@@ -81,6 +90,14 @@ document.addEventListener("click", function (e) {
     }else{
     	finished--;
     }
+  }
+  else if(e.target.className=="edit"){
+    
+    console.log("edit button pressed")
+    theInput.value=e.target.previousElementSibling.previousSibling.innerHTML
+    e.target.parentNode.remove();
+
+
   }
   tasksCount.textContent=count;
     tasksCompleted.textContent=finished;
