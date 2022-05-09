@@ -481,9 +481,12 @@
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   },
   {
+    "name":"Voice To Text Converter",
+    "link":"Voice%20To%20Text%20Converter/index.html"},{
      "name":"Screen distance Measure",
     "link":"Screen distance Measure/index.html"
   }, 
+  {
     "name":"Resume-Builder",
     "link":"Resume-Builder/index.html"
   },
@@ -494,5 +497,10 @@
     {
      "name":"EyeSight Check",
     "link":"EyeSight Check/index.html"
+
+  },
+  {
+    "name": "Meditation feature",
+    "link": "Meditation feature/assets/meditation.html"
   },
 ]
