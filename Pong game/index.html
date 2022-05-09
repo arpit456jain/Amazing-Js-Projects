@@ -212,7 +212,11 @@
             ball.vel.y = -ball.vel.y
           }
 
-          this.players[1].pos.y = ball.pos.y
+          this.players[1].pos.y = (ball.pos.y)
+          
+          if(ball.pos.y>380 || ball.pos.y<50){
+            this.players[1].pos.y = ((ball.pos.y)+this.players[0].pos.y)/2
+          }
 
           this.players.forEach((player) => {
             player.update(dt)
