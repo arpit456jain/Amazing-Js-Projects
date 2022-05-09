@@ -24,8 +24,8 @@
     "link": "Sum Of Digits Caluclator/sum.html"
   },
   {
-    "name": "Happy number checkerr",
-    "link": "Happy numberchecker/index.html"
+    "name": "Happy number checker",
+    "link": "Happy number checker/index.html"
   },
   {
       "name": "Special number checker",
@@ -491,7 +491,9 @@
   },
   {
     "name":"Voice To Text Converter",
-    "link":"Voice%20To%20Text%20Converter/index.html"},{
+    "link":"Voice%20To%20Text%20Converter/index.html"
+  },
+  {
      "name":"Screen distance Measure",
     "link":"Screen distance Measure/index.html"
   }, 
@@ -500,12 +502,12 @@
     "link":"Resume-Builder/index.html"
   },
   {
-     "name":"LyricZ - Website",
-    "link":"Lyricz API lyrics finder/index.html"
+     "name":"Lyricz finder",
+    "link":"Lyricz finder/index.html"
   },
     {
-     "name":"Color Picker",
-    "link":"Color Picker/index.html"
+     "name":"Car Color Change",
+    "link":"Car Color Change/index.html"
   },
   {
      "name":"EyeSight Check",
