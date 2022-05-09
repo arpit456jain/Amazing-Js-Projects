@@ -356,9 +356,14 @@
     "name": "Sneaker Site",
     "link": "Sneaker Site/index.html"
   },
+
   {
     "name": "Spin-and-Win-Game",
     "link": "Spin-and-Win-Game/index.html"
+  },
+  {
+    "name":"Spotify Clone",
+    "link":"Spotify Clone/index.html"
   },
   {
     "name": "Stick hero game by yash-25log",
@@ -466,7 +471,11 @@
     "link":"InstagramMini/index.html"
   },
   {
-    
+    "name":"Validation Form",
+    "link":"Validation Form/index.html"
+  }
+,
+  {
     "name":"SpotifyClone",
     "link":"SpotifyClone/index.html"
   },
@@ -481,9 +490,12 @@
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   },
   {
+    "name":"Voice To Text Converter",
+    "link":"Voice%20To%20Text%20Converter/index.html"},{
      "name":"Screen distance Measure",
     "link":"Screen distance Measure/index.html"
   }, 
+  {
     "name":"Resume-Builder",
     "link":"Resume-Builder/index.html"
   },
@@ -495,4 +507,18 @@
      "name":"Microphone Mouth",
     "link":"Microphone Mouth/index.html"
   },
+
+     "name":"Color Picker",
+    "link":"Color Picker/index.html"
+  },
+  {
+     "name":"EyeSight Check",
+    "link":"EyeSight Check/index.html"
+
+  },
+  {
+    "name": "Meditation feature",
+    "link": "Meditation feature/assets/meditation.html"
+  }
+
 ]
