@@ -1,6 +1,8 @@
 console.log("Welcome to Spotify");
 
 // Initialize the Variables
+let isPlaying=false;
+
 let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
@@ -61,11 +63,18 @@ const makeAllPlays = ()=>{
     Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         element.classList.remove('fa-pause-circle');
         element.classList.add('fa-play-circle');
+   
     })
 }
 
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+
+
+
+Array.from ( document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
+        isPlaying=!isPlaying;
+       
+       function callPlay(){
         makeAllPlays();
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
@@ -77,8 +86,26 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         gif.style.opacity = 1;
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
+       }
+       function callPause(){
+    
+        songIndex = parseInt(e.target.id);
+        e.target.classList.remove('fa-pause-circle');
+        e.target.classList.add('fa-play-circle');
+        audioElement.src = `songs/${songIndex+1}.mp3`;
+        masterSongName.innerText = songs[songIndex].songName;
+        audioElement.currentTime = 0;
+        audioElement.pause();
+        gif.style.opacity = 1;
+        masterPlay.classList.remove('fa-pause-circle');
+        masterPlay.classList.add('fa-play-circle');
+       }
+       isPlaying?callPlay():callPause();
+        
     })
 })
+
+
 
 document.getElementById('next').addEventListener('click', ()=>{
     if(songIndex>=9){
