@@ -10,12 +10,12 @@ const createResultRow = (symbol, title) => {
   const codePointHex = symbol.codePointAt(0).toString(16);
   const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
   return `
-    <div class="result-row">
+    <div class="result-row" data-clipboard=${symbol}>
         <span class="title">
             <img src=${src} alt="">
             ${title}
         </span>
-        <span class="info" data-clipboard=${symbol}>Click to copy</span>
+        <span class="info">Click to copy</span>
     </div>
     `;
 };
@@ -42,7 +42,7 @@ const displayEmojis = () => {
   resultElement.innerHTML = value;
   document.querySelectorAll(".result-row").forEach((element) => {
     element.addEventListener("click", (e) => {
-      addToClipBoard(e.target.dataset.clipboard);
+      addToClipBoard(e.target.closest("[data-clipboard]").dataset.clipboard);
     });
   });
 };
