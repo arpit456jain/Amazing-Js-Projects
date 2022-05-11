@@ -6,7 +6,7 @@ h1 {
     font-family: 'Inter';
     filter: drop-shadow(8px 8px 10px black);
     font-size: 70px;
-    
+
 } 
 #al {
     font-family: 'Inter';
@@ -17,14 +17,22 @@ h2 {
     font-family: 'Inter';
     filter: drop-shadow(8px 8px 10px brown);
 }
+#box {
+    align-items: right;
+    display: grid;
+}
 button {
-    position: static;
+    text-align: center;
+    font-weight: 900;
+    border: none;
+    display: inline-block;
     height: 24px;
     left: 17px;
     top: 9px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin: none;
+    padding: 32px;
+    padding-bottom: 32px;
+    margin-left: 50px;
+    margin-right: 50px;
     background: lightgreen;
     color: darkgreen;
     font-family: 'Inter';
@@ -34,7 +42,7 @@ button {
     cursor: pointer;
 }
 #password {
-    position: static;
+    position: relative;
     height: 54px;
     left: 47px;
     top: 9px;
