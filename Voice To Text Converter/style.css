@@ -1,0 +1,33 @@
+#results {position: relative;
+    top:10vh;
+    border: 5px dotted rgb(245, 1, 1);
+    width: 50vw;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+  
+  #interim {position: relative;
+    top:5vh;
+    word-wrap: break-word;
+    border: 5px solid rgb(8, 231, 45);
+    border-radius: 10px;
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    width: 50vw;
+    margin: auto;
+  }
+
+  .btn{
+    position: relative;
+    top:80px;
+    margin-right: 25px !important;
+  }
+  
+  

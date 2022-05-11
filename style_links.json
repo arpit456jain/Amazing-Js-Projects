@@ -24,8 +24,8 @@
     "link": "Sum Of Digits Caluclator/sum.html"
   },
   {
-    "name": "Happy number checkerr",
-    "link": "Happy numberchecker/index.html"
+    "name": "Happy number checker",
+    "link": "Happy number checker/index.html"
   },
   {
       "name": "Special number checker",
@@ -356,9 +356,14 @@
     "name": "Sneaker Site",
     "link": "Sneaker Site/index.html"
   },
+
   {
     "name": "Spin-and-Win-Game",
     "link": "Spin-and-Win-Game/index.html"
+  },
+  {
+    "name":"Spotify Clone",
+    "link":"Spotify Clone/index.html"
   },
   {
     "name": "Stick hero game by yash-25log",
@@ -415,6 +420,10 @@
     "link": "Tip Calculator/index.html"
   },
   {
+    "name":"ToDo App",
+    "link":"ToDo App/index.html"
+  },
+  {
     "name": "To-Do List",
     "link": "To-Do List/index.html"
   },
@@ -466,7 +475,11 @@
     "link":"InstagramMini/index.html"
   },
   {
-    
+    "name":"Validation Form",
+    "link":"Validation Form/index.html"
+  }
+,
+  {
     "name":"SpotifyClone",
     "link":"SpotifyClone/index.html"
   },
@@ -481,7 +494,11 @@
     "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
   },
   {
-     "name":"Screen distance Measure",
+    "name":"Voice To Text Converter",
+    "link":"Voice%20To%20Text%20Converter/index.html"
+  },
+  {
+    "name":"Screen distance Measure",
     "link":"Screen distance Measure/index.html"
   }, 
   {
@@ -489,11 +506,30 @@
     "link":"Resume-Builder/index.html"
   },
   {
-     "name":"LyricZ - Website",
-    "link":"Lyricz API lyrics finder/index.html"
+
+  {
+    "name":"Simple Library Management",
+    "link":"Simple Libray Management/index.html"
   },
   {
-     "name":"Simple Library Management",
-    "link":"Simple Libray Management/index.html"
+     "name":"Lyricz finder",
+    "link":"Lyricz finder/index.html"
+  },
+  {
+    "name":"Car Color Change",
+    "link":"Car Color Change/index.html"
+  },
+  {
+     "name":"EyeSight Check",
+    "link":"EyeSight Check/index.html"
+
+  },
+  {
+    "name": "Meditation feature",
+    "link": "Meditation feature/assets/meditation.html"
+  },
+  {
+    "name": "Color Picker",
+    "link": "Color%20Picker/index.html"
   }
 ]
