@@ -525,6 +525,9 @@
   {
     "name": "Color Picker",
     "link": "Color%20Picker/index.html"
+  },
+  {
+    "name": "Emoji-Search",
+    "link": "Emoji-Search/index.html"
   }
-
 ]
