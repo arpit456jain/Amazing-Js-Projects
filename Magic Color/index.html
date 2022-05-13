@@ -1,21 +1,35 @@
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<title>app </title>
-<style>
-input{
-width:80%;
-padding:10px;
-margin:0 auto;
-display:block;
-}
-</style>
+    <title>Background Color Changer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    </style>
 </head>
-<body id="a">
 
-<h1 align="center"> Enter your color name in box</h1>
-<br><br>
-<input 
-oninput="document.getElementById('a').style.backgroundColor=this
-.value">
+<body id="a">
+    <h1>Background Color Changer</h1>
+    <hr>
+    <h1> Enter your color name in box below</h1>
+    <br>
+    <input oninput="document.getElementById('a').style.backgroundColor=this.value">
+    <p>Example : Enter <span style="color: red;">red</span> in textbox above.</p>
 </body>
+
 </html>
