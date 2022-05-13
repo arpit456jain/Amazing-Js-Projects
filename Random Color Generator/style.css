@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e74c3c;
+    font-family: "Montserrat";
+}
+
+.color {
+    margin-top: 300px;
+    text-align: center;
+}
+
+#hex {
+    display: block;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.color button {
+    background-color: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    cursor: pointer;
+    font-size: 24px;
+}
