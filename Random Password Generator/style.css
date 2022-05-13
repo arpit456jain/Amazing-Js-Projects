@@ -26,17 +26,14 @@ button {
     font-weight: 900;
     border: none;
     display: inline-block;
-    height: 24px;
-    left: 17px;
-    top: 9px;
-    padding: 32px;
+    padding-top: 32px;
     padding-bottom: 32px;
     margin-left: 50px;
     margin-right: 50px;
     background: lightgreen;
     color: darkgreen;
     font-family: 'Inter';
-    font-size: 16px;
+    font-size: 40px;
     border: green;
     filter: drop-shadow(8px 8px 10px green);
     cursor: pointer;
@@ -52,7 +49,7 @@ button {
     background: lightgreen;
     color: darkgreen;
     font-family: 'Inter';
-    font-size: 16px;
+    font-size: 25px;
     border: green;
     filter: drop-shadow(8px 8px 10px green);
     cursor: pointer;
@@ -66,7 +63,7 @@ padding: 10px;
 
 }
 textarea {
-    font-size: larger;
+    font-size: 40px;
     text-align: center;
     color: lightgreen;
     background: #273549;
