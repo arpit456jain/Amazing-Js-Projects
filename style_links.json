@@ -89,6 +89,11 @@
     "link": "Certificate Generator/index.html"
   },
   {
+    "name": "Circular Timer",
+    "link": "Circular Timer/index.html"
+
+  },
+  {
     "name": "Clock",
     "link": "Clock/index.html"
   },

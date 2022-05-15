@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.container{
+    position: relative;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    user-select: none;
+   background:  conic-gradient(#8b8bff 360deg ,#8b8bff 0deg ,#585862d5 0deg,#585862d5 360deg);
+    animation: animations 2s linear 1 forward;
+}
+ion-icon{
+    color: white;
+    font-size: 0.7em;
+}
+.container::before{
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 95%;
+    background: black;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    color: #fac7c78f;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.text-container{
+    width: 70%;
+    height: 100px;
+   color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    font-size:2.5em ;
+    transform: translate(-50%,-50%);
+
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 0.45em 1.6em;
+    font-size: 1.14em;
+    background: rgb(10, 172, 10);
+    border-radius: 0.35em;
+    color: rgb(156, 221, 156);
+}
+.time-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.23em;
+}
+
+#min,#sec{
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    /* font-size:3em ; */
+    font-size: 1.3em;
+    width: 75px;
+    padding-left: 3.4px;
+   
+}
+
+h3{
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    display: none;
+    font-size: 1.3em;
+    
+}
+h2{
+    color: white;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 2.4em;
+    letter-spacing: 0.13em;
+    display: none;
+}
+.dot{
+    display: block;
+}
