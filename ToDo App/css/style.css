@@ -70,6 +70,18 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.todo-container .tasks-content .task-box .edit {
+  margin-right: 2%;
+  float: right;
+  background-color: rgb(99, 79, 251);
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .todo-container .tasks-content .task-box.finished {
   text-decoration: line-through;
 }
@@ -101,4 +113,17 @@ body {
 }
 .task-stats .tasks-completed span {
   background-color: #03a9f4;
+
 }
+@media(max-width:500px){
+  .todo-container .add-task {
+  height: 78px;
+  width: 95%;
+}
+.todo-container .tasks-content > span:not(:last-child) {
+  
+  margin-bottom: 34px;
+}
+}
+
+

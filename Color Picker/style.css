@@ -1,0 +1,73 @@
+body {
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+  line-height: 150%;
+}
+
+.wrap {
+  min-height: 100vh;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.wrap .half {
+  width: 50%;
+  padding: 32px 0;
+}
+
+.title {
+  font-family: cursive;
+  line-height: 24px;
+  display: block;
+  padding: 8px 0;
+}
+
+.readout {
+  margin-top: 32px;
+  line-height: 180%;
+}
+
+#values {
+  font-family: cursive;
+  line-height: 150%;
+}
+
+.link {
+  margin-top: 16px;
+}
+.link a {
+  color: MediumSlateBlue;
+}
+
+.half-readout{
+  position: relative;
+  display: block;
+  /* top: -276px; */
+  bottom: 281px;
+  right: 20%;
+  /* left: -20%; */
+  width: 50%;
+  align-items: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 0.8em;
+}
+
+.IroColorPicker{
+  display: block;
+  width: 50%;
+  position: absolute;
+  right: 30%;
+  bottom: 30%;
+}
+
+@media only screen and (min-width: 700px) {
+  .half-readout{
+    font-size: 1em;
+  }
+}

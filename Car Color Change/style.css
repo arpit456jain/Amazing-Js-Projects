@@ -1,0 +1,49 @@
+html {
+  font-size: 1vw;
+}
+
+body {
+  background: #333;
+  margin: 10rem 5rem;
+  cursor: none;
+}
+
+.car {
+  margin: 0;
+  display: inline;
+  width: 49%;
+  transition: background 0.4s ease-in-out;
+}
+
+.car-paint {
+  transition: fill 0.4s ease-in-out;
+}
+
+radioGroup {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40rem;
+  font-size: 0;
+  white-space: nowrap;
+}
+radioGroup input {
+  display: none;
+}
+radioGroup input + label {
+  border: 1px solid rgba(127, 127, 127, 0.3);
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+  background: red;
+  background-color: attr("data-value");
+  display: inline-block;
+  cursor: pointer;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+}
+radioGroup input:checked + label {
+  transform: scaleY(1.7);
+}

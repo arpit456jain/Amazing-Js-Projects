@@ -101,7 +101,9 @@ nav ul li{
     margin: 0 23px;
     border-radius: 34px;
 }
-
+.songlistplay{
+    margin-right: 3%;
+}
 .timestamp{
     margin: 0 23px;
 }
@@ -126,7 +128,12 @@ nav ul li{
       background-color: antiquewhite;
     }
   }
-
+  @media (max-width:600px){
+    .songItem{
+        font-size: 2.6vw;
+        width: 100%;
+    }
+  }
 #previous {
   padding-right: 20px;
 }

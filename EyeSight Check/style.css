@@ -1,0 +1,175 @@
+html {
+  font-size: 1.5vmax;
+  font-family: sans-serif;
+  background: #222;
+  color: white;
+}
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 2.4vw;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.fullscreen-remaining {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+}
+
+.remaining {
+  opacity: 0.5;
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+.fullscreen {
+  width: 2rem;
+  height: 1.4rem;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 2rem;
+  margin: -2rem -1rem;
+}
+.fullscreen .exit-fullscreen {
+  visibility: hidden;
+}
+.fullscreen:hover {
+  opacity: 1;
+}
+
+.fullscreen.active .exit-fullscreen {
+  visibility: visible;
+}
+.fullscreen.active .enter-fullscreen {
+  visibility: hidden;
+}
+
+#card-selector {
+  margin-bottom: 2rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 1rem 1.2rem;
+  font-size: 2rem;
+  margin: 0 1rem;
+  width: 10rem;
+  font-weight: bold;
+  background: #777;
+  color: #ccc;
+  transition: 0.2s background ease-out, 0.2s color ease-out;
+  border-radius: 0.5rem;
+}
+button:hover {
+  color: #fff;
+  background: #000;
+}
+@media screen and (min-aspect-ratio: 16/9) {
+  button {
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-80%);
+  }
+}
+
+.alt-button:hover {
+  color: #000;
+  background: #fff;
+}
+@media screen and (min-aspect-ratio: 16/9) {
+  .alt-button {
+    right: auto;
+    left: 1rem;
+  }
+}
+
+.deck {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.button-container-final {
+  display: none;
+}
+
+.card {
+  background: white;
+  padding: 6rem 4rem;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0.2rem 0.2rem 1rem 0.5rem #000;
+  text-align: center;
+  border-radius: 1rem;
+  max-width: 100%;
+}
+@media screen and (max-height: 430px) {
+  .card {
+    padding: 1rem 4rem 2rem;
+  }
+}
+
+.score {
+  font-size: 4rem;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  color: #44aa44;
+}
+
+.score-incorrect {
+  right: 2rem;
+  left: auto;
+  color: #aa4444;
+}
+
+.stars {
+  display: none;
+  width: 30rem;
+  height: 6rem;
+}
+
+.progress {
+  position: fixed;
+  width: 100%;
+  height: 1rem;
+  background: black;
+  bottom: 0;
+}
+.progress .fill {
+  width: 0%;
+  height: 100%;
+  background: white;
+}
+
+.timer-container {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+.timer-container .timer {
+  font-size: 2rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.timer-container .timer:hover {
+  opacity: 1;
+}
