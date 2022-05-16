@@ -15,9 +15,11 @@ blockquote {
 	max-width: 600px;
 	line-height: 1.4;
 	position: relative;
+
 	margin: 0;
 	padding: .5rem;
   font-family: 'Special Elite', cursive;
+  color:#FFA500;
 
 }
 
@@ -43,8 +45,13 @@ blockquote:after {
 }
 
 cite {
-	line-height: 3;
-	text-align: left;
+	line-height: 2;
+	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
 }
 
 
@@ -67,10 +74,10 @@ h1 {
                  0 20px 20px rgba(0,0,0,.15);
   }
 
-.container{
-   
+.containernew{
+
     background-color: white;
-    width: 65%;
+    width:80%;
     height: 450px;
     border: 1px solid red;
     /* background-color: #30373b; */
@@ -114,14 +121,14 @@ button {
 
 
 @media screen and (max-width:1180px) {
-    .container{
+    .containernew{
         height: 600px;
         width: 80%;
     }
 }
 
 @media screen and (max-width:800px) {
-    .container{
+    .containernew{
         height: 700px;
         width: 90%;
     }
