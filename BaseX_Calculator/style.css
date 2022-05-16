@@ -70,4 +70,7 @@
         width: 80%;
         font-size: 1rem;
     }
+    #to_convert, #x, #y{
+        margin-top: 1rem;    
+    }
 }
