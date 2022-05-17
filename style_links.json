@@ -544,5 +544,10 @@
   {
     "name": "Emoji-Search",
     "link": "Emoji-Search/index.html"
+  },
+
+  {
+    "name": "Feedback Component",
+    "link": "Feedback slider/index.html"
   }
 ]
