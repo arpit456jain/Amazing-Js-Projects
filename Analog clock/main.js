@@ -1,13 +1,11 @@
 // dynamic creation and changing of heading which shows current status of alarm
 var heading = document.createTextNode(``);
-var node = document.createElement("h1");
+var node = document.createElement("p");
 node.appendChild(heading);
-document.body.appendChild(node);
-node.id = "heading";
+document.getElementById('heading').appendChild(node);
 var check = 1;
 
 node.style.color = "white";
-node.style.position = "absolute";
 node.style.top = "100px";
 node.style.right = "600px";
 
@@ -70,10 +68,6 @@ function toggleClass()
 }
 
 
-
-
-
-
 // for time;
 const deg = 6; 
 // 360 / (12 * 5);
@@ -124,9 +118,9 @@ setInterval(() => {
 // keeps track of alarm status continuously
 setInterval(() =>{
     if(localStorage.getItem("set_time")=="undefined"){
-        heading.textContent="No Alarm is currently set";
+        heading.textContent="No Alarm set";
     }else{
-        heading.textContent=`Alarm is set for time: ${localStorage.getItem("set_time")} Hours`;
+        heading.textContent=`Alarm set: ${localStorage.getItem("set_time")} Hours`;
     }
     if(localStorage.getItem("set_time") != "undefined"){
         
