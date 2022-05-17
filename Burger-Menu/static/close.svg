@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Close button</title>
+    <g id="Close-button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19.5143805" y1="10.4733242" x2="10.5143805" y2="19.4733242" id="Path" stroke="#FFFFFF"></line>
+        <line x1="19.2293903" y1="19.6632195" x2="10.2293903" y2="10.6632195" id="Path-Copy" stroke="#FFFFFF"></line>
+        <circle id="Oval-Copy" stroke="#FFFFFF" cx="15" cy="15" r="14"></circle>
+    </g>
+</svg>
