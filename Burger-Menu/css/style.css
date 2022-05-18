@@ -108,6 +108,6 @@ span sup{
     border-radius: 22px;
 }
 
-.phone-menu{
+.phone-menu,.menu-icon{
     display: none;
 }

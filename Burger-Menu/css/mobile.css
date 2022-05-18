@@ -14,6 +14,7 @@ nav{
 }
 
 .menu-icon{
+    display: block;
     color: #f28d11;
     padding-right: 1em;
     font-size: 1.5em;
