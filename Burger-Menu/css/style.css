@@ -75,7 +75,7 @@ span sup{
     color: #00d39f;
 }
 
-.link::before, #home::before{
+.link::before{
     content: '';
     position: absolute;
     bottom: -11.7px;
