@@ -1,48 +1,47 @@
 /* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   display: flex;
   padding: 0 10px;
-  background-image: url("bgi.png");
+  background-color: rgb(255, 192, 229);
+  /* background-size:contain; */
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background: #AA57CC; */
-  margin-top: 200px;
-background-size: 100% 100%;
-overflow: hidden;
+  margin: auto;
+  background-size: 100% 100%;
+  overflow: hidden;
 }
-::selection{
+::selection {
   color: #fff;
-  background: rgb(170,87,204,0.8);
+  background: rgb(170, 87, 204, 0.8);
 }
-.wrapper{
-  max-width: 500px;
+.wrapper {
+  max-width: 480px;
+  padding: 1rem;
   background: #fff;
   border-radius: 7px;
-  padding: 20px 25px 15px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-margin-bottom: 269px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-header h1{
+header h1 {
   font-size: 27px;
   font-weight: 500;
 }
-header p{
+header p {
   margin-top: 5px;
   font-size: 18px;
   color: #474747;
 }
-.inputs{
+.inputs {
   margin: 20px 0 27px;
 }
-.inputs input{
+.inputs input {
   width: 100%;
   height: 60px;
   outline: none;
@@ -52,16 +51,16 @@ header p{
   border: 1px solid #999;
   transition: 0.1s ease;
 }
-.inputs input::placeholder{
+.inputs input::placeholder {
   color: #999999;
 }
-.inputs input:focus{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+.inputs input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
-.inputs input:focus::placeholder{
+.inputs input:focus::placeholder {
   color: #bebebe;
 }
-.inputs button{
+.inputs button {
   width: 100%;
   height: 56px;
   border: none;
@@ -73,43 +72,81 @@ header p{
   margin-top: 20px;
   border-radius: 5px;
   pointer-events: none;
-  background: #AA57CC;
+  background: #aa57cc;
   transition: opacity 0.15s ease;
 }
-.inputs button.active{
+.inputs button:hover {
+  background: #a253c1;
+}
+.inputs button.active {
   opacity: 1;
   pointer-events: auto;
 }
-.info-txt{
+.info-txt {
+  padding: 0.5rem;
   display: none;
-  font-size: 19px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  font-size: 1rem;
   text-align: center;
-  margin-bottom: 18px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.info-txt span{
-  color: #AA57CC;
+.info-txt.sucess {
+  border-left: 0.8rem solid rgb(57, 169, 65);
+}
+.info-txt.sucess::before {
+  border-bottom: 5px solid rgb(57, 169, 65);
+}
+.info-txt.failure {
+  border-left: 0.8rem solid rgb(176, 58, 31);
+}
+.info-txt.failure::before {
+  border-bottom: 5px solid rgb(176, 58, 31);
+}
+.info-txt:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  animation: borderBottom 3s linear forwards;
+}
+
+@keyframes borderBottom {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.info-txt span {
+  color: #aa57cc;
 }
 
 @media (max-width: 520px) {
-  .wrapper{
+  .wrapper {
     padding: 17px 20px 10px;
   }
-  header h1{
+  header h1 {
     font-size: 25px;
   }
-  header p{
+  header p {
     font-size: 16px;
   }
-  .inputs input{
+  .inputs input {
     height: 54px;
     font-size: 17px;
   }
-  .inputs button{
+  .inputs button {
     height: 50px;
     font-size: 16px;
     margin-top: 17px;
   }
-  .info-txt{
+  .info-txt {
     font-size: 18px;
   }
 }
