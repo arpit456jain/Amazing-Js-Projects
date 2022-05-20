@@ -1,0 +1,75 @@
+body {
+    background:  #ECFDF5;
+}
+h1 {
+    color: black;
+    font-family: 'Inter';
+    filter: drop-shadow(8px 8px 10px black);
+    font-size: 70px;
+
+} 
+#al {
+    font-family: 'Inter';
+    filter: drop-shadow(8px 8px 10px red);
+}
+h2 {
+    color: #6B7280;
+    font-family: 'Inter';
+    filter: drop-shadow(8px 8px 10px brown);
+}
+#box {
+    align-items: right;
+    display: grid;
+}
+button {
+    text-align: center;
+    font-weight: 900;
+    border: none;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: lightgreen;
+    color: darkgreen;
+    font-family: 'Inter';
+    font-size: 40px;
+    border: green;
+    filter: drop-shadow(8px 8px 10px green);
+    cursor: pointer;
+}
+#password {
+    position: relative;
+    height: 54px;
+    left: 47px;
+    top: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0px 10px;
+    background: lightgreen;
+    color: darkgreen;
+    font-family: 'Inter';
+    font-size: 25px;
+    border: green;
+    filter: drop-shadow(8px 8px 10px green);
+    cursor: pointer;
+}
+p {
+text-align: center;
+color: lightgreen;
+background: #273549;
+padding: 10px;
+
+
+}
+textarea {
+    font-size: 40px;
+    text-align: center;
+    color: lightgreen;
+    background: #273549;
+    padding: 50px;
+    margin-top: 100px; 
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
