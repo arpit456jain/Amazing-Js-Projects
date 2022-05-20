@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Circular Timer</title>
+</head>
+<body>
+    <form  class="form">
+
+
+        <div class="container">
+            <div class="text-container">
+                <div class="min-container time-container">
+                    <ion-icon name="caret-up-circle-outline" class="caret-up-min"></ion-icon>
+                    <h3 class="min"></h3>
+                    <input type="text" name="min" id="min" value="00" disabled >
+                    <ion-icon name="caret-down-circle-outline" class="caret-down-min"></ion-icon>
+                </div>
+                <h3 class="dot">:</h3>
+               
+    
+                <div class="sec-container time-container">
+                    <ion-icon name="caret-up-circle-outline" class="caret-up-sec"></ion-icon>
+                    <h3 class="sec"></h3>
+                    <input type="text" name="sec" id="sec" value="00" disabled >
+                    <ion-icon name="caret-down-circle-outline" class="caret-down-sec"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <h2>Times UP!</h2>
+        <button type="submit">Start</button>
+    </form>
+   
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="./script.js"></script>
+</body>
+</html>
