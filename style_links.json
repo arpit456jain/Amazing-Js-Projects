@@ -89,6 +89,11 @@
     "link": "Certificate Generator/index.html"
   },
   {
+    "name": "Circular Timer",
+    "link": "Circular Timer/index.html"
+
+  },
+  {
     "name": "Clock",
     "link": "Clock/index.html"
   },
@@ -325,6 +330,10 @@
     "link": "Quote-generator/index.html"
   },
   {
+    "name": "Random Password Generator",
+    "link": "Random Password Generator/index.html"
+  },
+  {
     "name": "Random Shapes and Backgrounds",
     "link": "Random Shapes and Backgrounds/index.html"
   },
@@ -498,7 +507,7 @@
     "link":"Voice%20To%20Text%20Converter/index.html"
   },
   {
-     "name":"Screen distance Measure",
+    "name":"Screen distance Measure",
     "link":"Screen distance Measure/index.html"
   }, 
   {
@@ -506,11 +515,15 @@
     "link":"Resume-Builder/index.html"
   },
   {
+    "name":"Simple Library Management",
+    "link":"Simple Libray Management/index.html"
+  },
+  {
      "name":"Lyricz finder",
     "link":"Lyricz finder/index.html"
   },
-    {
-     "name":"Car Color Change",
+  {
+    "name":"Car Color Change",
     "link":"Car Color Change/index.html"
   },
   {
@@ -529,5 +542,10 @@
   {
     "name": "Emoji-Search",
     "link": "Emoji-Search/index.html"
+  },
+
+  {
+    "name": "Feedback Component",
+    "link": "Feedback slider/index.html"
   }
 ]

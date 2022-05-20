@@ -13,6 +13,11 @@
    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
    rel="stylesheet"
   />
+  <link
+   href="https://fonts.googleapis.com/css?family=Special+Elite"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- font awesome cdn -->
   <link
@@ -25,18 +30,33 @@
   <link rel="stylesheet" href="style.css" />
  </head>
  <body>
-  <div>
-   <h1>Quote Generator</h1>
    <div class="container">
-    <i class="fas fa-quote-left"></i>
-    <div id="quotes">Everything in life is luck.</div>
-    <hr />
-    <div id="author">By Donald Trump</div>
-    <button onclick="getQuotes()">New Quotes</button>
+     <div class="row">
+       <div class="col-sm-12">
+  <h1>Quote Generator</h1>
+   <div class="containernew">
+     <blockquote><div id="quotes">
+       Everything in life is luck.
+     </div></blockquote>
+     <hr />
+     <div id="author"><cite>By Donald Trump</cite></div>
+
    </div>
-  </div>
+
+
+
+
+   </div>
+ </div>
+</div>
+
+
+
+
+    <button onclick="getQuotes()">New Quotes</button>
+
+
 
   <script src="script.js"></script>
  </body>
 </html>
-

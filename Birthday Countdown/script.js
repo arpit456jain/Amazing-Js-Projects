@@ -8,7 +8,6 @@ let yr= new Date().getFullYear();
 
 //add you birthday date in month day year format
 const birthday = new Date(person+ "/" +yr)
-console.log(birthday);
 
 
 const second = 1000
@@ -22,7 +21,6 @@ function countDown() {
   
   const timeSpan = birthday - today
   //milliseconds
-  console.log(timeSpan)
 
   if (timeSpan <= -day) {
     timeLeft.innerHTML = 'Hope you had a nice Birthday!!'
