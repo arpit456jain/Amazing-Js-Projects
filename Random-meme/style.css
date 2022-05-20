@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+#btn {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 2rem;
+}
+
+img {
+  width: 450px;
+  height: 450px;
+}
+
+.img-container {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow: scroll;
+  }
+
+  img {
+    width: 200px;
+  }
+}
