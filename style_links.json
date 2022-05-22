@@ -551,5 +551,9 @@
   {
     "name": "Feedback slider",
     "link": "Feedback slider/index.html"
+  },
+  {
+    "name": "wordCountTool",
+    "link": "wordCountTool/index.html"
   }
 ]
