@@ -12,8 +12,8 @@ generateCalendar = (month, year) => {
     calendar_days.innerHTML = ''
 
     let currDate = new Date()
-    if (!month) month = currDate.getMonth()
-    if (!year) year = currDate.getFullYear()
+    if (month==undefined) month = currDate.getMonth()
+    if (year==undefined) year = currDate.getFullYear()
 
     let curr_month = `${month_names[month]}`
     month_picker.innerHTML = curr_month
@@ -26,10 +26,6 @@ generateCalendar = (month, year) => {
         if (i >= first_day.getDay()) {
             day.classList.add('calendar-day-hover')
             day.innerHTML = i - first_day.getDay() + 1
-            day.innerHTML += `<span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>`
             if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
                 day.classList.add('curr-date')
             }
