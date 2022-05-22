@@ -62,7 +62,7 @@ const getProject = fetch('style_links.json')
 
             return`<div class="stylebox">
               
-                  <img class="image" src="/${project.name}/preview.png" alt="" >
+            <img class="image" src="/${project.name}/preview.png" onerror="this.src='logo.png'" alt="" >
                   <div class="card-data">
                       <p class="card-heading">${project.name}</p>
                 
