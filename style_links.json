@@ -90,7 +90,7 @@
   },
   {
     "name": "Circular Timer",
-    "link": "Circular Timer/index.html"
+    "link": "Circular%20Timer/index.html"
 
   },
   {
@@ -110,12 +110,12 @@
     "link": "Color_Code_Converter/index.html"
   },
   {
-    "name": "Color-change",
-    "link": "Color-change/index.html"
+    "name": "color-change",
+    "link": "color-change/index.html"
   },
   {
-    "name": "Color-guessing game",
-    "link": "Color-guessing game/index.html"
+    "name": "color-guessing game",
+    "link": "color-guessing game/index.html"
   },
   {
     "name": "Connect Four",
@@ -214,8 +214,8 @@
     "link": "Issue Tracker/index.html"
   },
   {
-    "name": "Javascript-sudoku-main",
-    "link": "Javascript-sudoku-main/index.html"
+    "name": "javascript-sudoku-main",
+    "link": "javascript-sudoku-main/index.html"
   },
   {
     "name": "Jokes Chrome Extension",
@@ -326,8 +326,8 @@
     "link": "Quote Generator/index.html"
   },
   {
-    "name": "Quote-generator",
-    "link": "Quote-generator/index.html"
+    "name": "quote-generator",
+    "link": "quote-generator/index.html"
   },
   {
     "name": "Random Password Generator",
@@ -342,8 +342,8 @@
     "link": "Random-joke-generator/index.html"
   },
   {
-    "name": "RandomColorGenerator",
-    "link": "RandomColorGenerator/index.html"
+    "name": "randomColorGenerator",
+    "link": "randomColorGenerator/index.html"
   },
   {
     "name": "Rock-Paper-Scissors",
@@ -375,8 +375,8 @@
     "link":"Spotify Clone/index.html"
   },
   {
-    "name": "Stick hero game by yash-25log",
-    "link": "Stick hero game by yash-25log/index.html"
+    "name": "stick hero game by yash-25log",
+    "link": "stick hero game by yash-25log/index.html"
   },
   {
     "name": "StopWatch",
@@ -449,8 +449,8 @@
     "link": "Weather-App/index.html"
   },
   {
-    "name": "Web dev proj3 clock",
-    "link": "Web dev proj3 clock/index.html"
+    "name": "web dev proj3 clock",
+    "link": "web dev proj3 clock/index.html"
   },
   {
     "name": "Weight Converter",
@@ -474,7 +474,7 @@
   },
     
   {
-    "name": "Game Of Pong",
+    "name": "Game of pong",
     "link": "Game of pong/index.html"
 
   }
@@ -516,10 +516,10 @@
   },
   {
     "name":"Simple Library Management",
-    "link":"Simple Libray Management/index.html"
+    "link":"Simple Library Management/index.html"
   },
   {
-     "name":"Lyricz finder",
+    "name":"Lyricz finder",
     "link":"Lyricz finder/index.html"
   },
   {
@@ -545,7 +545,7 @@
   },
 
   {
-    "name": "Feedback Component",
+    "name": "Feedback slider",
     "link": "Feedback slider/index.html"
   }
 ]
