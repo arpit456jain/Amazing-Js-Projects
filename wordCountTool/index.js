@@ -1,11 +1,11 @@
 textArea = document.querySelector("textarea");
 
 const countWord = () => {
-  const text = textArea.value.replace(/\h+/g, " "); //squeeze multiple spaces
-  const wordArray = text.split(" ");
+  const text = textArea.value.replaceAll(/\ +/g, " "); //squeeze multiple spaces
+  const wordArray = text.split(/[ \n]/);
   const lenWord = wordArray.filter((element) => element != "").length;
   word.innerText = lenWord;
-  const lenCharWithSpace = textArea.value.length;
+  const lenCharWithSpace = textArea.value.replaceAll('\n','').length;
   charWithSpace.innerText = lenCharWithSpace;
   const lenCharWithoutSpace = wordArray
     .filter((element) => element != "" && element != "\n")
@@ -13,11 +13,11 @@ const countWord = () => {
   charWithoutSpace.innerText = lenCharWithoutSpace;
   const lenSentence = text
     .split(/[.?!]/)
-    .filter((element) => element != "" && element != "\n").length;
+    .filter((element) => element != "" && element != "\n" && element != " ").length;
   sentence.innerText = lenSentence;
   const lenParagraph = text
-    .split(/\n\n/)
-    .filter((element) => element != "").length;
+    .split(/\n+/) 
+    .filter((element) => element != "" && element != "\n" && element != " ").length;
   paragraph.innerText = lenParagraph;
 };
 
