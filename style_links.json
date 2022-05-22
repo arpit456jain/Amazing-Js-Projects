@@ -547,5 +547,9 @@
   {
     "name": "Feedback Component",
     "link": "Feedback slider/index.html"
+  },
+  {
+    "name": "wordCountTool",
+    "link": "wordCountTool/index.html"
   }
 ]
