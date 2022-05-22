@@ -1,5 +1,6 @@
 const sliders = function () {
   const slides = document.querySelectorAll(".slide");
+  const slideContainer = document.querySelector(".slider-inner");
   const btnLeft = document.querySelector(".slider__btn--left");
   const btnRight = document.querySelector(".slider__btn--right");
   const dotContainer = document.querySelector(".dots");
@@ -29,9 +30,10 @@ const sliders = function () {
   };
 
   const goToSlide = function (slide) {
-    slides.forEach(
-      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
-    );
+    // slides.forEach(
+    //   (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    // );
+    slideContainer.style.transform = `translateX(${-100 * (slide)}%)`
   };
 
   // Next slide
