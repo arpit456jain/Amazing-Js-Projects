@@ -38,7 +38,7 @@ function Circle(x, y, dx, dy, radius, color) {
     ctx.stroke();
   };
   this.update = function () {
-    if (this.radius < 25) {
+    if (this.radius < 64) {
       if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
         this.dx = -this.dx;
       }
@@ -52,20 +52,20 @@ function Circle(x, y, dx, dy, radius, color) {
 
       // interactive
       if (
-        mouse.x - this.x < 25 &&
-        mouse.x - this.x > -25 &&
-        mouse.y - this.y < 25 &&
-        mouse.y - this.y > -25
+        mouse.x - this.x < 64 &&
+        mouse.x - this.x > -64 &&
+        mouse.y - this.y < 64 &&
+        mouse.y - this.y > -64
       ) {
-        if (this.radius < 50) {
+        if (this.radius < 80) {
           this.radius += 2;
           console.log(this.radius);
-          if (this.radius === 25) {
+          if (this.radius === 64) {
             score += 1;
             console.log("+");
           }
         }
-      } else if (this.radius > this.minRadius && this.radius < 25) {
+      } else if (this.radius > this.minRadius && this.radius < 64) {
         this.radius -= 2;
       }
 
@@ -77,7 +77,7 @@ function Circle(x, y, dx, dy, radius, color) {
 const circles = [];
 
 for (let i = 0; i < 100; i++) {
-  const radius = 5;
+  const radius = 8;
   const x = Math.random() * (canvas.width - radius * 2) + radius;
   const y = Math.random() * (canvas.height - radius * 2) + radius;
   const dx = Math.random() - 0.25 * 2 + 1;

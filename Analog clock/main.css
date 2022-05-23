@@ -1,228 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #090909;
-    background: #07141b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background: #07141b;
 }
-
-
 
 body.light {
-    background: #d1dae3;
+  background: #d1dae3;
 }
 
-
 .clock {
-    width: 375px;
-    height: 375px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(https://raw.githubusercontent.com/ankitapuri/clock/master/clock%20.png);
-    background-size: cover;
-    border: 4px;
-    /* box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5); */
-    box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
-                inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
-                0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
-                inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
+  width: 90vw;
+  margin: 1.5rem 0;
+  max-width: 375px;
+  height: 90vw;
+  max-height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://raw.githubusercontent.com/ankitapuri/clock/master/clock%20.png);
+  background-size: cover;
+  border: 4px;
+  /* box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5); */
+  box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.092),
+    inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.092),
+    0em 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 body.light .clock {
-    box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.3),
-                inset 1em 1em -1em rgba(255, 255, 255, 0.3),
-                0em -1.2em -1.2em rgba(0, 0, 0, 0.5),
-                inset 1em -1em 1em rgba(0, 0, 0, 0.1);
+  box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.3),
+    inset 1em 1em -1em rgba(255, 255, 255, 0.3),
+    0em -1.2em -1.2em rgba(0, 0, 0, 0.5), inset 1em -1em 1em rgba(0, 0, 0, 0.1);
 }
-
-
 
 .clock :hover {
-    /* added hover functionlity in main.js file */
-    cursor: pointer;
-
+  /* added hover functionlity in main.js file */
+  cursor: pointer;
 }
-
-
 
 /* The small circle int the center */
 .clock:before {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
 
-   
-    z-index: 10000;
-    /* kept as a high value, since wanted at top */
+  z-index: 10000;
+  /* kept as a high value, since wanted at top */
 }
 
 body.light .clock:before {
-    background: #1a74be;
+  background: #1a74be;
 }
-
 
 .clock .hour,
 .clock .min,
 .clock .sec {
-    position: absolute;
+  position: absolute;
 }
 
 /* length of respective arms; */
-.clock .hour, .hr {
-    width: 160px;
-    height: 160px;
-} 
-
-.clock .min, .mn {
-    width: 190px;
-    height: 190px;
+.clock .hour,
+.hr {
+  width: 160px;
+  height: 160px;
 }
 
-.clock .sec, .sc {
-    width: 230px;
-    height: 230px;
+.clock .min,
+.mn {
+  width: 190px;
+  height: 190px;
 }
 
-
-.hr, .mn, .sc {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    position: absolute;
-    border-radius: 50%;
-    
+.clock .sec,
+.sc {
+  width: 230px;
+  height: 230px;
 }
 
+.hr,
+.mn,
+.sc {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
 
 .hr:before {
-    content: '';
-    position: absolute;
-    width: 7.5px;
-    height: 80px;
-    background: #f81460;
-    z-index: 10;
-    /* z-index least */
-    border-radius: 2.8px;
+  content: "";
+  position: absolute;
+  width: 7.5px;
+  height: 80px;
+  background: #f81460;
+  z-index: 10;
+  /* z-index least */
+  border-radius: 2.8px;
 }
 
 .mn:before {
-    content: '';
-    position: absolute;
-    width: 3.5px;
-    height: 100px;
-    background: #ffffff;
-    z-index: 11;
-    /* z-index more than hour hand */
-    border-radius: 3px;
+  content: "";
+  position: absolute;
+  width: 3.5px;
+  height: 100px;
+  background: #ffffff;
+  z-index: 11;
+  /* z-index more than hour hand */
+  border-radius: 3px;
 }
 
 body.light .mn:before {
-    background: #091921;
-
+  background: #091921;
 }
-
 
 .sc:before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 150px;
-    background: #0075fa80;
-    z-index: 12;
-    /* z-index more than hour minute hand */
-    border-radius: 3px;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #0075fa80;
+  z-index: 12;
+  /* z-index more than hour minute hand */
+  border-radius: 3px;
 }
-
 
 .toggleClass {
-    position: absolute;
-    top: 35px;
-    right: 150px;
-    width: 20px;
-    margin: 2px;
-    height: 20px;
-    font-size: 18px;
-    border-radius: 50%;
-    background: #d1dae3;
-    color: #d1dae3;
-    font-family: 'Quicksand', sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  width: 20px;
+  margin: 2px;
+  height: 20px;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: #d1dae3;
+  color: #d1dae3;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-
 .toggleClass:before {
-    position: absolute;
-    content: 'Light Mode';
-    white-space: nowrap;
-    left: 25px;
-
+  position: absolute;
+  content: "Light Mode";
+  white-space: nowrap;
+  left: 25px;
 }
 
 body.light .toggleClass {
-    background: #091921;
-    color: #091921;
-    content: 'Dark Mode';
+  background: #091921;
+  color: #091921;
+  content: "Dark Mode";
 }
-
 
 body.light .toggleClass:before {
-    content: 'Dark Mode';
-    white-space: nowrap;
+  content: "Dark Mode";
+  white-space: nowrap;
 }
 
-
-#set_time {
-    position: absolute;
-    bottom: 100px;
-    right: 200px;
+#heading{
+    font-size: 1.8rem;
+    text-align: center;
 }
 
-#alarm_heading {
-    position: absolute;
-    color: green;
-    bottom: 170px;
-    right: 150px;
+.alarm{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d1dae3;
 }
-
+body.light .alarm{
+    color: #091921;
+}
+.alarm input{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    font-size: 1.3rem;
+}
+.alarmButtons{
+    display: flex;
+    gap: 0.8rem;
+}
+.alarmButtons button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
 #alarm_button {
-    position: absolute;
-    bottom: 98px;
-    right: 100px;
     background-color: green;
     border: green;
     color: white;
-    font-size: 16px;
-    padding: 3px;
     border-radius: 6px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 #delete_button {
-    position: absolute;
-    bottom: 50px;
-    right: 130px;
-    background-color: red;
-    border: red;
-    color: white;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 6px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: red;
+  border: red;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
