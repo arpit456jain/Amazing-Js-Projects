@@ -547,5 +547,18 @@
   {
     "name": "Feedback Component",
     "link": "Feedback slider/index.html"
+  },
+  {
+    "name": "wordCountTool",
+    "link": "wordCountTool/index.html"
+  },
+  
+  {
+    "name": "Custom QR Code",
+    "link": "Custom QR Code/index.html"
+  },
+  {
+    "name": "Discord Emoji Switcher",
+    "link": "Discord Emoji Switcher/index.html"
   }
 ]
