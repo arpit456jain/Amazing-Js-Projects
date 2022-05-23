@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#2d2d2d url("../static/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* styling for navbar */
+nav{
+    background: #16181c;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+/* styling for logo */
+.logo{
+    display: inline-block;
+    width: 150px;
+    height: 62.85px;
+    margin-right: 7em;
+}
+
+.logo span{
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    font:40px sans-serif;
+    background: linear-gradient(to right, #da2a6d, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+span sup{
+    font-size: 10px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links ul li{
+    display: inline;
+    position: relative;
+}
+
+/* styling for individual navbar element */
+.link{
+    text-decoration: none;
+    color: white;
+    font:17px/30px sans-serif;
+    padding: 10px 5px 0;
+    margin: 0px 15px;
+    transition: 1s;
+}
+
+.link:hover{
+    color: #00d39f;
+}
+
+.link::before{
+    content: '';
+    position: absolute;
+    bottom: -11.7px;
+    left: 0;
+    right: 0;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    line-height: 1;
+    padding-bottom: 7px;
+    border-image: linear-gradient(to right,rgb(106, 168, 255),rgb(62, 26, 226));
+    border-image-slice: 1;
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+    width: 0%;
+    transition: all 0.3s ease-in;
+}
+
+.links ul li:hover .link::before{
+    width: 68%;
+}
+
+.nav-button{
+    background-color: white;
+    color: black;
+    padding: 9px 17px;
+    border-radius: 22px;
+}
+
+.phone-menu,.menu-icon{
+    display: none;
+}

@@ -1,4 +1,3 @@
-console.log('this is my clock');
 
 function updateclock() {
     // get the current date and time
@@ -25,6 +24,6 @@ function updateclock() {
     // seting the date 
     let currenttimestr = currenthour + ":" + currentminutes + ":" + currentseconds + " " + timeofday;
     document.getElementById('clock').innerHTML = currenttimestr;
-    document.getElementById('clock2').innerHTML = currenttime;
+    document.getElementById('clock2').innerHTML = currenttime.toDateString();
 
 }

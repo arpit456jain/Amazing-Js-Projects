@@ -1,4 +1,3 @@
-console.log("this is my alarm file ")
 let alarmsubmit =  document.getElementById('alarmsubmit');
 
 alarmsubmit.addEventListener('click',setalarm);
