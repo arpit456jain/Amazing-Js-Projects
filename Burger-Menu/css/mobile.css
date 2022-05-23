@@ -1,0 +1,68 @@
+.links{
+    display: none;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.link::before{
+    bottom: 14.1px;
+    left: 20px;
+    right: unset;
+}
+
+.links ul li:hover .link::before{
+    width: 37%;
+}
+
+.logo{
+    margin-left: 1.5em;
+    width: 8em;
+}
+
+.menu-icon{
+    display: block;
+    color: #f28d11;
+    padding-right: 1em;
+    font-size: 1.5em;
+}
+
+.phone-menu{
+    display: block;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+    width: 65vw;
+    transition: all 1s ease-out;
+}
+
+.phone-menu ul li{
+    display: block;
+    padding-bottom: 20px;
+}
+
+.close-button{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 80%;
+    margin-bottom: 1em;
+    background-color: rgb(26, 26, 26);
+    border-radius: 14px;
+}
+
+.close-button img{
+    width: 100%;
+}
+
+/* #home::before{
+    bottom: 18px;
+    width: 25%;
+    left: 19px;
+    right: unset;
+} */

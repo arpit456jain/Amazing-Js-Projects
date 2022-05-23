@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="A Simple Analog Clock">
-    <meta name="theme-color" content="#091921">
-    <link rel="stylesheet" href="main.css">
-    <link rel= "icon" href= "https://image.flaticon.com/icons/png/128/2784/2784459.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="A Simple Analog Clock" />
+    <meta name="theme-color" content="#091921" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="icon"
+      href="https://image.flaticon.com/icons/png/128/2784/2784459.png"
+    />
 
     <title>Analog Clock</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="clock" id="hovers">
-        <div class="hour">
-            <div class="hr" id="hr">
-                
-            </div>
-        </div>
+      <div class="hour">
+        <div class="hr" id="hr"></div>
+      </div>
 
-        <div class="min">
-            <div class="mn" id="mn">
+      <div class="min">
+        <div class="mn" id="mn"></div>
+      </div>
 
-            </div>
-        </div>
-
-        <div class="sec">
-            <div class="sc" id="sc">
-
-            </div>
-        </div>
-
+      <div class="sec">
+        <div class="sc" id="sc"></div>
+      </div>
     </div>
+    <div id="heading"></div>
     <div class="alarm">
-        <h1 id="alarm_heading">Alarm</h1>
-        <input type="time" id="set_time" name="timeField" value="00:00" />
-        <button id="alarm_button" onclick="setAlarm()">Set Alarm</button>
-        <button id="delete_button" onclick="delAlarm()">Delete Alarm</button>
+      <h1 id="alarm_heading">Alarm</h1>
+      <input type="time" id="set_time" name="timeField" value="00:00" />
+      <div class="alarmButtons">
+          <button id="alarm_button" onclick="setAlarm()">Set Alarm</button>
+          <button id="delete_button" onclick="delAlarm()">Delete Alarm</button>
+      </div>
     </div>
     <div class="toggleClass" onclick="toggleClass()"></div>
     <script src="main.js"></script>
-
-</body>
+  </body>
 </html>
