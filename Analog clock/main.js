@@ -1,28 +1,23 @@
 // dynamic creation and changing of heading which shows current status of alarm
 var heading = document.createTextNode(``);
-var node = document.createElement("h1");
+var node = document.createElement("p");
 node.appendChild(heading);
-document.body.appendChild(node);
-node.id = "heading";
+document.getElementById('heading').appendChild(node);
 var check = 1;
 
 node.style.color = "white";
-node.style.position = "absolute";
 node.style.top = "100px";
 node.style.right = "600px";
 
 
 // dynamic hover function showing current time
 var node_hover = document.getElementById("hovers");
-var floater = document.createElement("h3");
-floater.style.position = "absolute";
-floater.style.top = "500px";
-floater.style.right = "100px";
+var floater = document.createElement("p");
 floater.style.color = "white";
 var hover_check=1;
 var text = document.createTextNode(``);
 floater.appendChild(text);
-document.body.appendChild(floater);
+document.getElementById('heading').appendChild(floater);
 node_hover.addEventListener("mouseover", function( event ) {
     let day = new Date();
     let hour = day.getHours();
@@ -39,7 +34,7 @@ node_hover.addEventListener("mouseover", function( event ) {
     if(minute<10){
         minute = `0${minute}`;
     }
-    text.textContent = `Current Time is : ${hour}:${minute} ${part}`;
+    text.textContent = `Current Time: ${hour}:${minute} ${part}`;
     setTimeout(function() {
         text.textContent = "";
       }, 4000);
@@ -68,10 +63,6 @@ function toggleClass()
         hover_check = 1;
     }
 }
-
-
-
-
 
 
 // for time;
@@ -124,9 +115,9 @@ setInterval(() => {
 // keeps track of alarm status continuously
 setInterval(() =>{
     if(localStorage.getItem("set_time")=="undefined"){
-        heading.textContent="No Alarm is currently set";
+        heading.textContent="No Alarm set";
     }else{
-        heading.textContent=`Alarm is set for time: ${localStorage.getItem("set_time")} Hours`;
+        heading.textContent=`Alarm set: ${localStorage.getItem("set_time")} Hours`;
     }
     if(localStorage.getItem("set_time") != "undefined"){
         

@@ -40,13 +40,15 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 
-const getProject = fetch('style_links.json')
+const getProject =()=>{
+  fetch('style_links.json')
                 .then(response => response.json())
                 .then(data => {
                     projects = data;
                     displayProjects(projects)
 
-});
+  });
+} 
 
 
     // <a target="_blank" href="https://github.com/arpit456jain/Amazing-Css-Effects/tree/master/${links[i].name}" class="code">Code</a>
@@ -58,11 +60,10 @@ const getProject = fetch('style_links.json')
 
           
 
-          console.log(projects.length)
 
             return`<div class="stylebox">
               
-                  <img class="image" src="/${project.name}/preview.png" alt="" >
+            <img class="image" src="/${project.name}/preview.png" onerror="this.src='logo.png'" alt="" >
                   <div class="card-data">
                       <p class="card-heading">${project.name}</p>
                 

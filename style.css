@@ -4,15 +4,12 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0 auto;
   padding: auto;
   background-color: rgb(19, 24, 44);
   overflow-x: hidden;
 }
-
-
 /* heading */
 h1 {
   color: #fff;
@@ -42,10 +39,7 @@ h1:hover:after {
   width: 100%;
   left: 0;
 }
-
-
 /* SCROLL TOP STARTS */
-
 #scroll-top {
   position: fixed;
   right: 1rem;
@@ -66,18 +60,14 @@ h1:hover:after {
 #scroll-top.active {
   bottom: 5px;
 }
-
 @media only screen and (max-width:786px) {
   #scroll-top{
     position: relative;
     right: 12rem;
   }
 }
-
 /* SCROLL TOP ENDS */
-
 /* NAVABR STARTS HERE */
-
 a {
   text-decoration: none;
   color: white;
@@ -91,11 +81,9 @@ a {
  .navbar-nav a.active{
    color: yellow;
  }
-
  li {
   list-style: none;
  }
-
  .navbar{
    background-color: rgb(19, 24, 44);
  }
@@ -104,9 +92,6 @@ a {
    line-height: 10px;
    transform: translate(50%, -200%);
  }
-
-
-
 .nav-link{
   font-family: 'Space Mono', monospace;
   margin:0 1em ;
@@ -115,30 +100,23 @@ a {
 span{
   color: yellow;
 }
-
 .navbar-brand{
   font-family: 'Space Mono',monospace;
   
 }
-
 .navbar-brand:hover{
   transform: none;
   color: white;
 }
-
 #navbarText{
   justify-content: right;
   align-items: right;
 }
-
 @media only screen and (max-width: 786px) {
   
 }
-
  
 /* NAVBAR ENDS HERE */
-
-
 /* MISC. DESIGNING */
 .tags{
   padding: 0;
@@ -148,12 +126,9 @@ span{
  font-size: 16px;
  opacity: 70%;
 }
-
 .tags-opening{
   transform: translate(24%, 290%);
 }
-
-
 #counter{
   color: white;
   font-family: 'Bitter';
@@ -166,7 +141,6 @@ span{
   
   box-shadow: 0px 10px 10px #000;
 }
-
 @media only screen and (max-width: 786px){
   .tags-opening{
     transform: translate(10%, 200%);
@@ -178,15 +152,8 @@ span{
     margin-bottom: 2em;
   }
 }
-
-
-
 /* END OF MISC. DESIGING */
-
-
 /* SEARCH BOX STARTS */
-
-
 .searchBar{
   outline: none;
   border: 2px solid yellow;
@@ -202,7 +169,6 @@ span{
   box-shadow: 0px 10px 10px #000;
   
 }
-
 .searchBox{
   display: flex;
   flex-direction: row;
@@ -210,12 +176,8 @@ span{
   align-items: center;
   padding: 1em;
 }
-
-
 /* SEARCH BOX ENDS */
-
 /* CARDS DESIGN STARTS  */
-
 .image{
   padding: .5em;
   transition: 0.3s;
@@ -223,7 +185,6 @@ span{
 .image:hover{
   padding: 0;
 }
-
 .styles {
   display: flex;
   justify-content: center;
@@ -233,7 +194,6 @@ span{
   margin-top: 4vmin;
   flex-wrap: wrap;
 }
-
 .stylebox {
   display: flex;
   flex-direction: column;
@@ -241,17 +201,17 @@ span{
   flex-wrap: wrap;
   overflow: hidden;
   background-color: white;
-  padding: .2rem;
+  padding: 1.6rem;
   text-align: center;
   font-family: 'Bitter', sans-serif;
-  margin: 1.5rem;
-  border-radius: 5px;
+  margin: 0.8rem;
+  border-radius: 25px;
   border: none;
-  width: 20rem;
-  transition: .2s;
+  width: 21rem;
+  transition: .4s;
 }
 .stylebox:hover {
-  
+
   box-shadow: 15px 15px 17px #000;
 }
 .stylebox .image {
@@ -261,13 +221,11 @@ span{
   border-radius: .5em;
   transition: .4s;
 }
-
 .stylebox .image:hover{
   transform: scale(1.17);
   border-radius: .5em;
 }
 /*  */
-
 .card-heading{
   display: flex;
   font-size: 18px;
@@ -281,21 +239,24 @@ span{
 }
 
 button{
-  border: 2px solid #101522;
+  border: none;
   width: 95%;
   font-size: 1em;
   font-family: 'Bitter';
   font-weight: bold;
-  padding: .5em;
+  padding: 0.5em;
   transition: 0.3s;
-  margin-bottom: 1em ;
+  margin-bottom: 1em;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+  box-shadow:  20px 20px 60px #b6b6b6,
+              -20px -20px 60px #f6f6f6;
 }
 
 .btnn:hover{
   background-color: #101522;
   color: #fff;
 }
-
 @media only screen and (max-width: 600px) {
   .styles {
     display: flex;
@@ -322,38 +283,24 @@ button{
     transition: .3s;
   }
 }
-
-
-
-
 /* CARDS DESIGN ENDS */
  
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 #footer {
   background: #101522;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
-
 #footer .footer-top {
   background: #040919;
   padding: 60px 0 30px 0;
 }
-
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
-
 #footer .footer-top .footer-info h3 {
   font-size: 26px;
   margin: 0 0 20px 0;
@@ -363,12 +310,10 @@ button{
   font-weight: 700;
   color: #fff;
 }
-
 #footer .footer-top .footer-info img {
   height: 40px;
   margin-bottom: 10px;
 }
-
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
@@ -376,7 +321,6 @@ button{
   font-family: "Raleway", sans-serif;
   color: #fff;
 }
-
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -391,12 +335,10 @@ button{
   height: 36px;
   transition: 0.3s;
 }
-
 #footer .footer-top .social-links a:hover {
   background: #f82249;
   color: #fff;
 }
-
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
@@ -406,58 +348,46 @@ button{
   padding-bottom: 12px;
   border-bottom: 2px solid #f82249;
 }
-
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
-
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
   color: #f82249;
   font-size: 18px;
 }
-
 #footer .footer-top .footer-links ul li {
   border-bottom: 1px solid #262c44;
   padding: 10px 0;
 }
-
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
 }
-
 #footer .footer-top .footer-links ul a {
   color: #eee;
 }
-
 #footer .footer-top .footer-links ul a:hover {
   color: #f82249;
 }
-
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
-
 #footer .footer-top .footer-contact p {
   line-height: 26px;
 }
-
 #footer .footer-top .footer-newsletter {
   margin-bottom: 30px;
 }
-
 #footer .footer-top .footer-newsletter input[type="email"] {
   border: 0;
   padding: 6px 8px;
   width: 65%;
 }
-
 #footer .footer-top .footer-newsletter input[type="submit"] {
   background: #f82249;
   border: 0;
@@ -468,19 +398,15 @@ button{
   transition: 0.3s;
   cursor: pointer;
 }
-
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
   background: #e0072f;
 }
-
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
 }
-
 #footer .credits {
   text-align: center;
   font-size: 13px;
   color: #ddd;
 }
-

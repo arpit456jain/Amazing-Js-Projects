@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section {
+  width: fit-content;
+}
+.time {
+  margin: 1.5rem;
+  padding: 1rem 5rem;
+  max-width: 512px;
+  border: 2px solid red;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.time:hover {
+  background-color: red;
+  color: aliceblue;
+  -webkit-box-shadow: inset 0 0 30px red, 0 0 30px red;
+  -moz-box-shadow: inset 0 0 30px red, 0 0 30px red;
+  box-shadow: inset 0 0 30px red, 0 0 30px red;
+}
+.alarm {
+  margin: 1rem;
+}
+.alarm input {
+  display: block;
+}
+.alarm,
+.alarm button,
+.alarm label,
+.alarm input {
+  font-size: 1.2rem;
+}
+.alarm h3 {
+  font-size: 2rem;
+}
+form {
+  margin-bottom: 0.8rem;
+}
+.form-group > * {
+  margin: 0.8rem 0;
+}
+.alarm .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+#alarmsubmit {
+  padding: 0.3rem 1rem;
+  background-color: #90ee90;
+}
+#alarmsubmit:hover {
+  background-color: #5cc55c;
+}
+#alarmstop {
+  padding: 0.3rem 1rem;
+  background-color: #fb8d8d;
+}
+#alarmstop:hover {
+  background-color: #fc4f4f;
+}
+
+@media (max-width: 548px) {
+  .time {
+    margin: 1rem;
+    padding: 0.3rem 2rem;
+    font-size: 1.5rem;
+  }
+  .alarm {
+    margin: 0.5rem;
+  }
+}
