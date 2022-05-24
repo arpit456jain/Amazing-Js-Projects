@@ -555,5 +555,9 @@
   {
     "name": "wordCountTool",
     "link": "wordCountTool/index.html"
+  },
+  {
+    "name":"BankingMoneyTransfer",
+    "link":"BankingMoneyTransfer/index.html"
   }
 ]
