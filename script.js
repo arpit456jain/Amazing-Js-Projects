@@ -67,7 +67,7 @@ const getProject =()=>{
                   <div class="card-data">
                       <p class="card-heading">${project.name}</p>
                 
-                      <a href=${(project.link).split(" ").join("%20")}><button class="btnn">View</button></a> 
+                      <a href=${(project.link).split(" ").join("%20")} target="_blank"><button class="btnn">View</button></a> 
                   </div>
            
               </div>`; // Links to projects (To eliminate space , used split and join)
