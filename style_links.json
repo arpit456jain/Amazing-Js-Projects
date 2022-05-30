@@ -1,40 +1,29 @@
 [
+  
   {
-    "name": "15-Puzzle-Challenge",
-    "link": "15-Puzzle-Challenge/index.html"
-  },
+    "name":"2D Snake Game",
+    "link":"2D Snake Game/index.html"
+  },  
   {
     "name": "2dShooterGame",
     "link": "2dShooterGame/index.html"
   },
-   {
-    "name": "Hangman Game",
-    "link": "Hangman Game/index.html"
+
+  {
+    "name": "15-Puzzle-Challenge",
+    "link": "15-Puzzle-Challenge/index.html"
   },
   {
     "name": "2048_game",
     "link": "2048_game/index.html"
   },
   {
-    "name": "Spy Number Checker",
-    "link": "Spy%20Number%20Checker/index.html"
-  },
-  {
-    "name": "Sum Of Digits Caluclator",
-    "link": "Sum Of Digits Caluclator/sum.html"
-  },
-  {
-    "name": "Happy number checker",
-    "link": "Happy number checker/index.html"
-  },
-  {
-      "name": "Special number checker",
-    "link": "Special number checker/index.html"
-  },
-  
-  {
     "name": "Age Calculator",
     "link": "Age Calculator/index.html"
+  },
+  {
+    "name":"Alarm_Clock",
+    "link":"Alarm_Clock/index.html"
   },
   {
     "name": "Analog clock",
@@ -51,6 +40,10 @@
   {
     "name": "Ball-Game",
     "link": "Ball-Game/index.html"
+  },
+  {
+    "name":"BankingMoneyTranfer",
+    "link":"BankingMoneyTranfer/index.html"
   },
   {
     "name": "BaseX_Calculator",
@@ -89,6 +82,14 @@
     "link": "Candy Crush Clone/index.html"
   },
   {
+    "name":"Captcha Generator",
+    "link":"Captcha Generator/index.html"
+  },
+  {
+    "name":"Car Color Change",
+    "link":"Car Color Change/index.html"
+  },
+  {
     "name": "Certificate Generator",
     "link": "Certificate Generator/index.html"
   },
@@ -107,7 +108,11 @@
   },
   {
     "name": "Color Checker",
-    "link": "Clock And Alarm/index.html"
+    "link": "Color Checker/index.html"
+  },
+  {
+    "name": "Color Picker",
+    "link": "Color%20Picker/index.html"
   },
   {
     "name": "Color_Code_Converter",
@@ -138,6 +143,14 @@
     "link": "Currency Convertor/index.html"
   },
   {
+    "name":"custom Emoji slider",
+    "link":"custom Emoji slider/index.html"
+  },
+  {
+    "name":"Custom QR Code",
+    "link":"Custom QR Code/index.html"
+  },
+  {
     "name": "Custom Range Slider",
     "link": "Custom Range Slider/index.html"
   },
@@ -154,8 +167,16 @@
     "link": "Dictionary App/index.html"
   },
   {
+    "name":"Digital_Clock",
+    "link":"Digital_Clock/index.html"
+  },
+  {
     "name": "Digital-clock",
     "link": "Digital-clock/clock.html"
+  },
+  {
+    "name":"Discord Emoji Switcher",
+    "link":"Discord Emoji Switcher/index.html"
   },
   {
     "name": "Double Vertical Slider",
@@ -170,403 +191,438 @@
     "link": "Drum Kit/index.html"
   },
   {
+    "name": "Emoji-Search",
+    "link": "Emoji-Search/index.html"
+  },
+  {
     "name": "Expense-Tracker",
     "link": "Expense-Tracker/index.html"
   },
   {
-    "name": "Flipbook",
-    "link": "Flipbook/index.html"
-  },
-  {
-    "name": "Fresh Quotes",
-    "link": "Fresh Quotes/index.html"
-  },
-  {
-    "name": "Fruit Slice Game",
-    "link": "Fruit Slice Game/index.html"
-  },
-  {
-    "name": "Github Profiles",
-    "link": "Github Profiles/index.html"
-  },
-  {
-    "name": "Gradient_Background_Generator",
-    "link": "Gradient_Background_Generator/index.html"
-  },
-  {
-    "name": "Guess the Number",
-    "link": "Guess the Number/game.html"
-  },
-  {
-    "name": "Happy New Year CountDown Timer",
-    "link": "Happy New Year CountDown Timer/index.html"
-  },
-  {
-    "name": "Image Filter App",
-    "link": "Image Filter App/index.html"
-  },
-  {
-    "name": "Image-Resizer",
-    "link": "Image-Resizer/index.html"
-  },
-  {
-    "name": "Guess-The-Number",
-    "link": "Guess-The-Number/index.html"
-  },
-  {
-    "name": "Issue Tracker",
-    "link": "Issue Tracker/index.html"
-  },
-  {
-    "name": "javascript-sudoku-main",
-    "link": "javascript-sudoku-main/index.html"
-  },
-  {
-    "name": "Jokes Chrome Extension",
-    "link": "Jokes Chrome Extension/popup.html"
-  },
-  {
-    "name": "Keyboard",
-    "link": "Keyboard/index.html"
-  },
-  {
-    "name": "Leap Year",
-    "link": "Leap Year/index.html"
-  },
-  {
-    "name": "Lorem Ipsum Generator",
-    "link": "Lorem Ipsum Generator/index.html"
-  },
-  {
-    "name": "Magic Color",
-    "link": "Magic Color/index.html"
-  },
-  {
-    "name": "Magic Image",
-    "link": "Magic Image/index.html"
-  },
-  {
-    "name": "Meme Generator",
-    "link": "Meme Generator/index.html"
-  },
-  {
-    "name": "Memory Game",
-    "link": "Memory Game/index.html"
-  },
-  {
-    "name": "Minify CSS",
-    "link": "Minify CSS/index.html"
-  },
-  {
-    "name": "Movie-Search-App",
-    "link": "Movie-Search-App/index.html"
-  },
-  {
-    "name": "Music",
-    "link": "Music/index.html"
-  },
-  {
-    "name": "Music Player",
-    "link": "Music Player/index.html"
-  },
-  {
-    "name": "Netflix Clone",
-    "link": "Netflix Clone/index.html"
-  },
-  {
-    "name": "Note Taking App",
-    "link": "Note Taking App/index.html"
-  },
-  {
-    "name": "Notes Maker",
-    "link": "Notes Maker/index.html"
-  },
-  {
-    "name": "Palindrome Check",
-    "link": "Palindrome Check/index.html"
-  },
-  {
-    "name": "Password Generator",
-    "link": "Password Generator/index.html"
-  },
-  {
-    "name": "Photo-Editor",
-    "link": "Photo-Editor/index.html"
-  },
-  {
-    "name": "picture-in-picture",
-    "link": "picture-in-picture/index.html"
-  },
-  {
-    "name": "PiG-Game",
-    "link": "PiG-Game/index.html"
-  },
-  {
-    "name": "PIng _Pong _Ball _Score_Keeper",
-    "link": "PIng _Pong _Ball _Score_Keeper/index.html"
-  },
-  {
-    "name": "Ping Pong Score Keeper",
-    "link": "Ping Pong Score Keeper/index.html"
-  },
-  {
-    "name": "Pokemon-Generator",
-    "link": "Pokemon-Generator/index.html"
-  },
-  {
-    "name": "Pomodoro-Timer",
-    "link": "Pomodoro-Timer/index.html"
-  },
-  {
-    "name": "Pong game",
-    "link": "Pong game/index.html"
-  },
-  {
-    "name": "Prime Factor Calculator",
-    "link": "Prime Factor Calculator/index.html"
-  },
-  {
-    "name": "Quote Generator",
-    "link": "Quote Generator/index.html"
-  },
-  {
-    "name": "quote-generator",
-    "link": "quote-generator/index.html"
-  },
-  {
-    "name": "Random Password Generator",
-    "link": "Random Password Generator/index.html"
-  },
-  {
-    "name": "Random Shapes and Backgrounds",
-    "link": "Random Shapes and Backgrounds/index.html"
-  },
-  {
-    "name": "Random-joke-generator",
-    "link": "Random-joke-generator/index.html"
-  },
-  {
-    "name": "randomColorGenerator",
-    "link": "randomColorGenerator/index.html"
-  },
-  {
-    "name": "Rock-Paper-Scissors",
-    "link": "Rock-Paper-Scissors/index.html"
-  },
-  {
-    "name": "Rocket Web Animation",
-    "link": "Rocket Web Animation/index.html"
-  },
-  {
-    "name": "Simon Game",
-    "link": "Simon Game/index.html"
-  },
-  {
-    "name": "Snake Game",
-    "link": "Snake Game/index.html"
-  },
-  {
-    "name": "Sneaker Site",
-    "link": "Sneaker Site/index.html"
-  },
+    "name":"EyeSight Check",
+   "link":"EyeSight Check/index.html"
 
-  {
-    "name": "Spin-and-Win-Game",
-    "link": "Spin-and-Win-Game/index.html"
-  },
-  {
-    "name":"Spotify Clone",
-    "link":"Spotify Clone/index.html"
-  },
-  {
-    "name": "stick hero game by yash-25log",
-    "link": "stick hero game by yash-25log/index.html"
-  },
-  {
-    "name": "StopWatch",
-    "link": "StopWatch/index.html"
-  },
-  {
-    "name": "Stopwatch (minimalist)",
-    "link": "Stopwatch (minimalist)/index.html"
-  },
-  {
-    "name": "String Generator",
-    "link": "String Generator/index.html"
-  },
-  {
-    "name": "Superhero Website",
-    "link": "Superhero Website/index.html"
-  },
-  {
-    "name": "Temp Convert",
-    "link": "Temp Convert/index.html"
-  },
-  {
-    "name": "Terminal Themed Portfolio",
-    "link": "Terminal Themed Portfolio/index.html"
-  },
-  {
-    "name": "Text_to_speech_converter",
-    "link": "Text_to_speech_converter/index.html"
-  },
-  {
-    "name": "Tic Tac Toe",
-    "link": "Tic Tac Toe/index.html"
-  },
-  {
-    "name": "Tic-Tac-Toe with computer",
-    "link": "Tic-Tac-Toe with computer/index.html"
-  },
-  {
+ },
+ {
+  "name": "Feedback slider",
+  "link": "Feedback slider/index.html"
+},
+{
+  "name":"Flappy_Bird_Clone",
+  "link":"Flappy_Bird_Clone/index.html"
+},
+{
+  "name": "Flipbook",
+  "link": "Flipbook/index.html"
+},
+{
+  "name":"Fortune Cookie Generator",
+  "link":"Fortune Cookie Generator/index.html"
+},
+{
+  "name": "Fresh Quotes",
+  "link": "Fresh Quotes/index.html"
+},
+{
+  "name": "Fruit Slice Game",
+  "link": "Fruit Slice Game/index.html"
+},
+{
+  "name":"Function_Grapher",
+  "link":"Function_Grapher/index.html"
+},
+{
+  "name":"Game of pong",
+  "link":"Game of pong/index.html"
+},
+{
+  "name": "Github Profiles",
+  "link": "Github Profiles/index.html"
+},
+{
+  "name": "Gradient_Background_Generator",
+  "link": "Gradient_Background_Generator/index.html"
+},
+{
+  "name": "Guess the Number",
+  "link": "Guess the Number/game.html"
+},
+{
+  "name": "Guess-The-Number",
+  "link": "Guess-The-Number/index.html"
+},
+{
+  "name": "Hangman Game",
+  "link": "Hangman Game/index.html"
+},
+{
+  "name": "Happy New Year CountDown Timer",
+  "link": "Happy New Year CountDown Timer/index.html"
+},
+{
+  "name": "Happy number checker",
+  "link": "Happy number checker/index.html"
+},
+{
+  "name": "Image Filter App",
+  "link": "Image Filter App/index.html"
+},
+{
+  "name": "Image-Resizer",
+  "link": "Image-Resizer/index.html"
+},
+{
 
-    "name": "Random Shapes and Backgrounds",
-    "link": "Random Shapes and Backgrounds/index.html"
-  },
-  {
-    "name": "URL-Shortner",
-    "link": "URL-Shortner/index.html"
-  },
+  "name":"InstagramMini",
+  "link":"InstagramMini/index.html"
+},
+{
+  "name": "Issue Tracker",
+  "link": "Issue Tracker/index.html"
+},
+{
+  "name": "javascript-sudoku-main",
+  "link": "javascript-sudoku-main/index.html"
+},
+{
+  "name": "Jokes Chrome Extension",
+  "link": "Jokes Chrome Extension/popup.html"
+},
+{
+  "name": "Keyboard",
+  "link": "Keyboard/index.html"
+},
+{
+  "name": "Leap Year",
+  "link": "Leap Year/index.html"
+},
+{
+  "name":"Live User Filter",
+  "link":"Live User Filter/index.html"
+},
+{
+  "name": "Lorem Ipsum Generator",
+  "link": "Lorem Ipsum Generator/index.html"
+},
+{
+  "name":"Lyricz finder",
+  "link":"Lyricz finder/index.html"
+},
+{
+  "name": "Magic Color",
+  "link": "Magic Color/index.html"
+},
+{
+  "name": "Magic Image",
+  "link": "Magic Image/index.html"
+},
+{
+  "name": "Meditation feature",
+  "link": "Meditation feature/assets/meditation.html"
+},
+{
+  "name": "Meme Generator",
+  "link": "Meme Generator/index.html"
+},
+{
+  "name": "Memory Game",
+  "link": "Memory Game/index.html"
+},
+{
+  "name": "Minify CSS",
+  "link": "Minify CSS/index.html"
+},
+{
+  "name": "Movie-Search-App",
+  "link": "Movie-Search-App/index.html"
+},
+{
+  "name": "Music",
+  "link": "Music/index.html"
+},
+{
+  "name": "Music Player",
+  "link": "Music Player/index.html"
+},
+{
+  "name": "Netflix Clone",
+  "link": "Netflix Clone/index.html"
+},
+{
+  "name": "Note Taking App",
+  "link": "Note Taking App/index.html"
+},
+{
+  "name": "Notes Maker",
+  "link": "Notes Maker/index.html"
+},
+{
+  "name":"number_system_convertor",
+  "link":"number_system_convertor/index.html"
+},
+{
+  "name": "Palindrome Check",
+  "link": "Palindrome Check/index.html"
+},
+{
+  "name": "Password Generator",
+  "link": "Password Generator/index.html"
+},
+{
+  "name": "Photo-Editor",
+  "link": "Photo-Editor/index.html"
+},
+{
+  "name":"piano",
+  "link":"piano/index.html"
+},
+{
+  "name":"Picture Puzzle Game",
+  "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
+},
+{
+  "name": "picture-in-picture",
+  "link": "picture-in-picture/index.html"
+},
+{
+  "name": "PiG-Game",
+  "link": "PiG-Game/index.html"
+},
+{
+  "name": "PIng _Pong _Ball _Score_Keeper",
+  "link": "PIng _Pong _Ball _Score_Keeper/index.html"
+},
+{
+  "name": "Ping Pong Score Keeper",
+  "link": "Ping Pong Score Keeper/index.html"
+},
+{
+  "name": "Pokemon-Generator",
+  "link": "Pokemon-Generator/index.html"
+},
+{
+  "name": "Pomodoro-Timer",
+  "link": "Pomodoro-Timer/index.html"
+},
+{
+  "name": "Pong game",
+  "link": "Pong game/index.html"
+},
+{
+  "name": "Prime Factor Calculator",
+  "link": "Prime Factor Calculator/index.html"
+},
+{
+  "name":"Quiz",
+  "link":"Quiz/index.html"
+},
+{
+  "name": "Quote Generator",
+  "link": "Quote Generator/index.html"
+},
+{
+  "name": "quote-generator",
+  "link": "quote-generator/index.html"
+},
+{
+  "name": "Random Password Generator",
+  "link": "Random Password Generator/index.html"
+},
+{
+  "name": "Random Shapes and Backgrounds",
+  "link": "Random Shapes and Backgrounds/index.html"
+},
+{
+  "name":"Random Wave",
+  "link":"Random Wave/index.html"
+},
+{
+  "name": "Random-joke-generator",
+  "link": "Random-joke-generator/index.html"
+},
+{
+  "name": "randomColorGenerator",
+  "link": "randomColorGenerator/index.html"
+},
+{
+    
+  "name":"Reflex Training",
+  "link":"Reflex Training/Index.html"
+},
+{
+  "name":"Resume-Builder",
+  "link":"Resume-Builder/index.html"
+},
+{
+  "name": "Rock-Paper-Scissors",
+  "link": "Rock-Paper-Scissors/index.html"
+},
+{
+  "name": "Rocket Web Animation",
+  "link": "Rocket Web Animation/index.html"
+},
+{
+  "name":"Screen distance Measure",
+  "link":"Screen distance Measure/index.html"
+}, 
+{
+  "name": "Simon Game",
+  "link": "Simon Game/index.html"
+},
+{
+  "name":"Simple Library Management",
+  "link":"Simple Library Management/index.html"
+},
+{
+  "name": "Snake Game",
+  "link": "Snake Game/index.html"
+},
+{
+  "name": "Sneaker Site",
+  "link": "Sneaker Site/index.html"
+},
+{
+  "name": "Sound Wave",
+  "link": "Sound Wave/main/sound_wave.html"
+},
+{
+  "name": "Special number checker",
+"link": "Special number checker/index.html"
+},
+
+{
+  "name": "Spin-and-Win-Game",
+  "link": "Spin-and-Win-Game/index.html"
+},
+{
+  "name":"Spotify Clone",
+  "link":"Spotify Clone/index.html"
+},
+{
+  "name":"SpotifyClone",
+  "link":"SpotifyClone/index.html"
+},
+{
+  "name": "Spy Number Checker",
+  "link": "Spy%20Number%20Checker/index.html"
+},
+{
+  "name": "stick hero game by yash-25log",
+  "link": "stick hero game by yash-25log/index.html"
+},
+{
+  "name": "StopWatch",
+  "link": "StopWatch/index.html"
+},
+{
+  "name": "Stopwatch (minimalist)",
+  "link": "Stopwatch (minimalist)/index.html"
+},
+{
+  "name": "String Generator",
+  "link": "String Generator/index.html"
+},
+
+{
+  "name": "Sum Of Digits Caluclator",
+  "link": "Sum Of Digits Caluclator/sum.html"
+},
+{
+  "name": "Superhero Website",
+  "link": "Superhero Website/index.html"
+},
+{
+  "name": "Temp Convert",
+  "link": "Temp Convert/index.html"
+},
+{
+  "name": "Terminal Themed Portfolio",
+  "link": "Terminal Themed Portfolio/index.html"
+},
+{
+  "name": "Text_to_speech_converter",
+  "link": "Text_to_speech_converter/index.html"
+},
+{
+  "name": "Tic Tac Toe",
+  "link": "Tic Tac Toe/index.html"
+},
+{
+  "name":"Tic-Tac-Toe with 2 player",
+  "link":"Tic-Tac-Toe with 2 player/index.html"
+},
+{
+  "name": "Tic-Tac-Toe with computer",
+  "link": "Tic-Tac-Toe with computer/index.html"
+},
+{
+  "name": "Tip Calculator",
+  "link": "Tip Calculator/index.html"
+},
+{
+  "name":"ToDo App",
+  "link":"ToDo App/index.html"
+},
+{
+  "name": "To-Do List",
+  "link": "To-Do List/index.html"
+},
+{
+  "name": "Transpose-3X3-Matrix Calculator",
+  "link": "Transpose-3X3-Matrix Calculator/index.html"
+},
+{
+  "name": "Tying Speed Game",
+  "link": "Tying Speed Game/index.html"
+},
+{
+  "name":"Typer",
+  "link":"Typer/index.html"
+},
+{
+  "name":"Typewriter effect",
+  "link":"Typewriter effect/index.html"
+},
+{
+  "name": "URL-Shortner",
+  "link": "URL-Shortner/index.html"
+},
+{
+  "name":"Validation Form",
+  "link":"Validation Form/index.html"
+},
+{
+  "name":"Voice To Text Converter",
+  "link":"Voice%20To%20Text%20Converter/index.html"
+},
+{
+  "name": "Weather-App",
+  "link": "Weather-App/index.html"
+},
+{
+  "name": "web dev proj3 clock",
+  "link": "web dev proj3 clock/index.html"
+},
+{
+  "name": "Weight Converter",
+  "link": "Weight Converter/index.html"
+},
+{
+  "name": "Whac a mole",
+  "link": "Whac a mole/index.html"
+},
+{
+  "name": "Windows 11",
+  "link": "Windows 11/index.html"
+},
+{
+  "name": "wordCountTool",
+  "link": "wordCountTool/index.html"
+},
+{
+  "name": "Youtube-Music-clone",
+  "link": "Youtube-Music-clone/index.html"
+}
   
-  {
-    "name": "Tip Calculator",
-    "link": "Tip Calculator/index.html"
-  },
-  {
-    "name":"ToDo App",
-    "link":"ToDo App/index.html"
-  },
-  {
-    "name": "To-Do List",
-    "link": "To-Do List/index.html"
-  },
-  {
-    "name": "Transpose-3X3-Matrix Calculator",
-    "link": "Transpose-3X3-Matrix Calculator/index.html"
-  },
-  {
-    "name": "Tying Speed Game",
-    "link": "Tying Speed Game/index.html"
-  },
-  {
-    "name": "Weather-App",
-    "link": "Weather-App/index.html"
-  },
-  {
-    "name": "web dev proj3 clock",
-    "link": "web dev proj3 clock/index.html"
-  },
-  {
-    "name": "Weight Converter",
-    "link": "Weight Converter/index.html"
-  },
-  {
-    "name": "Whac a mole",
-    "link": "Whac a mole/index.html"
-  },
-  {
-    "name": "Youtube-Music-clone",
-    "link": "Youtube-Music-clone/index.html"
-  },
-  {
-    "name": "Windows 11",
-    "link": "Windows 11/index.html"
-  },
-  {
-    "name": "Sound Wave",
-    "link": "Sound Wave/main/sound_wave.html"
-  },
-    
-  {
-    "name": "Game of pong",
-    "link": "Game of pong/index.html"
-
-  }
-  ,{
-
-    "name":"InstagramMini",
-    "link":"InstagramMini/index.html"
-  },
-  {
-    "name":"Validation Form",
-    "link":"Validation Form/index.html"
-  }
-,
-  {
-    "name":"SpotifyClone",
-    "link":"SpotifyClone/index.html"
-  },
-  {
-    
-    "name":"Reflex Training",
-    "link":"Reflex Training/Index.html"
-  },
-  {
-    
-    "name":"Picture Puzzle Game",
-    "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
-  },
-  {
-    "name":"Voice To Text Converter",
-    "link":"Voice%20To%20Text%20Converter/index.html"
-  },
-  {
-    "name":"Screen distance Measure",
-    "link":"Screen distance Measure/index.html"
-  }, 
-  {
-    "name":"Resume-Builder",
-    "link":"Resume-Builder/index.html"
-  },
-  {
-    "name":"Simple Library Management",
-    "link":"Simple Library Management/index.html"
-  },
-  {
-    "name":"Lyricz finder",
-    "link":"Lyricz finder/index.html"
-  },
-  {
-    "name":"Car Color Change",
-    "link":"Car Color Change/index.html"
-  },
-  {
-     "name":"EyeSight Check",
-    "link":"EyeSight Check/index.html"
-
-  },
-  {
-    "name": "Meditation feature",
-    "link": "Meditation feature/assets/meditation.html"
-  },
-  {
-    "name": "Color Picker",
-    "link": "Color%20Picker/index.html"
-  },
-  {
-    "name": "Emoji-Search",
-    "link": "Emoji-Search/index.html"
-  },
-
-  {
-    "name": "Feedback slider",
-    "link": "Feedback slider/index.html"
-  },
-  {
-    "name": "wordCountTool",
-    "link": "wordCountTool/index.html"
-  },
   
-  {
-    "name": "Custom QR Code",
-    "link": "Custom QR Code/index.html"
-  },
-  {
-    "name": "Discord Emoji Switcher",
-    "link": "Discord Emoji Switcher/index.html"
-  },
-  {
-    "name":"BankingMoneyTransfer",
-    "link":"BankingMoneyTransfer/index.html"
-  }
 ]
