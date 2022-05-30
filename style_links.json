@@ -42,8 +42,8 @@
     "link": "Ball-Game/index.html"
   },
   {
-    "name":"BankingMoneyTransfer",
-    "link":"BankingMoneyTransfer/index.html"
+    "name":"BankingMoneyTranfer",
+    "link":"BankingMoneyTranfer/index.html"
   },
   {
     "name": "BaseX_Calculator",
@@ -108,7 +108,7 @@
   },
   {
     "name": "Color Checker",
-    "link": "Clock And Alarm/index.html"
+    "link": "Color Checker/index.html"
   },
   {
     "name": "Color Picker",
@@ -143,8 +143,8 @@
     "link": "Currency Convertor/index.html"
   },
   {
-    "name":"Custom Emoji Slider",
-    "link":"custome Emoji slider/index.html"
+    "name":"custom Emoji slider",
+    "link":"custom Emoji slider/index.html"
   },
   {
     "name":"Custom QR Code",
@@ -208,7 +208,7 @@
   "link": "Feedback slider/index.html"
 },
 {
-  "name":"Flappy Bird Clone",
+  "name":"Flappy_Bird_Clone",
   "link":"Flappy_Bird_Clone/index.html"
 },
 {
@@ -228,7 +228,7 @@
   "link": "Fruit Slice Game/index.html"
 },
 {
-  "name":"Function Grapher",
+  "name":"Function_Grapher",
   "link":"Function_Grapher/index.html"
 },
 {
@@ -297,7 +297,7 @@
   "link": "Leap Year/index.html"
 },
 {
-  "name":"Live User",
+  "name":"Live User Filter",
   "link":"Live User Filter/index.html"
 },
 {
@@ -357,7 +357,7 @@
   "link": "Notes Maker/index.html"
 },
 {
-  "name":"Number System Converter",
+  "name":"number_system_convertor",
   "link":"number_system_convertor/index.html"
 },
 {
@@ -373,12 +373,12 @@
   "link": "Photo-Editor/index.html"
 },
 {
-  "name":"Piano",
+  "name":"piano",
   "link":"piano/index.html"
 },
 {
   "name":"Picture Puzzle Game",
-  "link":"Picture Puzzle Game/index.html"
+  "link":"Picture Puzzle Game/Finding Nemo Picture Puzzle/index.html"
 },
 {
   "name": "picture-in-picture",
@@ -580,8 +580,8 @@
   "link":"Typer/index.html"
 },
 {
-  "name":"Typewriter Effect",
-  "link":"Typerwriter effect/index.html"
+  "name":"Typewriter effect",
+  "link":"Typewriter effect/index.html"
 },
 {
   "name": "URL-Shortner",
