@@ -208,10 +208,7 @@
     "name": "Issue Tracker",
     "link": "Issue Tracker/index.html"
   },
-  {
-    "name": "javascript-sudoku-main",
-    "link": "javascript-sudoku-main/index.html"
-  },
+ 
   {
     "name": "Jokes Chrome Extension",
     "link": "Jokes Chrome Extension/popup.html"
