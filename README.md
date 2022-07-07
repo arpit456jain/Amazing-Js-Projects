@@ -59,7 +59,7 @@ HELLO FOLKS , <br><br>
 <hr>
 
 ## 🎥 Demo 
-#### Website for this repository : https://amazing-js-projects.netlify.app/
+#### Website for this repository : https://amazing-js-project.netlify.app/
 ![frontendtemp](recording.gif)
 
 # Must Check These Repos Also
