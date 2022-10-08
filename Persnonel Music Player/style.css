@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+body {
+    background: url(ec.jpg);
+
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+
+
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+
+    list-style-type: none;
+    align-items: center;
+    border-radius: 25px;
+    background: #d2eab1;
+    padding: 10px;
+    width: 1000px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white
+}
+
+nav ul li.buttons {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+li.buttons:hover {
+    font-size: 25px;
+    border-radius: 9px;
+    height: 30px;
+}
+
+li.buttons a:hover {
+    color: rgb(11, 229, 19);
+}
+
+.brand img {
+    margin-left: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    padding: 0 2px;
+}
+
+li.brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #d2eab1;
+
+}
+
+/* Bottom */
+div.bottom {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 20px;
+
+    list-style-type: none;
+
+    border-radius: 25px;
+    background: #d2eab1;
+    padding: 5px;
+    width: 80%;
+    height: 100px;
+
+
+    margin-top: 300px;
+}
+
+div.banner {
+    position: relative;
+}
+
+#range {
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+img.bg {
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 50px 70px rgb(1, 240, 216),
+        inset 5px 5px 10px rgb(1, 240, 216, 0.25),
+        inset 5px 5px 20px rgb(1, 240, 216, 0.25),
+        inset -5px -5px 15px rgb(1, 240, 216, 0.25);
+
+
+
+}
+
+div.songs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: black;
+    margin-right: 500px;
+    margin-bottom: 400px;
+    font-weight: bold;
+    font-size: 25px;
+
+
+
+}
+
+div.songs1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: black;
+    margin-left: 500px;
+    margin-bottom: 400px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.songs h1 {
+    padding: 10px;
+    font-size: 25px;
+
+}
+
+img.icons {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.fa {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.fa:hover {
+    transform: scale(1.25);
+}
+
+.gaana:hover i {
+    opacity: 1;
+    color: black;
+
+}
+
+.play i {
+    padding: 10px;
+}
+
+.gaana {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20%;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+
+
+
+
+}
+
+
+
+
+
+.gaana:hover {
+    background-color: #d2eab1;
+    color: black;
+
+}
+
+#masterplay {
+    cursor: pointer;
+}
+
+#next {
+    cursor: pointer;
+}
+
+#previous {
+    cursor: pointer;
+}
+
+.gif {
+    position: absolute;
+    left: 3%;
+}
+
+.gif img {
+
+    height: 70px;
+    width: 120px;
+    border-radius: 25%;
+    opacity: 0;
+    transition: .5s ease-in;
+}
+
+.gif1 {
+    position: absolute;
+    right: 3%;
+
+}
+
+.gif1 img {
+    height: 70px;
+    width: 120px;
+    border-radius: 25%;
+    opacity: 0;
+    transition: 1s ease-in;
+
+}
+
+@media only screen and(max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: #d2eab1;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        /* z-index: ; */
+    }
+
+}
