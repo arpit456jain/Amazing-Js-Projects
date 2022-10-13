@@ -1,0 +1,28 @@
+.main {
+  position: relative;
+}
+.text {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 110px;
+}
+.text h1 {
+  text-align: center;
+  font-size: 80px;
+  color: black;
+}
+.body {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+.body p {
+  font-size: 18px;
+  text-align: center;
+}
+.body h1 {
+  color: #15223b;
+  text-align: center;
+}

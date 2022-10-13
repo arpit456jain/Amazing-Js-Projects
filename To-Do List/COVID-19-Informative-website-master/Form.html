@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<title>Symptom Checker</title>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+outline: none;
+}
+
+body {
+background:linear-gradient(black,#1c478f);
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 40%;
+  min-width: 300px;
+}
+#check{
+position: absolute;
+top:532px;
+}
+h1 {
+ text-align: center; 
+font-size: 35px;
+font-weight: 600;
+margin: 0 0 30px 0; 
+}
+h4{
+font-size: 25px;
+font-weight: 500;
+ }
+p{
+font-size: 20px;
+font-weight: 500;
+}
+.try input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+.ch input{
+font-size: 17px;
+  font-family: Arial;
+  border: 1px solid #aaaaaa;
+}
+select{
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+
+.tab {
+  display: none;
+}
+input[type=checkbox]{
+width:32px;
+}
+
+button {
+  background-color:#15223B;;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+font-size: 500;
+  font-family: Raleway;
+  cursor: pointer;
+text-transform: uppercase;
+border-radius: 5px;
+letter-spacing: 1px; 
+}
+input.large{
+width: 15px;
+height: 15px;
+
+}
+button:hover {
+opacity: 0.8;
+background: #000;
+}
+
+
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #4CAF50;
+}
+img{
+padding-right: 100px;
+padding-left: 120px;
+padding-bottom: -20px;
+padding-top: -20px;
+}
+.intro img
+{
+ padding-right: 50px;
+ padding-left: 50px;
+ padding-bottom: -20px;
+padding-top: -20px;
+}
+</style>
+<body>
+<form name="myForms"id="regForm" onsubmit="return validateForm()">
+  <h1 >Symptom Checker</h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab intro">
+  <h1>Hello!</h1>
+  <div class="intro"><img src="Hello.JPG"></div>
+ <p style="text-align: center;">You’re about to use a short, safe and anonymous health checkup. Your answers will be carefully analyzed and you’ll learn whether or not you are at a High Risk to get affected by Covid-19.</p>
+</div>
+
+  <div class="tab">
+   
+   
+    <h1><u>Terms of Service:</u></h1>
+    <img src="T&C.jpg" alt="">
+    <p>Before using the symptom checker, please read Terms of Service. <strong>Remember that:</strong>
+    <ul>
+      <li style="font-size: 20px;"><strong>The is not a diagnosis.</strong> Checkup is for informational purposes and is not a qualified medical opinion.</li><br>
+      <li style="font-size: 20px;"><strong>Do not use in emergencies.</strong> In case of health emergency, call the helpline numbers provided in the webpage immediately.</li><br>
+      <li style="font-size: 20px;"><strong>Your data is safe.</strong> Information that you provide is anonymous , not saved anywhere nor shared with anyone.</li><br>
+      <p style="font-size: 20px;"><input type="checkbox" class="large" id="check1" checked onclick="Check()">I read & accept the Terms of Services</input><br></p>
+    </p></ul>
+  </div>
+  <div class="tab"><h4>Name:</h4>
+    <div class="try"><p><input placeholder="Enter Your name" oninput="this.className = ''" name="fname" required></p>
+    </div>
+    <h4>What is your gender?</h4>
+    <p>
+    <select>
+<option></option>
+<option>Male</option>
+<option>Female</option>
+<option>Others</option>
+</select>
+</p>
+   <div class="try"><h4>Please Select your Age in Years</h4>
+   <p><select>
+    <option></option>
+    <option>0-25</option>
+    <option>25-50</option>
+    <option>50-75</option>
+    <option>75-100</option>
+    </select></p>
+   </div>
+  </div>
+  <div class="tab"><h4>Do you currently have any of these health conditions?</h4>
+  <div class="ch" >
+    <p>
+       <input type="checkbox" class="large" id="a1">No existing conditions</input><br>
+       <input type="checkbox" class="large" id="a2">Asthama</input><br>
+       <input type="checkbox" class="large" id="a3" >Cancer</input><br>
+       <input type="checkbox" class="large" id="a4">Chronic lung disease(COPD)</input><br>
+       <input type="checkbox" class="large" id="a5">Diabetes</input><br>
+       <input type="checkbox" class="large" id="a6">Hypertension</input><br>
+       <input type="checkbox" class="large" id="a7">Heart disease</input></p>
+       </div>
+
+  </div>
+  <div class="tab"><h4>Have you or someone in your family staying with you come in close contact with a laboratory confirmed  COVID-19 patient in the last 14 days?</h4>
+    <p><select>
+<option></option>
+<option  id="y1">Yes</option>
+<option id="n1">No</option>
+</select></p>
+<h4>Have you or someone in your family staying with you attended a large gathering/ in a migration centre in the last 14 days?</h4>
+<p><select>
+<option></option>
+<option id="y2">Yes</option>
+<option id="n2">No</option>
+</select></p>
+<h4>Are you or any of the family member staying with you currently working for essential services in public exposed places(such as hospitals, retail outlets, delivery services)?</h4>
+<p><select>
+<option></option>
+<option id="y3">Yes</option>
+<option id="n3">No</option>
+</select></p>
+  </div>
+  <div class="tab"><h4>Are you having one or more of the following symptoms?</h4>
+    <div class="ch">
+    <p>
+    <input type="checkbox" class="large" id="b1">None</input><br>
+    <input type="checkbox" class="large" id="b2">Fever</input><br>
+       <input type="checkbox" class="large" id="b3">Dry Cough</input><br>
+       <input type="checkbox" class="large" id="b4">Feeling shortness of breadth</input><br>
+       <input type="checkbox" class="large" id="b5">Sore throat</input><br>
+       <input type="checkbox" class="large" id="b6">Hoarseness in voice</input><br>
+       <input type="checkbox" class="large" id="b7">Headache</input><br>
+       <input type="checkbox" class="large" id="b8">Running Nose</input><br>
+       <input type="checkbox" class="large" id="b9">Loss of Smell</input></p>
+       <button type="button" id="check" onclick="my()">Check</button>
+       </div>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)" >Next</button>
+    </div>
+  </div>
+  
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+
+  </div>
+</form>
+
+<script>
+var currentTab = 0; 
+showTab(currentTab); 
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Reset";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+function my()
+{
+var u=document.getElementById('a1').checked;
+var v=document.getElementById('a2').checked;
+var w=document.getElementById('a3').checked;
+var x=document.getElementById('a4').checked;
+var y=document.getElementById('a5').checked;
+var z=document.getElementById('a6').checked;
+var a=document.getElementById('a7').checked;
+var b=document.getElementById('b1').checked;
+var c=document.getElementById('b2').checked;
+var d=document.getElementById('b3').checked;
+var e=document.getElementById('b4').checked;
+var f=document.getElementById('b5').checked;
+var g=document.getElementById('b6').checked;
+var h=document.getElementById('b7').checked;
+var i=document.getElementById('b8').checked;
+var j=document.getElementById('b9').checked;
+var k=document.getElementById('y1').selected;
+var l=document.getElementById('n1').selected;
+var m=document.getElementById('y2').selected;
+var n=document.getElementById('n2').selected;
+var o=document.getElementById('y3').selected;
+var p=document.getElementById('n3').selected;
+if(u==true && b==true && l==true && n==true && p==true ) 
+{
+    alert("You are at Low Risk for Covid-19.");
+}
+else if(v==true || w==true || x==true || y == true || z==true|| a==true|| c==true || d==true|| e==true||f==true||g==true||h==true||i==true||j==true||k==true ||m==true || o==true)
+{
+    alert("You are at High Risk for Covid-19.");
+}
+}
+function Check()
+{
+  var q=document.getElementById('check1').checked;
+  if(q==false)
+  {
+    document.getElementById('nextBtn').disabled=true;
+  }
+  else
+  {
+    document.getElementById('nextBtn').disabled=false;
+  }
+}
+</script>
+</body>
+</html>

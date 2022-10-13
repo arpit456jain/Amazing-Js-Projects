@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav1 {
+  background-color: #15223b;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav1 h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-left: 20px;
+  font-size: 50px;
+  color: #ffffff;
+}
+.line1 {
+  color: cyan;
+}
+a {
+  text-decoration: none;
+  padding-right: 40px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.head h1 {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main p {
+  width: 80%;
+  margin-right: 15px;
+  margin-left: 135px;
+  text-align: center;
+}
+ul {
+  text-align: center;
+  padding-left: 5px;
+}
+
+main {
+  color: rgba(0, 0, 0, 1);
+  padding: 2px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  height: 50%;
+  padding: 0 10px;
+  padding-top: 5px;
+}
+
+.row {
+  margin: 0 0px;
+  padding-left: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #15223b;
+  color: white;
+}
+.card:hover {
+  background-color: white;
+  color: black;
+}
+.card a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  margin-top: 20px;
+  color: cornsilk;
+  background-color: #15223b;
+  padding-left: 50px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.links {
+  width: 100%;
+  background-color: #15223b;
+}

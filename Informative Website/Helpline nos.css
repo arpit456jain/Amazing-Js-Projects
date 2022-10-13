@@ -1,0 +1,22 @@
+.body {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  text-align: center;
+}
+table {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  text-align: center;
+}
+thead,
+th,
+td {
+  font-size: 25px;
+  border: 3px solid black;
+  text-align: center;
+  padding: 5px 15px;
+}
