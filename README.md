@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/issues"><img src="https://img.shields.io/github/issues/arpit4567jain/Amazing-Js-Projects"></a>
@@ -9,12 +8,10 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-	
 
 </div>
 
-
-#  Amazing-Js-Projects
+# Amazing-Js-Projects
 
 ### This project was a part of the following Open Source Program
 
@@ -30,7 +27,7 @@
   <a href="https://www.devincept.com/">
      <img width="55%" src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif" />&nbsp
   </a>
-</div>	
+</div>
 
 <br />
 
@@ -40,12 +37,9 @@
   </a>	  
 </div>
 
-	
-
-
 #
 
->### Do you want to make project on JavaScript ? if yes then :point_down:	
+> ### Do you want to make project on JavaScript ? if yes then :point_down:
 
  <h3 align="center">
     <a>👋  <strong>Join Us</strong> </a>
@@ -58,18 +52,21 @@ HELLO FOLKS , <br><br>
 
 <hr>
 
-## 🎥 Demo 
+## 🎥 Demo
+
 #### Website for this repository : https://amazing-js-projects.netlify.app/
+
 ![frontendtemp](recording.gif)
 
 # Must Check These Repos Also
+
 - [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
 - [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
 - [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
 - [Web-Development-Path-And-Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 - [Open-Source-Programs](https://github.com/arpit456jain/Open-Source-Programs)
 <hr>
- 
+
 ## 💻 Technologies
 
 - ![HTML 5](https://forthebadge.com/images/badges/uses-html.svg)
@@ -80,7 +77,7 @@ HELLO FOLKS , <br><br>
 
 ## ⭐ How to get started?
 
-You can refer to the following steps  on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
+You can refer to the following steps on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
 
@@ -139,7 +136,6 @@ git checkout -b abc
 
 Now open file in a text editor, add your changes to it. Now, save the file.
 
-
 If you go to the project directory and execute the command `git status`, you'll see there are changes.
 
 Add those changes to the branch you just created using the `git add` command:
@@ -153,8 +149,6 @@ Now commit those changes using the `git commit` command:
 ```
 git commit -m "write about the changes you made in file"
 ```
-
-
 
 ## Push changes to GitHub
 
@@ -176,55 +170,58 @@ Now submit the pull request.
 
 **voila** ! You have done it , You will get a notification email once the changes have been merged by maintainer.
 
-## CONTRIBUTING A NEW PROJECT	?
-### Please adhere to these guidelines 
+## CONTRIBUTING A NEW PROJECT ?
 
-1. Create a folder with the name of your project 
+### Please adhere to these guidelines
+
+1. Create a folder with the name of your project
 
 2. Start building inside your folder with an entry file called index.html and after building, attach an image named "preview.png" within the folder root which represents the preview image of your template(preview image should be in .png format only)
 
 3. Go into the style_link.json file and add an object corresponding to your project in the following format:
+
 ```
     {
-  
+
       "name": "Name-of-folder-in-exact-case-used-in-naming",
       "link": "Name-of-folder-in-exact-case-used-in-naming/index.html"
-  
+
     },
 
 ```
-#### Important to note:  
-If the folder name has white spaces e.g "My  Project", the object should be:
+
+#### Important to note:
+
+If the folder name has white spaces e.g "My Project", the object should be:
 
 ```
     {
-  
+
       "name": "My Project", (not "my project" or "My project" or "My-project")
       "link": "My%20Project/index.html" (not "My Project/index.html" or "My project/index.html"
-  
+
     },
 
 ```
+
 #### Note: The name key is case sensitive and the link key is white space sensitive in the json object so if you have white spaces in the initial name of your folder, replace space with "%20" in the json link but if there are no white spaces like in the case of "ABlogPage" or "Form", use the exact name of the project
 
 If the folder name has no white spaces e.g "My-project", the object should be:
 
 ```
     {
-  
+
       "name": "My-project",  (not "my-project" or "My-Project" or "My Project")
       "link": "My-project/index.html"  (not "My%20project/index.html" or "My-Project/index.html")
-  
+
     },
 
 ```
 
+## 📌Till Then
 
+### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 
-
-
-## 📌Till Then 
- ### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
 <hr>
 
@@ -233,25 +230,13 @@ If the folder name has no white spaces e.g "My-project", the object should be:
 <table>
   <tbody><tr>
      <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br></td> </a></td>
-     <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
 
-</tbody></table>
-
-
- <h1 align=center> Project Mentors 👩‍🏫 </h1>
-<p align="center">
-<table>
-  <tbody><tr>
-     <td align="center"><a href="https://github.com/astha2412"><img alt="" src="https://avatars.githubusercontent.com/u/87020129?v=4" width="100px;"><br><sub><b>Kumari Astha Rani </b></sub></a><br></td> </a></td>
-     <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
-     <td align="center"><a href="https://github.com/DEEPALI-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724041?v=4" width="100px;"><br><sub><b> DEEPALI-SUK</b></sub></a><br></td></a></td>
-     <td align="center"><a href="https://github.com/DEEPIKA-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724039?v=4" width="100px;"><br><sub><b> DEEPIKA-SUK</b></sub></a><br></td></a></td>
 
 </tbody></table>
 
 <h2 align=center> ✨ Contributors </h2>
 
-Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of any kind are welcome! 
+Thanks go to these **Wonderful People** 👨🏻‍💻: 🚀 **Contributions** of any kind are welcome!
 
 <table>
 	<tr>
