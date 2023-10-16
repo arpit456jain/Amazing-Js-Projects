@@ -1,3 +1,6 @@
+# Amazing-Js-Projects
+
+<a href="https://hacktoberfest.digitalocean.com/"><img alt="HacktoberFest'21" title="HacktoberFest'21" width=100% src="https://miro.medium.com/v2/resize:fit:1400/1*Lz_KFgbak2sUjwjOG9SZ4g.png"></a>
 <div align="center">
 
 <a href="https://github.com/arpit4567jain/Amazing-Js-Projects/issues"><img src="https://img.shields.io/github/issues/arpit4567jain/Amazing-Js-Projects"></a>
@@ -11,7 +14,6 @@
 
 </div>
 
-# Amazing-Js-Projects
 
 ### This project was a part of the following Open Source Program
 
